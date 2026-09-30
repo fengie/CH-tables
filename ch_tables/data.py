@@ -2,8 +2,12 @@
 
 The detailed builds are representative saved builds, not population averages.
 Every record stores its original source URL.
+
+When a metric is mathematically estimated rather than directly exposed by the
+target page, BUILD_METRIC_BASIS records that fact so reports can label it.
 """
 
+from .estimation import SURYA8_ESTIMATE
 from .models import BossAutoProfile, Build
 from .sources import BLOODTHORN, DHIOTHU, MAGE_BUILD, RANGER_BUILD, ROGUE_BUILD, WARRIOR_BUILD
 
@@ -32,9 +36,14 @@ WARRIOR = Build(
     base_strength=1165, base_dexterity=5, base_focus=10, base_vitality=10,
     total_strength=5622, total_dexterity=850, total_focus=735, total_vitality=1687,
     hp=12044, energy=6094, attack=20687, defence=3460,
-    # The builds index gives a benchmark DPS, but this detailed table leaves it
-    # unset rather than pretending it is identical to the practical-rotation metric.
-    practical_dps=None, auto_dps=None, source_url=WARRIOR_BUILD,
+
+    # Surya8's Saved Builds benchmark is 11,982.1 DPS.
+    # Its current detail page does not expose a populated Practical Rotation
+    # result, so practical DPS and auto DPS are reconstructed from a sourced,
+    # same-class Warrior calibration model in estimation.py.
+    practical_dps=SURYA8_ESTIMATE.practical_dps,
+    auto_dps=SURYA8_ESTIMATE.auto_dps,
+    source_url=WARRIOR_BUILD,
 )
 
 MAGE = Build(
@@ -49,6 +58,34 @@ MAGE = Build(
 )
 
 REPRESENTATIVE_BUILDS = [ROGUE, RANGER, WARRIOR, MAGE]
+
+
+BUILD_METRIC_BASIS = {
+    "Rogue": {
+        "practical_dps": "SOURCE",
+        "auto_dps": "SOURCE",
+        "note": "Practical Rotation values exposed by the target build page.",
+    },
+    "Ranger": {
+        "practical_dps": "SOURCE",
+        "auto_dps": "SOURCE",
+        "note": "Practical Rotation values exposed by the target build page.",
+    },
+    "Warrior": {
+        "practical_dps": "ESTIMATE",
+        "auto_dps": "ESTIMATE",
+        "note": (
+            "Surya8 benchmark DPS transformed with the median practical/overall "
+            "ratio and median auto share from three sourced Warrior calibration builds."
+        ),
+    },
+    "Mage": {
+        "practical_dps": "SOURCE",
+        "auto_dps": "SOURCE",
+        "note": "Practical Rotation values exposed by the target build page.",
+    },
+}
+
 
 DHIOTHU_AUTO = BossAutoProfile(
     name="Dhiothu",
