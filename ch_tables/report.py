@@ -14,7 +14,14 @@ from .calculations import (
     required_uptime_to_match,
     vitality_opportunity_cost,
 )
-from .data import BOSS_AUTOS, RANGER, REPRESENTATIVE_BUILDS, ROGUE
+from .data import (
+    BOSS_AUTOS,
+    BUILD_METRIC_BASIS,
+    RANGER,
+    REPRESENTATIVE_BUILDS,
+    ROGUE,
+)
+from .estimation import SURYA8_ESTIMATE, WARRIOR_CALIBRATION
 from .normalize import read_published_builds, summarize_classes
 from .sources import SOURCES
 
@@ -31,18 +38,38 @@ def pct(value: float, digits: int = 2) -> str:
 
 
 def table(title: str, columns: list[str]) -> Table:
-    result = Table(title=title, box=box.ROUNDED, header_style="bold cyan")
+    result = Table(
+        title=title,
+        box=box.ROUNDED,
+        header_style="bold cyan",
+        row_styles=["", "dim"],
+        show_lines=False,
+    )
     for column in columns:
-        result.add_column(column)
+        justify = "right" if column not in {"Class", "Build", "Basis", "Damage type"} else "left"
+        result.add_column(column, justify=justify)
     return result
 
 
 def render_representative_builds() -> None:
     t = table(
-        "Representative sourced builds",
-        ["Class", "HP", "Energy", "Attack", "Defence", "Base Vit", "Total Vit", "Practical DPS", "Auto share"],
+        "Representative sourced / model-completed builds",
+        [
+            "Class",
+            "HP",
+            "Energy",
+            "Attack",
+            "Defence",
+            "Base Vit",
+            "Total Vit",
+            "Practical DPS",
+            "Auto share",
+            "Basis",
+        ],
     )
+
     for build in REPRESENTATIVE_BUILDS:
+        basis = BUILD_METRIC_BASIS[build.character_class]["practical_dps"]
         t.add_row(
             build.character_class,
             number(build.hp),
@@ -51,13 +78,61 @@ def render_representative_builds() -> None:
             number(build.defence),
             number(build.base_vitality),
             number(build.total_vitality),
-            number(build.practical_dps) if build.practical_dps is not None else "N/A",
-            pct(build.auto_share) if build.auto_share is not None else "N/A",
+            number(build.practical_dps),
+            pct(build.auto_share),
+            basis,
         )
+
     console.print(t)
-    console.print("[dim]Defence is not Armour. No Armour values are fabricated here.[/dim]")
+    console.print(
+        "[dim]SOURCE = directly exposed by the target build page. "
+        "ESTIMATE = reconstructed mathematically from sourced same-class data.[/dim]"
+    )
+    console.print("[dim]Defence is not Armour; the report does not relabel it as Armour.[/dim]")
     for build in REPRESENTATIVE_BUILDS:
         console.print(f"[dim]{build.character_class}: {build.source_url}[/dim]")
+    console.print()
+
+
+def render_warrior_estimation() -> None:
+    t = table(
+        "Warrior practical-DPS calibration sample",
+        ["Build", "Overall DPS", "Practical DPS", "Practical / Overall", "Practical auto share"],
+    )
+
+    for point in WARRIOR_CALIBRATION:
+        t.add_row(
+            point.name,
+            number(point.overall_dps),
+            number(point.practical_dps),
+            pct(point.practical_ratio),
+            pct(point.practical_auto_share),
+        )
+
+    console.print(t)
+    for point in WARRIOR_CALIBRATION:
+        console.print(f"[dim]{point.name}: {point.source_url}[/dim]")
+
+    console.print(
+        Panel.fit(
+            f"Surya8 published benchmark DPS: [bold]{number(SURYA8_ESTIMATE.benchmark_dps)}[/bold]\n"
+            f"Median practical/overall ratio: [bold]{pct(SURYA8_ESTIMATE.practical_ratio)}[/bold]\n"
+            f"Estimated practical DPS: [bold]{number(SURYA8_ESTIMATE.practical_dps)}[/bold]\n"
+            f"Empirical calibration range: "
+            f"[bold]{number(SURYA8_ESTIMATE.practical_dps_low)} - "
+            f"{number(SURYA8_ESTIMATE.practical_dps_high)}[/bold]\n"
+            f"Median Warrior practical auto share: [bold]{pct(SURYA8_ESTIMATE.auto_share)}[/bold]\n"
+            f"Observed auto-share range: "
+            f"[bold]{pct(SURYA8_ESTIMATE.auto_share_low)} - "
+            f"{pct(SURYA8_ESTIMATE.auto_share_high)}[/bold]\n"
+            f"Estimated auto DPS: [bold]{number(SURYA8_ESTIMATE.auto_dps)}[/bold]\n"
+            f"Calibration n = {SURYA8_ESTIMATE.calibration_n}\n\n"
+            "[dim]Method: robust median same-class calibration. The low/high numbers are "
+            "the empirical calibration range, not a fake high-confidence population CI.[/dim]\n"
+            f"[dim]Surya8 benchmark source: {SURYA8_ESTIMATE.benchmark_source_url}[/dim]",
+            title="Applied-math completion for Surya8",
+        )
+    )
     console.print()
 
 
@@ -79,16 +154,19 @@ def render_vitality_tax() -> None:
     console.print(t)
 
     cost = vitality_opportunity_cost(ROGUE)
-    console.print(Panel.fit(
-        f"Rogue has [bold]{cost['extra_vit']:.0f}[/bold] extra base Vit versus a 10-Vit comparison build.\n"
-        f"Moving those points only to STR would change base STR to "
-        f"[bold]{cost['hypothetical_base_strength']:.0f}[/bold] "
-        f"({pct(cost['base_strength_increase_pct'])} higher), and total STR to "
-        f"[bold]{cost['hypothetical_total_strength']:.0f}[/bold] "
-        f"({pct(cost['total_strength_increase_pct'])} higher).\n"
-        "[dim]Opportunity cost only. The code does not assume DPS scales linearly with STR.[/dim]",
-        title="Rogue stat-budget example",
-    ))
+    console.print(
+        Panel.fit(
+            f"Rogue has [bold]{cost['extra_vit']:.0f}[/bold] extra base Vit versus a 10-Vit comparison build.\n"
+            f"Moving those points only to STR would change base STR to "
+            f"[bold]{cost['hypothetical_base_strength']:.0f}[/bold] "
+            f"({pct(cost['base_strength_increase_pct'])} higher), and total STR to "
+            f"[bold]{cost['hypothetical_total_strength']:.0f}[/bold] "
+            f"({pct(cost['total_strength_increase_pct'])} higher).\n"
+            "[dim]Opportunity cost only. The code does not assume DPS scales linearly with STR.[/dim]",
+            title="Rogue stat-budget example",
+        )
+    )
+    console.print()
 
 
 def render_generic_class_summary(snapshot: Path) -> None:
@@ -120,21 +198,54 @@ def render_generic_class_summary(snapshot: Path) -> None:
     console.print(f"[dim]Source: {SOURCES['codex_builds']}[/dim]\n")
 
 
+def render_all_class_uptime() -> None:
+    t = table(
+        "Effective DPS sensitivity if complete attack uptime is lost",
+        ["Class", "100%", "95%", "90%", "85%", "Auto share", "DPS basis"],
+    )
+
+    for build in REPRESENTATIVE_BUILDS:
+        t.add_row(
+            build.character_class,
+            number(effective_dps(build, 1.00)),
+            number(effective_dps(build, 0.95)),
+            number(effective_dps(build, 0.90)),
+            number(effective_dps(build, 0.85)),
+            pct(build.auto_share),
+            BUILD_METRIC_BASIS[build.character_class]["practical_dps"],
+        )
+
+    console.print(t)
+    console.print(
+        "[dim]This is a sensitivity table, not a claim that every class actually has the same uptime. "
+        "It shows the arithmetic effect of losing complete damage uptime.[/dim]\n"
+    )
+
+
 def render_uptime() -> None:
-    t = table("Rogue effective DPS by total attack uptime", ["Uptime", "Effective DPS", "DPS lost", "Loss"])
+    t = table(
+        "Rogue effective DPS by total attack uptime",
+        ["Uptime", "Effective DPS", "DPS lost", "Loss"],
+    )
     for uptime in [1.00, 0.95, 0.90, 0.85, 0.80, 0.75, 0.70]:
         result = effective_dps(ROGUE, uptime)
         lost = ROGUE.practical_dps - result
         t.add_row(pct(uptime, 0), number(result), number(lost), pct(lost / ROGUE.practical_dps))
     console.print(t)
 
-    t = table("Conservative Rogue auto-only downtime", ["Auto downtime", "Effective DPS", "DPS lost", "Total loss"])
+    t = table(
+        "Conservative Rogue auto-only downtime",
+        ["Auto downtime", "Effective DPS", "DPS lost", "Total loss"],
+    )
     for downtime in [0.05, 0.10, 0.15, 0.20, 0.25, 0.30]:
         result = effective_dps_auto_only(ROGUE, downtime)
         lost = ROGUE.practical_dps - result
         t.add_row(pct(downtime, 0), number(result), number(lost), pct(lost / ROGUE.practical_dps))
     console.print(t)
-    console.print("[dim]Auto-only model assumes every non-auto source keeps working perfectly.[/dim]\n")
+    console.print(
+        "[dim]Auto-only model is deliberately conservative: every non-auto source is assumed to "
+        "continue perfectly.[/dim]\n"
+    )
 
 
 def render_rogue_vs_ranger() -> None:
@@ -176,12 +287,17 @@ def render_deaths() -> None:
             number(ROGUE.practical_dps - result),
         )
     console.print(t)
-    console.print("[dim]15 seconds is a scenario input. Change it in code to match observed raid recovery time.[/dim]\n")
+    console.print(
+        "[dim]15 seconds is an explicit scenario input. Change it in code to match observed raid recovery time.[/dim]\n"
+    )
 
 
 def render_bosses() -> None:
     for boss in BOSS_AUTOS:
-        t = table(f"{boss.name}: normal raw auto composition", ["Damage type", "Raw damage", "Share"])
+        t = table(
+            f"{boss.name}: normal raw auto composition",
+            ["Damage type", "Raw damage", "Share"],
+        )
         for damage_type, raw in boss.components.items():
             t.add_row(damage_type, number(raw), pct(raw / boss.total_raw))
         t.add_row("TOTAL", number(boss.total_raw), "100.00%")
@@ -190,18 +306,27 @@ def render_bosses() -> None:
 
 
 def render_sources() -> None:
-    console.print(Panel("\n".join(f"{name}: {url}" for name, url in SOURCES.items()), title="Original source URLs"))
+    console.print(
+        Panel(
+            "\n".join(f"{name}: {url}" for name, url in SOURCES.items()),
+            title="Original source URLs",
+        )
+    )
 
 
 def run_report() -> None:
-    console.print(Panel.fit(
-        "Celtic Heroes sourced class / boss analysis\n"
-        "[dim]Community build sample + transparent scenario math[/dim]",
-        title="CH-tables",
-    ))
+    console.print(
+        Panel.fit(
+            "Celtic Heroes sourced class / boss analysis\n"
+            "[dim]Direct source data + clearly labeled applied-math estimates[/dim]",
+            title="CH-tables",
+        )
+    )
     render_representative_builds()
+    render_warrior_estimation()
     render_vitality_tax()
     render_generic_class_summary(Path("data/raw/codex_builds_sample_2026-09-30.csv"))
+    render_all_class_uptime()
     render_uptime()
     render_rogue_vs_ranger()
     render_deaths()
