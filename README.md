@@ -75,7 +75,7 @@ Because the calibration sample is small, the code reports its observed min/max r
 
 ## Data sources
 
-Original source URLs live in `ch_tables/sources.py`. No ChatGPT/UTM tracking parameters are stored.
+Original source URLs live in `ch_tables/sources.py`.
 
 The Codex is an unofficial community resource, not an official DECA Games stat sheet:
 
