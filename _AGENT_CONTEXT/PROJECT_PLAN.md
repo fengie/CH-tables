@@ -14,8 +14,8 @@ This file is the repository's durable current-work ledger. It follows the cross-
 
 ### DATA-002 — Reproducible staged scrape pipeline
 
-**Status:** ACTIVE  
-**Owner:** issue #2 / branch `issue-2-reproducible-pipeline`  
+**Status:** DONE  
+**Owner:** completed via issue #2 / PR #3  
 **Source:** issue #2; current Codex Saved Builds schema; branch implementation  
 **Goal:** make live scraped analysis inputs reproducible, schema-drift safe, validate-before-publish, and bounded in retained source evidence.
 
@@ -25,9 +25,9 @@ This file is the repository's durable current-work ledger. It follows the cross-
 - [x] Stage raw/normalized/summary outputs and publish only after validation.
 - [x] Emit a machine-readable manifest with source/output hashes, row counts, parser version, filters, and calibration sources.
 - [x] Add regressions for unrelated leading tables, schema drift, failure preservation, and successful manifest publication.
-- [ ] Run exact candidate CI/tests.
-- [ ] Merge verified candidate to canonical `main`, verify remote main, and close issue #2.
+- [x] Exact head `b78033f49d254ece4fac7fc82f4a172f93fea260` passed Tests run `37128924361`.
+- [x] Merged as `2b1fd85a4468ce813bd101b5bfa34e6a2a680d8b` and verified remote `main` readback.
 
 **Execution-path note:** the current ChatGPT session exposes the canonical Toolbox skills and authenticated GitHub mutation surface but no callable Heaven/Agent Control local-runtime namespace, so the mandatory local offload lane could not be exercised. Exact candidate GitHub CI is the mechanical verification path.
 
-**Next action:** open the implementation PR, require exact-head tests/CI, then integrate only the verified candidate and update this item to DONE.
+**Next action:** none for DATA-002; future schema changes must update parser fixtures/version and preserve the same fail-closed publication contract.
