@@ -83,3 +83,9 @@ The Codex is an unofficial community resource, not an official DECA Games stat s
 - https://the-codex.ch/builds
 
 The generic class summary describes the sampled published builds after filtering to comparable damage builds at level 220+, not the entire player population.
+
+## Current plans & progress
+
+Canonical ledger: [`_AGENT_CONTEXT/PROJECT_PLAN.md`](_AGENT_CONTEXT/PROJECT_PLAN.md)
+
+No active tracked work. Add the first durable item when substantive work begins.
