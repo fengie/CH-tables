@@ -6,7 +6,9 @@ import hashlib
 import json
 import os
 import re
+import shutil
 import tempfile
+import uuid
 from datetime import date, datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit, urlunsplit
@@ -261,6 +263,52 @@ def _publish_file(staged: Path, destination: Path) -> None:
     os.replace(staged, destination)
 
 
+def _publish_generation(pairs: list[tuple[Path, Path]]) -> None:
+    """Publish a generation with rollback if any replacement fails.
+
+    Every staged file must be on the same filesystem as its destination.
+    Existing destinations are copied to same-directory rollback siblings before
+    mutation. The manifest is supplied last by the caller and therefore remains
+    the generation commit marker.
+    """
+    backups: dict[Path, Path | None] = {}
+    published: list[Path] = []
+    token = uuid.uuid4().hex
+    try:
+        for staged, destination in pairs:
+            destination.parent.mkdir(parents=True, exist_ok=True)
+            backup: Path | None = None
+            if destination.exists():
+                backup = destination.with_name(
+                    f".{destination.name}.rollback-{token}"
+                )
+                shutil.copy2(destination, backup)
+            backups[destination] = backup
+            _publish_file(staged, destination)
+            published.append(destination)
+    except Exception:
+        for destination in reversed(published):
+            backup = backups.get(destination)
+            try:
+                if backup is None:
+                    destination.unlink(missing_ok=True)
+                elif backup.exists():
+                    os.replace(backup, destination)
+            except OSError:
+                # Preserve the original publication exception. A rollback
+                # sibling that could not be restored remains visible for
+                # operator recovery rather than being silently deleted.
+                pass
+        raise
+    finally:
+        for backup in backups.values():
+            if backup is not None:
+                try:
+                    backup.unlink(missing_ok=True)
+                except OSError:
+                    pass
+
+
 def refresh_dataset(
     raw_path: Path,
     normalized_path: Path,
@@ -288,7 +336,23 @@ def refresh_dataset(
     _validate_records(records, normalized)
 
     published_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
-    with tempfile.TemporaryDirectory(prefix="ch-tables-refresh-") as stage_root_text:
+    destinations = [
+        raw_path.resolve(),
+        normalized_path.resolve(),
+        class_summary_path.resolve(),
+        manifest_path.resolve(),
+    ]
+    anchors = {path.anchor.lower() for path in destinations}
+    if len(anchors) != 1:
+        raise RuntimeError(
+            "Refresh outputs must share one filesystem for rollback-safe publication."
+        )
+    common_parent = Path(os.path.commonpath([str(path.parent) for path in destinations]))
+    common_parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory(
+        prefix=".ch-tables-refresh-",
+        dir=common_parent,
+    ) as stage_root_text:
         stage_root = Path(stage_root_text)
         staged_raw = stage_root / "raw.csv"
         staged_normalized = stage_root / "normalized.csv"
@@ -337,10 +401,12 @@ def refresh_dataset(
         # Publication starts only after every staged artifact and invariant above
         # succeeded. The manifest is committed last and acts as the generation
         # marker for the self-consistent set.
-        _publish_file(staged_raw, raw_path)
-        _publish_file(staged_normalized, normalized_path)
-        _publish_file(staged_summary, class_summary_path)
-        _publish_file(staged_manifest, manifest_path)
+        _publish_generation([
+            (staged_raw, raw_path),
+            (staged_normalized, normalized_path),
+            (staged_summary, class_summary_path),
+            (staged_manifest, manifest_path),
+        ])
 
     return len(records), len(normalized)
 
