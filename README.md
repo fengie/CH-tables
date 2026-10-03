@@ -24,6 +24,21 @@ Run tests:
 python -m unittest discover -s tests -v
 ```
 
+## Reproducible refresh pipeline
+
+The Saved Builds refresh is validate-before-publish rather than a direct scrape-to-`latest` write:
+
+1. fetch the canonical source HTML and bounded response metadata;
+2. content-address the source snapshot under `data/source_snapshots/codex-builds/`;
+3. bind the parser to the Saved Builds semantic headers and fail closed on schema drift;
+4. parse, normalize, summarize, and validate everything in per-run staging;
+5. publish the CSVs only after all staged artifacts pass validation;
+6. publish `data/normalized/dataset_manifest.json` last as the generation marker.
+
+The manifest records the source/content hash, parser schema, filter parameters, row counts, output SHA-256 values, and calibration-source identities. Source snapshots are deduplicated by SHA-256 and retain only the newest 10 by default; override with `--snapshot-retention`.
+
+Network, schema, parse, normalization, or staging failures do not replace the previously published CSV/manifest set. This keeps a failed upstream refresh from silently turning into a new analysis baseline.
+
 ## Missing-data policy
 
 The report no longer prints a blank/N/A merely because a target build page is missing a derived metric.
@@ -88,4 +103,4 @@ The generic class summary describes the sampled published builds after filtering
 
 Canonical ledger: [`_AGENT_CONTEXT/PROJECT_PLAN.md`](_AGENT_CONTEXT/PROJECT_PLAN.md)
 
-No active tracked work. Add the first durable item when substantive work begins.
+Issue #2 is the active reproducible-ingest revamp. Source/tests are on `issue-2-reproducible-pipeline`; completion requires exact candidate CI, merge to `main`, and remote-main verification.
