@@ -37,7 +37,7 @@ The Saved Builds refresh is validate-before-publish rather than a direct scrape-
 
 The manifest records the source/content hash, parser schema, filter parameters, row counts, output SHA-256 values, and calibration-source identities. Source snapshots are deduplicated by SHA-256 and retain only the newest 10 by default; override with `--snapshot-retention`.
 
-Network, schema, parse, normalization, or staging failures do not replace the previously published CSV/manifest set. This keeps a failed upstream refresh from silently turning into a new analysis baseline.
+Network, schema, parse, normalization, staging, or mid-publication failures do not replace the previously published CSV/manifest set; partial publication is rolled back from same-directory recovery siblings. This keeps a failed upstream refresh from silently turning into a new analysis baseline.
 
 ## Missing-data policy
 
@@ -103,4 +103,4 @@ The generic class summary describes the sampled published builds after filtering
 
 Canonical ledger: [`_AGENT_CONTEXT/PROJECT_PLAN.md`](_AGENT_CONTEXT/PROJECT_PLAN.md)
 
-Issue #2 is the active reproducible-ingest revamp. Source/tests are on `issue-2-reproducible-pipeline`; completion requires exact candidate CI, merge to `main`, and remote-main verification.
+Issue #2 is complete on canonical `main` at `2b1fd85a4468ce813bd101b5bfa34e6a2a680d8b`; exact PR head `b78033f49d254ece4fac7fc82f4a172f93fea260` passed Tests run `37128924361` before integration.
