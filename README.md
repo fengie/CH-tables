@@ -1,6 +1,6 @@
 # CH-tables
 
-> ⏱️ Last README update: `2026-10-05T22:11:00Z` _(auto-maintained)_
+> ⏱️ Last README update: **October 5, 2026 · 7:41:53 PM EDT** _(repo-enforced)_
 
 Celtic Heroes class/boss data utilities, normalized class samples, and reproducible effective-DPS analysis.
 
