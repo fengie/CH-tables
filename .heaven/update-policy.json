@@ -1,0 +1,15 @@
+{
+  "schema": "heaven-toolbox/update-policy/v1",
+  "repository": "fengie/CH-tables",
+  "branch": "main",
+  "kind": "source",
+  "source_update": {
+    "required": true,
+    "strategy": "ff-only",
+    "poll_interval_minutes": 1,
+    "controller": "heaven-toolbox/repo-autoupdate"
+  },
+  "runtime_update": {
+    "mode": "none"
+  }
+}
