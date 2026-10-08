@@ -116,6 +116,34 @@ class BuildPlannerTests(unittest.TestCase):
         self.assertLessEqual(result.occupied_share, 0.21)
         self.assertEqual(result.allocated_skill_points, 1)
 
+    def test_unique_swap_gold_charged_once_across_skills(self):
+        a = Skill("A", {2: rank(2, 1000)})
+        b = Skill("B", {2: rank(2, 1500)})
+        item = Swap("ring", "ring1", bonus_levels=1,
+                    acquisition_gold_cost=400,
+                    release_status="released_documented")
+        prefs = Preferences(level=220, skill_points_available=2,
+                            max_swaps_per_skill=1, total_gold_budget=400)
+        result = optimize([a, b], {"A": [item], "B": [item]}, prefs)
+        self.assertEqual(result.estimated_dps, 250)
+        self.assertEqual(result.gold_cost, 400)
+        self.assertEqual(len(result.used_swap_ids), 1)
+        tight = Preferences(level=220, skill_points_available=2,
+                            max_swaps_per_skill=1, total_gold_budget=399)
+        other = optimize([a, b], {"A": [item], "B": [item]}, tight)
+        self.assertEqual(other.gold_cost, 0)
+        self.assertLess(other.estimated_dps, result.estimated_dps)
+
+    def test_unknown_price_does_not_become_zero_cost(self):
+        skill = Skill("A", {2: rank(2, 1000)})
+        unknown = Swap("rare", "ring", bonus_levels=1,
+                       release_status="released_documented")
+        with self.assertRaises(ValueError):
+            optimize([Skill("A", skill.ranks, mandatory=True)],
+                     {"A": [unknown]},
+                     Preferences(level=220, skill_points_available=1,
+                                 max_swaps_per_skill=1, total_gold_budget=1000))
+
     def test_rejects_malformed_rank_and_imaginary_scaling(self):
         with self.assertRaises(ValueError):
             rank(5, -200)
