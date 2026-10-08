@@ -57,7 +57,9 @@ This file is the repository's durable current-work ledger. It follows the cross-
 **Source:** `docs/OPTIMIZATION_ARCHITECTURE_2026_10_08.md`.  
 **Acceptance:** seeded event-simulation fixtures agree with game observations; search agrees with exhaustive oracle for tiny cases; clear Pareto results with safe, priced gear sources and quality indicators.  
 **Implemented slice:** `ch_tables/combat_simulator.py` models deterministic priority-queue events, resource caps, enemy/auto/pet attacks, cast/action occupation, finite potions, swaps, DoT refresh and buff expiry; a planner Choice adapter and paired-seed evaluation are included. `tests/test_combat_simulator.py` has 16 locally passing standard-library regression tests. `data/planner/synthetic_combat_scenario.json` is explicitly NOT real game data. See `docs/COMBAT_SIMULATOR.md`. Full OPT-002 acceptance is still pending.  
-**Next action:** collect same-patch real Rogue and resource-limited caster traces to validate action timing/mitigation/mount/skill mechanics; compare predictions on grouped session holdouts before any practical-DPS claims. Then build tiny exact oracle/solver and Pareto comparison.
+**Validation slice:** `ch_tables/combat_validation.py` provides strict source-identity and frozen-scenario gates, independent-session holdout comparison, seeded expected DPS/potion/death/kill metrics, and an explicitly synthetic CLI fixture (`tests/test_combat_validation.py`, 9 regression tests). It does **not** estimate coefficients or establish real-game accuracy. Targeted simulator+validation tests: 25 passed locally on Python 3.13; exact GitHub main CI pending publication.
+
+**Next action:** collect independently recorded same-patch Rogue and resource-limited caster traces (including source hash, timing, gear and policy); freeze calibrated inputs before holdout inspection, then compare against real sessions and audit model bias. Only after that proceed to the tiny exact solver/oracle.
 
 ### OPT-003 — Tooling case-study feedback
 

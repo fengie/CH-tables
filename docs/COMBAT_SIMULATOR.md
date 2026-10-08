@@ -73,3 +73,12 @@ conditional proc scripts, pet active skills, true armour resistance or
 attack-speed elixir caps, mount equipment exclusions, cooldown-group sharing,
 server latency, automatic resurrection or gold/hour for unverified items.
 These remain explicit gaps, not hidden zero-cost assumptions.
+
+
+## Held-out evidence comparison
+
+The adjacent [combat validation harness](COMBAT_VALIDATION.md) now accepts
+SHA-identified independent fight sessions and an exact frozen scenario, and
+compares fixed-window DPS, potion consumption, death and kill outcomes against
+seeded predictions. It deliberately never fits parameters on holdout sessions
+or claims that synthetic fixtures establish real-world game accuracy.

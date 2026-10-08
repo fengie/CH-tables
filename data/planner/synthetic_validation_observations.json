@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "evidence_kind": "synthetic",
+  "patch_id": "synthetic-fixture-v1",
+  "boss_id": "toy-target",
+  "build_id": "toy-auto-attack",
+  "scenario_sha256": "4f03cb735343d7ba58ae22dd381918e3132b0a92ef6e617c3fc31d5aa0c2d218",
+  "frozen_model_sha256": "4f03cb735343d7ba58ae22dd381918e3132b0a92ef6e617c3fc31d5aa0c2d218",
+  "sessions": [
+    {
+      "session_id": "toy-session-1",
+      "recording_sha256": "0000000000000000000000000000000000000000000000000000000000000001",
+      "duration_s": 10,
+      "elapsed_s": 10,
+      "total_damage": 50,
+      "end_reason": "time_limit",
+      "hp_potions": 0,
+      "energy_potions": 0,
+      "split": "calibration"
+    },
+    {
+      "session_id": "toy-session-2",
+      "recording_sha256": "0000000000000000000000000000000000000000000000000000000000000002",
+      "duration_s": 10,
+      "elapsed_s": 10,
+      "total_damage": 50,
+      "end_reason": "time_limit",
+      "hp_potions": 0,
+      "energy_potions": 0,
+      "split": "holdout"
+    },
+    {
+      "session_id": "toy-session-3",
+      "recording_sha256": "0000000000000000000000000000000000000000000000000000000000000003",
+      "duration_s": 10,
+      "elapsed_s": 10,
+      "total_damage": 50,
+      "end_reason": "time_limit",
+      "hp_potions": 0,
+      "energy_potions": 0,
+      "split": "holdout"
+    }
+  ]
+}

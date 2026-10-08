@@ -1,0 +1,9 @@
+{
+  "duration_s": 10,
+  "max_hp": 100,
+  "max_energy": 0,
+  "auto": {
+    "interval_s": 2,
+    "damage": 10
+  }
+}

@@ -1,6 +1,6 @@
 # CH-tables
 
-> ⏱️ Last README update: **October 8, 2026 · 7:30:00 PM EDT** _(repo-enforced)_
+> ⏱️ Last README update: **October 8, 2026 · 7:57:15 PM EDT** _(repo-enforced)_
 
 Celtic Heroes class/boss data utilities, normalized class samples, and reproducible effective-DPS analysis.
 
@@ -33,6 +33,10 @@ per-level skill points, **0–3 gear swaps per skill**, item-release safety,
 pet tiers, game-server trade observations, RNG limits and QoL alternatives.
 The current implementation is a local Python **research optimizer**, not
 a finished website or validated live-game DPS simulator.
+
+- [Combat holdout validation harness](docs/COMBAT_VALIDATION.md): source-locked
+  recorded-session comparisons against seeded simulations; synthetic fixtures
+  are regression evidence only, **not** real-game calibration.
 
 - [Design, algorithms, exact limits and roadmap](docs/BUILD_PLANNER.md)
 - [User's DEX-only knuckleblade Rogue template](data/planner/personal_dex_fist_rogue_template.json)
