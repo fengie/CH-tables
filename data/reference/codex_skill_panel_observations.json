@@ -1,0 +1,1935 @@
+{
+  "schema": 1,
+  "collected_on": "2026-10-08",
+  "source_method": "read_only_public_saved_build_HTML",
+  "warning": "NOT exact current engine coefficients; item-swap effects and cross-build confounding are present.",
+  "snapshots": [
+    {
+      "url": "https://the-codex.ch/damagebuilder/rogue-main-build",
+      "html_sha256": "f7d5edbd88adc8f7e296892ec06a57baf8227151a58b575313930f92e62e01a8",
+      "skills": 14
+    },
+    {
+      "url": "https://the-codex.ch/damagebuilder/realistic-rogue-build",
+      "html_sha256": "b9c0869346c5e7bd5893aceb22c2fb94dbf4a680f18b3e7dbd7fe20bbf1d06be",
+      "skills": 12
+    },
+    {
+      "url": "https://the-codex.ch/damagebuilder/surya8",
+      "html_sha256": "9aef384b5ed23ff7cff4c97f7f6d86a818d09d0ee6b5ce7b2c7e4179cc3c64f3",
+      "skills": 11
+    },
+    {
+      "url": "https://the-codex.ch/damagebuilder/suzz",
+      "html_sha256": "e46e19fd1f07643fd4ef0686a02e7ba3d3f2779aec2756b07a7a4fc6c801b3b2",
+      "skills": 10
+    },
+    {
+      "url": "https://the-codex.ch/damagebuilder/high-tier-ice",
+      "html_sha256": "65464adce0204eca3f7458111c92afbf19545d0a785beee79fa27ca019e897da",
+      "skills": 12
+    },
+    {
+      "url": "https://the-codex.ch/damagebuilder/draga",
+      "html_sha256": "032ed60cb5dcedf817098434cd4463b31e9e8b2f3008f7621a989c7f60cebce3",
+      "skills": 9
+    },
+    {
+      "url": "https://the-codex.ch/damagebuilder/yuhhh",
+      "html_sha256": "3f7c572d37149e392f2a8fea187d18de8e52ac293e2c48068df540971a96fbe6",
+      "skills": 7
+    },
+    {
+      "url": "https://the-codex.ch/damagebuilder/gwyn-shields-dps",
+      "html_sha256": "2ea2f20d20dcfb40ad3f14b5bada0110f5671b0b1522e57baeafc1839442af46",
+      "skills": 9
+    }
+  ],
+  "errors": [],
+  "observations": [
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/rogue-main-build",
+      "skill_name": "Sneaky Attack",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2400,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 710,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 37393,
+        "Base Skill": 23993,
+        "Direct Dmg": 13400,
+        "Avg Damage": 31774,
+        "Dmg Lost": 435905
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/rogue-main-build",
+      "skill_name": "Quick Strike",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2400,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 710,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 11766,
+        "Base Skill": 6457,
+        "Direct Dmg": 5309,
+        "Avg Damage": 9998,
+        "Dmg Lost": 12892
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/rogue-main-build",
+      "skill_name": "Assassinate",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2400,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 710,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 28270,
+        "Base Skill": 28270,
+        "Direct Dmg": 0,
+        "Avg Damage": 24022,
+        "Dmg Lost": 46624
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/rogue-main-build",
+      "skill_name": "Shadowstrike",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2400,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Dexterity",
+        "value": {
+          "base": 5,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 7022,
+        "Base Skill": 5922,
+        "Direct Dmg": 1100,
+        "Avg Damage": 5967,
+        "Dmg Lost": 9883
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/rogue-main-build",
+      "skill_name": "Rend",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2400,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 710,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 24373,
+        "Base Skill": 22193,
+        "Direct Dmg": 2180,
+        "Avg Damage": 20710,
+        "Dmg Lost": 547546
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/rogue-main-build",
+      "skill_name": "Life Steal",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2400,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Dexterity",
+        "value": {
+          "base": 5,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 1988,
+        "Base Skill": 1988,
+        "Direct Dmg": 0,
+        "Avg Damage": 1689,
+        "Dmg Lost": 292208
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/rogue-main-build",
+      "skill_name": "Double Attack",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 22950,
+        "Base Skill": 22950,
+        "Direct Dmg": 0,
+        "Avg Damage": 19501,
+        "Dmg Lost": 1005538
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/rogue-main-build",
+      "skill_name": "Virulent Sunder",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 3250,
+        "Base Skill": 3000,
+        "Direct Dmg": 250,
+        "Debuff Value": -800,
+        "Avg Damage": 2470,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/rogue-main-build",
+      "skill_name": "Fingals Prowess",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 14250,
+        "Base Skill": 14250,
+        "Direct Dmg": 0,
+        "Avg Damage": 10830,
+        "Dmg Lost": 164925
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/rogue-main-build",
+      "skill_name": "Nightmare Stomp",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 7079,
+        "Base Skill": 7079,
+        "Direct Dmg": 0,
+        "Debuff Value": -606,
+        "Avg Damage": 6015,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/rogue-main-build",
+      "skill_name": "Hexbound Pierce",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 7669,
+        "Base Skill": 7669,
+        "Direct Dmg": 0,
+        "Avg Damage": 6516,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/rogue-main-build",
+      "skill_name": "Poison Weapon",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2400,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Dexterity",
+        "value": {
+          "base": 5,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Avg Damage": 157,
+        "Dmg Lost": 19767,
+        "Max Damage": 191
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/rogue-main-build",
+      "skill_name": "Smoke Bomb",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2400,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Dexterity",
+        "value": {
+          "base": 5,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 0,
+        "Base Skill": 0,
+        "Direct Dmg": 0,
+        "Debuff Value": -1614,
+        "Avg Damage": 0,
+        "Dmg Lost": 721925
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/rogue-main-build",
+      "skill_name": "Expose Weakness",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2400,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Dexterity",
+        "value": {
+          "base": 5,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 11061,
+        "Base Skill": 11061,
+        "Direct Dmg": 0,
+        "Debuff Value": -2447,
+        "Avg Damage": 9399,
+        "Dmg Lost": 167847
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/realistic-rogue-build",
+      "skill_name": "Sneaky Attack",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2500,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1250,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 47407,
+        "Base Skill": 5777,
+        "Direct Dmg": 3541,
+        "Avg Damage": 7534,
+        "Dmg Lost": 96127
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/realistic-rogue-build",
+      "skill_name": "Quick Strike",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2500,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1250,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 13643,
+        "Base Skill": 1323,
+        "Direct Dmg": 1220,
+        "Avg Damage": 2056,
+        "Dmg Lost": 1706
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/realistic-rogue-build",
+      "skill_name": "Assassinate",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2500,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1250,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 34791,
+        "Base Skill": 6343,
+        "Direct Dmg": 626,
+        "Avg Damage": 5635,
+        "Dmg Lost": 16451
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/realistic-rogue-build",
+      "skill_name": "Shadowstrike",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2500,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Dexterity",
+        "value": {
+          "base": 485,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 12478,
+        "Base Skill": 2189,
+        "Direct Dmg": 1234,
+        "Avg Damage": 2776,
+        "Dmg Lost": 2180
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/realistic-rogue-build",
+      "skill_name": "Rend",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2500,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1250,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 28403,
+        "Base Skill": 5371,
+        "Direct Dmg": 406,
+        "Avg Damage": 4671,
+        "Dmg Lost": 120747
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/realistic-rogue-build",
+      "skill_name": "Life Steal",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2500,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Dexterity",
+        "value": {
+          "base": 485,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 2233,
+        "Base Skill": 613,
+        "Direct Dmg": 0,
+        "Avg Damage": 496,
+        "Dmg Lost": 64439
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/realistic-rogue-build",
+      "skill_name": "Double Attack",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 29083,
+        "Base Skill": 6165,
+        "Direct Dmg": 157,
+        "Avg Damage": 5112,
+        "Dmg Lost": 255859
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/realistic-rogue-build",
+      "skill_name": "Hellborne Sunder",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 7500,
+        "Base Skill": 1732,
+        "Direct Dmg": 124,
+        "Debuff Value": -900,
+        "Avg Damage": 1411,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/realistic-rogue-build",
+      "skill_name": "Fingals Prowess",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 14250,
+        "Base Skill": 11269,
+        "Direct Dmg": 0,
+        "Avg Damage": 8564,
+        "Dmg Lost": 36370
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/realistic-rogue-build",
+      "skill_name": "Hexbound Pierce",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 7800,
+        "Base Skill": 1454,
+        "Direct Dmg": 0,
+        "Avg Damage": 1176,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/realistic-rogue-build",
+      "skill_name": "Nightmare Stomp",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 7200,
+        "Base Skill": 1975,
+        "Direct Dmg": 0,
+        "Debuff Value": -613,
+        "Avg Damage": 1597,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/realistic-rogue-build",
+      "skill_name": "Poison Weapon",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2500,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Dexterity",
+        "value": {
+          "base": 485,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Avg Damage": 61,
+        "Dmg Lost": 5227,
+        "Max Damage": 279
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/surya8",
+      "skill_name": "Giant Swing",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2330,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1645,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 9319,
+        "Base Skill": 5069,
+        "Direct Dmg": 4250,
+        "Avg Damage": 7918,
+        "Dmg Lost": 183543
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/surya8",
+      "skill_name": "Sweeping Blow",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2330,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1645,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 2438,
+        "Base Skill": 2438,
+        "Direct Dmg": 0,
+        "Avg Damage": 2071,
+        "Dmg Lost": 127682
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/surya8",
+      "skill_name": "Rupture",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2330,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1645,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 31672,
+        "Base Skill": 26259,
+        "Direct Dmg": 5413,
+        "Avg Damage": 26911,
+        "Dmg Lost": 285642
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/surya8",
+      "skill_name": "Pummel",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2330,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1645,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 14485,
+        "Base Skill": 7735,
+        "Direct Dmg": 6750,
+        "Avg Damage": 12308,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/surya8",
+      "skill_name": "Double Attack",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 30972,
+        "Base Skill": 30972,
+        "Direct Dmg": 0,
+        "Avg Damage": 26316,
+        "Dmg Lost": 444606
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/surya8",
+      "skill_name": "Hellborne Sunder",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 7500,
+        "Base Skill": 7000,
+        "Direct Dmg": 500,
+        "Debuff Value": -900,
+        "Avg Damage": 5700,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/surya8",
+      "skill_name": "Cuhcullains Fury",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 3750,
+        "Base Skill": 3750,
+        "Direct Dmg": 0,
+        "Avg Damage": 2850,
+        "Dmg Lost": 184683
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/surya8",
+      "skill_name": "Hexbound Pierce",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 7575,
+        "Base Skill": 7575,
+        "Direct Dmg": 0,
+        "Avg Damage": 6436,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/surya8",
+      "skill_name": "Nightmare Stomp",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 6992,
+        "Base Skill": 6992,
+        "Direct Dmg": 0,
+        "Debuff Value": -601,
+        "Avg Damage": 5941,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/surya8",
+      "skill_name": "Shatter",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2330,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1645,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 15573,
+        "Base Skill": 15573,
+        "Direct Dmg": 0,
+        "Debuff Value": -1062,
+        "Avg Damage": 13232,
+        "Dmg Lost": 62564
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/surya8",
+      "skill_name": "Frenzy",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2330,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1645,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Avg Damage": 1078,
+        "Dmg Lost": 17100,
+        "Max Damage": 1314
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/suzz",
+      "skill_name": "Sharp Shot",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Ranged Combat",
+        "value": {
+          "base": 2500,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Dexterity",
+        "value": {
+          "base": 5,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 21253,
+        "Base Skill": 9323,
+        "Direct Dmg": 11930,
+        "Avg Damage": 18539,
+        "Dmg Lost": 325576
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/suzz",
+      "skill_name": "Longshot",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Ranged Combat",
+        "value": {
+          "base": 2500,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Dexterity",
+        "value": {
+          "base": 5,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 29078,
+        "Base Skill": 24228,
+        "Direct Dmg": 4850,
+        "Avg Damage": 25364,
+        "Dmg Lost": 2438133
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/suzz",
+      "skill_name": "Explosive Arrow",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Ranged Combat",
+        "value": {
+          "base": 2500,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Dexterity",
+        "value": {
+          "base": 5,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 7956,
+        "Base Skill": 7956,
+        "Direct Dmg": 0,
+        "Avg Damage": 6940,
+        "Dmg Lost": 2661587
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/suzz",
+      "skill_name": "Double Shot",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 35012,
+        "Base Skill": 31837,
+        "Direct Dmg": 3175,
+        "Avg Damage": 30541,
+        "Dmg Lost": 2217175
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/suzz",
+      "skill_name": "Barbed Shot",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Ranged Combat",
+        "value": {
+          "base": 2500,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Dexterity",
+        "value": {
+          "base": 5,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 27282,
+        "Base Skill": 27282,
+        "Direct Dmg": 0,
+        "Avg Damage": 23798,
+        "Dmg Lost": 734283
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/suzz",
+      "skill_name": "Deathborne Sunder",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 7500,
+        "Base Skill": 7000,
+        "Direct Dmg": 500,
+        "Debuff Value": -900,
+        "Avg Damage": 5850,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/suzz",
+      "skill_name": "Hexbound Pierce",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 7800,
+        "Base Skill": 7800,
+        "Direct Dmg": 0,
+        "Avg Damage": 6804,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/suzz",
+      "skill_name": "Nightmare Stomp",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 7200,
+        "Base Skill": 7200,
+        "Direct Dmg": 0,
+        "Debuff Value": -613,
+        "Avg Damage": 6281,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/suzz",
+      "skill_name": "Steady Aim",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Ranged Combat",
+        "value": {
+          "base": 2500,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Dexterity",
+        "value": {
+          "base": 5,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Avg Damage": 643,
+        "Dmg Lost": 7597,
+        "Max Damage": 785
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/suzz",
+      "skill_name": "Sharpen Weapons",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Ranged Combat",
+        "value": {
+          "base": 2500,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Dexterity",
+        "value": {
+          "base": 5,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Avg Damage": 200,
+        "Dmg Lost": 14108,
+        "Max Damage": 243
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/high-tier-ice",
+      "skill_name": "Fire Bolt",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Fire Magic",
+        "value": {
+          "base": 2350,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 1420,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 10978,
+        "Base Skill": 8028,
+        "Direct Dmg": 2950,
+        "Avg Damage": 9827,
+        "Dmg Lost": 64344
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/high-tier-ice",
+      "skill_name": "Ice Shards",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Ice Magic",
+        "value": {
+          "base": 2350,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 1420,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 34038,
+        "Base Skill": 12610,
+        "Direct Dmg": 21428,
+        "Avg Damage": 30469,
+        "Dmg Lost": 58792
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/high-tier-ice",
+      "skill_name": "Firestorm",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Fire Magic",
+        "value": {
+          "base": 2350,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 1420,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 12580,
+        "Base Skill": 9879,
+        "Direct Dmg": 2701,
+        "Avg Damage": 11261,
+        "Dmg Lost": 79369
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/high-tier-ice",
+      "skill_name": "Ice Blast",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Ice Magic",
+        "value": {
+          "base": 2350,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 1420,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 28848,
+        "Base Skill": 14179,
+        "Direct Dmg": 14668,
+        "Avg Damage": 25823,
+        "Dmg Lost": 78389
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/high-tier-ice",
+      "skill_name": "Incinerate",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Fire Magic",
+        "value": {
+          "base": 2350,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 1420,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 14295,
+        "Base Skill": 14295,
+        "Direct Dmg": 0,
+        "Avg Damage": 12797,
+        "Dmg Lost": 39194
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/high-tier-ice",
+      "skill_name": "Frostbite",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Ice Magic",
+        "value": {
+          "base": 2350,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 1420,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 18250,
+        "Base Skill": 18250,
+        "Direct Dmg": 0,
+        "Avg Damage": 16337,
+        "Dmg Lost": 27436
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/high-tier-ice",
+      "skill_name": "Deathborne Sunder",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 5500,
+        "Base Skill": 5000,
+        "Direct Dmg": 500,
+        "Debuff Value": -700,
+        "Avg Damage": 4400,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/high-tier-ice",
+      "skill_name": "Myrrdins Glacial Embrace",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 12000,
+        "Base Skill": 12000,
+        "Direct Dmg": 0,
+        "Avg Damage": 9600,
+        "Dmg Lost": 4703
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/high-tier-ice",
+      "skill_name": "Freezing Breath",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 6001,
+        "Base Skill": 6001,
+        "Direct Dmg": 0,
+        "Avg Damage": 5372,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/high-tier-ice",
+      "skill_name": "Nightmare Bolt",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 7017,
+        "Base Skill": 7017,
+        "Direct Dmg": 0,
+        "Debuff Value": -602,
+        "Avg Damage": 6281,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/high-tier-ice",
+      "skill_name": "Ice Attunement",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Ice Magic",
+        "value": {
+          "base": 2350,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 1420,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 5205,
+        "Base Skill": 5205,
+        "Direct Dmg": 0,
+        "Avg Damage": 4659,
+        "Dmg Lost": 261
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/high-tier-ice",
+      "skill_name": "Fire Attunement",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Fire Magic",
+        "value": {
+          "base": 2350,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 1420,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 2951,
+        "Base Skill": 2951,
+        "Direct Dmg": 0,
+        "Avg Damage": 2641,
+        "Dmg Lost": 261
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/draga",
+      "skill_name": "Giant Swing",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2310,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1155,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 6478,
+        "Base Skill": 730,
+        "Direct Dmg": 402,
+        "Avg Damage": 913,
+        "Dmg Lost": 22873
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/draga",
+      "skill_name": "Sweeping Blow",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2310,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1155,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 2099,
+        "Base Skill": 367,
+        "Direct Dmg": 0,
+        "Avg Damage": 296,
+        "Dmg Lost": 15912
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/draga",
+      "skill_name": "Rupture",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2310,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1155,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 22810,
+        "Base Skill": 8410,
+        "Direct Dmg": 236,
+        "Avg Damage": 6976,
+        "Dmg Lost": 35597
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/draga",
+      "skill_name": "Pummel",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2310,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1155,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 11082,
+        "Base Skill": 1170,
+        "Direct Dmg": 768,
+        "Avg Damage": 1564,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/draga",
+      "skill_name": "Double Attack",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 23841,
+        "Base Skill": 5042,
+        "Direct Dmg": 0,
+        "Avg Damage": 4068,
+        "Dmg Lost": 55407
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/draga",
+      "skill_name": "Hellborne Sunder",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 7000,
+        "Base Skill": 1632,
+        "Direct Dmg": 0,
+        "Debuff Value": -900,
+        "Avg Damage": 1240,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/draga",
+      "skill_name": "Cuhcullains Fury",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 3500,
+        "Base Skill": 2721,
+        "Direct Dmg": 0,
+        "Avg Damage": 2068,
+        "Dmg Lost": 23015
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/draga",
+      "skill_name": "Hexbound Pierce",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 7548,
+        "Base Skill": 1319,
+        "Direct Dmg": 0,
+        "Avg Damage": 1064,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/draga",
+      "skill_name": "Frenzy",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2310,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1155,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Avg Damage": 132,
+        "Dmg Lost": 2671,
+        "Max Damage": 948
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/yuhhh",
+      "skill_name": "Giant Swing",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2310,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1155,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 4710,
+        "Base Skill": 3710,
+        "Direct Dmg": 1000,
+        "Avg Damage": 4002,
+        "Dmg Lost": 168613
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/yuhhh",
+      "skill_name": "Sweeping Blow",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2310,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1155,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 1864,
+        "Base Skill": 1864,
+        "Direct Dmg": 0,
+        "Avg Damage": 1584,
+        "Dmg Lost": 117296
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/yuhhh",
+      "skill_name": "Rupture",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2310,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1155,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 13276,
+        "Base Skill": 13276,
+        "Direct Dmg": 0,
+        "Avg Damage": 11280,
+        "Dmg Lost": 266303
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/yuhhh",
+      "skill_name": "Pummel",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2310,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1155,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 8378,
+        "Base Skill": 5658,
+        "Direct Dmg": 2720,
+        "Avg Damage": 7119,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/yuhhh",
+      "skill_name": "Double Attack",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 10242,
+        "Base Skill": 10242,
+        "Direct Dmg": 0,
+        "Avg Damage": 8703,
+        "Dmg Lost": 286421
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/yuhhh",
+      "skill_name": "Blazing Destruction",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 8000,
+        "Base Skill": 8000,
+        "Direct Dmg": 0,
+        "Debuff Value": -500,
+        "Avg Damage": 6080,
+        "Dmg Lost": 54556
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/yuhhh",
+      "skill_name": "Frenzy",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2310,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 1155,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Avg Damage": 485,
+        "Dmg Lost": 5115,
+        "Max Damage": 591
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/gwyn-shields-dps",
+      "skill_name": "Giant Swing",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2300,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 750,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 5029,
+        "Base Skill": 572,
+        "Direct Dmg": 243,
+        "Avg Damage": 657,
+        "Dmg Lost": 42486
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/gwyn-shields-dps",
+      "skill_name": "Sweeping Blow",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2300,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 750,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 1773,
+        "Base Skill": 287,
+        "Direct Dmg": 0,
+        "Avg Damage": 232,
+        "Dmg Lost": 29555
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/gwyn-shields-dps",
+      "skill_name": "Rupture",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2300,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 750,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 16531,
+        "Base Skill": 6279,
+        "Direct Dmg": 279,
+        "Avg Damage": 5290,
+        "Dmg Lost": 67101
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/gwyn-shields-dps",
+      "skill_name": "Pummel",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2300,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 750,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 8696,
+        "Base Skill": 875,
+        "Direct Dmg": 534,
+        "Avg Damage": 1137,
+        "Dmg Lost": 0
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/gwyn-shields-dps",
+      "skill_name": "Double Attack",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 14188,
+        "Base Skill": 3022,
+        "Direct Dmg": 0,
+        "Avg Damage": 2438,
+        "Dmg Lost": 72170
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/gwyn-shields-dps",
+      "skill_name": "Cuhcullains Fury",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 3500,
+        "Base Skill": 2719,
+        "Direct Dmg": 0,
+        "Avg Damage": 2066,
+        "Dmg Lost": 44848
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/gwyn-shields-dps",
+      "skill_name": "Aetheric Cleaver",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 8500,
+        "Base Skill": 1373,
+        "Direct Dmg": 422,
+        "Avg Damage": 1364,
+        "Dmg Lost": 56705
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/gwyn-shields-dps",
+      "skill_name": "Shatter",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2300,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 750,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 6964,
+        "Base Skill": 1491,
+        "Direct Dmg": 0,
+        "Debuff Value": -768,
+        "Avg Damage": 1203,
+        "Dmg Lost": 15877
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/gwyn-shields-dps",
+      "skill_name": "Frenzy",
+      "cooldown_cast_lockout_text": "Cooldown:",
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2300,
+          "effective": null
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 750,
+          "effective": null
+        }
+      },
+      "numeric_metrics": {
+        "Avg Damage": 70,
+        "Dmg Lost": 1477,
+        "Max Damage": 540
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    }
+  ]
+}
