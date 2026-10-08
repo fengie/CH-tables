@@ -1,0 +1,2797 @@
+{
+  "schema_version": 1,
+  "observations_source": "data/reference/codex_skill_panel_observations.json",
+  "published_saved_builds": 12,
+  "method": "within_saved_build_observed_avg_damage_over_effective_cooldown",
+  "not_final_build_advice": true,
+  "builds": {
+    "https://the-codex.ch/damagebuilder/doc": {
+      "sample_size": 10,
+      "by_gross_damage_cooldown": [
+        {
+          "skill": "Strangling Vines",
+          "cooldown_effective_s": 13.0,
+          "observed_average_damage": 19782,
+          "gross_damage_per_cooldown_s": 1521.69231,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 2.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Nature Magic",
+            "value": {
+              "base": 2000,
+              "effective": 4750
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 730,
+              "effective": 2188
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Lightning Strike",
+          "cooldown_effective_s": 5.63,
+          "observed_average_damage": 7469,
+          "gross_damage_per_cooldown_s": 1326.64298,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 0.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Nature Magic",
+            "value": {
+              "base": 2000,
+              "effective": 4750
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 730,
+              "effective": 2048
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Stinging Swarm",
+          "cooldown_effective_s": 10.0,
+          "observed_average_damage": 4742,
+          "gross_damage_per_cooldown_s": 474.2,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 1.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Nature Magic",
+            "value": {
+              "base": 2000,
+              "effective": 4750
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 730,
+              "effective": 2048
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Storm Touch",
+          "cooldown_effective_s": 25.0,
+          "observed_average_damage": 10990,
+          "gross_damage_per_cooldown_s": 439.6,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 1.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Nature Magic",
+            "value": {
+              "base": 2000,
+              "effective": 4750
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 730,
+              "effective": 2048
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Double Attack",
+          "cooldown_effective_s": 15.0,
+          "observed_average_damage": 1098,
+          "gross_damage_per_cooldown_s": 73.2,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 1.0,
+          "lockout_s": 0.5,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Lightning Discharge",
+          "cooldown_effective_s": 45.0,
+          "observed_average_damage": 2290,
+          "gross_damage_per_cooldown_s": 50.88889,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": {
+            "name": "Elk Riding",
+            "value": {
+              "base": 2000,
+              "effective": 2000
+            }
+          },
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Howling Wind",
+          "cooldown_effective_s": 10.0,
+          "observed_average_damage": 0,
+          "gross_damage_per_cooldown_s": 0.0,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 2.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Nature Magic",
+            "value": {
+              "base": 2000,
+              "effective": 4750
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 730,
+              "effective": 2048
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Natures Touch",
+          "cooldown_effective_s": 8.0,
+          "observed_average_damage": 0,
+          "gross_damage_per_cooldown_s": 0.0,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 2.0,
+          "lockout_s": 0.8,
+          "skill_ability": {
+            "name": "Nature Magic",
+            "value": {
+              "base": 2000,
+              "effective": 4750
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 730,
+              "effective": 2048
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Natures Embrace",
+          "cooldown_effective_s": 10.0,
+          "observed_average_damage": 0,
+          "gross_damage_per_cooldown_s": 0.0,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 2.0,
+          "lockout_s": 0.8,
+          "skill_ability": {
+            "name": "Nature Magic",
+            "value": {
+              "base": 2000,
+              "effective": 4750
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 730,
+              "effective": 2048
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Natures Breath",
+          "cooldown_effective_s": 14.0,
+          "observed_average_damage": 0,
+          "gross_damage_per_cooldown_s": 0.0,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 3.0,
+          "lockout_s": 1.2,
+          "skill_ability": {
+            "name": "Nature Magic",
+            "value": {
+              "base": 2000,
+              "effective": 4750
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 730,
+              "effective": 2048
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        }
+      ],
+      "limitations": [
+        "A skill's gross damage divided by cooldown is NOT rotation DPS.",
+        "A skill may occupy cast time or interrupt autos or other skills.",
+        "DoT double-counting, overlap, and support/debuff value are not modeled.",
+        "Different builds contain incompatible stats, buffs and gear swaps.",
+        "Skills with zero immediate damage may have major indirect value.",
+        "Cooldown may reflect gear from an individual saved build."
+      ]
+    },
+    "https://the-codex.ch/damagebuilder/draga": {
+      "sample_size": 9,
+      "by_gross_damage_cooldown": [
+        {
+          "skill": "Double Attack",
+          "cooldown_effective_s": 10.5,
+          "observed_average_damage": 19235,
+          "gross_damage_per_cooldown_s": 1831.90476,
+          "codex_net_after_reported_lost_auto": 629.52381,
+          "reported_lost_auto_per_cast": 12625,
+          "cast_s": 1.0,
+          "lockout_s": 0.5,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Pummel",
+          "cooldown_effective_s": 6.5,
+          "observed_average_damage": 8941,
+          "gross_damage_per_cooldown_s": 1375.53846,
+          "codex_net_after_reported_lost_auto": 1375.53846,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2310,
+              "effective": 4110
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1155,
+              "effective": 3940
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Rupture",
+          "cooldown_effective_s": 14.0,
+          "observed_average_damage": 18403,
+          "gross_damage_per_cooldown_s": 1314.5,
+          "codex_net_after_reported_lost_auto": 477.64286,
+          "reported_lost_auto_per_cast": 11716,
+          "cast_s": 1.09,
+          "lockout_s": 0.3,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2310,
+              "effective": 3210
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1155,
+              "effective": 4060
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Hexbound Pierce",
+          "cooldown_effective_s": 15.0,
+          "observed_average_damage": 6090,
+          "gross_damage_per_cooldown_s": 406.0,
+          "codex_net_after_reported_lost_auto": 406.0,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Giant Swing",
+          "cooldown_effective_s": 20.0,
+          "observed_average_damage": 5226,
+          "gross_damage_per_cooldown_s": 261.3,
+          "codex_net_after_reported_lost_auto": -222.65,
+          "reported_lost_auto_per_cast": 9679,
+          "cast_s": 0.7,
+          "lockout_s": 0.45,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2310,
+              "effective": 3210
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1155,
+              "effective": 4060
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Hellborne Sunder",
+          "cooldown_effective_s": 60.0,
+          "observed_average_damage": 5320,
+          "gross_damage_per_cooldown_s": 88.66667,
+          "codex_net_after_reported_lost_auto": 88.66667,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Cuhcullains Fury",
+          "cooldown_effective_s": 30.0,
+          "observed_average_damage": 2660,
+          "gross_damage_per_cooldown_s": 88.66667,
+          "codex_net_after_reported_lost_auto": -416.33333,
+          "reported_lost_auto_per_cast": 15150,
+          "cast_s": 1.0,
+          "lockout_s": 0.8,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Sweeping Blow",
+          "cooldown_effective_s": 20.0,
+          "observed_average_damage": 1694,
+          "gross_damage_per_cooldown_s": 84.7,
+          "codex_net_after_reported_lost_auto": -251.95,
+          "reported_lost_auto_per_cast": 6733,
+          "cast_s": 0.7,
+          "lockout_s": 0.1,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2310,
+              "effective": 3210
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1155,
+              "effective": 4060
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Frenzy",
+          "cooldown_effective_s": 15.0,
+          "observed_average_damage": 752,
+          "gross_damage_per_cooldown_s": 50.13333,
+          "codex_net_after_reported_lost_auto": -791.53333,
+          "reported_lost_auto_per_cast": 12625,
+          "cast_s": 0.7,
+          "lockout_s": 0.8,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2310,
+              "effective": 4710
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1155,
+              "effective": 4640
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        }
+      ],
+      "limitations": [
+        "A skill's gross damage divided by cooldown is NOT rotation DPS.",
+        "A skill may occupy cast time or interrupt autos or other skills.",
+        "DoT double-counting, overlap, and support/debuff value are not modeled.",
+        "Different builds contain incompatible stats, buffs and gear swaps.",
+        "Skills with zero immediate damage may have major indirect value.",
+        "Cooldown may reflect gear from an individual saved build."
+      ]
+    },
+    "https://the-codex.ch/damagebuilder/druid-ox": {
+      "sample_size": 8,
+      "by_gross_damage_cooldown": [
+        {
+          "skill": "Strangling Vines",
+          "cooldown_effective_s": 13.0,
+          "observed_average_damage": 18928,
+          "gross_damage_per_cooldown_s": 1456.0,
+          "codex_net_after_reported_lost_auto": 1394.0,
+          "reported_lost_auto_per_cast": 806,
+          "cast_s": 2.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Nature Magic",
+            "value": {
+              "base": 1840,
+              "effective": 3840
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 925,
+              "effective": 2499
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Lightning Strike",
+          "cooldown_effective_s": 7.5,
+          "observed_average_damage": 4717,
+          "gross_damage_per_cooldown_s": 628.93333,
+          "codex_net_after_reported_lost_auto": 593.06667,
+          "reported_lost_auto_per_cast": 269,
+          "cast_s": 0.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Nature Magic",
+            "value": {
+              "base": 1840,
+              "effective": 3840
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 925,
+              "effective": 2499
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Stinging Swarm",
+          "cooldown_effective_s": 10.0,
+          "observed_average_damage": 4619,
+          "gross_damage_per_cooldown_s": 461.9,
+          "codex_net_after_reported_lost_auto": 408.2,
+          "reported_lost_auto_per_cast": 537,
+          "cast_s": 1.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Nature Magic",
+            "value": {
+              "base": 1840,
+              "effective": 3840
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 925,
+              "effective": 2499
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Storm Touch",
+          "cooldown_effective_s": 25.0,
+          "observed_average_damage": 7886,
+          "gross_damage_per_cooldown_s": 315.44,
+          "codex_net_after_reported_lost_auto": 293.96,
+          "reported_lost_auto_per_cast": 537,
+          "cast_s": 1.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Nature Magic",
+            "value": {
+              "base": 1840,
+              "effective": 3840
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 925,
+              "effective": 2499
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Double Attack",
+          "cooldown_effective_s": 15.0,
+          "observed_average_damage": 2041,
+          "gross_damage_per_cooldown_s": 136.06667,
+          "codex_net_after_reported_lost_auto": 109.2,
+          "reported_lost_auto_per_cast": 403,
+          "cast_s": 1.0,
+          "lockout_s": 0.5,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Nightmare Scream",
+          "cooldown_effective_s": 45.0,
+          "observed_average_damage": 5357,
+          "gross_damage_per_cooldown_s": 119.04444,
+          "codex_net_after_reported_lost_auto": 119.04444,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Arcane Breath",
+          "cooldown_effective_s": 25.0,
+          "observed_average_damage": 786,
+          "gross_damage_per_cooldown_s": 31.44,
+          "codex_net_after_reported_lost_auto": 31.44,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Dragonlord Boon",
+          "cooldown_effective_s": 180.0,
+          "observed_average_damage": 2880,
+          "gross_damage_per_cooldown_s": 16.0,
+          "codex_net_after_reported_lost_auto": 13.31667,
+          "reported_lost_auto_per_cast": 483,
+          "cast_s": 1.0,
+          "lockout_s": 0.8,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        }
+      ],
+      "limitations": [
+        "A skill's gross damage divided by cooldown is NOT rotation DPS.",
+        "A skill may occupy cast time or interrupt autos or other skills.",
+        "DoT double-counting, overlap, and support/debuff value are not modeled.",
+        "Different builds contain incompatible stats, buffs and gear swaps.",
+        "Skills with zero immediate damage may have major indirect value.",
+        "Cooldown may reflect gear from an individual saved build."
+      ]
+    },
+    "https://the-codex.ch/damagebuilder/gwyn-shields-dps": {
+      "sample_size": 9,
+      "by_gross_damage_cooldown": [
+        {
+          "skill": "Pummel",
+          "cooldown_effective_s": 6.5,
+          "observed_average_damage": 7015,
+          "gross_damage_per_cooldown_s": 1079.23077,
+          "codex_net_after_reported_lost_auto": 1079.23077,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2300,
+              "effective": 3200
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 750,
+              "effective": 2303
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Rupture",
+          "cooldown_effective_s": 14.0,
+          "observed_average_damage": 13335,
+          "gross_damage_per_cooldown_s": 952.5,
+          "codex_net_after_reported_lost_auto": 485.92857,
+          "reported_lost_auto_per_cast": 6532,
+          "cast_s": 1.12,
+          "lockout_s": 0.3,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2300,
+              "effective": 3000
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 750,
+              "effective": 2303
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Double Attack",
+          "cooldown_effective_s": 15.0,
+          "observed_average_damage": 11446,
+          "gross_damage_per_cooldown_s": 763.06667,
+          "codex_net_after_reported_lost_auto": 303.06667,
+          "reported_lost_auto_per_cast": 6900,
+          "cast_s": 1.0,
+          "lockout_s": 0.5,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Shatter",
+          "cooldown_effective_s": 20.0,
+          "observed_average_damage": 5618,
+          "gross_damage_per_cooldown_s": 280.9,
+          "codex_net_after_reported_lost_auto": 184.3,
+          "reported_lost_auto_per_cast": 1932,
+          "cast_s": 0.42,
+          "lockout_s": 0.0,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2300,
+              "effective": 3200
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 750,
+              "effective": 2303
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Giant Swing",
+          "cooldown_effective_s": 20.0,
+          "observed_average_damage": 4057,
+          "gross_damage_per_cooldown_s": 202.85,
+          "codex_net_after_reported_lost_auto": -61.65,
+          "reported_lost_auto_per_cast": 5290,
+          "cast_s": 0.7,
+          "lockout_s": 0.45,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2300,
+              "effective": 3200
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 750,
+              "effective": 2303
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Aetheric Cleaver",
+          "cooldown_effective_s": 40.5,
+          "observed_average_damage": 6460,
+          "gross_damage_per_cooldown_s": 159.50617,
+          "codex_net_after_reported_lost_auto": -181.25926,
+          "reported_lost_auto_per_cast": 13801,
+          "cast_s": 0.0,
+          "lockout_s": 3.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Cuhcullains Fury",
+          "cooldown_effective_s": 30.0,
+          "observed_average_damage": 2660,
+          "gross_damage_per_cooldown_s": 88.66667,
+          "codex_net_after_reported_lost_auto": -187.33333,
+          "reported_lost_auto_per_cast": 8280,
+          "cast_s": 1.0,
+          "lockout_s": 0.8,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Sweeping Blow",
+          "cooldown_effective_s": 20.0,
+          "observed_average_damage": 1431,
+          "gross_damage_per_cooldown_s": 71.55,
+          "codex_net_after_reported_lost_auto": -112.45,
+          "reported_lost_auto_per_cast": 3680,
+          "cast_s": 0.7,
+          "lockout_s": 0.1,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2300,
+              "effective": 3200
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 750,
+              "effective": 2303
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Frenzy",
+          "cooldown_effective_s": 15.0,
+          "observed_average_damage": 428,
+          "gross_damage_per_cooldown_s": 28.53333,
+          "codex_net_after_reported_lost_auto": -431.46667,
+          "reported_lost_auto_per_cast": 6900,
+          "cast_s": 0.7,
+          "lockout_s": 0.8,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2300,
+              "effective": 3200
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 750,
+              "effective": 2303
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        }
+      ],
+      "limitations": [
+        "A skill's gross damage divided by cooldown is NOT rotation DPS.",
+        "A skill may occupy cast time or interrupt autos or other skills.",
+        "DoT double-counting, overlap, and support/debuff value are not modeled.",
+        "Different builds contain incompatible stats, buffs and gear swaps.",
+        "Skills with zero immediate damage may have major indirect value.",
+        "Cooldown may reflect gear from an individual saved build."
+      ]
+    },
+    "https://the-codex.ch/damagebuilder/high-tier-ice": {
+      "sample_size": 12,
+      "by_gross_damage_cooldown": [
+        {
+          "skill": "Ice Shards",
+          "cooldown_effective_s": 9.0,
+          "observed_average_damage": 30469,
+          "gross_damage_per_cooldown_s": 3385.44444,
+          "codex_net_after_reported_lost_auto": 3312.88889,
+          "reported_lost_auto_per_cast": 653,
+          "cast_s": 1.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Ice Magic",
+            "value": {
+              "base": 2350,
+              "effective": 13310
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 1420,
+              "effective": 7592
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Fire Bolt",
+          "cooldown_effective_s": 4.55,
+          "observed_average_damage": 9827,
+          "gross_damage_per_cooldown_s": 2159.78022,
+          "codex_net_after_reported_lost_auto": 2087.91209,
+          "reported_lost_auto_per_cast": 327,
+          "cast_s": 0.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Fire Magic",
+            "value": {
+              "base": 2350,
+              "effective": 4910
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 1420,
+              "effective": 7407
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Ice Blast",
+          "cooldown_effective_s": 12.0,
+          "observed_average_damage": 25823,
+          "gross_damage_per_cooldown_s": 2151.91667,
+          "codex_net_after_reported_lost_auto": 2043.08333,
+          "reported_lost_auto_per_cast": 1306,
+          "cast_s": 3.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Ice Magic",
+            "value": {
+              "base": 2350,
+              "effective": 12210
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 1420,
+              "effective": 7242
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Incinerate",
+          "cooldown_effective_s": 8.0,
+          "observed_average_damage": 12797,
+          "gross_damage_per_cooldown_s": 1599.625,
+          "codex_net_after_reported_lost_auto": 1477.125,
+          "reported_lost_auto_per_cast": 980,
+          "cast_s": 2.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Fire Magic",
+            "value": {
+              "base": 2350,
+              "effective": 5210
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 1420,
+              "effective": 7662
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Firestorm",
+          "cooldown_effective_s": 9.0,
+          "observed_average_damage": 11261,
+          "gross_damage_per_cooldown_s": 1251.22222,
+          "codex_net_after_reported_lost_auto": 1142.33333,
+          "reported_lost_auto_per_cast": 980,
+          "cast_s": 2.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Fire Magic",
+            "value": {
+              "base": 2350,
+              "effective": 5210
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 1420,
+              "effective": 7242
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Frostbite",
+          "cooldown_effective_s": 20.0,
+          "observed_average_damage": 16337,
+          "gross_damage_per_cooldown_s": 816.85,
+          "codex_net_after_reported_lost_auto": 767.85,
+          "reported_lost_auto_per_cast": 980,
+          "cast_s": 2.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Ice Magic",
+            "value": {
+              "base": 2350,
+              "effective": 14110
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 1420,
+              "effective": 7502
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Freezing Breath",
+          "cooldown_effective_s": 15.0,
+          "observed_average_damage": 5372,
+          "gross_damage_per_cooldown_s": 358.13333,
+          "codex_net_after_reported_lost_auto": 358.13333,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Nightmare Bolt",
+          "cooldown_effective_s": 45.0,
+          "observed_average_damage": 6281,
+          "gross_damage_per_cooldown_s": 139.57778,
+          "codex_net_after_reported_lost_auto": 139.57778,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Myrrdins Glacial Embrace",
+          "cooldown_effective_s": 90.0,
+          "observed_average_damage": 9600,
+          "gross_damage_per_cooldown_s": 106.66667,
+          "codex_net_after_reported_lost_auto": 100.85556,
+          "reported_lost_auto_per_cast": 523,
+          "cast_s": 1.0,
+          "lockout_s": 0.6,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Ice Attunement",
+          "cooldown_effective_s": 60.0,
+          "observed_average_damage": 4659,
+          "gross_damage_per_cooldown_s": 77.65,
+          "codex_net_after_reported_lost_auto": 73.3,
+          "reported_lost_auto_per_cast": 261,
+          "cast_s": 0.0,
+          "lockout_s": 0.8,
+          "skill_ability": {
+            "name": "Ice Magic",
+            "value": {
+              "base": 2350,
+              "effective": 14510
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 1420,
+              "effective": 7662
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Deathborne Sunder",
+          "cooldown_effective_s": 60.0,
+          "observed_average_damage": 4400,
+          "gross_damage_per_cooldown_s": 73.33333,
+          "codex_net_after_reported_lost_auto": 73.33333,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Fire Attunement",
+          "cooldown_effective_s": 60.0,
+          "observed_average_damage": 2641,
+          "gross_damage_per_cooldown_s": 44.01667,
+          "codex_net_after_reported_lost_auto": 39.66667,
+          "reported_lost_auto_per_cast": 261,
+          "cast_s": 0.0,
+          "lockout_s": 0.8,
+          "skill_ability": {
+            "name": "Fire Magic",
+            "value": {
+              "base": 2350,
+              "effective": 4770
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 1420,
+              "effective": 7622
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        }
+      ],
+      "limitations": [
+        "A skill's gross damage divided by cooldown is NOT rotation DPS.",
+        "A skill may occupy cast time or interrupt autos or other skills.",
+        "DoT double-counting, overlap, and support/debuff value are not modeled.",
+        "Different builds contain incompatible stats, buffs and gear swaps.",
+        "Skills with zero immediate damage may have major indirect value.",
+        "Cooldown may reflect gear from an individual saved build."
+      ]
+    },
+    "https://the-codex.ch/damagebuilder/realistic-rogue-build": {
+      "sample_size": 12,
+      "by_gross_damage_cooldown": [
+        {
+          "skill": "Double Attack",
+          "cooldown_effective_s": 9.0,
+          "observed_average_damage": 23515,
+          "gross_damage_per_cooldown_s": 2612.77778,
+          "codex_net_after_reported_lost_auto": 875.66667,
+          "reported_lost_auto_per_cast": 15634,
+          "cast_s": 1.0,
+          "lockout_s": 0.5,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Sneaky Attack",
+          "cooldown_effective_s": 27.0,
+          "observed_average_damage": 38332,
+          "gross_damage_per_cooldown_s": 1419.7037,
+          "codex_net_after_reported_lost_auto": 807.85185,
+          "reported_lost_auto_per_cast": 16520,
+          "cast_s": 1.08,
+          "lockout_s": 0.5,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2500,
+              "effective": 6400
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1250,
+              "effective": 5892
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Shadowstrike",
+          "cooldown_effective_s": 7.8,
+          "observed_average_damage": 10121,
+          "gross_damage_per_cooldown_s": 1297.5641,
+          "codex_net_after_reported_lost_auto": 1284.23077,
+          "reported_lost_auto_per_cast": 104,
+          "cast_s": 0.0,
+          "lockout_s": 0.01,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2500,
+              "effective": 5400
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Dexterity",
+            "value": {
+              "base": 485,
+              "effective": 3877
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Rend",
+          "cooldown_effective_s": 19.0,
+          "observed_average_damage": 22966,
+          "gross_damage_per_cooldown_s": 1208.73684,
+          "codex_net_after_reported_lost_auto": 449.0,
+          "reported_lost_auto_per_cast": 14435,
+          "cast_s": 0.39,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2500,
+              "effective": 6400
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1250,
+              "effective": 5882
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Quick Strike",
+          "cooldown_effective_s": 10.0,
+          "observed_average_damage": 11032,
+          "gross_damage_per_cooldown_s": 1103.2,
+          "codex_net_after_reported_lost_auto": 1092.8,
+          "reported_lost_auto_per_cast": 104,
+          "cast_s": 0.0,
+          "lockout_s": 0.01,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2500,
+              "effective": 4200
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1250,
+              "effective": 5492
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Assassinate",
+          "cooldown_effective_s": 36.0,
+          "observed_average_damage": 28131,
+          "gross_damage_per_cooldown_s": 781.41667,
+          "codex_net_after_reported_lost_auto": 467.27778,
+          "reported_lost_auto_per_cast": 11309,
+          "cast_s": 1.08,
+          "lockout_s": 0.0,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2500,
+              "effective": 4950
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1250,
+              "effective": 5192
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Hexbound Pierce",
+          "cooldown_effective_s": 15.0,
+          "observed_average_damage": 6307,
+          "gross_damage_per_cooldown_s": 420.46667,
+          "codex_net_after_reported_lost_auto": 420.46667,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Fingals Prowess",
+          "cooldown_effective_s": 45.0,
+          "observed_average_damage": 10830,
+          "gross_damage_per_cooldown_s": 240.66667,
+          "codex_net_after_reported_lost_auto": 6.73333,
+          "reported_lost_auto_per_cast": 10527,
+          "cast_s": 1.0,
+          "lockout_s": 0.01,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Nightmare Stomp",
+          "cooldown_effective_s": 45.0,
+          "observed_average_damage": 5822,
+          "gross_damage_per_cooldown_s": 129.37778,
+          "codex_net_after_reported_lost_auto": 129.37778,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Hellborne Sunder",
+          "cooldown_effective_s": 60.0,
+          "observed_average_damage": 5700,
+          "gross_damage_per_cooldown_s": 95.0,
+          "codex_net_after_reported_lost_auto": 95.0,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Life Steal",
+          "cooldown_effective_s": 25.0,
+          "observed_average_damage": 1806,
+          "gross_damage_per_cooldown_s": 72.24,
+          "codex_net_after_reported_lost_auto": -344.68,
+          "reported_lost_auto_per_cast": 10423,
+          "cast_s": 1.0,
+          "lockout_s": 0.0,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2500,
+              "effective": 4200
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Dexterity",
+            "value": {
+              "base": 485,
+              "effective": 2037
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Poison Weapon",
+          "cooldown_effective_s": 12.0,
+          "observed_average_damage": 222,
+          "gross_damage_per_cooldown_s": 18.5,
+          "codex_net_after_reported_lost_auto": -1979.16667,
+          "reported_lost_auto_per_cast": 23972,
+          "cast_s": 2.0,
+          "lockout_s": 0.3,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2500,
+              "effective": 6350
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Dexterity",
+            "value": {
+              "base": 485,
+              "effective": 4727
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        }
+      ],
+      "limitations": [
+        "A skill's gross damage divided by cooldown is NOT rotation DPS.",
+        "A skill may occupy cast time or interrupt autos or other skills.",
+        "DoT double-counting, overlap, and support/debuff value are not modeled.",
+        "Different builds contain incompatible stats, buffs and gear swaps.",
+        "Skills with zero immediate damage may have major indirect value.",
+        "Cooldown may reflect gear from an individual saved build."
+      ]
+    },
+    "https://the-codex.ch/damagebuilder/rogue-main-build": {
+      "sample_size": 14,
+      "by_gross_damage_cooldown": [
+        {
+          "skill": "Double Attack",
+          "cooldown_effective_s": 10.5,
+          "observed_average_damage": 19501,
+          "gross_damage_per_cooldown_s": 1857.2381,
+          "codex_net_after_reported_lost_auto": 629.42857,
+          "reported_lost_auto_per_cast": 12892,
+          "cast_s": 1.0,
+          "lockout_s": 0.5,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Quick Strike",
+          "cooldown_effective_s": 6.0,
+          "observed_average_damage": 9998,
+          "gross_damage_per_cooldown_s": 1666.33333,
+          "codex_net_after_reported_lost_auto": 1652.0,
+          "reported_lost_auto_per_cast": 86,
+          "cast_s": 0.0,
+          "lockout_s": 0.01,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2400,
+              "effective": 4950
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 710,
+              "effective": 4062
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Sneaky Attack",
+          "cooldown_effective_s": 27.0,
+          "observed_average_damage": 31774,
+          "gross_damage_per_cooldown_s": 1176.81481,
+          "codex_net_after_reported_lost_auto": 672.2963,
+          "reported_lost_auto_per_cast": 13622,
+          "cast_s": 1.08,
+          "lockout_s": 0.5,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2400,
+              "effective": 4950
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 710,
+              "effective": 4222
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Rend",
+          "cooldown_effective_s": 19.0,
+          "observed_average_damage": 20710,
+          "gross_damage_per_cooldown_s": 1090.0,
+          "codex_net_after_reported_lost_auto": 463.52632,
+          "reported_lost_auto_per_cast": 11903,
+          "cast_s": 0.39,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2400,
+              "effective": 4950
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 710,
+              "effective": 4252
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Expose Weakness",
+          "cooldown_effective_s": 10.0,
+          "observed_average_damage": 9399,
+          "gross_damage_per_cooldown_s": 939.9,
+          "codex_net_after_reported_lost_auto": -259.0,
+          "reported_lost_auto_per_cast": 11989,
+          "cast_s": 1.39,
+          "lockout_s": 0.01,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2400,
+              "effective": 4750
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Dexterity",
+            "value": {
+              "base": 5,
+              "effective": 1677
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Shadowstrike",
+          "cooldown_effective_s": 7.8,
+          "observed_average_damage": 5967,
+          "gross_damage_per_cooldown_s": 765.0,
+          "codex_net_after_reported_lost_auto": 753.97436,
+          "reported_lost_auto_per_cast": 86,
+          "cast_s": 0.0,
+          "lockout_s": 0.01,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2400,
+              "effective": 5650
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Dexterity",
+            "value": {
+              "base": 5,
+              "effective": 1537
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Hexbound Pierce",
+          "cooldown_effective_s": 15.0,
+          "observed_average_damage": 6516,
+          "gross_damage_per_cooldown_s": 434.4,
+          "codex_net_after_reported_lost_auto": 434.4,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Assassinate",
+          "cooldown_effective_s": 60.0,
+          "observed_average_damage": 24022,
+          "gross_damage_per_cooldown_s": 400.36667,
+          "codex_net_after_reported_lost_auto": 244.95,
+          "reported_lost_auto_per_cast": 9325,
+          "cast_s": 1.08,
+          "lockout_s": 0.0,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2400,
+              "effective": 3950
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 710,
+              "effective": 4222
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Fingals Prowess",
+          "cooldown_effective_s": 45.0,
+          "observed_average_damage": 10830,
+          "gross_damage_per_cooldown_s": 240.66667,
+          "codex_net_after_reported_lost_auto": 47.77778,
+          "reported_lost_auto_per_cast": 8680,
+          "cast_s": 1.0,
+          "lockout_s": 0.01,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Nightmare Stomp",
+          "cooldown_effective_s": 45.0,
+          "observed_average_damage": 6015,
+          "gross_damage_per_cooldown_s": 133.66667,
+          "codex_net_after_reported_lost_auto": 133.66667,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Life Steal",
+          "cooldown_effective_s": 25.0,
+          "observed_average_damage": 1689,
+          "gross_damage_per_cooldown_s": 67.56,
+          "codex_net_after_reported_lost_auto": -276.2,
+          "reported_lost_auto_per_cast": 8594,
+          "cast_s": 1.0,
+          "lockout_s": 0.0,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2400,
+              "effective": 3950
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Dexterity",
+            "value": {
+              "base": 5,
+              "effective": 1447
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Virulent Sunder",
+          "cooldown_effective_s": 60.0,
+          "observed_average_damage": 2470,
+          "gross_damage_per_cooldown_s": 41.16667,
+          "codex_net_after_reported_lost_auto": 41.16667,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Poison Weapon",
+          "cooldown_effective_s": 12.0,
+          "observed_average_damage": 157,
+          "gross_damage_per_cooldown_s": 13.08333,
+          "codex_net_after_reported_lost_auto": -1634.16667,
+          "reported_lost_auto_per_cast": 19767,
+          "cast_s": 2.0,
+          "lockout_s": 0.3,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2400,
+              "effective": 3950
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Dexterity",
+            "value": {
+              "base": 5,
+              "effective": 1447
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Smoke Bomb",
+          "cooldown_effective_s": 20.0,
+          "observed_average_damage": 0,
+          "gross_damage_per_cooldown_s": 0.0,
+          "codex_net_after_reported_lost_auto": -859.45,
+          "reported_lost_auto_per_cast": 17189,
+          "cast_s": 1.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2400,
+              "effective": 3950
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Dexterity",
+            "value": {
+              "base": 5,
+              "effective": 1447
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        }
+      ],
+      "limitations": [
+        "A skill's gross damage divided by cooldown is NOT rotation DPS.",
+        "A skill may occupy cast time or interrupt autos or other skills.",
+        "DoT double-counting, overlap, and support/debuff value are not modeled.",
+        "Different builds contain incompatible stats, buffs and gear swaps.",
+        "Skills with zero immediate damage may have major indirect value.",
+        "Cooldown may reflect gear from an individual saved build."
+      ]
+    },
+    "https://the-codex.ch/damagebuilder/roguetank": {
+      "sample_size": 11,
+      "by_gross_damage_cooldown": [
+        {
+          "skill": "Taunt Pollen",
+          "cooldown_effective_s": 5.0,
+          "observed_average_damage": 5420,
+          "gross_damage_per_cooldown_s": 1084.0,
+          "codex_net_after_reported_lost_auto": 362.0,
+          "reported_lost_auto_per_cast": 3610,
+          "cast_s": 1.0,
+          "lockout_s": 0.05,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2310,
+              "effective": 2310
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Vitality",
+            "value": {
+              "base": 1160,
+              "effective": 2375
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Double Attack",
+          "cooldown_effective_s": 11.25,
+          "observed_average_damage": 9012,
+          "gross_damage_per_cooldown_s": 801.06667,
+          "codex_net_after_reported_lost_auto": 342.66667,
+          "reported_lost_auto_per_cast": 5157,
+          "cast_s": 1.0,
+          "lockout_s": 0.5,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Quick Strike",
+          "cooldown_effective_s": 7.0,
+          "observed_average_damage": 4712,
+          "gross_damage_per_cooldown_s": 673.14286,
+          "codex_net_after_reported_lost_auto": 668.28571,
+          "reported_lost_auto_per_cast": 34,
+          "cast_s": 0.0,
+          "lockout_s": 0.01,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2310,
+              "effective": 2810
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 5,
+              "effective": 1780
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Shadowstrike",
+          "cooldown_effective_s": 12.0,
+          "observed_average_damage": 7461,
+          "gross_damage_per_cooldown_s": 621.75,
+          "codex_net_after_reported_lost_auto": 618.91667,
+          "reported_lost_auto_per_cast": 34,
+          "cast_s": 0.0,
+          "lockout_s": 0.01,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2310,
+              "effective": 2760
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Dexterity",
+            "value": {
+              "base": 5,
+              "effective": 2500
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Rend",
+          "cooldown_effective_s": 19.0,
+          "observed_average_damage": 10753,
+          "gross_damage_per_cooldown_s": 565.94737,
+          "codex_net_after_reported_lost_auto": 315.31579,
+          "reported_lost_auto_per_cast": 4762,
+          "cast_s": 0.39,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2310,
+              "effective": 2910
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 5,
+              "effective": 1580
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Sneaky Attack",
+          "cooldown_effective_s": 45.0,
+          "observed_average_damage": 10337,
+          "gross_damage_per_cooldown_s": 229.71111,
+          "codex_net_after_reported_lost_auto": 108.62222,
+          "reported_lost_auto_per_cast": 5449,
+          "cast_s": 1.08,
+          "lockout_s": 0.5,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2310,
+              "effective": 2710
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 5,
+              "effective": 1180
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Assassinate",
+          "cooldown_effective_s": 60.0,
+          "observed_average_damage": 12722,
+          "gross_damage_per_cooldown_s": 212.03333,
+          "codex_net_after_reported_lost_auto": 149.86667,
+          "reported_lost_auto_per_cast": 3730,
+          "cast_s": 1.08,
+          "lockout_s": 0.0,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2310,
+              "effective": 2710
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 5,
+              "effective": 1180
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Life Steal",
+          "cooldown_effective_s": 17.5,
+          "observed_average_damage": 2093,
+          "gross_damage_per_cooldown_s": 119.6,
+          "codex_net_after_reported_lost_auto": -76.85714,
+          "reported_lost_auto_per_cast": 3438,
+          "cast_s": 1.0,
+          "lockout_s": 0.0,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2310,
+              "effective": 2810
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Dexterity",
+            "value": {
+              "base": 5,
+              "effective": 2650
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Aetheric Assault",
+          "cooldown_effective_s": 45.0,
+          "observed_average_damage": 3800,
+          "gross_damage_per_cooldown_s": 84.44444,
+          "codex_net_after_reported_lost_auto": -144.75556,
+          "reported_lost_auto_per_cast": 10314,
+          "cast_s": 0.0,
+          "lockout_s": 3.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Natural Focus",
+          "cooldown_effective_s": 15.0,
+          "observed_average_damage": 843,
+          "gross_damage_per_cooldown_s": 56.2,
+          "codex_net_after_reported_lost_auto": -173.0,
+          "reported_lost_auto_per_cast": 3438,
+          "cast_s": 1.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Poison Weapon",
+          "cooldown_effective_s": 12.0,
+          "observed_average_damage": 168,
+          "gross_damage_per_cooldown_s": 14.0,
+          "codex_net_after_reported_lost_auto": -645.0,
+          "reported_lost_auto_per_cast": 7908,
+          "cast_s": 2.0,
+          "lockout_s": 0.3,
+          "skill_ability": {
+            "name": "Cunning",
+            "value": {
+              "base": 2310,
+              "effective": 2710
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Dexterity",
+            "value": {
+              "base": 5,
+              "effective": 2450
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        }
+      ],
+      "limitations": [
+        "A skill's gross damage divided by cooldown is NOT rotation DPS.",
+        "A skill may occupy cast time or interrupt autos or other skills.",
+        "DoT double-counting, overlap, and support/debuff value are not modeled.",
+        "Different builds contain incompatible stats, buffs and gear swaps.",
+        "Skills with zero immediate damage may have major indirect value.",
+        "Cooldown may reflect gear from an individual saved build."
+      ]
+    },
+    "https://the-codex.ch/damagebuilder/sage": {
+      "sample_size": 9,
+      "by_gross_damage_cooldown": [
+        {
+          "skill": "Strangling Vines",
+          "cooldown_effective_s": 13.0,
+          "observed_average_damage": 30452,
+          "gross_damage_per_cooldown_s": 2342.46154,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 2.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Nature Magic",
+            "value": {
+              "base": 2330,
+              "effective": 9521
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 1170,
+              "effective": 6900
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Lightning Strike",
+          "cooldown_effective_s": 5.25,
+          "observed_average_damage": 12105,
+          "gross_damage_per_cooldown_s": 2305.71429,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 0.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Nature Magic",
+            "value": {
+              "base": 2330,
+              "effective": 9621
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 1170,
+              "effective": 6720
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Storm Touch",
+          "cooldown_effective_s": 16.25,
+          "observed_average_damage": 15681,
+          "gross_damage_per_cooldown_s": 964.98462,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 1.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Nature Magic",
+            "value": {
+              "base": 2330,
+              "effective": 8721
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 1170,
+              "effective": 6600
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Stinging Swarm",
+          "cooldown_effective_s": 10.0,
+          "observed_average_damage": 7198,
+          "gross_damage_per_cooldown_s": 719.8,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 1.0,
+          "lockout_s": 1.0,
+          "skill_ability": {
+            "name": "Nature Magic",
+            "value": {
+              "base": 2330,
+              "effective": 9521
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Focus",
+            "value": {
+              "base": 1170,
+              "effective": 6900
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Double Attack",
+          "cooldown_effective_s": 15.0,
+          "observed_average_damage": 2204,
+          "gross_damage_per_cooldown_s": 146.93333,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 1.0,
+          "lockout_s": 0.5,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Lightning Discharge",
+          "cooldown_effective_s": 45.0,
+          "observed_average_damage": 4956,
+          "gross_damage_per_cooldown_s": 110.13333,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": {
+            "name": "Elk Riding",
+            "value": {
+              "base": 2330,
+              "effective": 2330
+            }
+          },
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Dian Cechts Stormrage",
+          "cooldown_effective_s": 90.0,
+          "observed_average_damage": 6800,
+          "gross_damage_per_cooldown_s": 75.55556,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 1.0,
+          "lockout_s": 0.8,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Arcane Breath",
+          "cooldown_effective_s": 25.0,
+          "observed_average_damage": 1167,
+          "gross_damage_per_cooldown_s": 46.68,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Aetheric Renewal",
+          "cooldown_effective_s": 45.0,
+          "observed_average_damage": 1000,
+          "gross_damage_per_cooldown_s": 22.22222,
+          "codex_net_after_reported_lost_auto": null,
+          "reported_lost_auto_per_cast": null,
+          "cast_s": 0.0,
+          "lockout_s": 3.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        }
+      ],
+      "limitations": [
+        "A skill's gross damage divided by cooldown is NOT rotation DPS.",
+        "A skill may occupy cast time or interrupt autos or other skills.",
+        "DoT double-counting, overlap, and support/debuff value are not modeled.",
+        "Different builds contain incompatible stats, buffs and gear swaps.",
+        "Skills with zero immediate damage may have major indirect value.",
+        "Cooldown may reflect gear from an individual saved build."
+      ]
+    },
+    "https://the-codex.ch/damagebuilder/surya8": {
+      "sample_size": 11,
+      "by_gross_damage_cooldown": [
+        {
+          "skill": "Double Attack",
+          "cooldown_effective_s": 10.5,
+          "observed_average_damage": 26316,
+          "gross_damage_per_cooldown_s": 2506.28571,
+          "codex_net_after_reported_lost_auto": 877.71429,
+          "reported_lost_auto_per_cast": 17100,
+          "cast_s": 1.0,
+          "lockout_s": 0.5,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Rupture",
+          "cooldown_effective_s": 14.0,
+          "observed_average_damage": 26911,
+          "gross_damage_per_cooldown_s": 1922.21429,
+          "codex_net_after_reported_lost_auto": 788.71429,
+          "reported_lost_auto_per_cast": 15869,
+          "cast_s": 1.09,
+          "lockout_s": 0.3,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2330,
+              "effective": 5830
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1645,
+              "effective": 5662
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Pummel",
+          "cooldown_effective_s": 10.0,
+          "observed_average_damage": 12308,
+          "gross_damage_per_cooldown_s": 1230.8,
+          "codex_net_after_reported_lost_auto": 1230.8,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2330,
+              "effective": 5130
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1645,
+              "effective": 5522
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Shatter",
+          "cooldown_effective_s": 20.0,
+          "observed_average_damage": 13232,
+          "gross_damage_per_cooldown_s": 661.6,
+          "codex_net_after_reported_lost_auto": 438.15,
+          "reported_lost_auto_per_cast": 4469,
+          "cast_s": 0.39,
+          "lockout_s": 0.0,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2330,
+              "effective": 4630
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1645,
+              "effective": 5622
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Hexbound Pierce",
+          "cooldown_effective_s": 15.0,
+          "observed_average_damage": 6436,
+          "gross_damage_per_cooldown_s": 429.06667,
+          "codex_net_after_reported_lost_auto": 429.06667,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Giant Swing",
+          "cooldown_effective_s": 20.0,
+          "observed_average_damage": 7918,
+          "gross_damage_per_cooldown_s": 395.9,
+          "codex_net_after_reported_lost_auto": -259.6,
+          "reported_lost_auto_per_cast": 13110,
+          "cast_s": 0.7,
+          "lockout_s": 0.45,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2330,
+              "effective": 5830
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1645,
+              "effective": 5862
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Nightmare Stomp",
+          "cooldown_effective_s": 45.0,
+          "observed_average_damage": 5941,
+          "gross_damage_per_cooldown_s": 132.02222,
+          "codex_net_after_reported_lost_auto": 132.02222,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Sweeping Blow",
+          "cooldown_effective_s": 20.0,
+          "observed_average_damage": 2071,
+          "gross_damage_per_cooldown_s": 103.55,
+          "codex_net_after_reported_lost_auto": -352.45,
+          "reported_lost_auto_per_cast": 9120,
+          "cast_s": 0.7,
+          "lockout_s": 0.1,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2330,
+              "effective": 4630
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1645,
+              "effective": 5622
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Hellborne Sunder",
+          "cooldown_effective_s": 60.0,
+          "observed_average_damage": 5700,
+          "gross_damage_per_cooldown_s": 95.0,
+          "codex_net_after_reported_lost_auto": 95.0,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Cuhcullains Fury",
+          "cooldown_effective_s": 30.0,
+          "observed_average_damage": 2850,
+          "gross_damage_per_cooldown_s": 95.0,
+          "codex_net_after_reported_lost_auto": -589.0,
+          "reported_lost_auto_per_cast": 20520,
+          "cast_s": 1.0,
+          "lockout_s": 0.8,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Frenzy",
+          "cooldown_effective_s": 15.0,
+          "observed_average_damage": 1078,
+          "gross_damage_per_cooldown_s": 71.86667,
+          "codex_net_after_reported_lost_auto": -1068.13333,
+          "reported_lost_auto_per_cast": 17100,
+          "cast_s": 0.7,
+          "lockout_s": 0.8,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2330,
+              "effective": 7030
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1645,
+              "effective": 6412
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        }
+      ],
+      "limitations": [
+        "A skill's gross damage divided by cooldown is NOT rotation DPS.",
+        "A skill may occupy cast time or interrupt autos or other skills.",
+        "DoT double-counting, overlap, and support/debuff value are not modeled.",
+        "Different builds contain incompatible stats, buffs and gear swaps.",
+        "Skills with zero immediate damage may have major indirect value.",
+        "Cooldown may reflect gear from an individual saved build."
+      ]
+    },
+    "https://the-codex.ch/damagebuilder/suzz": {
+      "sample_size": 10,
+      "by_gross_damage_cooldown": [
+        {
+          "skill": "Double Shot",
+          "cooldown_effective_s": 9.0,
+          "observed_average_damage": 30541,
+          "gross_damage_per_cooldown_s": 3393.44444,
+          "codex_net_after_reported_lost_auto": 656.22222,
+          "reported_lost_auto_per_cast": 24635,
+          "cast_s": 1.0,
+          "lockout_s": 1.27,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Sharp Shot",
+          "cooldown_effective_s": 6.0,
+          "observed_average_damage": 18539,
+          "gross_damage_per_cooldown_s": 3089.83333,
+          "codex_net_after_reported_lost_auto": 2728.0,
+          "reported_lost_auto_per_cast": 2171,
+          "cast_s": 0.0,
+          "lockout_s": 0.2,
+          "skill_ability": {
+            "name": "Ranged Combat",
+            "value": {
+              "base": 2500,
+              "effective": 6400
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Dexterity",
+            "value": {
+              "base": 5,
+              "effective": 4057
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Longshot",
+          "cooldown_effective_s": 8.4,
+          "observed_average_damage": 25364,
+          "gross_damage_per_cooldown_s": 3019.52381,
+          "codex_net_after_reported_lost_auto": -68.33333,
+          "reported_lost_auto_per_cast": 25938,
+          "cast_s": 1.12,
+          "lockout_s": 1.27,
+          "skill_ability": {
+            "name": "Ranged Combat",
+            "value": {
+              "base": 2500,
+              "effective": 5450
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Dexterity",
+            "value": {
+              "base": 5,
+              "effective": 2957
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Barbed Shot",
+          "cooldown_effective_s": 20.0,
+          "observed_average_damage": 23798,
+          "gross_damage_per_cooldown_s": 1189.9,
+          "codex_net_after_reported_lost_auto": 110.05,
+          "reported_lost_auto_per_cast": 21597,
+          "cast_s": 1.12,
+          "lockout_s": 0.87,
+          "skill_ability": {
+            "name": "Ranged Combat",
+            "value": {
+              "base": 2500,
+              "effective": 4450
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Dexterity",
+            "value": {
+              "base": 5,
+              "effective": 3257
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Explosive Arrow",
+          "cooldown_effective_s": 10.0,
+          "observed_average_damage": 6940,
+          "gross_damage_per_cooldown_s": 694.0,
+          "codex_net_after_reported_lost_auto": -2854.8,
+          "reported_lost_auto_per_cast": 35488,
+          "cast_s": 2.0,
+          "lockout_s": 1.27,
+          "skill_ability": {
+            "name": "Ranged Combat",
+            "value": {
+              "base": 2500,
+              "effective": 4450
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Dexterity",
+            "value": {
+              "base": 5,
+              "effective": 3257
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Hexbound Pierce",
+          "cooldown_effective_s": 15.0,
+          "observed_average_damage": 6804,
+          "gross_damage_per_cooldown_s": 453.6,
+          "codex_net_after_reported_lost_auto": 453.6,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Nightmare Stomp",
+          "cooldown_effective_s": 45.0,
+          "observed_average_damage": 6281,
+          "gross_damage_per_cooldown_s": 139.57778,
+          "codex_net_after_reported_lost_auto": 139.57778,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Deathborne Sunder",
+          "cooldown_effective_s": 60.0,
+          "observed_average_damage": 5850,
+          "gross_damage_per_cooldown_s": 97.5,
+          "codex_net_after_reported_lost_auto": 97.5,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Sharpen Weapons",
+          "cooldown_effective_s": 6.0,
+          "observed_average_damage": 200,
+          "gross_damage_per_cooldown_s": 33.33333,
+          "codex_net_after_reported_lost_auto": -2318.0,
+          "reported_lost_auto_per_cast": 14108,
+          "cast_s": 1.0,
+          "lockout_s": 0.3,
+          "skill_ability": {
+            "name": "Ranged Combat",
+            "value": {
+              "base": 2500,
+              "effective": 4450
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Dexterity",
+            "value": {
+              "base": 5,
+              "effective": 3257
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Steady Aim",
+          "cooldown_effective_s": 28.0,
+          "observed_average_damage": 643,
+          "gross_damage_per_cooldown_s": 22.96429,
+          "codex_net_after_reported_lost_auto": -248.35714,
+          "reported_lost_auto_per_cast": 7597,
+          "cast_s": 0.7,
+          "lockout_s": 0.0,
+          "skill_ability": {
+            "name": "Ranged Combat",
+            "value": {
+              "base": 2500,
+              "effective": 4450
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Dexterity",
+            "value": {
+              "base": 5,
+              "effective": 3257
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        }
+      ],
+      "limitations": [
+        "A skill's gross damage divided by cooldown is NOT rotation DPS.",
+        "A skill may occupy cast time or interrupt autos or other skills.",
+        "DoT double-counting, overlap, and support/debuff value are not modeled.",
+        "Different builds contain incompatible stats, buffs and gear swaps.",
+        "Skills with zero immediate damage may have major indirect value.",
+        "Cooldown may reflect gear from an individual saved build."
+      ]
+    },
+    "https://the-codex.ch/damagebuilder/yuhhh": {
+      "sample_size": 7,
+      "by_gross_damage_cooldown": [
+        {
+          "skill": "Pummel",
+          "cooldown_effective_s": 7.5,
+          "observed_average_damage": 7119,
+          "gross_damage_per_cooldown_s": 949.2,
+          "codex_net_after_reported_lost_auto": 949.2,
+          "reported_lost_auto_per_cast": 0,
+          "cast_s": 0.0,
+          "lockout_s": 0.0,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2310,
+              "effective": 3926
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1155,
+              "effective": 2465
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Rupture",
+          "cooldown_effective_s": 14.0,
+          "observed_average_damage": 11280,
+          "gross_damage_per_cooldown_s": 805.71429,
+          "codex_net_after_reported_lost_auto": 459.85714,
+          "reported_lost_auto_per_cast": 4842,
+          "cast_s": 1.12,
+          "lockout_s": 0.3,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2310,
+              "effective": 3926
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1155,
+              "effective": 2465
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Double Attack",
+          "cooldown_effective_s": 15.0,
+          "observed_average_damage": 8703,
+          "gross_damage_per_cooldown_s": 580.2,
+          "codex_net_after_reported_lost_auto": 239.2,
+          "reported_lost_auto_per_cast": 5115,
+          "cast_s": 1.0,
+          "lockout_s": 0.5,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Giant Swing",
+          "cooldown_effective_s": 20.0,
+          "observed_average_damage": 4002,
+          "gross_damage_per_cooldown_s": 200.1,
+          "codex_net_after_reported_lost_auto": 4.05,
+          "reported_lost_auto_per_cast": 3921,
+          "cast_s": 0.7,
+          "lockout_s": 0.45,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2310,
+              "effective": 3926
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1155,
+              "effective": 2465
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Blazing Destruction",
+          "cooldown_effective_s": 45.0,
+          "observed_average_damage": 6080,
+          "gross_damage_per_cooldown_s": 135.11111,
+          "codex_net_after_reported_lost_auto": 74.48889,
+          "reported_lost_auto_per_cast": 2728,
+          "cast_s": 0.0,
+          "lockout_s": 0.8,
+          "skill_ability": null,
+          "scaling_attribute": null,
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Sweeping Blow",
+          "cooldown_effective_s": 20.0,
+          "observed_average_damage": 1584,
+          "gross_damage_per_cooldown_s": 79.2,
+          "codex_net_after_reported_lost_auto": -57.2,
+          "reported_lost_auto_per_cast": 2728,
+          "cast_s": 0.7,
+          "lockout_s": 0.1,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2310,
+              "effective": 3926
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1155,
+              "effective": 2465
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        },
+        {
+          "skill": "Frenzy",
+          "cooldown_effective_s": 15.0,
+          "observed_average_damage": 485,
+          "gross_damage_per_cooldown_s": 32.33333,
+          "codex_net_after_reported_lost_auto": -308.66667,
+          "reported_lost_auto_per_cast": 5115,
+          "cast_s": 0.7,
+          "lockout_s": 0.8,
+          "skill_ability": {
+            "name": "Melee Combat",
+            "value": {
+              "base": 2310,
+              "effective": 3926
+            }
+          },
+          "scaling_attribute": {
+            "stat": "Strength",
+            "value": {
+              "base": 1155,
+              "effective": 2465
+            }
+          },
+          "evidence_kind": "single_saved_build_model",
+          "strictly_comparable_to_other_characters": false
+        }
+      ],
+      "limitations": [
+        "A skill's gross damage divided by cooldown is NOT rotation DPS.",
+        "A skill may occupy cast time or interrupt autos or other skills.",
+        "DoT double-counting, overlap, and support/debuff value are not modeled.",
+        "Different builds contain incompatible stats, buffs and gear swaps.",
+        "Skills with zero immediate damage may have major indirect value.",
+        "Cooldown may reflect gear from an individual saved build."
+      ]
+    }
+  }
+}
