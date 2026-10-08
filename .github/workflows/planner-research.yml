@@ -31,7 +31,7 @@ jobs:
           python-version: "3.12"
       - name: Verify modeling and ingestion tests
         run: |
-          python -m unittest tests.test_build_planner tests.test_economy tests.test_market_import tests.test_pet_catalog tests.test_skill_priorities tests.test_personal_planner -v
+          python -m unittest tests.test_build_planner tests.test_economy tests.test_market_import tests.test_pet_catalog tests.test_skill_priorities tests.test_personal_planner tests.test_companions tests.test_item_rarity -v
       - name: Index item name tiers separately from drop probability
         run: |
           python -m unittest tests.test_item_rarity -v
@@ -64,6 +64,7 @@ jobs:
           assert demo["scenario_status"]=="synthetic_demo"
           assert demo["builds"]["point_budget"]==5
           assert len(demo["builds"]["results"])==4
+          assert all("by_source_modeled_net_after_auto_loss" in x for x in rankings["builds"].values())
           print("PET SPECIES",len(pets["public_pet_species"]))
           print("PUBLISHED SKILL BUILDS",rankings["published_saved_builds"])
           print("REAL WORLD PRICES",market["prices_submitted"])
