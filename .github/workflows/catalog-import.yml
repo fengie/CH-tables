@@ -29,6 +29,10 @@ jobs:
         run: python -m unittest tests.test_catalog_ingest -v
       - name: Fetch pinned public JSON data safely
         run: python -m ch_tables.catalog_ingest --output data/catalog
+      - name: Generate compact item examples and field-key inventory
+        run: |
+          python -m unittest tests.test_catalog_report -v
+          python -m ch_tables.catalog_report
       - name: Inspect manifest
         run: |
           python -c "import json; x=json.load(open('data/catalog/catalog_manifest.json')); print('selected=', x['selected_relevant_items'], 'total=',x['total_unique_items'], 'missing=',x['missing_terms'])"
