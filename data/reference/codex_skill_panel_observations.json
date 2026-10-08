@@ -43,6 +43,26 @@
       "url": "https://the-codex.ch/damagebuilder/gwyn-shields-dps",
       "html_sha256": "2ea2f20d20dcfb40ad3f14b5bada0110f5671b0b1522e57baeafc1839442af46",
       "skills": 9
+    },
+    {
+      "url": "https://the-codex.ch/damagebuilder/druid-ox",
+      "html_sha256": "1bb2eb7b47b2a5d5eb990dc933c497207b497463faf1ef02ca66bc5bdb0e7c2a",
+      "skills": 8
+    },
+    {
+      "url": "https://the-codex.ch/damagebuilder/doc",
+      "html_sha256": "77da30c64a6ba6e694ed23065a872dca807115089c95ca29a585a204d127626e",
+      "skills": 10
+    },
+    {
+      "url": "https://the-codex.ch/damagebuilder/sage",
+      "html_sha256": "cdab31bf3be7d6a12738a5ac2eadad20fe93570e3c2f3e919c044c8e869b90a0",
+      "skills": 9
+    },
+    {
+      "url": "https://the-codex.ch/damagebuilder/roguetank",
+      "html_sha256": "d8f2de5b26a7da57f376519dd83e2e60598d199a98e007b281e3256dff436206",
+      "skills": 11
     }
   ],
   "errors": [],
@@ -3110,6 +3130,1482 @@
         ],
         "Dmg Lost": [
           1477
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/druid-ox",
+      "skill_name": "Lightning Strike",
+      "cooldown_cast_lockout_text": "Cooldown: 7.50s | Cast: 0s | Lockout: 1s",
+      "timing_s": {
+        "cooldown_s": 7.5,
+        "cast_s": 0.0,
+        "lockout_s": 1.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Nature Magic",
+        "value": {
+          "base": 1840,
+          "effective": 3840
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 925,
+          "effective": 2499
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 5589,
+        "Base Skill": 5289,
+        "Direct Dmg": 300,
+        "Avg Damage": 4717,
+        "Dmg Lost": 269
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          89
+        ],
+        "Direct Dmg": [
+          5
+        ],
+        "Avg Damage": [
+          79
+        ],
+        "Dmg Lost": [
+          3,
+          92
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/druid-ox",
+      "skill_name": "Stinging Swarm",
+      "cooldown_cast_lockout_text": "Cooldown: 10s | Cast: 1s | Lockout: 1s",
+      "timing_s": {
+        "cooldown_s": 10.0,
+        "cast_s": 1.0,
+        "lockout_s": 1.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Nature Magic",
+        "value": {
+          "base": 1840,
+          "effective": 3840
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 925,
+          "effective": 2499
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 5473,
+        "Base Skill": 5473,
+        "Direct Dmg": 0,
+        "Avg Damage": 4619,
+        "Dmg Lost": 537
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          547
+        ],
+        "Direct Dmg": [
+          0
+        ],
+        "Avg Damage": [
+          462
+        ],
+        "Dmg Lost": [
+          5,
+          64
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/druid-ox",
+      "skill_name": "Strangling Vines",
+      "cooldown_cast_lockout_text": "Cooldown: 13s | Cast: 2s | Lockout: 1s",
+      "timing_s": {
+        "cooldown_s": 13.0,
+        "cast_s": 2.0,
+        "lockout_s": 1.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Nature Magic",
+        "value": {
+          "base": 1840,
+          "effective": 3840
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 925,
+          "effective": 2499
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 22429,
+        "Base Skill": 22429,
+        "Direct Dmg": 0,
+        "Avg Damage": 18928,
+        "Dmg Lost": 806
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          378
+        ],
+        "Direct Dmg": [
+          0
+        ],
+        "Avg Damage": [
+          319
+        ],
+        "Dmg Lost": [
+          8,
+          64
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/druid-ox",
+      "skill_name": "Storm Touch",
+      "cooldown_cast_lockout_text": "Cooldown: 25s | Cast: 1s | Lockout: 1s",
+      "timing_s": {
+        "cooldown_s": 25.0,
+        "cast_s": 1.0,
+        "lockout_s": 1.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Nature Magic",
+        "value": {
+          "base": 1840,
+          "effective": 3840
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 925,
+          "effective": 2499
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 9344,
+        "Base Skill": 8844,
+        "Direct Dmg": 500,
+        "Avg Damage": 7886,
+        "Dmg Lost": 537
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          149
+        ],
+        "Direct Dmg": [
+          8
+        ],
+        "Avg Damage": [
+          132
+        ],
+        "Dmg Lost": [
+          5,
+          52
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/druid-ox",
+      "skill_name": "Double Attack",
+      "cooldown_cast_lockout_text": "Cooldown: 15s | Cast: 1s | Lockout: 0.50s None 0 ( 0 ) None 0 ( 0 )",
+      "timing_s": {
+        "cooldown_s": 15.0,
+        "cast_s": 1.0,
+        "lockout_s": 0.5,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 2419,
+        "Base Skill": 2419,
+        "Direct Dmg": 0,
+        "Avg Damage": 2041,
+        "Dmg Lost": 403
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          24
+        ],
+        "Direct Dmg": [
+          0
+        ],
+        "Avg Damage": [
+          20
+        ],
+        "Dmg Lost": [
+          4,
+          64
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/druid-ox",
+      "skill_name": "Dragonlord Boon",
+      "cooldown_cast_lockout_text": "Cooldown: 180s | Cast: 1s | Lockout: 0.80s None 0 ( 0 ) None 0 ( 0 )",
+      "timing_s": {
+        "cooldown_s": 180.0,
+        "cast_s": 1.0,
+        "lockout_s": 0.8,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 3600,
+        "Base Skill": 3600,
+        "Direct Dmg": 0,
+        "Avg Damage": 2880,
+        "Dmg Lost": 483
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          360
+        ],
+        "Direct Dmg": [
+          0
+        ],
+        "Avg Damage": [
+          288
+        ],
+        "Dmg Lost": [
+          5,
+          6
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/druid-ox",
+      "skill_name": "Arcane Breath",
+      "cooldown_cast_lockout_text": "Cooldown: 25s | Cast: 0s | Lockout: 0s Phoenix Taming 1,840 ( 1,840 ) None 0 ( 0 )",
+      "timing_s": {
+        "cooldown_s": 25.0,
+        "cast_s": 0.0,
+        "lockout_s": 0.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 931,
+        "Base Skill": 931,
+        "Direct Dmg": 0,
+        "Debuff Value": -300,
+        "Avg Damage": 786,
+        "Dmg Lost": 0
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          16
+        ],
+        "Direct Dmg": [
+          0
+        ],
+        "Avg Damage": [
+          14
+        ],
+        "Dmg Lost": [
+          0,
+          0
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/druid-ox",
+      "skill_name": "Nightmare Scream",
+      "cooldown_cast_lockout_text": "Cooldown: 45s | Cast: 0s | Lockout: 0s SNighmare Steed Riding 1,840 ( 1,840 ) None 0 ( 0 )",
+      "timing_s": {
+        "cooldown_s": 45.0,
+        "cast_s": 0.0,
+        "lockout_s": 0.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 6347,
+        "Base Skill": 6347,
+        "Direct Dmg": 0,
+        "Debuff Value": -563,
+        "Avg Damage": 5357,
+        "Dmg Lost": 0
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          107
+        ],
+        "Direct Dmg": [
+          0
+        ],
+        "Avg Damage": [
+          90
+        ],
+        "Dmg Lost": [
+          0,
+          0
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/doc",
+      "skill_name": "Lightning Strike",
+      "cooldown_cast_lockout_text": "Cooldown: 7.50s ( 5.63s ) | Cast: 0s | Lockout: 1s",
+      "timing_s": {
+        "cooldown_s": 7.5,
+        "cast_s": 0.0,
+        "lockout_s": 1.0,
+        "effective_cooldown_s": 5.63
+      },
+      "skill_ability": {
+        "name": "Nature Magic",
+        "value": {
+          "base": 2000,
+          "effective": 4750
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 730,
+          "effective": 2048
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 8354,
+        "Base Skill": 5086,
+        "Direct Dmg": 3268,
+        "Avg Damage": 7469
+      },
+      "additional_metric_occurrences": {},
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/doc",
+      "skill_name": "Stinging Swarm",
+      "cooldown_cast_lockout_text": "Cooldown: 10s | Cast: 1s | Lockout: 1s",
+      "timing_s": {
+        "cooldown_s": 10.0,
+        "cast_s": 1.0,
+        "lockout_s": 1.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Nature Magic",
+        "value": {
+          "base": 2000,
+          "effective": 4750
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 730,
+          "effective": 2048
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 5303,
+        "Base Skill": 5303,
+        "Direct Dmg": 0,
+        "Avg Damage": 4742
+      },
+      "additional_metric_occurrences": {},
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/doc",
+      "skill_name": "Strangling Vines",
+      "cooldown_cast_lockout_text": "Cooldown: 13s | Cast: 2s | Lockout: 1s",
+      "timing_s": {
+        "cooldown_s": 13.0,
+        "cast_s": 2.0,
+        "lockout_s": 1.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Nature Magic",
+        "value": {
+          "base": 2000,
+          "effective": 4750
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 730,
+          "effective": 2188
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 22124,
+        "Base Skill": 22124,
+        "Direct Dmg": 0,
+        "Avg Damage": 19782
+      },
+      "additional_metric_occurrences": {},
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/doc",
+      "skill_name": "Storm Touch",
+      "cooldown_cast_lockout_text": "Cooldown: 25s | Cast: 1s | Lockout: 1s",
+      "timing_s": {
+        "cooldown_s": 25.0,
+        "cast_s": 1.0,
+        "lockout_s": 1.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Nature Magic",
+        "value": {
+          "base": 2000,
+          "effective": 4750
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 730,
+          "effective": 2048
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 12291,
+        "Base Skill": 8546,
+        "Direct Dmg": 3745,
+        "Avg Damage": 10990
+      },
+      "additional_metric_occurrences": {},
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/doc",
+      "skill_name": "Double Attack",
+      "cooldown_cast_lockout_text": "Cooldown: 15s | Cast: 1s | Lockout: 0.50s None 0 ( 0 ) None 0 ( 0 )",
+      "timing_s": {
+        "cooldown_s": 15.0,
+        "cast_s": 1.0,
+        "lockout_s": 0.5,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 1228,
+        "Base Skill": 1228,
+        "Direct Dmg": 0,
+        "Avg Damage": 1098
+      },
+      "additional_metric_occurrences": {},
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/doc",
+      "skill_name": "Lightning Discharge",
+      "cooldown_cast_lockout_text": "Cooldown: 45s | Cast: 0s | Lockout: 0s",
+      "timing_s": {
+        "cooldown_s": 45.0,
+        "cast_s": 0.0,
+        "lockout_s": 0.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Elk Riding",
+        "value": {
+          "base": 2000,
+          "effective": 2000
+        }
+      },
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 2561,
+        "Base Skill": 2561,
+        "Direct Dmg": 0,
+        "Debuff Value": -334,
+        "Avg Damage": 2290
+      },
+      "additional_metric_occurrences": {},
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/doc",
+      "skill_name": "Howling Wind",
+      "cooldown_cast_lockout_text": "Cooldown: 10s | Cast: 2s | Lockout: 1s",
+      "timing_s": {
+        "cooldown_s": 10.0,
+        "cast_s": 2.0,
+        "lockout_s": 1.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Nature Magic",
+        "value": {
+          "base": 2000,
+          "effective": 4750
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 730,
+          "effective": 2048
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 0,
+        "Base Skill": 0,
+        "Direct Dmg": 0,
+        "Debuff Value": -3172,
+        "Avg Damage": 0
+      },
+      "additional_metric_occurrences": {},
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/doc",
+      "skill_name": "Natures Touch",
+      "cooldown_cast_lockout_text": "Cooldown: 8s | Cast: 2s | Lockout: 0.80s",
+      "timing_s": {
+        "cooldown_s": 8.0,
+        "cast_s": 2.0,
+        "lockout_s": 0.8,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Nature Magic",
+        "value": {
+          "base": 2000,
+          "effective": 4750
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 730,
+          "effective": 2048
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 0,
+        "Base Skill": 0,
+        "Direct Dmg": 0,
+        "Healing": -2656,
+        "Avg Damage": 0
+      },
+      "additional_metric_occurrences": {},
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/doc",
+      "skill_name": "Natures Embrace",
+      "cooldown_cast_lockout_text": "Cooldown: 10s | Cast: 2s | Lockout: 0.80s",
+      "timing_s": {
+        "cooldown_s": 10.0,
+        "cast_s": 2.0,
+        "lockout_s": 0.8,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Nature Magic",
+        "value": {
+          "base": 2000,
+          "effective": 4750
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 730,
+          "effective": 2048
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 0,
+        "Base Skill": 0,
+        "Direct Dmg": 0,
+        "Healing": 3424,
+        "Avg Damage": 0
+      },
+      "additional_metric_occurrences": {},
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/doc",
+      "skill_name": "Natures Breath",
+      "cooldown_cast_lockout_text": "Cooldown: 14s | Cast: 3s | Lockout: 1.20s",
+      "timing_s": {
+        "cooldown_s": 14.0,
+        "cast_s": 3.0,
+        "lockout_s": 1.2,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Nature Magic",
+        "value": {
+          "base": 2000,
+          "effective": 4750
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 730,
+          "effective": 2048
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 0,
+        "Base Skill": 0,
+        "Direct Dmg": 0,
+        "Healing": -1215,
+        "Avg Damage": 0
+      },
+      "additional_metric_occurrences": {},
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/sage",
+      "skill_name": "Lightning Strike",
+      "cooldown_cast_lockout_text": "Cooldown: 7.50s ( 5.25s ) | Cast: 0s | Lockout: 1s",
+      "timing_s": {
+        "cooldown_s": 7.5,
+        "cast_s": 0.0,
+        "lockout_s": 1.0,
+        "effective_cooldown_s": 5.25
+      },
+      "skill_ability": {
+        "name": "Nature Magic",
+        "value": {
+          "base": 2330,
+          "effective": 9621
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 1170,
+          "effective": 6720
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 14203,
+        "Base Skill": 8393,
+        "Direct Dmg": 5810,
+        "Avg Damage": 12105
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          4910
+        ],
+        "Direct Dmg": [
+          3399
+        ],
+        "Avg Damage": [
+          7082
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/sage",
+      "skill_name": "Stinging Swarm",
+      "cooldown_cast_lockout_text": "Cooldown: 10s | Cast: 1s | Lockout: 1s",
+      "timing_s": {
+        "cooldown_s": 10.0,
+        "cast_s": 1.0,
+        "lockout_s": 1.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Nature Magic",
+        "value": {
+          "base": 2330,
+          "effective": 9521
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 1170,
+          "effective": 6900
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 8445,
+        "Base Skill": 8445,
+        "Direct Dmg": 0,
+        "Avg Damage": 7198
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          8445
+        ],
+        "Direct Dmg": [
+          0
+        ],
+        "Avg Damage": [
+          7198
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/sage",
+      "skill_name": "Strangling Vines",
+      "cooldown_cast_lockout_text": "Cooldown: 13s | Cast: 2s | Lockout: 1s",
+      "timing_s": {
+        "cooldown_s": 13.0,
+        "cast_s": 2.0,
+        "lockout_s": 1.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Nature Magic",
+        "value": {
+          "base": 2330,
+          "effective": 9521
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 1170,
+          "effective": 6900
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 35728,
+        "Base Skill": 35728,
+        "Direct Dmg": 0,
+        "Avg Damage": 30452
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          20903
+        ],
+        "Direct Dmg": [
+          0
+        ],
+        "Avg Damage": [
+          17816
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/sage",
+      "skill_name": "Storm Touch",
+      "cooldown_cast_lockout_text": "Cooldown: 25s ( 16.25s ) | Cast: 1s | Lockout: 1s",
+      "timing_s": {
+        "cooldown_s": 25.0,
+        "cast_s": 1.0,
+        "lockout_s": 1.0,
+        "effective_cooldown_s": 16.25
+      },
+      "skill_ability": {
+        "name": "Nature Magic",
+        "value": {
+          "base": 2330,
+          "effective": 8721
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Focus",
+        "value": {
+          "base": 1170,
+          "effective": 6600
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 18398,
+        "Base Skill": 13681,
+        "Direct Dmg": 4717,
+        "Avg Damage": 15681
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          8004
+        ],
+        "Direct Dmg": [
+          2760
+        ],
+        "Avg Damage": [
+          9174
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/sage",
+      "skill_name": "Double Attack",
+      "cooldown_cast_lockout_text": "Cooldown: 15s | Cast: 1s | Lockout: 0.50s None 0 ( 0 ) None 0 ( 0 )",
+      "timing_s": {
+        "cooldown_s": 15.0,
+        "cast_s": 1.0,
+        "lockout_s": 0.5,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 2586,
+        "Base Skill": 2586,
+        "Direct Dmg": 0,
+        "Avg Damage": 2204
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          928
+        ],
+        "Direct Dmg": [
+          0
+        ],
+        "Avg Damage": [
+          791
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/sage",
+      "skill_name": "Dian Cechts Stormrage",
+      "cooldown_cast_lockout_text": "Cooldown: 90s | Cast: 1s | Lockout: 0.80s None 0 ( 0 ) None 0 ( 0 )",
+      "timing_s": {
+        "cooldown_s": 90.0,
+        "cast_s": 1.0,
+        "lockout_s": 0.8,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 8500,
+        "Base Skill": 8500,
+        "Direct Dmg": 0,
+        "Debuff Value": -450,
+        "Avg Damage": 6800
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          6622
+        ],
+        "Direct Dmg": [
+          0
+        ],
+        "Avg Damage": [
+          5298
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/sage",
+      "skill_name": "Arcane Breath",
+      "cooldown_cast_lockout_text": "Cooldown: 25s | Cast: 0s | Lockout: 0s Phoenix Taming 2,330 ( 2,330 ) None 0 ( 0 )",
+      "timing_s": {
+        "cooldown_s": 25.0,
+        "cast_s": 0.0,
+        "lockout_s": 0.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 1369,
+        "Base Skill": 1369,
+        "Direct Dmg": 0,
+        "Debuff Value": -400,
+        "Avg Damage": 1167
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          801
+        ],
+        "Direct Dmg": [
+          0
+        ],
+        "Avg Damage": [
+          683
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/sage",
+      "skill_name": "Aetheric Renewal",
+      "cooldown_cast_lockout_text": "Cooldown: 45s | Cast: 0s | Lockout: 3s None 0 ( 0 ) None 0 ( 0 )",
+      "timing_s": {
+        "cooldown_s": 45.0,
+        "cast_s": 0.0,
+        "lockout_s": 3.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 1250,
+        "Base Skill": 0,
+        "Direct Dmg": 1250,
+        "Debuff Value": -2500,
+        "Avg Damage": 1000
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          0
+        ],
+        "Direct Dmg": [
+          731
+        ],
+        "Avg Damage": [
+          585
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/sage",
+      "skill_name": "Lightning Discharge",
+      "cooldown_cast_lockout_text": "Cooldown: 45s | Cast: 0s | Lockout: 0s",
+      "timing_s": {
+        "cooldown_s": 45.0,
+        "cast_s": 0.0,
+        "lockout_s": 0.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Elk Riding",
+        "value": {
+          "base": 2330,
+          "effective": 2330
+        }
+      },
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 5815,
+        "Base Skill": 5815,
+        "Direct Dmg": 0,
+        "Debuff Value": -443,
+        "Avg Damage": 4956
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          3402
+        ],
+        "Direct Dmg": [
+          0
+        ],
+        "Avg Damage": [
+          2900
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/roguetank",
+      "skill_name": "Sneaky Attack",
+      "cooldown_cast_lockout_text": "Cooldown: 45s | Cast: 1.08s | Lockout: 0.50s",
+      "timing_s": {
+        "cooldown_s": 45.0,
+        "cast_s": 1.08,
+        "lockout_s": 0.5,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2310,
+          "effective": 2710
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 5,
+          "effective": 1180
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 12812,
+        "Base Skill": 12812,
+        "Direct Dmg": 0,
+        "Avg Damage": 10337,
+        "Dmg Lost": 5449
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          10086
+        ],
+        "Direct Dmg": [
+          0
+        ],
+        "Avg Damage": [
+          8137
+        ],
+        "Dmg Lost": [
+          4379,
+          69240
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/roguetank",
+      "skill_name": "Quick Strike",
+      "cooldown_cast_lockout_text": "Cooldown: 10s ( 7s ) | Cast: 0s | Lockout: 0.01s",
+      "timing_s": {
+        "cooldown_s": 10.0,
+        "cast_s": 0.0,
+        "lockout_s": 0.01,
+        "effective_cooldown_s": 7.0
+      },
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2310,
+          "effective": 2810
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 5,
+          "effective": 1780
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 5841,
+        "Base Skill": 4531,
+        "Direct Dmg": 1310,
+        "Avg Damage": 4712,
+        "Dmg Lost": 34
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          3523
+        ],
+        "Direct Dmg": [
+          1019
+        ],
+        "Avg Damage": [
+          3664
+        ],
+        "Dmg Lost": [
+          28,
+          2943
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/roguetank",
+      "skill_name": "Assassinate",
+      "cooldown_cast_lockout_text": "Cooldown: 60s | Cast: 1.08s | Lockout: 0s | Usable at 30% target HP or lower",
+      "timing_s": {
+        "cooldown_s": 60.0,
+        "cast_s": 1.08,
+        "lockout_s": 0.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2310,
+          "effective": 2710
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 5,
+          "effective": 1180
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 15768,
+        "Base Skill": 15768,
+        "Direct Dmg": 0,
+        "Avg Damage": 12722,
+        "Dmg Lost": 3730
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          12385
+        ],
+        "Direct Dmg": [
+          0
+        ],
+        "Avg Damage": [
+          9992
+        ],
+        "Dmg Lost": [
+          2998,
+          12473
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/roguetank",
+      "skill_name": "Shadowstrike",
+      "cooldown_cast_lockout_text": "Cooldown: 12s | Cast: 0s | Lockout: 0.01s",
+      "timing_s": {
+        "cooldown_s": 12.0,
+        "cast_s": 0.0,
+        "lockout_s": 0.01,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2310,
+          "effective": 2760
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Dexterity",
+        "value": {
+          "base": 5,
+          "effective": 2500
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 9247,
+        "Base Skill": 6322,
+        "Direct Dmg": 2925,
+        "Avg Damage": 7461,
+        "Dmg Lost": 34
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          1885
+        ],
+        "Direct Dmg": [
+          872
+        ],
+        "Avg Damage": [
+          2224
+        ],
+        "Dmg Lost": [
+          28,
+          1724
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/roguetank",
+      "skill_name": "Rend",
+      "cooldown_cast_lockout_text": "Cooldown: 19s | Cast: 0.39s | Lockout: 1s",
+      "timing_s": {
+        "cooldown_s": 19.0,
+        "cast_s": 0.39,
+        "lockout_s": 1.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2310,
+          "effective": 2910
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Strength",
+        "value": {
+          "base": 5,
+          "effective": 1580
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 13328,
+        "Base Skill": 12628,
+        "Direct Dmg": 700,
+        "Avg Damage": 10753,
+        "Dmg Lost": 4762
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          9942
+        ],
+        "Direct Dmg": [
+          544
+        ],
+        "Avg Damage": [
+          8460
+        ],
+        "Dmg Lost": [
+          3826,
+          146480
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/roguetank",
+      "skill_name": "Life Steal",
+      "cooldown_cast_lockout_text": "Cooldown: 25s ( 17.50s ) | Cast: 1s | Lockout: 0s",
+      "timing_s": {
+        "cooldown_s": 25.0,
+        "cast_s": 1.0,
+        "lockout_s": 0.0,
+        "effective_cooldown_s": 17.5
+      },
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2310,
+          "effective": 2810
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Dexterity",
+        "value": {
+          "base": 5,
+          "effective": 2650
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 2595,
+        "Base Skill": 2330,
+        "Direct Dmg": 265,
+        "Avg Damage": 2093,
+        "Dmg Lost": 3438
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          695
+        ],
+        "Direct Dmg": [
+          79
+        ],
+        "Avg Damage": [
+          624
+        ],
+        "Dmg Lost": [
+          2763,
+          110360
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/roguetank",
+      "skill_name": "Double Attack",
+      "cooldown_cast_lockout_text": "Cooldown: 15s ( 11.25s ) | Cast: 1s | Lockout: 0.50s None 0 ( 0 ) None 0 ( 0 )",
+      "timing_s": {
+        "cooldown_s": 15.0,
+        "cast_s": 1.0,
+        "lockout_s": 0.5,
+        "effective_cooldown_s": 11.25
+      },
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 11170,
+        "Base Skill": 11170,
+        "Direct Dmg": 0,
+        "Avg Damage": 9012,
+        "Dmg Lost": 5157
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          8823
+        ],
+        "Direct Dmg": [
+          0
+        ],
+        "Avg Damage": [
+          7118
+        ],
+        "Dmg Lost": [
+          4144,
+          251759
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/roguetank",
+      "skill_name": "Aetheric Assault",
+      "cooldown_cast_lockout_text": "Cooldown: 45s | Cast: 0s | Lockout: 3s None 0 ( 0 ) None 0 ( 0 )",
+      "timing_s": {
+        "cooldown_s": 45.0,
+        "cast_s": 0.0,
+        "lockout_s": 3.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 5000,
+        "Base Skill": 5000,
+        "Direct Dmg": 0,
+        "Avg Damage": 3800,
+        "Dmg Lost": 10314
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          4374
+        ],
+        "Direct Dmg": [
+          0
+        ],
+        "Avg Damage": [
+          3324
+        ],
+        "Dmg Lost": [
+          8288,
+          137950
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/roguetank",
+      "skill_name": "Natural Focus",
+      "cooldown_cast_lockout_text": "Cooldown: 15s | Cast: 1s | Lockout: 0s Rabbit Taming 2,310 ( 2,310 ) None 0 ( 0 )",
+      "timing_s": {
+        "cooldown_s": 15.0,
+        "cast_s": 1.0,
+        "lockout_s": 0.0,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": null,
+      "scaling_attribute": null,
+      "numeric_metrics": {
+        "Max Damage": 1045,
+        "Base Skill": 1045,
+        "Direct Dmg": 0,
+        "Debuff Value": -2003,
+        "Avg Damage": 843,
+        "Dmg Lost": 3438
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          0
+        ],
+        "Direct Dmg": [
+          0
+        ],
+        "Avg Damage": [
+          0
+        ],
+        "Dmg Lost": [
+          2763,
+          128754
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/roguetank",
+      "skill_name": "Taunt Pollen",
+      "cooldown_cast_lockout_text": "Cooldown: 5s | Cast: 1s | Lockout: 0.05s",
+      "timing_s": {
+        "cooldown_s": 5.0,
+        "cast_s": 1.0,
+        "lockout_s": 0.05,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Melee Combat",
+        "value": {
+          "base": 2310,
+          "effective": 2310
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Vitality",
+        "value": {
+          "base": 1160,
+          "effective": 2375
+        }
+      },
+      "numeric_metrics": {
+        "Max Damage": 6718,
+        "Base Skill": 6718,
+        "Direct Dmg": 0,
+        "Avg Damage": 5420,
+        "Dmg Lost": 3610
+      },
+      "additional_metric_occurrences": {
+        "Base Skill": [
+          2003
+        ],
+        "Direct Dmg": [
+          0
+        ],
+        "Avg Damage": [
+          1616
+        ],
+        "Dmg Lost": [
+          2901,
+          362120
+        ]
+      },
+      "model_provenance": "single_saved_build_not_engine_coefficients"
+    },
+    {
+      "source_url": "https://the-codex.ch/damagebuilder/roguetank",
+      "skill_name": "Poison Weapon",
+      "cooldown_cast_lockout_text": "Cooldown: 12s | Cast: 2s | Lockout: 0.30s",
+      "timing_s": {
+        "cooldown_s": 12.0,
+        "cast_s": 2.0,
+        "lockout_s": 0.3,
+        "effective_cooldown_s": null
+      },
+      "skill_ability": {
+        "name": "Cunning",
+        "value": {
+          "base": 2310,
+          "effective": 2710
+        }
+      },
+      "scaling_attribute": {
+        "stat": "Dexterity",
+        "value": {
+          "base": 5,
+          "effective": 2450
+        }
+      },
+      "numeric_metrics": {
+        "Avg Damage": 168,
+        "Dmg Lost": 7908,
+        "Max Damage": 213
+      },
+      "additional_metric_occurrences": {
+        "Avg Damage": [
+          50
+        ],
+        "Dmg Lost": [
+          6354
         ]
       },
       "model_provenance": "single_saved_build_not_engine_coefficients"
