@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "policy": "Only exact item IDs with item-specific or family-explicit public release proof can be promoted; extracted loot links alone never prove release.",
+  "as_of": "2026-10-08",
+  "source_note": "Celtic Heroes official 6.11.0 March 11 2026 patch notes explicitly identify live Dhiothu Creidhne-tier weapons and Ashes/Winter/Earth versions; upstream data provides exact knuckleblade IDs.",
+  "records": [
+    {
+      "item_id": 65537,
+      "exact_name": "Creidhne's Knuckleblade of Ashes",
+      "release_status": "released_documented",
+      "evidence_type": "official_patch",
+      "evidence_date": "2026-03-11",
+      "url": "https://www.celtic-heroes.com/news/6110-release-patch-notes-st-patricks-event",
+      "reason": "Official released patch discusses Creidhne-tier Dhiothu weapons with Ashes/Winter/Earth variants, matched to extracted knuckleblade identity and ID.",
+      "scope": "explicit_weapon_family_plus_exact_item_name"
+    },
+    {
+      "item_id": 65538,
+      "exact_name": "Creidhne's Knuckleblade of Winter",
+      "release_status": "released_documented",
+      "evidence_type": "official_patch",
+      "evidence_date": "2026-03-11",
+      "url": "https://www.celtic-heroes.com/news/6110-release-patch-notes-st-patricks-event",
+      "reason": "Official released patch discusses Creidhne-tier Dhiothu weapons with Ashes/Winter/Earth variants, matched to extracted knuckleblade identity and ID.",
+      "scope": "explicit_weapon_family_plus_exact_item_name"
+    },
+    {
+      "item_id": 65539,
+      "exact_name": "Creidhne's Knuckleblade of Earth",
+      "release_status": "released_documented",
+      "evidence_type": "official_patch",
+      "evidence_date": "2026-03-11",
+      "url": "https://www.celtic-heroes.com/news/6110-release-patch-notes-st-patricks-event",
+      "reason": "Official released patch discusses Creidhne-tier Dhiothu weapons with Ashes/Winter/Earth variants, matched to extracted knuckleblade identity and ID.",
+      "scope": "explicit_weapon_family_plus_exact_item_name"
+    }
+  ]
+}
