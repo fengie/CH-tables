@@ -172,7 +172,10 @@ def main() -> None:
     if digest != manifest["generated_files"]["items.jsonl.gz"]["sha256"]:
         raise ValueError("Source item data does not match pinned manifest")
     evidence_content = args.evidence.read_bytes()
-    evidence = json.loads(evidence_content)
+    document = json.loads(evidence_content)
+    if not isinstance(document, dict) or document.get("schema_version") != 1:
+        raise ValueError("Unsupported evidence schema version")
+    evidence = document.get("records")
     entries, summary = classify(list(load_records("items", root=args.data)), evidence)
     summary["upstream_source_commit"] = manifest["upstream_commit"]
     summary["source_item_archive_sha256"] = digest
