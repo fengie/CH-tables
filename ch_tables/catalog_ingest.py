@@ -203,6 +203,8 @@ def main() -> None:
     parser.add_argument("--output", type=Path, default=Path("data/catalog"))
     opts = parser.parse_args()
     assets = {name: download(name)[0] for name in ASSETS}
+    for name, script in assets.items():
+        print(f"input {name}: {len(script)} chars, prefix={script[:160]!r}", flush=True)
     records, manifest = assemble(assets)
     opts.output.mkdir(parents=True, exist_ok=True)
     # Atomic publication for the data file; the manifest is published last.
