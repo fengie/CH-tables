@@ -8,6 +8,7 @@ on:
       - "ch_tables/full_game_ingest.py"
       - "tests/test_full_game_ingest.py"
       - "ch_tables/gear_bonus_index.py"
+      - "ch_tables/game_quality.py"
 
 permissions:
   contents: write
@@ -33,6 +34,10 @@ jobs:
         run: |
           python -m unittest tests.test_gear_bonus_index tests.test_game_query -v
           python -m ch_tables.gear_bonus_index --data data/game
+      - name: Crosscheck item and mob ids and conflicting source records
+        run: |
+          python -m unittest tests.test_game_quality -v
+          python -m ch_tables.game_quality --data data/game
       - name: Verify generated file manifest and all gzip archives
         run: |
           python - <<'PY'
