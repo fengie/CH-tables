@@ -25,6 +25,17 @@ class CatalogReportTests(unittest.TestCase):
                          ["stats"]["pierce"], 200)
         self.assertEqual(schema["numeric_and_categorical_field_counts"]["attack"], 1)
         self.assertEqual(schema["total_items"], 3)
+        self.assertEqual(index["categories"]["knuckleblades"]["entries"][0]
+                         ["release_status"], "unverified")
+        self.assertTrue(index["categories"]["knuckleblades"]["entries"][0]
+                        ["excluded_from_default_bis"])
+        known, _ = summarize_items(data, {
+            "101": {"release_status": "released_documented"},
+        })
+        self.assertFalse(known["categories"]["knuckleblades"]["entries"][0]
+                         ["excluded_from_default_bis"])
+        self.assertEqual(known["categories"]["knuckleblades"]["entries"][0]
+                         ["release_status"], "released_documented")
 
 
 if __name__ == "__main__":
