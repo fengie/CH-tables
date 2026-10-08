@@ -7,6 +7,7 @@ on:
       - ".github/workflows/gear-release-status.yml"
       - "ch_tables/release_status.py"
       - "ch_tables/game_query.py"
+      - "ch_tables/catalog_report.py"
       - "data/release/evidence.json"
 
 permissions:
@@ -29,6 +30,10 @@ jobs:
         run: python -m unittest tests.test_release_status tests.test_game_query -v
       - name: Generate evidence-backed status for every item
         run: python -m ch_tables.release_status --data data/game --evidence data/release/evidence.json
+      - name: Label every priority-gear shortlist entry by release state
+        run: |
+          python -m unittest tests.test_catalog_report -v
+          python -m ch_tables.catalog_report
       - name: Verify complete coverage with no inferred unreleased state
         run: |
           python - <<'PY'
@@ -55,7 +60,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/game/item_release_status.jsonl.gz data/game/release_status_summary.json
+          git add data/game/item_release_status.jsonl.gz data/game/release_status_summary.json data/catalog/priority_gear_lookup.json
           if git diff --cached --quiet; then
             echo "Item status evidence unchanged"
             exit 0
