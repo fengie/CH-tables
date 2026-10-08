@@ -1,6 +1,6 @@
 # CH-tables
 
-> ⏱️ Last README update: **October 8, 2026 · 6:49:00 PM EDT** _(repo-enforced)_
+> ⏱️ Last README update: **October 8, 2026 · 7:02:00 PM EDT** _(repo-enforced)_
 
 Celtic Heroes class/boss data utilities, normalized class samples, and reproducible effective-DPS analysis.
 
@@ -89,6 +89,23 @@ Calibration n:                   3
 ```
 
 Because the calibration sample is small, the code reports its observed min/max range instead of claiming a misleading high-confidence population interval.
+
+## Full extracted public game-data archive
+
+The [complete source-pinned game-data inventory](docs/FULL_GAME_DATA.md)
+is now available for all classes, not just endgame Rogue. It records
+23,752 items, 8,406 detailed combat mobs, 5,484 loot-source mobs,
+322,763 item-drop references, six major questline groups and
+28,290 original item bonus tuples, with cross-dataset hash and ID
+validation. The data does not include unpublished server or client
+coefficients; live availability remains unverified.
+
+Search locally with:
+```powershell
+python -m ch_tables.game_query items "Creidhne's Knuckleblade"
+python -m ch_tables.game_query combat_mobs "Dhiothu"
+python -m ch_tables.game_query questlines
+```
 
 ## Reusable CH mechanics and gear research
 
