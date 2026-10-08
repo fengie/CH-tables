@@ -38,6 +38,10 @@ jobs:
         run: |
           python -m unittest tests.test_game_quality -v
           python -m ch_tables.game_quality --data data/game
+      - name: Rebuild release states against the newly imported item IDs
+        run: |
+          python -m unittest tests.test_release_status -v
+          python -m ch_tables.release_status --data data/game --evidence data/release/evidence.json
       - name: Verify generated file manifest and all gzip archives
         run: |
           python - <<'PY'
