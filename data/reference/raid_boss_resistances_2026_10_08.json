@@ -1,0 +1,338 @@
+{
+  "schema": 1,
+  "as_of": "2026-10-08",
+  "source_url": "https://raw.githubusercontent.com/celtichero2026/CH-Encyclopedia/main/data/mobstats.js",
+  "source_type": "upstream_extracted_game_data_unverified_current_server",
+  "note": "Historical extracted record, not a live boss measurement; negative resistance sentinel values may denote special cases; do not treat these as percent reductions.",
+  "total_records": 71,
+  "bosses": [
+    {
+      "id": 141103,
+      "name": "Bloodthorn the Ravenous",
+      "level": 220,
+      "health": 6500000,
+      "defence": 4750,
+      "attack": 15000,
+      "attackSpeed": 1000,
+      "damage": {
+        "pierce": 0,
+        "slash": 4000,
+        "crush": 0,
+        "heat": 0,
+        "cold": 0,
+        "magic": 4000,
+        "poison": 0,
+        "divine": 0,
+        "chaos": 8000,
+        "true": 800
+      },
+      "resist": {
+        "pierce": 6000,
+        "slash": 6000,
+        "crush": 6000,
+        "heat": 4000,
+        "cold": 4000,
+        "magic": 4000,
+        "poison": 3750,
+        "divine": 200,
+        "chaos": -1,
+        "true": 0
+      },
+      "evasions": {
+        "physical": 3375,
+        "spell": 3375,
+        "movement": 6750,
+        "wounding": 3375,
+        "weakening": 3375,
+        "mental": 3375
+      }
+    },
+    {
+      "id": 141966,
+      "name": "Bloodthorn the Ravenous",
+      "level": 220,
+      "health": 9500000,
+      "defence": 4750,
+      "attack": 15000,
+      "attackSpeed": 1000,
+      "damage": {
+        "pierce": 0,
+        "slash": 4000,
+        "crush": 0,
+        "heat": 0,
+        "cold": 0,
+        "magic": 0,
+        "poison": 5000,
+        "divine": 0,
+        "chaos": 7750,
+        "true": 800
+      },
+      "resist": {
+        "pierce": 6000,
+        "slash": 6000,
+        "crush": 6000,
+        "heat": 3000,
+        "cold": 3000,
+        "magic": 2700,
+        "poison": 1750,
+        "divine": 200,
+        "chaos": -1,
+        "true": 0
+      },
+      "evasions": {
+        "physical": 3750,
+        "spell": 3750,
+        "movement": 20000,
+        "wounding": 3750,
+        "weakening": 3750,
+        "mental": 3750
+      }
+    },
+    {
+      "id": 142027,
+      "name": "Dhiothu",
+      "level": 220,
+      "health": 6000000,
+      "defence": 5000,
+      "attack": 15000,
+      "attackSpeed": 1000,
+      "damage": {
+        "pierce": 0,
+        "slash": 0,
+        "crush": 9500,
+        "heat": 0,
+        "cold": 0,
+        "magic": 10000,
+        "poison": 0,
+        "divine": 10000,
+        "chaos": 0,
+        "true": 1500
+      },
+      "resist": {
+        "pierce": 6000,
+        "slash": 5700,
+        "crush": 5500,
+        "heat": 4000,
+        "cold": 4000,
+        "magic": 2750,
+        "poison": 2000,
+        "divine": -1,
+        "chaos": 0,
+        "true": 0
+      },
+      "evasions": {
+        "physical": 3750,
+        "spell": 3750,
+        "movement": 66000,
+        "wounding": 3750,
+        "weakening": 3750,
+        "mental": 3750
+      }
+    },
+    {
+      "id": 102982,
+      "name": "Gelebron",
+      "level": 220,
+      "health": 6372000,
+      "defence": 4500,
+      "attack": 14450,
+      "attackSpeed": 1000,
+      "damage": {
+        "pierce": 0,
+        "slash": 0,
+        "crush": 4000,
+        "heat": 0,
+        "cold": 0,
+        "magic": 4000,
+        "poison": 0,
+        "divine": 0,
+        "chaos": 8000,
+        "true": 800
+      },
+      "resist": {
+        "pierce": 5500,
+        "slash": 5500,
+        "crush": 5500,
+        "heat": 4500,
+        "cold": 4500,
+        "magic": 4500,
+        "poison": 2000,
+        "divine": 200,
+        "chaos": -1,
+        "true": 0
+      },
+      "evasions": {
+        "physical": 3375,
+        "spell": 3375,
+        "movement": 6750,
+        "wounding": 3375,
+        "weakening": 3375,
+        "mental": 3375
+      }
+    },
+    {
+      "id": 103027,
+      "name": "Proteus Base",
+      "level": 220,
+      "health": 4000000,
+      "defence": 4400,
+      "attack": 8800,
+      "attackSpeed": 1000,
+      "damage": {
+        "pierce": 0,
+        "slash": 0,
+        "crush": 6500,
+        "heat": 0,
+        "cold": 0,
+        "magic": 0,
+        "poison": 0,
+        "divine": 0,
+        "chaos": 6500,
+        "true": 650
+      },
+      "resist": {
+        "pierce": 4000,
+        "slash": 4000,
+        "crush": 4000,
+        "heat": 3600,
+        "cold": 3600,
+        "magic": 3600,
+        "poison": 1645,
+        "divine": 0,
+        "chaos": -1,
+        "true": 0
+      },
+      "evasions": {
+        "physical": 3300,
+        "spell": 3300,
+        "movement": 66000,
+        "wounding": 3300,
+        "weakening": 3300,
+        "mental": 3300
+      }
+    },
+    {
+      "id": 103028,
+      "name": "Proteus Prime",
+      "level": 220,
+      "health": 6000000,
+      "defence": 4400,
+      "attack": 8800,
+      "attackSpeed": 1000,
+      "damage": {
+        "pierce": 0,
+        "slash": 0,
+        "crush": 8000,
+        "heat": 0,
+        "cold": 0,
+        "magic": 0,
+        "poison": 0,
+        "divine": 0,
+        "chaos": 8000,
+        "true": 800
+      },
+      "resist": {
+        "pierce": 4000,
+        "slash": 4000,
+        "crush": 4000,
+        "heat": 3600,
+        "cold": 3600,
+        "magic": 3600,
+        "poison": 1645,
+        "divine": 0,
+        "chaos": -1,
+        "true": 0
+      },
+      "evasions": {
+        "physical": 3300,
+        "spell": 3300,
+        "movement": 66000,
+        "wounding": 3300,
+        "weakening": 3300,
+        "mental": 3300
+      }
+    },
+    {
+      "id": 100002,
+      "name": "Efnisien the Necromancer",
+      "level": 190,
+      "health": 3000000,
+      "defence": 6000,
+      "attack": 8000,
+      "attackSpeed": 1500,
+      "damage": {
+        "pierce": 0,
+        "slash": 2000,
+        "crush": 0,
+        "heat": 0,
+        "cold": 2000,
+        "magic": 0,
+        "poison": 0,
+        "divine": 0,
+        "chaos": 3800,
+        "true": 400
+      },
+      "resist": {
+        "pierce": 5500,
+        "slash": 5500,
+        "crush": 5500,
+        "heat": 4500,
+        "cold": 4500,
+        "magic": 4500,
+        "poison": -1,
+        "divine": 0,
+        "chaos": -1,
+        "true": 0
+      },
+      "evasions": {
+        "physical": 2850,
+        "spell": 2850,
+        "movement": 28500,
+        "wounding": 2850,
+        "weakening": 2850,
+        "mental": 2850
+      }
+    },
+    {
+      "id": 73000,
+      "name": "Mordris",
+      "level": 190,
+      "health": 3000000,
+      "defence": 5000,
+      "attack": 9000,
+      "attackSpeed": 1000,
+      "damage": {
+        "pierce": 2000,
+        "slash": 0,
+        "crush": 0,
+        "heat": 2000,
+        "cold": 0,
+        "magic": 0,
+        "poison": 0,
+        "divine": 0,
+        "chaos": 3800,
+        "true": 400
+      },
+      "resist": {
+        "pierce": 4500,
+        "slash": 4500,
+        "crush": 4500,
+        "heat": 3800,
+        "cold": 3800,
+        "magic": 3800,
+        "poison": 0,
+        "divine": 0,
+        "chaos": -1,
+        "true": 0
+      },
+      "evasions": {
+        "physical": 2850,
+        "spell": 2850,
+        "movement": 38000,
+        "wounding": 2850,
+        "weakening": 2850,
+        "mental": 2850
+      }
+    }
+  ]
+}
