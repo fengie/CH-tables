@@ -78,6 +78,30 @@ def release_index(root: Path) -> dict[str, dict]:
     return out
 
 
+
+def rarity_index(root: Path) -> dict[str, dict]:
+    """Annotate source item rarity without pretending a tier is a drop rate."""
+    summary_path = root / "item_rarity_summary.json"
+    data_path = root / "item_rarity_metadata.jsonl.gz"
+    source = root / "items.jsonl.gz"
+    if not summary_path.exists() or not data_path.exists():
+        return {}
+    summary = json.loads(summary_path.read_text(encoding="utf-8"))
+    if summary.get("source_item_archive_sha256") != hashlib.sha256(source.read_bytes()).hexdigest() or \
+       summary.get("index_sha256") != hashlib.sha256(data_path.read_bytes()).hexdigest():
+        raise ValueError("Stale or altered item rarity index")
+    lookup = {}
+    with gzip.open(data_path, "rt", encoding="utf-8") as fp:
+        for line in fp:
+            if line.strip():
+                rec = json.loads(line)
+                key = str(rec["item_id"])
+                if key in lookup:
+                    raise ValueError("Duplicated rarity metadata ID")
+                lookup[key] = rec
+    return lookup
+
+
 def property_filters(record: dict, klass: str | None,
                      slot: str | None, level_min: int | None) -> bool:
     stats = record.get("stats") if isinstance(record.get("stats"), dict) else {}
@@ -112,6 +136,7 @@ def search(kind: str, text: str = "", *, root: Path = Path("data/game"),
     }:
         raise ValueError("Unknown release status")
     annotations = release_index(root) if kind == "items" else {}
+    rarity = rarity_index(root) if kind == "items" else {}
     query = text.casefold().strip()
     matches: list[dict] = []
     for record in load_records(kind, root=root):
@@ -141,6 +166,11 @@ def search(kind: str, text: str = "", *, root: Path = Path("data/game"),
             )
             record["excluded_from_default_bis"] = label != "released_documented"
             record["release_evidence"] = info["evidence"] if info else []
+            item_rarity = rarity.get(str(record["id"]), {})
+            record["rarity_source_value"] = item_rarity.get("item_rarity_source_value")
+            record["rarity_name_prefix_tier"] = item_rarity.get("name_prefix_tier")
+            record["rarity_status"] = item_rarity.get("rarity_status", "unknown")
+            record["observed_drop_probability"] = None
             record["release_source_signals"] = (
                 info["source_signals"] if info else None
             )
