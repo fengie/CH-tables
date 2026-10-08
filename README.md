@@ -1,6 +1,6 @@
 # CH-tables
 
-> ⏱️ Last README update: **October 8, 2026 · 7:02:00 PM EDT** _(repo-enforced)_
+> ⏱️ Last README update: **October 8, 2026 · 7:13:00 PM EDT** _(repo-enforced)_
 
 Celtic Heroes class/boss data utilities, normalized class samples, and reproducible effective-DPS analysis.
 
@@ -106,6 +106,31 @@ python -m ch_tables.game_query items "Creidhne's Knuckleblade"
 python -m ch_tables.game_query combat_mobs "Dhiothu"
 python -m ch_tables.game_query questlines
 ```
+
+## Released gear vs unreleased database-only entries
+
+The full item archive is intentionally broader than equipment that
+players can actually obtain. The [evidence-backed release-status system](docs/GEAR_RELEASE_STATUS.md)
+separates documented released, historically released, confirmed unreleased,
+and **unverified** items. Reconstructed loot entries and questline links
+do **not** independently prove public release.
+
+At the latest evidence audit: 8 exact items have official family-level
+release documentation; 23,744 are unverified, **not** "unreleased".
+Current farmability/tradability is checked separately.
+
+All item queries and the [priority gear lookup](data/catalog/priority_gear_lookup.json)
+show release flags; only sourced released gear is admitted by default to
+strict BIS comparison:
+
+```powershell
+python -m ch_tables.game_query items "Creidhne's Knuckleblade" --released-only
+python -m ch_tables.game_query items "Knuckleblade" --release-status unverified
+```
+
+Research can still inspect every unverified item without treating development
+records as real-world upgrades. New evidence is validated against exact
+item IDs/names and official source links before the catalog is reclassified.
 
 ## Reusable CH mechanics and gear research
 
