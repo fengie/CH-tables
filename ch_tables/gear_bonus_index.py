@@ -29,7 +29,7 @@ def index_items(items):
         stats = item.get("stats")
         if not isinstance(stats, dict):
             continue
-        stats_keys.update(stats)
+        stats_keys.update(stats.keys())
         for category in CATEGORIES:
             values = stats.get(category, [])
             if values is None:
