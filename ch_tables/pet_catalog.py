@@ -72,7 +72,7 @@ def source_pet_tiers() -> list[PetTier]:
                 species, color, size, level,
                 {a: aa[i], b: bb[i]},
                 SPECIES[species][0],
-                PET_GUIDES[species],
+                PET_GUIDES[species.casefold()],
                 token_cost=32 if i == 5 and color == "Brown" else None,
             ))
     return result
