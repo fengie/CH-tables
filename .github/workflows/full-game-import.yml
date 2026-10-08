@@ -1,0 +1,61 @@
+name: Import full public game data
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/full-game-import.yml"
+      - "ch_tables/full_game_ingest.py"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: full-ch-factual-data-import
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Run offline source schema and preservation tests
+        run: python -m unittest tests.test_full_game_ingest tests.test_catalog_ingest -v
+      - name: Import all publicly source-pinned records
+        run: python -m ch_tables.full_game_ingest --output data/game
+      - name: Verify generated file manifest and all gzip archives
+        run: |
+          python - <<'PY'
+          import gzip, hashlib, json
+          from pathlib import Path
+          p=Path("data/game"); m=json.loads((p/"manifest.json").read_text())
+          for name, meta in m["generated_files"].items():
+              content=(p/name).read_bytes()
+              assert hashlib.sha256(content).hexdigest()==meta["sha256"],name
+              if name.endswith(".gz"):
+                  assert gzip.decompress(content),name
+          assert m["counts"]["items"]>=10000
+          assert m["counts"]["mobs"]>=100
+          assert m["counts"]["combat_mobs"]>=100
+          print("VALIDATED",m["counts"])
+          PY
+      - name: Commit only against unchanged main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/game/
+          if git diff --cached --quiet; then
+            echo "Game dataset already current"
+            exit 0
+          fi
+          git commit -m "data: add complete publicly extracted CH items mobs loot quests and combat"
+          git fetch origin main
+          if [ "$(git rev-parse HEAD^)" != "$(git rev-parse origin/main)" ]; then
+            echo "::error::main advanced; generated dataset staged but not pushed"
+            exit 1
+          fi
+          git push origin HEAD:main
