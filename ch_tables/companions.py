@@ -45,6 +45,8 @@ class PetCandidate:
             raise ValueError("Unknown pet evidence kind")
         if self.measured_marginal_dps is not None and self.evidence_kind == "unmeasured":
             raise ValueError("Numeric pet DPS cannot be labeled unmeasured")
+        if self.evidence_kind in ("observed", "community_model") and not self.evidence_url.startswith("https://"):
+            raise ValueError("Observed pet benefit requires verifiable HTTPS provenance")
 
 
 def pet_shortlist(pets: Iterable[PetCandidate], *,
