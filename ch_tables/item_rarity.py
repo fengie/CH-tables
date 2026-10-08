@@ -66,6 +66,7 @@ def main():
         raise ValueError("Item source integrity mismatch")
     records, summary = create_metadata(list(load_records("items", root=args.data)))
     summary["source_commit"] = manifest["upstream_commit"]
+    summary["source_item_archive_sha256"] = manifest["generated_files"]["items.jsonl.gz"]["sha256"]
     body = gzip_deterministic(jsonl_bytes(records))
     summary["index_sha256"] = hashlib.sha256(body).hexdigest()
     output = {
