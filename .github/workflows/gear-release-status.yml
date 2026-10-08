@@ -39,8 +39,12 @@ jobs:
           r=json.loads((p/"release_status_summary.json").read_text())
           assert r["source_items"]==meta["counts"]["items"]
           assert sum(r["status_counts"].values())==r["source_items"]
-          assert r["status_counts"].get("confirmed_unreleased",0)==0, "No confirmed negative evidence yet"
-          assert r["status_counts"].get("released_documented",0)==3, "Verify exact family item evidence"
+          from collections import Counter
+          e=json.loads(Path("data/release/evidence.json").read_text())
+          expected=Counter(row["release_status"] for row in e["records"])
+          for status,n in expected.items():
+              assert r["status_counts"].get(status,0)==n,(status,n,r["status_counts"])
+          assert r["status_counts"].get("unverified",0)==r["source_items"]-len(e["records"])
           rows=[json.loads(x) for x in gzip.open(p/"item_release_status.jsonl.gz","rt")]
           assert len(rows)==r["source_items"]
           assert len({x["item_id"] for x in rows})==len(rows)
