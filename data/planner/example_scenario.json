@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "scenario_status": "synthetic_demo",
+  "name": "DEMO ONLY — numeric values are invented fixtures, NOT Celtic Heroes stats",
+  "preferences": {
+    "level": 30,
+    "skill_points_available": 5,
+    "skill_rank_cap_override": 15,
+    "max_swaps_per_skill": 3,
+    "per_skill_swap_limit": {
+      "Example Strike": 2,
+      "Example Dot": 1
+    },
+    "unique_swap_item_limit": 5,
+    "total_gold_budget": 200000,
+    "baseline_auto_dps": 150,
+    "manual_action_penalty_dps": 0.05,
+    "auto_loss_fraction": 1,
+    "max_occupation_fraction": 0.8
+  },
+  "effort_budget": {
+    "world": "DEMO_WORLD",
+    "gold": 200000,
+    "maximum_boss_kills": 20,
+    "minimum_success_chance": 0.6,
+    "acquisition_mode": "any",
+    "include_unknown_rng": false,
+    "include_unknown_market": false
+  },
+  "skills": [
+    {
+      "name": "Example Strike",
+      "role": "damage",
+      "ranks": {
+        "1": {
+          "expected_damage": 500,
+          "cooldown_s": 10,
+          "occupied_s": 0.1,
+          "evidence_kind": "user_estimate"
+        },
+        "2": {
+          "expected_damage": 950,
+          "cooldown_s": 10,
+          "occupied_s": 0.1,
+          "evidence_kind": "user_estimate"
+        },
+        "3": {
+          "expected_damage": 1450,
+          "cooldown_s": 10,
+          "occupied_s": 0.1,
+          "evidence_kind": "user_estimate"
+        }
+      }
+    },
+    {
+      "name": "Example Dot",
+      "role": "damage",
+      "ranks": {
+        "1": {
+          "expected_damage": 350,
+          "cooldown_s": 16,
+          "occupied_s": 1.2,
+          "evidence_kind": "user_estimate"
+        },
+        "2": {
+          "expected_damage": 750,
+          "cooldown_s": 16,
+          "occupied_s": 1.2,
+          "evidence_kind": "user_estimate"
+        },
+        "3": {
+          "expected_damage": 1150,
+          "cooldown_s": 16,
+          "occupied_s": 1.2,
+          "evidence_kind": "user_estimate"
+        }
+      }
+    }
+  ],
+  "swaps_by_skill": {}
+}
