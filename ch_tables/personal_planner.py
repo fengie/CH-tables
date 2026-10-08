@@ -15,6 +15,7 @@ import json
 from pathlib import Path
 
 from .build_planner import load_scenario, compare_playstyles
+from .companions import PetCandidate, pet_shortlist
 from .economy import EffortBudget, feasible_acquisition
 from .game_query import load_records, release_index
 
@@ -114,18 +115,41 @@ def run_scenario(document: dict, *, data_dir: Path = Path("data/game"),
     items = {str(row["id"]): row
              for row in load_records("items", root=data_dir)}
     market = json.loads(economy_file.read_text()) if economy_file.exists() else {}
+    status = release_index(data_dir)
     filtered, rejected = apply_acquisition_filters(
         swaps_by_skill, item_catalog=items,
-        status_index=release_index(data_dir),
-        market=market, budget=effort,
+        status_index=status, market=market, budget=effort,
     )
     result = compare_playstyles(skills, filtered, pref)
+    pet_report = None
+    if document.get("pet_candidates") is not None:
+        candidates = []
+        for source in document["pet_candidates"]:
+            proposed = PetCandidate(**source)
+            if proposed.item_id is not None:
+                item_id = str(proposed.item_id)
+                if item_id not in items:
+                    raise ValueError("Companion item ID missing from pinned game archive")
+                proposed = replace(
+                    proposed, release_status=status.get(item_id, {}).get(
+                        "release_status", "unverified"),
+                )
+            candidates.append(proposed)
+        pet_report = pet_shortlist(
+            candidates, character_level=pref.level, effort=effort,
+            owned_pet_tokens=document.get("owned_pet_tokens"),
+            world_sale_prices=price_map(market, effort.world),
+            item_drop_rates=drop_map(market, effort.world),
+            qol_cost_per_action=pref.manual_action_penalty_dps,
+            healing_value_per_hp=pref.healing_value_per_hp,
+        )
     return {
         "scenario_name": document.get("name", "Untitled"),
         "scenario_status": document["scenario_status"],
         "world": effort.world,
         "effort_budget": document["effort_budget"],
         "builds": result,
+        "pet_comparison": pet_report,
         "swap_candidates_rejected": rejected,
         "warnings": [
             "No inferred skill rank-damage curves: each rank must carry evidence.",
@@ -133,6 +157,7 @@ def run_scenario(document: dict, *, data_dir: Path = Path("data/game"),
             "Unverified gear can be used ONLY if user owns it and explicitly opts in.",
             "No fresh completed world sales or drop trials means cost/RNG are unknown.",
             "Pets must be compared with measured pet skill damage and stat effects.",
+            "Pet and skill-swap budgets are screened separately; a joint gear/pet optimizer is not yet verified.",
         ],
     }
 
