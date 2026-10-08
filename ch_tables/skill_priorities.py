@@ -15,8 +15,25 @@ import math
 from pathlib import Path
 
 
+# Role exclusions are deliberately conservative: a tooltip "Avg Damage"
+# next to a debuff is not proof that the debuff directly deals that damage.
+# Such effects require team-rotation evaluation, not damage/cooldown ranking.
+SUPPORT_OR_MAINTENANCE_SKILLS = frozenset({
+    "Expose Weakness", "Smoke Bomb", "Poison Weapon", "Fast Reflexes",
+    "Steady Aim", "Sharpen Weapons", "Bolas", "Rapid Shot",
+    "Defensive Spikes", "Bark", "Shield of Bark", "Bless",
+    "Frenzy", "Warcry", "Taunt", "Distract", "Play Dead",
+    "Hide", "Conceal", "Camouflage", "Camo", "Shield Wall",
+    "Nature's Embrace", "Nature's Touch", "Abundance", "Energy Well",
+    "Ice Attunement", "Fire Attunement", "Energy Shield", "Energy Boost",
+    "Lure of Ice", "Lure of Fire", "Lure of Assassins", "Lure of Soldiers",
+    "Lure of Giants", "Lure of Magic",
+})
+
+
 def snapshot_comparison(observations: list[dict]) -> dict:
     buckets = defaultdict(list)
+    non_direct = defaultdict(list)
     for observation in observations:
         if not observation.get("source_url") or not observation.get("skill_name"):
             continue
@@ -49,13 +66,22 @@ def snapshot_comparison(observations: list[dict]) -> dict:
             "evidence_kind": "single_saved_build_model",
             "strictly_comparable_to_other_characters": False,
         }
-        buckets[observation["source_url"]].append(entry)
+        if observation["skill_name"] in SUPPORT_OR_MAINTENANCE_SKILLS:
+            # Do NOT show an unverified direct-damage rank for this skill.
+            entry["rankable_direct_damage"] = False
+            entry["reason"] = "Support/buff skill: damage field may be inherited or indirect"
+            non_direct[observation["source_url"]].append(entry)
+        else:
+            entry["rankable_direct_damage"] = True
+            buckets[observation["source_url"]].append(entry)
     ranking = {}
-    for source, skills in sorted(buckets.items()):
+    for source in sorted(set(buckets) | set(non_direct)):
+        skills = buckets[source]
         skills.sort(key=lambda x: -x["gross_damage_per_cooldown_s"])
         ranking[source] = {
             "sample_size": len(skills),
             "by_gross_damage_cooldown": skills,
+            "support_and_maintenance_not_ranked": non_direct[source],
             "limitations": [
                 "A skill's gross damage divided by cooldown is NOT rotation DPS.",
                 "A skill may occupy cast time or interrupt autos or other skills.",
