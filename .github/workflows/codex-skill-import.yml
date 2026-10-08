@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - ".github/workflows/codex-skill-import.yml"
+      - "ch_tables/codex_skill_ingest.py"
 
 permissions:
   contents: write
