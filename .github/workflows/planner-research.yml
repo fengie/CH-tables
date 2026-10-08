@@ -8,6 +8,8 @@ on:
       - "ch_tables/pet_catalog.py"
       - "ch_tables/skill_priorities.py"
       - "ch_tables/market_import.py"
+      - "ch_tables/item_rarity.py"
+      - "ch_tables/game_query.py"
       - "data/community/prices.csv"
       - "data/community/drops.csv"
 
@@ -30,6 +32,10 @@ jobs:
       - name: Verify modeling and ingestion tests
         run: |
           python -m unittest tests.test_build_planner tests.test_economy tests.test_market_import tests.test_pet_catalog tests.test_skill_priorities tests.test_personal_planner -v
+      - name: Index item name tiers separately from drop probability
+        run: |
+          python -m unittest tests.test_item_rarity -v
+          python -m ch_tables.item_rarity --data data/game
       - name: Index source-backed companion gear and dated pet tiers
         run: python -m ch_tables.pet_catalog --data data/game --output data/pets
       - name: Rank the original saved-build skill observations
@@ -49,6 +55,9 @@ jobs:
           assert len(pets["measured_tiers"])>=18
           assert rankings["published_saved_builds"]>=8
           assert market["prices_submitted"]>=0
+          rarity=json.loads(Path("data/game/item_rarity_summary.json").read_text())
+          assert rarity["source_items"]==23752
+          assert rarity["drop_chances_populated"]==0
           print("PET SPECIES",len(pets["public_pet_species"]))
           print("PUBLISHED SKILL BUILDS",rankings["published_saved_builds"])
           print("REAL WORLD PRICES",market["prices_submitted"])
@@ -57,7 +66,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/pets data/planner/skill_snapshot_rankings.json data/community/market_summary.json
+          git add data/pets data/planner/skill_snapshot_rankings.json data/community/market_summary.json data/game/item_rarity_summary.json data/game/item_rarity_metadata.jsonl.gz
           if git diff --cached --quiet; then
             echo "Evidence-based planner data unchanged"
             exit 0
