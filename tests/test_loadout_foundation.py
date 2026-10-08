@@ -7,8 +7,10 @@ from ch_tables.loadout_foundation import (
 
 
 def item(id, slot, role, values=(0, 0, 0, 0, 0, 0), **kw):
+    kw.setdefault("class_scope", "restricted" if kw.get("classes") else "all")
     return Gear(str(id), slot, role, values, unknown_effects=False,
-                released_documented=True, cost_gold=100, **kw)
+                released_documented=True, cost_gold=100,
+                metric_basis="synthetic_fixture_v1", **kw)
 
 
 class LoadoutTests(unittest.TestCase):
@@ -52,16 +54,32 @@ class LoadoutTests(unittest.TestCase):
                      set_family="dochgul")
         hidden = Gear("hidden", "torso", "armor", (0, 0, 0, 0, 0, 0),
                       released_documented=True, cost_gold=100,
-                      unknown_effects=True)
+                      unknown_effects=True, class_scope="all")
         self.assertFalse(can_safely_dominate(known, extra))
         self.assertFalse(can_safely_dominate(known, hidden))
         self.assertEqual(len(safe_prefilter([known, extra, hidden], self.ctx)[0]), 3)
 
+    def test_incomparable_measurement_scenarios_cannot_prune(self):
+        exact = item("exact", "head", "armor", (100, 100, 100, 0, 0, 0))
+        from dataclasses import replace
+        other = replace(exact, item_id="other", metric_basis="different_patch")
+        self.assertFalse(can_safely_dominate(exact, other))
+        out, _ = safe_prefilter([exact, other], self.ctx)
+        self.assertEqual(len(out), 2)
+
+    def test_duplicate_item_id_fails_closed(self):
+        dup = item("duplicate", "head", "armor")
+        with self.assertRaisesRegex(ValueError, "Duplicate item"):
+            safe_prefilter([dup, dup], self.ctx)
+
     def test_rarity_unreleased_level_class_eligibility(self):
         blocked = Gear("test", "head", "armor", (100, 0, 0, 0, 0, 0))
         self.assertFalse(permitted(blocked, self.ctx))
-        self.assertTrue(permitted(Gear("owned", "head", "armor",
+        self.assertFalse(permitted(Gear("owned", "head", "armor",
                                       (0, 0, 0, 0, 0, 0), owned=True), self.ctx))
+        self.assertTrue(permitted(Gear("owned_ok", "head", "armor",
+                                      (0, 0, 0, 0, 0, 0), owned=True,
+                                      class_scope="all"), self.ctx))
         high = item("lvl", "head", "armor", min_level=240)
         self.assertFalse(permitted(high, self.ctx))
         classlocked = item("mage", "head", "armor", classes=frozenset({"Mage"}))

@@ -30,6 +30,8 @@ class EquipmentCandidate:
     cost_gold: int | None = None
     min_level: int = 1
     classes: frozenset[str] = frozenset()
+    class_scope: str = "unknown"  # unknown, all, restricted
+    metric_basis: str = ""  # exact observation/calibration scenario identity
     set_family: str | None = None
     skill_bonus_levels: tuple[tuple[str, int], ...] = ()
     mechanics: frozenset[str] = frozenset()
@@ -42,6 +44,12 @@ class EquipmentCandidate:
     def __post_init__(self):
         if not self.item_id or self.slot not in SLOTS:
             raise ValueError("Exact item ID and supported canonical slot required")
+        if self.class_scope not in ("unknown", "all", "restricted"):
+            raise ValueError("Invalid class eligibility evidence")
+        if self.class_scope == "restricted" and not self.classes:
+            raise ValueError("Restricted class rule needs class names")
+        if self.class_scope == "all" and self.classes:
+            raise ValueError("Unrestricted class rule cannot have a class whitelist")
         if self.min_level < 1 or self.cost_gold is not None and self.cost_gold < 0:
             raise ValueError("Invalid level or price")
         if len(self.metrics) != len(METRICS) or any(
@@ -80,7 +88,9 @@ class BuildContext:
 def permitted(item: EquipmentCandidate, context: BuildContext) -> bool:
     if item.min_level > context.level:
         return False
-    if item.classes and context.player_class not in item.classes:
+    if item.class_scope == "unknown":
+        return False
+    if item.class_scope == "restricted" and context.player_class not in item.classes:
         return False
     if not item.released_documented and not (
         item.owned and context.include_owned_unverified
@@ -114,8 +124,11 @@ def can_safely_dominate(a: EquipmentCandidate, b: EquipmentCandidate) -> bool:
         return False
     if a.unknown_effects or b.unknown_effects:
         return False
+    if not a.metric_basis or not b.metric_basis or a.metric_basis != b.metric_basis:
+        return False
     if (
-        a.classes != b.classes or a.set_family != b.set_family or
+        a.classes != b.classes or a.class_scope != b.class_scope or
+        a.set_family != b.set_family or
         a.skill_bonus_levels != b.skill_bonus_levels or
         a.mechanics != b.mechanics or a.weapon_family != b.weapon_family or
         a.in_combat_effect_verified != b.in_combat_effect_verified or
@@ -143,11 +156,15 @@ def safe_prefilter(items: Iterable[EquipmentCandidate],
     Never constructs full equipment permutations. A later integer/CP solver
     explores the survivors with cross-slot interactions preserved.
     """
-    eligible = [x for x in items if permitted(x, context)]
+    candidates = list(items)
+    if len({x.item_id for x in candidates}) != len(candidates):
+        raise ValueError("Duplicate item IDs in one candidate catalog")
+    eligible = [x for x in candidates if permitted(x, context)]
     groups: dict[tuple, list[EquipmentCandidate]] = {}
     for item in eligible:
         key = (
-            item.slot, item.role, item.classes, item.set_family,
+            item.slot, item.role, item.classes, item.class_scope,
+            item.metric_basis, item.set_family,
             item.skill_bonus_levels, item.mechanics, item.weapon_family,
             item.in_combat_effect_verified, item.released_documented, item.owned,
         )
@@ -165,7 +182,7 @@ def safe_prefilter(items: Iterable[EquipmentCandidate],
             else:
                 survivors.append(item)
     return survivors, {
-        "input_count": len(list(items)) if isinstance(items, (list, tuple)) else None,
+        "input_count": len(candidates),
         "eligible_count": len(eligible),
         "retained_count": len(survivors),
         "proven_conditional_dominance": rejected,
