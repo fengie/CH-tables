@@ -10,6 +10,8 @@ import argparse
 import json
 from pathlib import Path
 
+from .game_query import release_index
+
 
 CATEGORIES = {
     "knuckleblades": ("knuckle", "fist"),
@@ -26,7 +28,9 @@ CATEGORIES = {
 SHORTLIST_LIMIT = 120
 
 
-def summarize_items(items: list[dict]) -> tuple[dict, dict]:
+def summarize_items(items: list[dict],
+                    release_lookup: dict[str, dict] | None = None) -> tuple[dict, dict]:
+    release_lookup = release_lookup or {}
     index = {
         "schema_version": 1,
         "method": "case_insensitive_name_search_not_BIS_ranking",
@@ -42,7 +46,13 @@ def summarize_items(items: list[dict]) -> tuple[dict, dict]:
             "count": len(matches),
             "truncated": len(matches) > SHORTLIST_LIMIT,
             "entries": [
-                {k: i.get(k) for k in ("id", "name", "level", "class", "slot", "stats")}
+                {
+                    **{k: i.get(k) for k in ("id", "name", "level", "class", "slot", "stats")},
+                    "release_status": release_lookup.get(str(i["id"]), {}).get(
+                        "release_status", "unverified"),
+                    "excluded_from_default_bis": release_lookup.get(
+                        str(i["id"]), {}).get("release_status") != "released_documented",
+                }
                 for i in matches[:SHORTLIST_LIMIT]
             ]
         }
@@ -76,7 +86,7 @@ def main() -> None:
                         default=Path("data/catalog/rogue_endgame_items.json"))
     opts = parser.parse_args()
     items = json.loads(opts.catalog.read_text(encoding="utf-8"))
-    index, schema = summarize_items(items)
+    index, schema = summarize_items(items, release_index(Path("data/game")))
     out = opts.catalog.parent
     for filename, payload in (
         ("priority_gear_lookup.json", index),
