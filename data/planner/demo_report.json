@@ -1,0 +1,169 @@
+{
+  "scenario_name": "DEMO ONLY — numeric values are invented fixtures, NOT Celtic Heroes stats",
+  "scenario_status": "synthetic_demo",
+  "world": "DEMO_WORLD",
+  "effort_budget": {
+    "world": "DEMO_WORLD",
+    "gold": 200000,
+    "maximum_boss_kills": 20,
+    "minimum_success_chance": 0.6,
+    "acquisition_mode": "any",
+    "include_unknown_rng": false,
+    "include_unknown_market": false
+  },
+  "builds": {
+    "character_level": 30,
+    "base_skill_cap": 15,
+    "point_budget": 5,
+    "historical_cap_source": "https://forum.celtic-heroes.com/forum/viewtopic.php?p=93058",
+    "points_source": "https://celtic-heroes.fandom.com/wiki/Character",
+    "results": {
+      "no_swaps": {
+        "allocated_skill_points": 5,
+        "available_skill_points": 5,
+        "estimated_dps": 329.125,
+        "estimated_healing_per_second": 0.0,
+        "manual_actions_per_min": 9.75,
+        "estimated_skill_time_occupancy": 0.085,
+        "utility": 328.637,
+        "unique_swap_item_ids": [],
+        "total_acquisition_gold": 0,
+        "warning": "Rank-specific inputs are observations/estimates, not validated game coefficients. Additive cooldown DPS is a screening model, not a simulation of GCD, simultaneous cooldown contention, DoT overlap, resistances, player movement or buff uptime.",
+        "skills": [
+          {
+            "skill": "Example Strike",
+            "points": 3,
+            "effective_rank": 3,
+            "dps_gain_vs_auto": 143.5,
+            "hps": 0.0,
+            "swaps": [],
+            "actions_per_min": 6.0,
+            "evidence_kind": "user_estimate"
+          },
+          {
+            "skill": "Example Dot",
+            "points": 2,
+            "effective_rank": 2,
+            "dps_gain_vs_auto": 35.625,
+            "hps": 0.0,
+            "swaps": [],
+            "actions_per_min": 3.75,
+            "evidence_kind": "user_estimate"
+          }
+        ]
+      },
+      "casual_one_swap": {
+        "allocated_skill_points": 5,
+        "available_skill_points": 5,
+        "estimated_dps": 329.125,
+        "estimated_healing_per_second": 0.0,
+        "manual_actions_per_min": 9.75,
+        "estimated_skill_time_occupancy": 0.085,
+        "utility": 328.637,
+        "unique_swap_item_ids": [],
+        "total_acquisition_gold": 0,
+        "warning": "Rank-specific inputs are observations/estimates, not validated game coefficients. Additive cooldown DPS is a screening model, not a simulation of GCD, simultaneous cooldown contention, DoT overlap, resistances, player movement or buff uptime.",
+        "skills": [
+          {
+            "skill": "Example Strike",
+            "points": 3,
+            "effective_rank": 3,
+            "dps_gain_vs_auto": 143.5,
+            "hps": 0.0,
+            "swaps": [],
+            "actions_per_min": 6.0,
+            "evidence_kind": "user_estimate"
+          },
+          {
+            "skill": "Example Dot",
+            "points": 2,
+            "effective_rank": 2,
+            "dps_gain_vs_auto": 35.625,
+            "hps": 0.0,
+            "swaps": [],
+            "actions_per_min": 3.75,
+            "evidence_kind": "user_estimate"
+          }
+        ]
+      },
+      "balanced_two_swaps": {
+        "allocated_skill_points": 5,
+        "available_skill_points": 5,
+        "estimated_dps": 329.125,
+        "estimated_healing_per_second": 0.0,
+        "manual_actions_per_min": 9.75,
+        "estimated_skill_time_occupancy": 0.085,
+        "utility": 328.345,
+        "unique_swap_item_ids": [],
+        "total_acquisition_gold": 0,
+        "warning": "Rank-specific inputs are observations/estimates, not validated game coefficients. Additive cooldown DPS is a screening model, not a simulation of GCD, simultaneous cooldown contention, DoT overlap, resistances, player movement or buff uptime.",
+        "skills": [
+          {
+            "skill": "Example Strike",
+            "points": 3,
+            "effective_rank": 3,
+            "dps_gain_vs_auto": 143.5,
+            "hps": 0.0,
+            "swaps": [],
+            "actions_per_min": 6.0,
+            "evidence_kind": "user_estimate"
+          },
+          {
+            "skill": "Example Dot",
+            "points": 2,
+            "effective_rank": 2,
+            "dps_gain_vs_auto": 35.625,
+            "hps": 0.0,
+            "swaps": [],
+            "actions_per_min": 3.75,
+            "evidence_kind": "user_estimate"
+          }
+        ]
+      },
+      "competitive_three_swaps": {
+        "allocated_skill_points": 5,
+        "available_skill_points": 5,
+        "estimated_dps": 329.125,
+        "estimated_healing_per_second": 0.0,
+        "manual_actions_per_min": 9.75,
+        "estimated_skill_time_occupancy": 0.085,
+        "utility": 328.637,
+        "unique_swap_item_ids": [],
+        "total_acquisition_gold": 0,
+        "warning": "Rank-specific inputs are observations/estimates, not validated game coefficients. Additive cooldown DPS is a screening model, not a simulation of GCD, simultaneous cooldown contention, DoT overlap, resistances, player movement or buff uptime.",
+        "skills": [
+          {
+            "skill": "Example Strike",
+            "points": 3,
+            "effective_rank": 3,
+            "dps_gain_vs_auto": 143.5,
+            "hps": 0.0,
+            "swaps": [],
+            "actions_per_min": 6.0,
+            "evidence_kind": "user_estimate"
+          },
+          {
+            "skill": "Example Dot",
+            "points": 2,
+            "effective_rank": 2,
+            "dps_gain_vs_auto": 35.625,
+            "hps": 0.0,
+            "swaps": [],
+            "actions_per_min": 3.75,
+            "evidence_kind": "user_estimate"
+          }
+        ]
+      }
+    }
+  },
+  "pet_comparison": null,
+  "swap_candidates_rejected": [],
+  "warnings": [
+    "No inferred skill rank-damage curves: each rank must carry evidence.",
+    "Do not treat the DP screening model as validated real-time rotation DPS.",
+    "Unverified gear can be used ONLY if user owns it and explicitly opts in.",
+    "No fresh completed world sales or drop trials means cost/RNG are unknown.",
+    "Pets must be compared with measured pet skill damage and stat effects.",
+    "Pet and skill-swap budgets are screened separately; a joint gear/pet optimizer is not yet verified."
+  ]
+}
