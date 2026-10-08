@@ -78,12 +78,19 @@ def snapshot_comparison(observations: list[dict]) -> dict:
     for source in sorted(set(buckets) | set(non_direct)):
         skills = buckets[source]
         skills.sort(key=lambda x: -x["gross_damage_per_cooldown_s"])
+        net_ranked = sorted(
+            (row for row in skills if
+             row["codex_net_after_reported_lost_auto"] is not None),
+            key=lambda x: -x["codex_net_after_reported_lost_auto"],
+        )
         ranking[source] = {
             "sample_size": len(skills),
             "by_gross_damage_cooldown": skills,
+            "by_source_modeled_net_after_auto_loss": net_ranked,
             "support_and_maintenance_not_ranked": non_direct[source],
             "limitations": [
-                "A skill's gross damage divided by cooldown is NOT rotation DPS.",
+                "A skill\'s gross damage divided by cooldown is NOT rotation DPS.",
+                "Source-modeled net DPS is a screening index, not practical rotation DPS.",
                 "A skill may occupy cast time or interrupt autos or other skills.",
                 "DoT double-counting, overlap, and support/debuff value are not modeled.",
                 "Different builds contain incompatible stats, buffs and gear swaps.",
