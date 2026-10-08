@@ -24,6 +24,18 @@ class SkillPrioritiesTests(unittest.TestCase):
         self.assertIsNone(x[1]["codex_net_after_reported_lost_auto"])
         self.assertFalse(x[0]["strictly_comparable_to_other_characters"])
 
+    def test_expose_and_smoke_are_not_mislabeled_damage_skills(self):
+        test = [
+            {"source_url": "https://example.org/rogue", "skill_name": name,
+             "timing_s": {"cooldown_s": 10},
+             "numeric_metrics": {"Avg Damage": 99999, "Dmg Lost": 100}}
+            for name in ("Expose Weakness", "Smoke Bomb", "Quick Strike")
+        ]
+        data = snapshot_comparison(test)["https://example.org/rogue"]
+        self.assertEqual([x["skill"] for x in data["by_gross_damage_cooldown"]],
+                         ["Quick Strike"])
+        self.assertEqual(len(data["support_and_maintenance_not_ranked"]), 2)
+
     def test_does_not_make_false_dps_from_invalid_cooldown(self):
         result = snapshot_comparison([{"source_url": "x", "skill_name": "A",
                                        "timing_s": {"cooldown_s": 0},
