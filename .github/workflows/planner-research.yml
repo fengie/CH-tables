@@ -42,6 +42,8 @@ jobs:
         run: python -m ch_tables.skill_priorities
       - name: Audit per-world price and RNG submissions
         run: python -m ch_tables.market_import --game data/game --input data/community --output data/community
+      - name: Execute transparent synthetic personal scenario
+        run: python -m ch_tables.personal_planner --scenario data/planner/example_scenario.json > data/planner/demo_report.json
       - name: Verify outputs are internally consistent
         run: |
           python - <<'PY'
@@ -58,6 +60,10 @@ jobs:
           rarity=json.loads(Path("data/game/item_rarity_summary.json").read_text())
           assert rarity["source_items"]==23752
           assert rarity["drop_chances_populated"]==0
+          demo=json.loads(Path("data/planner/demo_report.json").read_text())
+          assert demo["scenario_status"]=="synthetic_demo"
+          assert demo["builds"]["point_budget"]==5
+          assert len(demo["builds"]["results"])==4
           print("PET SPECIES",len(pets["public_pet_species"]))
           print("PUBLISHED SKILL BUILDS",rankings["published_saved_builds"])
           print("REAL WORLD PRICES",market["prices_submitted"])
@@ -66,7 +72,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/pets data/planner/skill_snapshot_rankings.json data/community/market_summary.json data/game/item_rarity_summary.json data/game/item_rarity_metadata.jsonl.gz
+          git add data/pets data/planner/skill_snapshot_rankings.json data/planner/demo_report.json data/community/market_summary.json data/game/item_rarity_summary.json data/game/item_rarity_metadata.jsonl.gz
           if git diff --cached --quiet; then
             echo "Evidence-based planner data unchanged"
             exit 0
