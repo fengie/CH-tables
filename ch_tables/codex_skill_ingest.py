@@ -25,6 +25,10 @@ SOURCE_URLS = (
     "https://the-codex.ch/damagebuilder/draga",
     "https://the-codex.ch/damagebuilder/yuhhh",
     "https://the-codex.ch/damagebuilder/gwyn-shields-dps",
+    "https://the-codex.ch/damagebuilder/druid-ox",
+    "https://the-codex.ch/damagebuilder/doc",
+    "https://the-codex.ch/damagebuilder/sage",
+    "https://the-codex.ch/damagebuilder/roguetank",
 )
 KNOWN_ABILITIES = (
     "Cunning", "Melee Combat", "Ranged Combat", "Nature Magic",
