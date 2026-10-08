@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "source_repository": "celtichero2026/CH-Encyclopedia",
+  "source_commit": "fb6d99ba035dd28e5df08e6303f653da0de9a024",
+  "sources": [
+    {
+      "path": "data/base.js",
+      "url": "https://raw.githubusercontent.com/celtichero2026/CH-Encyclopedia/fb6d99ba035dd28e5df08e6303f653da0de9a024/data/base.js",
+      "sha256_text": "931f4d4617f785344fe41ecd0f9c5938b9138b126bdd22750681bb6c264c4bfa",
+      "items_parsed": 0
+    },
+    {
+      "path": "data/items-01.js",
+      "url": "https://raw.githubusercontent.com/celtichero2026/CH-Encyclopedia/fb6d99ba035dd28e5df08e6303f653da0de9a024/data/items-01.js",
+      "sha256_text": "839002a4052f90ab725dcbe13526804aaa34919058ad5cc153994d84d9232ea4",
+      "items_parsed": 17152
+    },
+    {
+      "path": "data/items-02.js",
+      "url": "https://raw.githubusercontent.com/celtichero2026/CH-Encyclopedia/fb6d99ba035dd28e5df08e6303f653da0de9a024/data/items-02.js",
+      "sha256_text": "615675c9f39bd2f7b3f1fc9aaa7b5740359fd00254d05089d390d51efc3d5f44",
+      "items_parsed": 6600
+    }
+  ],
+  "policy": "public-data-only_no_upstream_JS_execution",
+  "total_unique_items": 23752,
+  "selected_relevant_items": 3203,
+  "known_terms_found": {
+    "knuckle": 91,
+    "blight": 96,
+    "ferocity": 23,
+    "doch gul": 35,
+    "valley": 0,
+    "proteus": 0,
+    "concealment": 5
+  },
+  "missing_terms": [
+    "valley",
+    "proteus"
+  ],
+  "catalog_sha256": "ee5a0c126194a4112844a984ff331abc04f6ba7afafa05ac82d06da151ea46e1"
+}
