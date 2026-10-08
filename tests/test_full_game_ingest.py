@@ -33,12 +33,14 @@ def fixture():
          "stats": {"attributes": [["Strength", 320]],
                    "abilities": [["Hand to Hand", 1200]]}},
         {"id": 101, "name": "Royal Ring", "mobs": [4],
-         "stats": {"slot": "Ring", "levelReq": 220}},
+         "stats": {"slot": "Ring", "levelReq": 220, "defence": 999, "attack": 4321, "resists": [["Heat", 400], ["Cold", 300]]}},
     ]
     combat = [
         {"id": 4, "name": "Sample Dhiothu", "health": 2000,
-         "resist": {"heat": 4000}},
-        {"id": 5, "name": "Test Mob", "health": 1000},
+         "resist": {"heat": 4000, "cold": 3000, "magic": 2500},
+         "evasions": {"movement": 4000, "physical": 3300}, "attack": 2100},
+        {"id": 5, "name": "Test Mob", "health": 1000, "attack": 1900,
+         "defence": 500, "resist": {"heat": 350, "cold": 250, "poison": 200}},
     ]
     return {
         "data/base.js": asset("window.LOOT_DATA=" + json.dumps(root)),
