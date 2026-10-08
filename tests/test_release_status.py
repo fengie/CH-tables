@@ -84,6 +84,17 @@ class ReleaseStatusTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "not found"):
             classify(example(), [{**official(), "item_id": 9876543}])
 
+    def test_fake_official_domain_cannot_confirm_release(self):
+        fake = {**official(), "url": "https://celtic-heroes.com.evil.example/patch"}
+        with self.assertRaisesRegex(ValueError, "official Celtic Heroes domain"):
+            classify(example(), [fake])
+        fake = {**official(), "url": "https://arbitrary-website.example/claim",
+                "item_id": 99, "exact_name": "Prototype Blade",
+                "release_status": "confirmed_unreleased",
+                "evidence_type": "developer_confirmation"}
+        with self.assertRaisesRegex(ValueError, "official Celtic Heroes domain"):
+            classify(example(), [fake])
+
     def test_date_and_link_required(self):
         with self.assertRaisesRegex(ValueError, "URL"):
             classify(example(), [{**official(), "url": "http://example.org"}])
