@@ -31,3 +31,38 @@ This file is the repository's durable current-work ledger. It follows the cross-
 **Execution-path note:** the current ChatGPT session exposes the canonical Toolbox skills and authenticated GitHub mutation surface but no callable Heaven/Agent Control local-runtime namespace, so the mandatory local offload lane could not be exercised. Exact candidate GitHub CI is the mechanical verification path.
 
 **Next action:** none for DATA-002; future schema changes must update parser fixtures/version and preserve the same fail-closed publication contract.
+
+
+### OPT-001 — Equip/mount/consumable feasibility and research benchmark
+
+**Priority:** P1  
+**Status:** ACTIVE  
+**Owner:** unclaimed for next implementation phase  
+**Source:** personal user request October 8, 2026; `docs/OPTIMIZATION_ARCHITECTURE_2026_10_08.md`; Heaven Toolbox source `deddf600`.  
+**Goal:** interaction-safe candidate screening and measured fight feasibility including mounts, shield/offhand, sustain, QoL, consumables and acquisition limits.
+
+- [x] Document modular search/simulation/contracts, source uncertainty, legality and bounded phases.
+- [x] Implement candidate interaction signatures and no-false-pruning tests.
+- [x] Implement explicitly optimistic health/energy/potion/haste fight screen and adversarial tests.
+- [ ] Validate mount stat persistence, combat availability and offhand classes/slots against in-game sources.
+- [ ] Calibrate one Rogue and one resource-limited caster encounter before any real-DPS claims.
+
+**Next action:** collect exact current-patch mount/CG offhand/runic shield, rotation and resource-regen observations, add sourced fixtures, then build a small exact oracle versus constraint solver.
+
+### OPT-002 — Dynamic multi-objective simulator and planner UI
+
+**Priority:** P1  
+**Status:** PLANNED  
+**Owner:** unclaimed  
+**Source:** `docs/OPTIMIZATION_ARCHITECTURE_2026_10_08.md`.  
+**Acceptance:** seeded event-simulation fixtures agree with game observations; search agrees with exhaustive oracle for tiny cases; clear Pareto results with safe, priced gear sources and quality indicators.  
+**Next action:** prototype event queue with one validated boss and discrete attack/cooldown/potion/swap policies; benchmark CP-SAT vs baseline search before selecting default solver.
+
+### OPT-003 — Tooling case-study feedback
+
+**Priority:** P2  
+**Status:** ACTIVE  
+**Owner:** unclaimed  
+**Source:** `fengie/heaven-toolbox` project-training/provenance guidance and October 8 multi-repo user request.  
+**Acceptance:** narrow cross-project evidence/case study saved in Toolbox, without copying CH-specific assumptions or adding broad unvalidated mandatory policies.  
+**Next action:** run measured end-to-end development throughput/rework benchmark from two actual Toolbox projects and promote only verified wins.
