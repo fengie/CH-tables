@@ -1,0 +1,111 @@
+{
+  "total_items": 3203,
+  "numeric_and_categorical_field_counts": {
+    "slot": 3183,
+    "levelReq": 2472,
+    "resists": 1463,
+    "attributes": 1360,
+    "skillBonuses": 1065,
+    "abilities": 776,
+    "classReq": 743,
+    "evasions": 466,
+    "weight": 415,
+    "armour": 343
+  },
+  "field_examples": {
+    "levelReq": {
+      "item": "'Lemon Meringue Pie' Recipe Book",
+      "example_value": 170
+    },
+    "weight": {
+      "item": "Abyssal Axe of Agility",
+      "example_value": 20
+    },
+    "slot": {
+      "item": "Abyssal Axe of Agility",
+      "example_value": "Weapon"
+    },
+    "resists": {
+      "item": "Abyssal Axe of Agility",
+      "example_value": [
+        [
+          "Resistance 13",
+          300
+        ]
+      ]
+    },
+    "attributes": {
+      "item": "Abyssal Axe of Agility",
+      "example_value": [
+        [
+          "Dexterity",
+          150
+        ]
+      ]
+    },
+    "abilities": {
+      "item": "Abyssal Axe of Agility",
+      "example_value": [
+        [
+          "Melee Combat",
+          500
+        ]
+      ]
+    },
+    "armour": {
+      "item": "Alchemical Breeches",
+      "example_value": 149
+    },
+    "classReq": {
+      "item": "Alchemical Breeches",
+      "example_value": "Rogue"
+    },
+    "skillBonuses": {
+      "item": "Alchemical Breeches",
+      "example_value": [
+        [
+          "Shadowstrike",
+          400,
+          0
+        ]
+      ]
+    },
+    "evasions": {
+      "item": "Ankou's Necklace of Shadows",
+      "example_value": [
+        [
+          "Physical Attack Evasion",
+          600
+        ],
+        [
+          "Spell Attack Evasion",
+          600
+        ]
+      ]
+    }
+  },
+  "class_counts": {
+    "None": 2460,
+    "Rogue": 670,
+    "Mage": 48,
+    "Warrior": 15,
+    "Druid": 5,
+    "Ranger": 5
+  },
+  "slot_counts": {
+    "Ring": 1214,
+    "Bracelet": 976,
+    "Charm": 391,
+    "Weapon": 289,
+    "Necklace": 169,
+    "Offhand": 78,
+    "None": 20,
+    "Fashion Head": 20,
+    "Head": 16,
+    "Legs": 12,
+    "Feet": 6,
+    "Torso": 6,
+    "Hands": 6
+  },
+  "warning": "Raw upstream item/stat fields may contain undocumented encodings. Counts refer only to filtered endgame/rogue data."
+}

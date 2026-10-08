@@ -1,0 +1,6771 @@
+{
+  "schema_version": 1,
+  "method": "case_insensitive_name_search_not_BIS_ranking",
+  "source": "data/catalog/rogue_endgame_items.json",
+  "categories": {
+    "knuckleblades": {
+      "count": 100,
+      "truncated": false,
+      "entries": [
+        {
+          "id": 65537,
+          "name": "Creidhne's Knuckleblade of Ashes",
+          "level": 220,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 10,
+            "slot": "Weapon",
+            "resists": [
+              [
+                "Heat",
+                650
+              ]
+            ],
+            "levelReq": 220,
+            "attributes": [
+              [
+                "Dexterity",
+                320
+              ]
+            ],
+            "abilities": [
+              [
+                "Hand to Hand",
+                1200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 65539,
+          "name": "Creidhne's Knuckleblade of Earth",
+          "level": 220,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 10,
+            "slot": "Weapon",
+            "resists": [
+              [
+                "Magic",
+                650
+              ]
+            ],
+            "levelReq": 220,
+            "attributes": [
+              [
+                "Strength",
+                320
+              ]
+            ],
+            "abilities": [
+              [
+                "Hand to Hand",
+                1200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 65538,
+          "name": "Creidhne's Knuckleblade of Winter",
+          "level": 220,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 10,
+            "slot": "Weapon",
+            "resists": [
+              [
+                "Cold",
+                650
+              ]
+            ],
+            "levelReq": 220,
+            "attributes": [
+              [
+                "Strength",
+                320
+              ]
+            ],
+            "abilities": [
+              [
+                "Hand to Hand",
+                1200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 65465,
+          "name": "Darksworn Knuckleblade of Ashes",
+          "level": 220,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 10,
+            "slot": "Weapon",
+            "resists": [
+              [
+                "Heat",
+                350
+              ]
+            ],
+            "levelReq": 220,
+            "attributes": [
+              [
+                "Dexterity",
+                215
+              ]
+            ],
+            "abilities": [
+              [
+                "Hand to Hand",
+                900
+              ]
+            ]
+          }
+        },
+        {
+          "id": 65467,
+          "name": "Darksworn Knuckleblade of Earth",
+          "level": 220,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 10,
+            "slot": "Weapon",
+            "resists": [
+              [
+                "Magic",
+                350
+              ]
+            ],
+            "levelReq": 220,
+            "attributes": [
+              [
+                "Strength",
+                215
+              ]
+            ],
+            "abilities": [
+              [
+                "Hand to Hand",
+                900
+              ]
+            ]
+          }
+        },
+        {
+          "id": 65466,
+          "name": "Darksworn Knuckleblade of Winter",
+          "level": 220,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 10,
+            "slot": "Weapon",
+            "resists": [
+              [
+                "Cold",
+                350
+              ]
+            ],
+            "levelReq": 220,
+            "attributes": [
+              [
+                "Strength",
+                215
+              ]
+            ],
+            "abilities": [
+              [
+                "Hand to Hand",
+                900
+              ]
+            ]
+          }
+        },
+        {
+          "id": 65489,
+          "name": "Shadowsworn Knuckleblade of Ashes",
+          "level": 220,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 10,
+            "slot": "Weapon",
+            "resists": [
+              [
+                "Heat",
+                450
+              ]
+            ],
+            "levelReq": 220,
+            "attributes": [
+              [
+                "Dexterity",
+                250
+              ]
+            ],
+            "abilities": [
+              [
+                "Hand to Hand",
+                1000
+              ]
+            ]
+          }
+        },
+        {
+          "id": 65491,
+          "name": "Shadowsworn Knuckleblade of Earth",
+          "level": 220,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 10,
+            "slot": "Weapon",
+            "resists": [
+              [
+                "Magic",
+                450
+              ]
+            ],
+            "levelReq": 220,
+            "attributes": [
+              [
+                "Strength",
+                250
+              ]
+            ],
+            "abilities": [
+              [
+                "Hand to Hand",
+                1000
+              ]
+            ]
+          }
+        },
+        {
+          "id": 65490,
+          "name": "Shadowsworn Knuckleblade of Winter",
+          "level": 220,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 10,
+            "slot": "Weapon",
+            "resists": [
+              [
+                "Cold",
+                450
+              ]
+            ],
+            "levelReq": 220,
+            "attributes": [
+              [
+                "Strength",
+                250
+              ]
+            ],
+            "abilities": [
+              [
+                "Hand to Hand",
+                1000
+              ]
+            ]
+          }
+        },
+        {
+          "id": 65513,
+          "name": "Voidsworn Knuckleblade of Ashes",
+          "level": 220,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 10,
+            "slot": "Weapon",
+            "resists": [
+              [
+                "Heat",
+                550
+              ]
+            ],
+            "levelReq": 220,
+            "attributes": [
+              [
+                "Dexterity",
+                285
+              ]
+            ],
+            "abilities": [
+              [
+                "Hand to Hand",
+                1100
+              ]
+            ]
+          }
+        },
+        {
+          "id": 65515,
+          "name": "Voidsworn Knuckleblade of Earth",
+          "level": 220,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 10,
+            "slot": "Weapon",
+            "resists": [
+              [
+                "Magic",
+                550
+              ]
+            ],
+            "levelReq": 220,
+            "attributes": [
+              [
+                "Strength",
+                285
+              ]
+            ],
+            "abilities": [
+              [
+                "Hand to Hand",
+                1100
+              ]
+            ]
+          }
+        },
+        {
+          "id": 65514,
+          "name": "Voidsworn Knuckleblade of Winter",
+          "level": 220,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 10,
+            "slot": "Weapon",
+            "resists": [
+              [
+                "Cold",
+                550
+              ]
+            ],
+            "levelReq": 220,
+            "attributes": [
+              [
+                "Strength",
+                285
+              ]
+            ],
+            "abilities": [
+              [
+                "Hand to Hand",
+                1100
+              ]
+            ]
+          }
+        },
+        {
+          "id": 53868,
+          "name": "Thaumaturgic Knuckleblade",
+          "level": 200,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 15,
+            "slot": "Weapon",
+            "levelReq": 200,
+            "abilities": [
+              [
+                "Hand to Hand",
+                700
+              ]
+            ]
+          }
+        },
+        {
+          "id": 53875,
+          "name": "Thaumaturgic Knucklespike",
+          "level": 200,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 15,
+            "slot": "Offhand",
+            "levelReq": 200
+          }
+        },
+        {
+          "id": 34913,
+          "name": "Abyssal Knuckle of Agility",
+          "level": 180,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 20,
+            "slot": "Weapon",
+            "resists": [
+              [
+                "Resistance 13",
+                300
+              ]
+            ],
+            "levelReq": 180,
+            "attributes": [
+              [
+                "Dexterity",
+                150
+              ]
+            ],
+            "abilities": [
+              [
+                "Melee Combat",
+                500
+              ]
+            ]
+          }
+        },
+        {
+          "id": 34915,
+          "name": "Abyssal Knuckle of Bravery",
+          "level": 180,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 20,
+            "slot": "Weapon",
+            "resists": [
+              [
+                "Resistance 13",
+                300
+              ]
+            ],
+            "levelReq": 180,
+            "attributes": [
+              [
+                "Vitality",
+                150
+              ]
+            ],
+            "abilities": [
+              [
+                "Melee Combat",
+                500
+              ]
+            ]
+          }
+        },
+        {
+          "id": 34914,
+          "name": "Abyssal Knuckle of Might",
+          "level": 180,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 20,
+            "slot": "Weapon",
+            "resists": [
+              [
+                "Resistance 11",
+                200
+              ]
+            ],
+            "levelReq": 180,
+            "attributes": [
+              [
+                "Strength",
+                150
+              ]
+            ],
+            "abilities": [
+              [
+                "Blunt",
+                500
+              ]
+            ]
+          }
+        },
+        {
+          "id": 34912,
+          "name": "Abyssal Knuckle of Power",
+          "level": 180,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 20,
+            "slot": "Weapon",
+            "resists": [
+              [
+                "Resistance 12",
+                300
+              ]
+            ],
+            "levelReq": 180,
+            "attributes": [
+              [
+                "Dexterity",
+                150
+              ]
+            ],
+            "abilities": [
+              [
+                "Blunt",
+                500
+              ]
+            ]
+          }
+        },
+        {
+          "id": 53827,
+          "name": "Spellwrought Knuckleblade",
+          "level": 180,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 15,
+            "slot": "Weapon",
+            "levelReq": 180,
+            "abilities": [
+              [
+                "Hand to Hand",
+                600
+              ]
+            ]
+          }
+        },
+        {
+          "id": 53834,
+          "name": "Spellwrought Knucklespike",
+          "level": 180,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 15,
+            "slot": "Offhand",
+            "levelReq": 180
+          }
+        },
+        {
+          "id": 22655,
+          "name": "Dawnstar Knuckle",
+          "level": 160,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "slot": "Weapon",
+            "levelReq": 160
+          }
+        },
+        {
+          "id": 22642,
+          "name": "Brightstar Knuckle",
+          "level": 140,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "slot": "Weapon",
+            "levelReq": 140
+          }
+        },
+        {
+          "id": 23424,
+          "name": "Adamant Knuckleblade",
+          "level": 120,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 120,
+            "abilities": [
+              [
+                "Hand to Hand",
+                300
+              ]
+            ]
+          }
+        },
+        {
+          "id": 23434,
+          "name": "Adamant Knucklespike",
+          "level": 120,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 120
+          }
+        },
+        {
+          "id": 21450,
+          "name": "Godly Stormfist Ring",
+          "level": 120,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "slot": "Ring",
+            "resists": [
+              [
+                "Crush",
+                30
+              ],
+              [
+                "Magic",
+                30
+              ]
+            ],
+            "levelReq": 120
+          }
+        },
+        {
+          "id": 21445,
+          "name": "Grand Stormfist Ring",
+          "level": 120,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "slot": "Ring",
+            "resists": [
+              [
+                "Crush",
+                18
+              ],
+              [
+                "Magic",
+                18
+              ]
+            ],
+            "levelReq": 120
+          }
+        },
+        {
+          "id": 21449,
+          "name": "Imperial Stormfist Ring",
+          "level": 120,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "slot": "Ring",
+            "resists": [
+              [
+                "Crush",
+                28
+              ],
+              [
+                "Magic",
+                28
+              ]
+            ],
+            "levelReq": 120
+          }
+        },
+        {
+          "id": 21447,
+          "name": "Majestic Stormfist Ring",
+          "level": 120,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "slot": "Ring",
+            "resists": [
+              [
+                "Crush",
+                23
+              ],
+              [
+                "Magic",
+                23
+              ]
+            ],
+            "levelReq": 120
+          }
+        },
+        {
+          "id": 21443,
+          "name": "Major Stormfist Ring",
+          "level": 120,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "slot": "Ring",
+            "resists": [
+              [
+                "Crush",
+                13
+              ],
+              [
+                "Magic",
+                13
+              ]
+            ],
+            "levelReq": 120
+          }
+        },
+        {
+          "id": 21446,
+          "name": "Mighty Stormfist Ring",
+          "level": 120,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "slot": "Ring",
+            "resists": [
+              [
+                "Crush",
+                20
+              ],
+              [
+                "Magic",
+                20
+              ]
+            ],
+            "levelReq": 120
+          }
+        },
+        {
+          "id": 21442,
+          "name": "Mystic Stormfist Ring",
+          "level": 120,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "slot": "Ring",
+            "resists": [
+              [
+                "Crush",
+                10
+              ],
+              [
+                "Magic",
+                10
+              ]
+            ],
+            "levelReq": 120
+          }
+        },
+        {
+          "id": 21448,
+          "name": "Royal Stormfist Ring",
+          "level": 120,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "slot": "Ring",
+            "resists": [
+              [
+                "Crush",
+                25
+              ],
+              [
+                "Magic",
+                25
+              ]
+            ],
+            "levelReq": 120
+          }
+        },
+        {
+          "id": 21444,
+          "name": "Superior Stormfist Ring",
+          "level": 120,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "slot": "Ring",
+            "resists": [
+              [
+                "Crush",
+                15
+              ],
+              [
+                "Magic",
+                15
+              ]
+            ],
+            "levelReq": 120
+          }
+        },
+        {
+          "id": 23381,
+          "name": "Battlemist Opal Knuckleblade",
+          "level": 100,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 100,
+            "abilities": [
+              [
+                "Hand to Hand",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 23391,
+          "name": "Battlemist Opal Knucklespike",
+          "level": 100,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 100
+          }
+        },
+        {
+          "id": 23293,
+          "name": "Chromos Opal Knuckleblade",
+          "level": 100,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 100,
+            "abilities": [
+              [
+                "Hand to Hand",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 23303,
+          "name": "Chromos Opal Knucklespike",
+          "level": 100,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 100
+          }
+        },
+        {
+          "id": 23337,
+          "name": "Deepfall Opal Knuckleblade",
+          "level": 100,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 100,
+            "abilities": [
+              [
+                "Hand to Hand",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 23347,
+          "name": "Deepfall Opal Knucklespike",
+          "level": 100,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 100
+          }
+        },
+        {
+          "id": 23205,
+          "name": "Nebula Opal Knuckleblade",
+          "level": 100,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 100,
+            "abilities": [
+              [
+                "Hand to Hand",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 23215,
+          "name": "Nebula Opal Knucklespike",
+          "level": 100,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 100
+          }
+        },
+        {
+          "id": 23249,
+          "name": "Regal Opal Knuckleblade",
+          "level": 100,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 100,
+            "abilities": [
+              [
+                "Hand to Hand",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 23259,
+          "name": "Regal Opal Knucklespike",
+          "level": 100,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 100
+          }
+        },
+        {
+          "id": 19706,
+          "name": "Battlemist Diamond Knuckleblade",
+          "level": 80,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 80,
+            "abilities": [
+              [
+                "Hand to Hand",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 19735,
+          "name": "Battlemist Diamond Knucklespike",
+          "level": 80,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 80
+          }
+        },
+        {
+          "id": 20109,
+          "name": "Blackstone Crystal Knuckleblade",
+          "level": 80,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 1,
+            "slot": "Weapon",
+            "levelReq": 80
+          }
+        },
+        {
+          "id": 20119,
+          "name": "Blackstone Crystal Knucklespike",
+          "level": 80,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 1,
+            "slot": "Offhand",
+            "levelReq": 80
+          }
+        },
+        {
+          "id": 19654,
+          "name": "Chromos Diamond Knuckleblade",
+          "level": 80,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 80,
+            "abilities": [
+              [
+                "Hand to Hand",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 19729,
+          "name": "Chromos Diamond Knucklespike",
+          "level": 80,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 80
+          }
+        },
+        {
+          "id": 19680,
+          "name": "Deepfall Diamond Knuckleblade",
+          "level": 80,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 80,
+            "abilities": [
+              [
+                "Hand to Hand",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 19732,
+          "name": "Deepfall Diamond Knucklespike",
+          "level": 80,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 80
+          }
+        },
+        {
+          "id": 19587,
+          "name": "Nebula Diamond Knuckleblade",
+          "level": 80,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 80,
+            "abilities": [
+              [
+                "Hand to Hand",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 19595,
+          "name": "Nebula Diamond Knucklespike",
+          "level": 80,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 8,
+            "slot": "Offhand",
+            "levelReq": 80
+          }
+        },
+        {
+          "id": 19628,
+          "name": "Regal Diamond Knuckleblade",
+          "level": 80,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 80,
+            "abilities": [
+              [
+                "Hand to Hand",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 19726,
+          "name": "Regal Diamond Knucklespike",
+          "level": 80,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 80
+          }
+        },
+        {
+          "id": 22985,
+          "name": "Rosethorn Topaz Knuckleblade",
+          "level": 80,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 80,
+            "abilities": [
+              [
+                "Hand to Hand",
+                100
+              ]
+            ]
+          }
+        },
+        {
+          "id": 22995,
+          "name": "Rosethorn Topaz Knucklespike",
+          "level": 80,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 80
+          }
+        },
+        {
+          "id": 23161,
+          "name": "Skygem Topaz Knuckleblade",
+          "level": 80,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 80,
+            "abilities": [
+              [
+                "Hand to Hand",
+                100
+              ]
+            ]
+          }
+        },
+        {
+          "id": 23171,
+          "name": "Skygem Topaz Knucklespike",
+          "level": 80,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 80
+          }
+        },
+        {
+          "id": 20068,
+          "name": "Starfire Crystal Knuckleblade",
+          "level": 80,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 1,
+            "slot": "Weapon",
+            "levelReq": 80
+          }
+        },
+        {
+          "id": 20078,
+          "name": "Starfire Crystal Knucklespike",
+          "level": 80,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 1,
+            "slot": "Offhand",
+            "levelReq": 80
+          }
+        },
+        {
+          "id": 23073,
+          "name": "Sunburst Topaz Knuckleblade",
+          "level": 80,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 80,
+            "abilities": [
+              [
+                "Hand to Hand",
+                100
+              ]
+            ]
+          }
+        },
+        {
+          "id": 23083,
+          "name": "Sunburst Topaz Knucklespike",
+          "level": 80,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 80
+          }
+        },
+        {
+          "id": 23029,
+          "name": "Tranquil Topaz Knuckleblade",
+          "level": 80,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 80,
+            "abilities": [
+              [
+                "Hand to Hand",
+                100
+              ]
+            ]
+          }
+        },
+        {
+          "id": 23039,
+          "name": "Tranquil Topaz Knucklespike",
+          "level": 80,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 80
+          }
+        },
+        {
+          "id": 23117,
+          "name": "Verdant Topaz Knuckleblade",
+          "level": 80,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 80,
+            "abilities": [
+              [
+                "Hand to Hand",
+                100
+              ]
+            ]
+          }
+        },
+        {
+          "id": 23127,
+          "name": "Verdant Topaz Knucklespike",
+          "level": 80,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 80
+          }
+        },
+        {
+          "id": 20345,
+          "name": "Faerie Knuckleblade of Blizzards",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20358,
+          "name": "Faerie Knuckleblade of Blizzards",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20371,
+          "name": "Faerie Knuckleblade of Blizzards",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20228,
+          "name": "Faerie Knuckleblade of Fire",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20241,
+          "name": "Faerie Knuckleblade of Fire",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20254,
+          "name": "Faerie Knuckleblade of Fire",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20267,
+          "name": "Faerie Knuckleblade of Flames",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20280,
+          "name": "Faerie Knuckleblade of Flames",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20293,
+          "name": "Faerie Knuckleblade of Flames",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20306,
+          "name": "Faerie Knuckleblade of Snow",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20319,
+          "name": "Faerie Knuckleblade of Snow",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20332,
+          "name": "Faerie Knuckleblade of Snow",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20384,
+          "name": "Faerie Knuckleblade of Storms",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20397,
+          "name": "Faerie Knuckleblade of Storms",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20410,
+          "name": "Faerie Knuckleblade of Storms",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20423,
+          "name": "Faerie Knuckleblade of Tempests",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20436,
+          "name": "Faerie Knuckleblade of Tempests",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20449,
+          "name": "Faerie Knuckleblade of Tempests",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 22941,
+          "name": "Flint Knuckleblade",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60,
+            "abilities": [
+              [
+                "Hand to Hand",
+                50
+              ]
+            ]
+          }
+        },
+        {
+          "id": 22951,
+          "name": "Flint Knucklespike",
+          "level": 60,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20475,
+          "name": "Obsidian Knuckleblade",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 20462,
+          "name": "Onyx Knuckleblade",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 18031,
+          "name": "Rosethorn Quartz Knuckleblade",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60,
+            "abilities": [
+              [
+                "Hand to Hand",
+                100
+              ]
+            ]
+          }
+        },
+        {
+          "id": 19579,
+          "name": "Rosethorn Quartz Knucklespike",
+          "level": 60,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 8,
+            "slot": "Offhand",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 19693,
+          "name": "Skygem Quartz Knuckleblade",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60,
+            "abilities": [
+              [
+                "Hand to Hand",
+                100
+              ]
+            ]
+          }
+        },
+        {
+          "id": 19747,
+          "name": "Skygem Quartz Knucklespike",
+          "level": 60,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 19641,
+          "name": "Sunburst Quartz Knuckleblade",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60,
+            "abilities": [
+              [
+                "Hand to Hand",
+                100
+              ]
+            ]
+          }
+        },
+        {
+          "id": 19741,
+          "name": "Sunburst Quartz Knucklespike",
+          "level": 60,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 19615,
+          "name": "Tranquil Quartz Knuckleblade",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60,
+            "abilities": [
+              [
+                "Hand to Hand",
+                100
+              ]
+            ]
+          }
+        },
+        {
+          "id": 19738,
+          "name": "Tranquil Quartz Knucklespike",
+          "level": 60,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 19667,
+          "name": "Verdant Quartz Knuckleblade",
+          "level": 60,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "weight": 3,
+            "slot": "Weapon",
+            "levelReq": 60,
+            "abilities": [
+              [
+                "Hand to Hand",
+                100
+              ]
+            ]
+          }
+        },
+        {
+          "id": 19744,
+          "name": "Verdant Quartz Knucklespike",
+          "level": 60,
+          "class": null,
+          "slot": "Offhand",
+          "stats": {
+            "weight": 6,
+            "slot": "Offhand",
+            "levelReq": 60
+          }
+        },
+        {
+          "id": 51570,
+          "name": "Knuckle Bone",
+          "level": null,
+          "class": null,
+          "slot": null,
+          "stats": {}
+        }
+      ]
+    },
+    "dhiothu_named": {
+      "count": 0,
+      "truncated": false,
+      "entries": []
+    },
+    "doch_gul": {
+      "count": 35,
+      "truncated": false,
+      "entries": [
+        {
+          "id": 900002,
+          "name": "Doch Gul Boots of Fortitude",
+          "level": null,
+          "class": "Warrior",
+          "slot": "Feet",
+          "stats": {
+            "armour": 140,
+            "weight": 18,
+            "slot": "Feet",
+            "classReq": "Warrior",
+            "resists": [
+              [
+                "Heat",
+                98
+              ],
+              [
+                "Cold",
+                98
+              ],
+              [
+                "Magic",
+                98
+              ],
+              [
+                "Chaos",
+                207
+              ]
+            ],
+            "attributes": [
+              [
+                "Defence",
+                225
+              ],
+              [
+                "Dexterity",
+                120
+              ],
+              [
+                "Focus",
+                20
+              ],
+              [
+                "Vitality",
+                125
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                400
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Protective Stance skill level",
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55946,
+          "name": "Doch Gul Boots of Myth",
+          "level": null,
+          "class": "Warrior",
+          "slot": "Feet",
+          "stats": {
+            "armour": 39,
+            "weight": 18,
+            "slot": "Feet",
+            "resists": [
+              [
+                "Heat",
+                12
+              ],
+              [
+                "Cold",
+                6
+              ],
+              [
+                "Magic",
+                6
+              ],
+              [
+                "Resistance 11",
+                400
+              ]
+            ],
+            "classReq": "Warrior",
+            "attributes": [
+              [
+                "Strength",
+                120
+              ],
+              [
+                "Vitality",
+                120
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                400
+              ],
+              [
+                "Wounding Attack Evasion",
+                400
+              ]
+            ]
+          }
+        },
+        {
+          "id": 900005,
+          "name": "Doch Gul Breastplate of Fortitude",
+          "level": null,
+          "class": "Warrior",
+          "slot": "Torso",
+          "stats": {
+            "armour": 400,
+            "weight": 45,
+            "slot": "Torso",
+            "classReq": "Warrior",
+            "resists": [
+              [
+                "Heat",
+                285
+              ],
+              [
+                "Cold",
+                285
+              ],
+              [
+                "Magic",
+                285
+              ],
+              [
+                "Chaos",
+                414
+              ]
+            ],
+            "attributes": [
+              [
+                "Defence",
+                675
+              ],
+              [
+                "Dexterity",
+                240
+              ],
+              [
+                "Focus",
+                50
+              ],
+              [
+                "Vitality",
+                350
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                1000
+              ],
+              [
+                "Wounding Attack Evasion",
+                1000
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Taunt skill level",
+                8
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55949,
+          "name": "Doch Gul Breastplate of Myth",
+          "level": null,
+          "class": "Warrior",
+          "slot": "Torso",
+          "stats": {
+            "armour": 113,
+            "weight": 45,
+            "slot": "Torso",
+            "resists": [
+              [
+                "Heat",
+                36
+              ],
+              [
+                "Cold",
+                18
+              ],
+              [
+                "Magic",
+                18
+              ],
+              [
+                "Resistance 10",
+                1000
+              ]
+            ],
+            "classReq": "Warrior",
+            "attributes": [
+              [
+                "Strength",
+                240
+              ],
+              [
+                "Vitality",
+                240
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                1000
+              ],
+              [
+                "Wounding Attack Evasion",
+                1000
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55968,
+          "name": "Doch Gul Breeches of Myth",
+          "level": null,
+          "class": "Rogue",
+          "slot": "Legs",
+          "stats": {
+            "armour": 60,
+            "weight": 24,
+            "slot": "Legs",
+            "resists": [
+              [
+                "Heat",
+                56
+              ],
+              [
+                "Cold",
+                28
+              ],
+              [
+                "Magic",
+                28
+              ],
+              [
+                "Resistance 11",
+                800
+              ]
+            ],
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                200
+              ],
+              [
+                "Dexterity",
+                200
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                800
+              ],
+              [
+                "Weakening Attack Evasion",
+                800
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55952,
+          "name": "Doch Gul Circlet of Myth",
+          "level": null,
+          "class": "Druid",
+          "slot": "Head",
+          "stats": {
+            "armour": 19,
+            "weight": 9,
+            "slot": "Head",
+            "resists": [
+              [
+                "Heat",
+                52
+              ],
+              [
+                "Cold",
+                26
+              ],
+              [
+                "Magic",
+                26
+              ]
+            ],
+            "classReq": "Druid",
+            "attributes": [
+              [
+                "Dexterity",
+                80
+              ],
+              [
+                "Focus",
+                320
+              ],
+              [
+                "Vitality",
+                80
+              ]
+            ],
+            "abilities": [
+              [
+                "Nature Magic",
+                900
+              ]
+            ],
+            "evasions": [
+              [
+                "Spell Attack Evasion",
+                600
+              ],
+              [
+                "Wounding Attack Evasion",
+                600
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55967,
+          "name": "Doch Gul Cowl of Myth",
+          "level": null,
+          "class": "Rogue",
+          "slot": "Head",
+          "stats": {
+            "armour": 37,
+            "weight": 18,
+            "slot": "Head",
+            "resists": [
+              [
+                "Heat",
+                34
+              ],
+              [
+                "Cold",
+                17
+              ],
+              [
+                "Magic",
+                17
+              ],
+              [
+                "Resistance 10",
+                600
+              ]
+            ],
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                160
+              ],
+              [
+                "Dexterity",
+                160
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                600
+              ],
+              [
+                "Weakening Attack Evasion",
+                600
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55959,
+          "name": "Doch Gul Cuirass of Myth",
+          "level": null,
+          "class": "Ranger",
+          "slot": "Torso",
+          "stats": {
+            "armour": 76,
+            "weight": 30,
+            "slot": "Torso",
+            "resists": [
+              [
+                "Heat",
+                70
+              ],
+              [
+                "Cold",
+                35
+              ],
+              [
+                "Magic",
+                35
+              ],
+              [
+                "Resistance 10",
+                1000
+              ]
+            ],
+            "classReq": "Ranger",
+            "attributes": [
+              [
+                "Strength",
+                240
+              ],
+              [
+                "Dexterity",
+                240
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                1000
+              ],
+              [
+                "Spell Attack Evasion",
+                1000
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55966,
+          "name": "Doch Gul Footguards of Myth",
+          "level": null,
+          "class": "Rogue",
+          "slot": "Feet",
+          "stats": {
+            "armour": 26,
+            "weight": 12,
+            "slot": "Feet",
+            "resists": [
+              [
+                "Heat",
+                24
+              ],
+              [
+                "Cold",
+                12
+              ],
+              [
+                "Magic",
+                12
+              ],
+              [
+                "Resistance 11",
+                400
+              ]
+            ],
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                120
+              ],
+              [
+                "Dexterity",
+                120
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                400
+              ],
+              [
+                "Weakening Attack Evasion",
+                400
+              ]
+            ]
+          }
+        },
+        {
+          "id": 900001,
+          "name": "Doch Gul Gauntlets of Fortitude",
+          "level": null,
+          "class": "Warrior",
+          "slot": "Hands",
+          "stats": {
+            "armour": 90,
+            "weight": 9,
+            "slot": "Hands",
+            "classReq": "Warrior",
+            "resists": [
+              [
+                "Heat",
+                64
+              ],
+              [
+                "Cold",
+                64
+              ],
+              [
+                "Magic",
+                64
+              ],
+              [
+                "Chaos",
+                138
+              ]
+            ],
+            "attributes": [
+              [
+                "Defence",
+                110
+              ],
+              [
+                "Dexterity",
+                80
+              ],
+              [
+                "Focus",
+                15
+              ],
+              [
+                "Vitality",
+                85
+              ]
+            ],
+            "evasions": [
+              [
+                "Wounding Attack Evasion",
+                200
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Protective Stance skill level",
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55945,
+          "name": "Doch Gul Gauntlets of Myth",
+          "level": null,
+          "class": "Warrior",
+          "slot": "Hands",
+          "stats": {
+            "armour": 26,
+            "weight": 9,
+            "slot": "Hands",
+            "resists": [
+              [
+                "Heat",
+                8
+              ],
+              [
+                "Cold",
+                4
+              ],
+              [
+                "Magic",
+                4
+              ],
+              [
+                "Resistance 10",
+                200
+              ]
+            ],
+            "classReq": "Warrior",
+            "attributes": [
+              [
+                "Strength",
+                80
+              ],
+              [
+                "Vitality",
+                80
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                200
+              ],
+              [
+                "Wounding Attack Evasion",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55960,
+          "name": "Doch Gul Gloves of Myth",
+          "level": null,
+          "class": "Mage",
+          "slot": "Hands",
+          "stats": {
+            "armour": 9,
+            "weight": 3,
+            "slot": "Hands",
+            "resists": [
+              [
+                "Heat",
+                24
+              ],
+              [
+                "Cold",
+                12
+              ],
+              [
+                "Magic",
+                12
+              ]
+            ],
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Dexterity",
+                40
+              ],
+              [
+                "Focus",
+                160
+              ],
+              [
+                "Vitality",
+                40
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                200
+              ],
+              [
+                "Fire Magic",
+                200
+              ]
+            ],
+            "evasions": [
+              [
+                "Spell Attack Evasion",
+                200
+              ],
+              [
+                "Weakening Attack Evasion",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55964,
+          "name": "Doch Gul Gown of Myth",
+          "level": null,
+          "class": "Mage",
+          "slot": "Torso",
+          "stats": {
+            "armour": 40,
+            "weight": 15,
+            "slot": "Torso",
+            "resists": [
+              [
+                "Heat",
+                106
+              ],
+              [
+                "Cold",
+                53
+              ],
+              [
+                "Magic",
+                53
+              ]
+            ],
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Dexterity",
+                120
+              ],
+              [
+                "Focus",
+                480
+              ],
+              [
+                "Vitality",
+                120
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                1000
+              ],
+              [
+                "Fire Magic",
+                1000
+              ]
+            ],
+            "evasions": [
+              [
+                "Spell Attack Evasion",
+                1000
+              ],
+              [
+                "Weakening Attack Evasion",
+                1000
+              ]
+            ]
+          }
+        },
+        {
+          "id": 900004,
+          "name": "Doch Gul Greaves of Fortitude",
+          "level": null,
+          "class": "Warrior",
+          "slot": "Legs",
+          "stats": {
+            "armour": 320,
+            "weight": 36,
+            "slot": "Legs",
+            "classReq": "Warrior",
+            "resists": [
+              [
+                "Heat",
+                225
+              ],
+              [
+                "Cold",
+                225
+              ],
+              [
+                "Magic",
+                225
+              ],
+              [
+                "Chaos",
+                345
+              ]
+            ],
+            "attributes": [
+              [
+                "Defence",
+                450
+              ],
+              [
+                "Dexterity",
+                200
+              ],
+              [
+                "Focus",
+                40
+              ],
+              [
+                "Vitality",
+                275
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                800
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Defensive Formation skill level",
+                8
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55948,
+          "name": "Doch Gul Greaves of Myth",
+          "level": null,
+          "class": "Warrior",
+          "slot": "Legs",
+          "stats": {
+            "armour": 91,
+            "weight": 36,
+            "slot": "Legs",
+            "resists": [
+              [
+                "Heat",
+                28
+              ],
+              [
+                "Cold",
+                14
+              ],
+              [
+                "Magic",
+                14
+              ],
+              [
+                "Resistance 11",
+                800
+              ]
+            ],
+            "classReq": "Warrior",
+            "attributes": [
+              [
+                "Strength",
+                200
+              ],
+              [
+                "Vitality",
+                200
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                800
+              ],
+              [
+                "Wounding Attack Evasion",
+                800
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55965,
+          "name": "Doch Gul Handwraps of Myth",
+          "level": null,
+          "class": "Rogue",
+          "slot": "Hands",
+          "stats": {
+            "armour": 17,
+            "weight": 6,
+            "slot": "Hands",
+            "resists": [
+              [
+                "Heat",
+                16
+              ],
+              [
+                "Cold",
+                8
+              ],
+              [
+                "Magic",
+                8
+              ],
+              [
+                "Resistance 10",
+                200
+              ]
+            ],
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                80
+              ],
+              [
+                "Dexterity",
+                80
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                200
+              ],
+              [
+                "Weakening Attack Evasion",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55962,
+          "name": "Doch Gul Hat of Myth",
+          "level": null,
+          "class": "Mage",
+          "slot": "Head",
+          "stats": {
+            "armour": 19,
+            "weight": 9,
+            "slot": "Head",
+            "resists": [
+              [
+                "Heat",
+                52
+              ],
+              [
+                "Cold",
+                26
+              ],
+              [
+                "Magic",
+                26
+              ]
+            ],
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Dexterity",
+                80
+              ],
+              [
+                "Focus",
+                320
+              ],
+              [
+                "Vitality",
+                80
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                600
+              ],
+              [
+                "Fire Magic",
+                600
+              ]
+            ],
+            "evasions": [
+              [
+                "Spell Attack Evasion",
+                600
+              ],
+              [
+                "Weakening Attack Evasion",
+                600
+              ]
+            ]
+          }
+        },
+        {
+          "id": 900003,
+          "name": "Doch Gul Helm of Fortitude",
+          "level": null,
+          "class": "Warrior",
+          "slot": "Head",
+          "stats": {
+            "armour": 185,
+            "weight": 27,
+            "slot": "Head",
+            "classReq": "Warrior",
+            "resists": [
+              [
+                "Heat",
+                138
+              ],
+              [
+                "Cold",
+                138
+              ],
+              [
+                "Magic",
+                138
+              ],
+              [
+                "Chaos",
+                276
+              ]
+            ],
+            "attributes": [
+              [
+                "Defence",
+                370
+              ],
+              [
+                "Dexterity",
+                160
+              ],
+              [
+                "Focus",
+                25
+              ],
+              [
+                "Vitality",
+                165
+              ]
+            ],
+            "evasions": [
+              [
+                "Wounding Attack Evasion",
+                600
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55947,
+          "name": "Doch Gul Helm of Myth",
+          "level": null,
+          "class": "Warrior",
+          "slot": "Head",
+          "stats": {
+            "armour": 55,
+            "weight": 27,
+            "slot": "Head",
+            "resists": [
+              [
+                "Heat",
+                18
+              ],
+              [
+                "Cold",
+                9
+              ],
+              [
+                "Magic",
+                9
+              ],
+              [
+                "Resistance 10",
+                600
+              ]
+            ],
+            "classReq": "Warrior",
+            "attributes": [
+              [
+                "Strength",
+                160
+              ],
+              [
+                "Vitality",
+                160
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                600
+              ],
+              [
+                "Wounding Attack Evasion",
+                600
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55957,
+          "name": "Doch Gul Hood of Myth",
+          "level": null,
+          "class": "Ranger",
+          "slot": "Head",
+          "stats": {
+            "armour": 37,
+            "weight": 18,
+            "slot": "Head",
+            "resists": [
+              [
+                "Heat",
+                34
+              ],
+              [
+                "Cold",
+                17
+              ],
+              [
+                "Magic",
+                17
+              ],
+              [
+                "Resistance 10",
+                600
+              ]
+            ],
+            "classReq": "Ranger",
+            "attributes": [
+              [
+                "Strength",
+                160
+              ],
+              [
+                "Dexterity",
+                160
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                600
+              ],
+              [
+                "Spell Attack Evasion",
+                600
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55969,
+          "name": "Doch Gul Jerkin of Myth",
+          "level": null,
+          "class": "Rogue",
+          "slot": "Torso",
+          "stats": {
+            "armour": 76,
+            "weight": 30,
+            "slot": "Torso",
+            "resists": [
+              [
+                "Heat",
+                70
+              ],
+              [
+                "Cold",
+                35
+              ],
+              [
+                "Magic",
+                35
+              ],
+              [
+                "Resistance 10",
+                1000
+              ]
+            ],
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                240
+              ],
+              [
+                "Dexterity",
+                240
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                1000
+              ],
+              [
+                "Weakening Attack Evasion",
+                1000
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55953,
+          "name": "Doch Gul Leggings of Myth",
+          "level": null,
+          "class": "Druid",
+          "slot": "Legs",
+          "stats": {
+            "armour": 32,
+            "weight": 12,
+            "slot": "Legs",
+            "resists": [
+              [
+                "Heat",
+                84
+              ],
+              [
+                "Cold",
+                42
+              ],
+              [
+                "Magic",
+                42
+              ],
+              [
+                "Resistance 11",
+                800
+              ]
+            ],
+            "classReq": "Druid",
+            "attributes": [
+              [
+                "Dexterity",
+                100
+              ],
+              [
+                "Focus",
+                400
+              ],
+              [
+                "Vitality",
+                100
+              ]
+            ],
+            "evasions": [
+              [
+                "Spell Attack Evasion",
+                800
+              ],
+              [
+                "Wounding Attack Evasion",
+                800
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55958,
+          "name": "Doch Gul Legguards of Myth",
+          "level": null,
+          "class": "Ranger",
+          "slot": "Legs",
+          "stats": {
+            "armour": 60,
+            "weight": 24,
+            "slot": "Legs",
+            "resists": [
+              [
+                "Heat",
+                56
+              ],
+              [
+                "Cold",
+                28
+              ],
+              [
+                "Magic",
+                28
+              ],
+              [
+                "Resistance 11",
+                800
+              ]
+            ],
+            "classReq": "Ranger",
+            "attributes": [
+              [
+                "Strength",
+                200
+              ],
+              [
+                "Dexterity",
+                200
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                800
+              ],
+              [
+                "Spell Attack Evasion",
+                800
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55954,
+          "name": "Doch Gul Robe of Myth",
+          "level": null,
+          "class": "Druid",
+          "slot": "Torso",
+          "stats": {
+            "armour": 40,
+            "weight": 15,
+            "slot": "Torso",
+            "resists": [
+              [
+                "Heat",
+                106
+              ],
+              [
+                "Cold",
+                53
+              ],
+              [
+                "Magic",
+                53
+              ]
+            ],
+            "classReq": "Druid",
+            "attributes": [
+              [
+                "Dexterity",
+                120
+              ],
+              [
+                "Focus",
+                480
+              ],
+              [
+                "Vitality",
+                120
+              ]
+            ],
+            "abilities": [
+              [
+                "Nature Magic",
+                1500
+              ]
+            ],
+            "evasions": [
+              [
+                "Spell Attack Evasion",
+                1000
+              ],
+              [
+                "Wounding Attack Evasion",
+                1000
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55951,
+          "name": "Doch Gul Sandals of Myth",
+          "level": null,
+          "class": "Druid",
+          "slot": "Feet",
+          "stats": {
+            "armour": 14,
+            "weight": 6,
+            "slot": "Feet",
+            "resists": [
+              [
+                "Heat",
+                36
+              ],
+              [
+                "Cold",
+                18
+              ],
+              [
+                "Magic",
+                18
+              ],
+              [
+                "Resistance 11",
+                400
+              ]
+            ],
+            "classReq": "Druid",
+            "attributes": [
+              [
+                "Dexterity",
+                60
+              ],
+              [
+                "Focus",
+                240
+              ],
+              [
+                "Vitality",
+                60
+              ]
+            ],
+            "evasions": [
+              [
+                "Spell Attack Evasion",
+                400
+              ],
+              [
+                "Wounding Attack Evasion",
+                400
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56673,
+          "name": "Doch Gul Set Bonus Druid",
+          "level": null,
+          "class": null,
+          "slot": null,
+          "stats": {
+            "skillBonuses": [
+              [
+                "Lightning Strike",
+                1080,
+                0
+              ],
+              [
+                "Natures Touch",
+                -720,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56675,
+          "name": "Doch Gul Set Bonus Mage",
+          "level": null,
+          "class": null,
+          "slot": null,
+          "stats": {
+            "skillBonuses": [
+              [
+                "Fire Bolt",
+                900,
+                0
+              ],
+              [
+                "Ice Shards",
+                1800,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56674,
+          "name": "Doch Gul Set Bonus Ranger",
+          "level": null,
+          "class": null,
+          "slot": null,
+          "stats": {
+            "skillBonuses": [
+              [
+                "Sharp Shot",
+                1350,
+                0
+              ],
+              [
+                "Longshot",
+                1710,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56676,
+          "name": "Doch Gul Set Bonus Rogue",
+          "level": null,
+          "class": null,
+          "slot": null,
+          "stats": {
+            "skillBonuses": [
+              [
+                "Sneaky Attack",
+                3600,
+                0
+              ],
+              [
+                "Quick Strike",
+                1080,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56672,
+          "name": "Doch Gul Set Bonus Warrior",
+          "level": null,
+          "class": null,
+          "slot": null,
+          "stats": {
+            "skillBonuses": [
+              [
+                "Giant Swing",
+                1800,
+                0
+              ],
+              [
+                "Rupture",
+                1350,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55961,
+          "name": "Doch Gul Shoes of Myth",
+          "level": null,
+          "class": "Mage",
+          "slot": "Feet",
+          "stats": {
+            "armour": 14,
+            "weight": 6,
+            "slot": "Feet",
+            "resists": [
+              [
+                "Heat",
+                36
+              ],
+              [
+                "Cold",
+                18
+              ],
+              [
+                "Magic",
+                18
+              ],
+              [
+                "Resistance 11",
+                400
+              ]
+            ],
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Dexterity",
+                60
+              ],
+              [
+                "Focus",
+                240
+              ],
+              [
+                "Vitality",
+                60
+              ]
+            ],
+            "evasions": [
+              [
+                "Spell Attack Evasion",
+                400
+              ],
+              [
+                "Weakening Attack Evasion",
+                400
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55963,
+          "name": "Doch Gul Skirt of Myth",
+          "level": null,
+          "class": "Mage",
+          "slot": "Legs",
+          "stats": {
+            "armour": 32,
+            "weight": 12,
+            "slot": "Legs",
+            "resists": [
+              [
+                "Heat",
+                84
+              ],
+              [
+                "Cold",
+                42
+              ],
+              [
+                "Magic",
+                42
+              ],
+              [
+                "Resistance 11",
+                800
+              ]
+            ],
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Dexterity",
+                100
+              ],
+              [
+                "Focus",
+                400
+              ],
+              [
+                "Vitality",
+                100
+              ]
+            ],
+            "evasions": [
+              [
+                "Spell Attack Evasion",
+                800
+              ],
+              [
+                "Weakening Attack Evasion",
+                800
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55956,
+          "name": "Doch Gul Treads of Myth",
+          "level": null,
+          "class": "Ranger",
+          "slot": "Feet",
+          "stats": {
+            "armour": 26,
+            "weight": 12,
+            "slot": "Feet",
+            "resists": [
+              [
+                "Heat",
+                24
+              ],
+              [
+                "Cold",
+                12
+              ],
+              [
+                "Magic",
+                12
+              ],
+              [
+                "Resistance 11",
+                400
+              ]
+            ],
+            "classReq": "Ranger",
+            "attributes": [
+              [
+                "Strength",
+                120
+              ],
+              [
+                "Dexterity",
+                120
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                400
+              ],
+              [
+                "Spell Attack Evasion",
+                400
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55955,
+          "name": "Doch Gul Vambraces of Myth",
+          "level": null,
+          "class": "Ranger",
+          "slot": "Hands",
+          "stats": {
+            "armour": 17,
+            "weight": 6,
+            "slot": "Hands",
+            "resists": [
+              [
+                "Heat",
+                16
+              ],
+              [
+                "Cold",
+                8
+              ],
+              [
+                "Magic",
+                8
+              ],
+              [
+                "Resistance 10",
+                200
+              ]
+            ],
+            "classReq": "Ranger",
+            "attributes": [
+              [
+                "Strength",
+                80
+              ],
+              [
+                "Dexterity",
+                80
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                200
+              ],
+              [
+                "Spell Attack Evasion",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 55950,
+          "name": "Doch Gul Wristguards of Myth",
+          "level": null,
+          "class": "Druid",
+          "slot": "Hands",
+          "stats": {
+            "armour": 9,
+            "weight": 3,
+            "slot": "Hands",
+            "resists": [
+              [
+                "Heat",
+                24
+              ],
+              [
+                "Cold",
+                12
+              ],
+              [
+                "Magic",
+                12
+              ]
+            ],
+            "classReq": "Druid",
+            "attributes": [
+              [
+                "Dexterity",
+                40
+              ],
+              [
+                "Focus",
+                160
+              ],
+              [
+                "Vitality",
+                40
+              ]
+            ],
+            "abilities": [
+              [
+                "Nature Magic",
+                300
+              ]
+            ],
+            "evasions": [
+              [
+                "Spell Attack Evasion",
+                200
+              ],
+              [
+                "Wounding Attack Evasion",
+                200
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "blight": {
+      "count": 96,
+      "truncated": false,
+      "entries": [
+        {
+          "id": 56961,
+          "name": "Godly Blightcasters Bracelet of the Crag",
+          "level": 210,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 210,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                150
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                700
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Attunement",
+                10
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57021,
+          "name": "Godly Blightcasters Circlet of the Crag",
+          "level": 210,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 210,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                150
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                700
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Lure of Ice",
+                10
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56901,
+          "name": "Godly Blightcasters Ring of the Crag",
+          "level": 210,
+          "class": "Mage",
+          "slot": "Ring",
+          "stats": {
+            "armour": 100,
+            "slot": "Ring",
+            "levelReq": 210,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                85
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Blast",
+                10
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57101,
+          "name": "Godly Blightwand of Dor-Keln",
+          "level": 210,
+          "class": "Mage",
+          "slot": "Weapon",
+          "stats": {
+            "weight": 8,
+            "slot": "Weapon",
+            "levelReq": 210,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                150
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                400
+              ]
+            ]
+          }
+        },
+        {
+          "id": 65971,
+          "name": "Giant Blightbound Imp",
+          "level": 200,
+          "class": null,
+          "slot": null,
+          "stats": {
+            "levelReq": 200,
+            "attributes": [
+              [
+                "Strength",
+                240
+              ],
+              [
+                "Focus",
+                240
+              ]
+            ],
+            "abilities": [
+              [
+                "Treasure Hunter",
+                1500
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56960,
+          "name": "Imperial Blightcasters Bracelet of the Crag",
+          "level": 200,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 200,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                120
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                560
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Attunement",
+                9
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57020,
+          "name": "Imperial Blightcasters Circlet of the Crag",
+          "level": 200,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 200,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                120
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                560
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Lure of Ice",
+                9
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56900,
+          "name": "Imperial Blightcasters Ring of the Crag",
+          "level": 200,
+          "class": "Mage",
+          "slot": "Ring",
+          "stats": {
+            "armour": 80,
+            "slot": "Ring",
+            "levelReq": 200,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                70
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Blast",
+                9
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57100,
+          "name": "Imperial Blightwand of Dor-Keln",
+          "level": 200,
+          "class": "Mage",
+          "slot": "Weapon",
+          "stats": {
+            "weight": 8,
+            "slot": "Weapon",
+            "levelReq": 200,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                120
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                320
+              ]
+            ]
+          }
+        },
+        {
+          "id": 66143,
+          "name": "Spirit Blightbound Imp",
+          "level": 200,
+          "class": null,
+          "slot": null,
+          "stats": {
+            "levelReq": 200,
+            "attributes": [
+              [
+                "Strength",
+                320
+              ],
+              [
+                "Focus",
+                320
+              ]
+            ],
+            "abilities": [
+              [
+                "Treasure Hunter",
+                2000
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56959,
+          "name": "Royal Blightcasters Bracelet of the Crag",
+          "level": 190,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 190,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                90
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                420
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Attunement",
+                8
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57019,
+          "name": "Royal Blightcasters Circlet of the Crag",
+          "level": 190,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 190,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                90
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                420
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Lure of Ice",
+                8
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56899,
+          "name": "Royal Blightcasters Ring of the Crag",
+          "level": 190,
+          "class": "Mage",
+          "slot": "Ring",
+          "stats": {
+            "armour": 60,
+            "slot": "Ring",
+            "levelReq": 190,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                50
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Blast",
+                8
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57099,
+          "name": "Royal Blightwand of Dor-Keln",
+          "level": 190,
+          "class": "Mage",
+          "slot": "Weapon",
+          "stats": {
+            "weight": 8,
+            "slot": "Weapon",
+            "levelReq": 190,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                90
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                240
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35762,
+          "name": "Godly Blightbound Ring",
+          "level": 185,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 80,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                80
+              ]
+            ],
+            "levelReq": 185,
+            "evasions": [
+              [
+                "Movement Attack Evasion",
+                300
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35758,
+          "name": "Godly Blightsalve Ring",
+          "level": 185,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 80,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                80
+              ]
+            ],
+            "levelReq": 185,
+            "evasions": [
+              [
+                "Weakening Attack Evasion",
+                300
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35754,
+          "name": "Godly Blightseal Ring",
+          "level": 185,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 80,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                80
+              ]
+            ],
+            "levelReq": 185,
+            "evasions": [
+              [
+                "Wounding Attack Evasion",
+                300
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35746,
+          "name": "Godly Blightstone Ring",
+          "level": 185,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 80,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                80
+              ]
+            ],
+            "levelReq": 185,
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                300
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35750,
+          "name": "Godly Blightward Ring",
+          "level": 185,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 80,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                80
+              ]
+            ],
+            "levelReq": 185,
+            "evasions": [
+              [
+                "Spell Attack Evasion",
+                300
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35742,
+          "name": "Imperial Blightbound Ring",
+          "level": 185,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 70,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                70
+              ]
+            ],
+            "levelReq": 185,
+            "evasions": [
+              [
+                "Movement Attack Evasion",
+                275
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35738,
+          "name": "Imperial Blightsalve Ring",
+          "level": 185,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 70,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                70
+              ]
+            ],
+            "levelReq": 185,
+            "evasions": [
+              [
+                "Weakening Attack Evasion",
+                275
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35734,
+          "name": "Imperial Blightseal Ring",
+          "level": 185,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 70,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                70
+              ]
+            ],
+            "levelReq": 185,
+            "evasions": [
+              [
+                "Wounding Attack Evasion",
+                275
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35726,
+          "name": "Imperial Blightstone Ring",
+          "level": 185,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 70,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                70
+              ]
+            ],
+            "levelReq": 185,
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                275
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35730,
+          "name": "Imperial Blightward Ring",
+          "level": 185,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 70,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                70
+              ]
+            ],
+            "levelReq": 185,
+            "evasions": [
+              [
+                "Spell Attack Evasion",
+                275
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35702,
+          "name": "Majestic Blightbound Ring",
+          "level": 180,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 50,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                50
+              ]
+            ],
+            "levelReq": 180,
+            "evasions": [
+              [
+                "Movement Attack Evasion",
+                225
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35698,
+          "name": "Majestic Blightsalve Ring",
+          "level": 180,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 50,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                50
+              ]
+            ],
+            "levelReq": 180,
+            "evasions": [
+              [
+                "Weakening Attack Evasion",
+                225
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35694,
+          "name": "Majestic Blightseal Ring",
+          "level": 180,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 50,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                50
+              ]
+            ],
+            "levelReq": 180,
+            "evasions": [
+              [
+                "Wounding Attack Evasion",
+                225
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35686,
+          "name": "Majestic Blightstone Ring",
+          "level": 180,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 50,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                50
+              ]
+            ],
+            "levelReq": 180,
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                225
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35690,
+          "name": "Majestic Blightward Ring",
+          "level": 180,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 50,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                50
+              ]
+            ],
+            "levelReq": 180,
+            "evasions": [
+              [
+                "Spell Attack Evasion",
+                225
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35722,
+          "name": "Royal Blightbound Ring",
+          "level": 180,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 60,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                60
+              ]
+            ],
+            "levelReq": 180,
+            "evasions": [
+              [
+                "Movement Attack Evasion",
+                250
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35718,
+          "name": "Royal Blightsalve Ring",
+          "level": 180,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 60,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                60
+              ]
+            ],
+            "levelReq": 180,
+            "evasions": [
+              [
+                "Weakening Attack Evasion",
+                250
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35714,
+          "name": "Royal Blightseal Ring",
+          "level": 180,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 60,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                60
+              ]
+            ],
+            "levelReq": 180,
+            "evasions": [
+              [
+                "Wounding Attack Evasion",
+                250
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35706,
+          "name": "Royal Blightstone Ring",
+          "level": 180,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 60,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                60
+              ]
+            ],
+            "levelReq": 180,
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                250
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35710,
+          "name": "Royal Blightward Ring",
+          "level": 180,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 60,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                60
+              ]
+            ],
+            "levelReq": 180,
+            "evasions": [
+              [
+                "Spell Attack Evasion",
+                250
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35682,
+          "name": "Mighty Blightbound Ring",
+          "level": 175,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 40,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                40
+              ]
+            ],
+            "levelReq": 175,
+            "evasions": [
+              [
+                "Movement Attack Evasion",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35678,
+          "name": "Mighty Blightsalve Ring",
+          "level": 175,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 40,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                40
+              ]
+            ],
+            "levelReq": 175,
+            "evasions": [
+              [
+                "Weakening Attack Evasion",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35674,
+          "name": "Mighty Blightseal Ring",
+          "level": 175,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 40,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                40
+              ]
+            ],
+            "levelReq": 175,
+            "evasions": [
+              [
+                "Wounding Attack Evasion",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35666,
+          "name": "Mighty Blightstone Ring",
+          "level": 175,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 40,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                40
+              ]
+            ],
+            "levelReq": 175,
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 35670,
+          "name": "Mighty Blightward Ring",
+          "level": 175,
+          "class": null,
+          "slot": "Ring",
+          "stats": {
+            "armour": 40,
+            "slot": "Ring",
+            "resists": [
+              [
+                "Poison",
+                40
+              ]
+            ],
+            "levelReq": 175,
+            "evasions": [
+              [
+                "Spell Attack Evasion",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 65970,
+          "name": "Huge Blightbound Imp",
+          "level": 160,
+          "class": null,
+          "slot": null,
+          "stats": {
+            "levelReq": 160,
+            "attributes": [
+              [
+                "Strength",
+                180
+              ],
+              [
+                "Focus",
+                180
+              ]
+            ],
+            "abilities": [
+              [
+                "Treasure Hunter",
+                1000
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56958,
+          "name": "Majestic Blightcasters Bracelet of the Crag",
+          "level": 160,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 160,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                80
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                350
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Attunement",
+                7
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57018,
+          "name": "Majestic Blightcasters Circlet of the Crag",
+          "level": 160,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 160,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                80
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                350
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Lure of Ice",
+                7
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56898,
+          "name": "Majestic Blightcasters Ring of the Crag",
+          "level": 160,
+          "class": "Mage",
+          "slot": "Ring",
+          "stats": {
+            "armour": 50,
+            "slot": "Ring",
+            "levelReq": 160,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                45
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Blast",
+                7
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57098,
+          "name": "Majestic Blightwand of Dor-Keln",
+          "level": 160,
+          "class": "Mage",
+          "slot": "Weapon",
+          "stats": {
+            "weight": 8,
+            "slot": "Weapon",
+            "levelReq": 160,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                60
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56957,
+          "name": "Mighty Blightcasters Bracelet of the Crag",
+          "level": 150,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 150,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                60
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                280
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Attunement",
+                6
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57017,
+          "name": "Mighty Blightcasters Circlet of the Crag",
+          "level": 150,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 150,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                60
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                280
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Lure of Ice",
+                6
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56897,
+          "name": "Mighty Blightcasters Ring of the Crag",
+          "level": 150,
+          "class": "Mage",
+          "slot": "Ring",
+          "stats": {
+            "armour": 40,
+            "slot": "Ring",
+            "levelReq": 150,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                35
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Blast",
+                6
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57097,
+          "name": "Mighty Blightwand of Dor-Keln",
+          "level": 150,
+          "class": "Mage",
+          "slot": "Weapon",
+          "stats": {
+            "weight": 8,
+            "slot": "Weapon",
+            "levelReq": 150,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                50
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                160
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56956,
+          "name": "Grand Blightcasters Bracelet of the Crag",
+          "level": 140,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 140,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                45
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                210
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Attunement",
+                5
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57016,
+          "name": "Grand Blightcasters Circlet of the Crag",
+          "level": 140,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 140,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                45
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                210
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Lure of Ice",
+                5
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56896,
+          "name": "Grand Blightcasters Ring of the Crag",
+          "level": 140,
+          "class": "Mage",
+          "slot": "Ring",
+          "stats": {
+            "armour": 30,
+            "slot": "Ring",
+            "levelReq": 140,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                25
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Blast",
+                5
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57096,
+          "name": "Grand Blightwand of Dor-Keln",
+          "level": 140,
+          "class": "Mage",
+          "slot": "Weapon",
+          "stats": {
+            "weight": 8,
+            "slot": "Weapon",
+            "levelReq": 140,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                40
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                120
+              ]
+            ]
+          }
+        },
+        {
+          "id": 65969,
+          "name": "Large Blightbound Imp",
+          "level": 120,
+          "class": null,
+          "slot": null,
+          "stats": {
+            "levelReq": 120,
+            "attributes": [
+              [
+                "Strength",
+                120
+              ],
+              [
+                "Focus",
+                120
+              ]
+            ],
+            "abilities": [
+              [
+                "Treasure Hunter",
+                800
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56955,
+          "name": "Greater Blightcasters Bracelet of the Crag",
+          "level": 110,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 110,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                35
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                170
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Attunement",
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57015,
+          "name": "Greater Blightcasters Circlet of the Crag",
+          "level": 110,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 110,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                35
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                170
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Lure of Ice",
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56895,
+          "name": "Greater Blightcasters Ring of the Crag",
+          "level": 110,
+          "class": "Mage",
+          "slot": "Ring",
+          "stats": {
+            "armour": 25,
+            "slot": "Ring",
+            "levelReq": 110,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                20
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Blast",
+                4
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57095,
+          "name": "Greater Blightwand of Dor-Keln",
+          "level": 110,
+          "class": "Mage",
+          "slot": "Weapon",
+          "stats": {
+            "weight": 8,
+            "slot": "Weapon",
+            "levelReq": 110,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                30
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                95
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56954,
+          "name": "Mystic Blightcasters Bracelet of the Crag",
+          "level": 100,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 100,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                25
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                130
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Attunement",
+                3
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57014,
+          "name": "Mystic Blightcasters Circlet of the Crag",
+          "level": 100,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 100,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                25
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                130
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Lure of Ice",
+                3
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56894,
+          "name": "Mystic Blightcasters Ring of the Crag",
+          "level": 100,
+          "class": "Mage",
+          "slot": "Ring",
+          "stats": {
+            "armour": 20,
+            "slot": "Ring",
+            "levelReq": 100,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                15
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Blast",
+                3
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57094,
+          "name": "Mystic Blightwand of Dor-Keln",
+          "level": 100,
+          "class": "Mage",
+          "slot": "Weapon",
+          "stats": {
+            "weight": 8,
+            "slot": "Weapon",
+            "levelReq": 100,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                20
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                70
+              ]
+            ]
+          }
+        },
+        {
+          "id": 65968,
+          "name": "Medium Blightbound Imp",
+          "level": 80,
+          "class": null,
+          "slot": null,
+          "stats": {
+            "levelReq": 80,
+            "attributes": [
+              [
+                "Strength",
+                80
+              ],
+              [
+                "Focus",
+                80
+              ]
+            ],
+            "abilities": [
+              [
+                "Treasure Hunter",
+                600
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56953,
+          "name": "Lesser Blightcasters Bracelet of the Crag",
+          "level": 60,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 60,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                20
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                100
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Attunement",
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57013,
+          "name": "Lesser Blightcasters Circlet of the Crag",
+          "level": 60,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 60,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                20
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                100
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Lure of Ice",
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56893,
+          "name": "Lesser Blightcasters Ring of the Crag",
+          "level": 60,
+          "class": "Mage",
+          "slot": "Ring",
+          "stats": {
+            "armour": 15,
+            "slot": "Ring",
+            "levelReq": 60,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                10
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Blast",
+                2
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57093,
+          "name": "Lesser Blightwand of Dor-Keln",
+          "level": 60,
+          "class": "Mage",
+          "slot": "Weapon",
+          "stats": {
+            "weight": 8,
+            "slot": "Weapon",
+            "levelReq": 60,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                10
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                55
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56952,
+          "name": "Minor Blightcasters Bracelet of the Crag",
+          "level": 50,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 50,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                15
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                70
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Attunement",
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57012,
+          "name": "Minor Blightcasters Circlet of the Crag",
+          "level": 50,
+          "class": "Mage",
+          "slot": "Bracelet",
+          "stats": {
+            "slot": "Bracelet",
+            "levelReq": 50,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                15
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                70
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Lure of Ice",
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "id": 56892,
+          "name": "Minor Blightcasters Ring of the Crag",
+          "level": 50,
+          "class": "Mage",
+          "slot": "Ring",
+          "stats": {
+            "armour": 10,
+            "slot": "Ring",
+            "levelReq": 50,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                10
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Ice Blast",
+                1
+              ]
+            ]
+          }
+        },
+        {
+          "id": 57092,
+          "name": "Minor Blightwand of Dor-Keln",
+          "level": 50,
+          "class": "Mage",
+          "slot": "Weapon",
+          "stats": {
+            "weight": 8,
+            "slot": "Weapon",
+            "levelReq": 50,
+            "classReq": "Mage",
+            "attributes": [
+              [
+                "Focus",
+                5
+              ]
+            ],
+            "abilities": [
+              [
+                "Ice Magic",
+                40
+              ]
+            ]
+          }
+        },
+        {
+          "id": 65967,
+          "name": "Small Blightbound Imp",
+          "level": 40,
+          "class": null,
+          "slot": null,
+          "stats": {
+            "levelReq": 40,
+            "attributes": [
+              [
+                "Strength",
+                40
+              ],
+              [
+                "Focus",
+                40
+              ]
+            ],
+            "abilities": [
+              [
+                "Treasure Hunter",
+                400
+              ]
+            ]
+          }
+        },
+        {
+          "id": 65908,
+          "name": "Black Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 58015,
+          "name": "Blight Blossom",
+          "level": null,
+          "class": null,
+          "slot": null,
+          "stats": {}
+        },
+        {
+          "id": 58012,
+          "name": "Blight Flower",
+          "level": null,
+          "class": null,
+          "slot": null,
+          "stats": {}
+        },
+        {
+          "id": 60130,
+          "name": "Blightbeast Fragment",
+          "level": null,
+          "class": null,
+          "slot": null,
+          "stats": {}
+        },
+        {
+          "id": 65906,
+          "name": "Blue Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 65918,
+          "name": "Glacial Black Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 65916,
+          "name": "Glacial Blue Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 65914,
+          "name": "Glacial Green Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 65912,
+          "name": "Glacial Orange Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 65911,
+          "name": "Glacial Pink Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 65917,
+          "name": "Glacial Purple Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 65910,
+          "name": "Glacial Red Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 65915,
+          "name": "Glacial Turquoise Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 65919,
+          "name": "Glacial White Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 65913,
+          "name": "Glacial Yellow Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 65904,
+          "name": "Green Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 65902,
+          "name": "Orange Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 65901,
+          "name": "Pink Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 65907,
+          "name": "Purple Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 65900,
+          "name": "Red Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 65966,
+          "name": "Tiny Blightbound Imp",
+          "level": null,
+          "class": null,
+          "slot": null,
+          "stats": {
+            "attributes": [
+              [
+                "Strength",
+                20
+              ],
+              [
+                "Focus",
+                20
+              ]
+            ],
+            "abilities": [
+              [
+                "Treasure Hunter",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 65905,
+          "name": "Turquoise Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 50137,
+          "name": "Warlock's Blighted Fellspine",
+          "level": null,
+          "class": null,
+          "slot": "Weapon",
+          "stats": {
+            "slot": "Weapon"
+          }
+        },
+        {
+          "id": 65909,
+          "name": "White Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        },
+        {
+          "id": 65903,
+          "name": "Yellow Winterblight Crown",
+          "level": null,
+          "class": null,
+          "slot": "Fashion Head",
+          "stats": {
+            "slot": "Fashion Head"
+          }
+        }
+      ]
+    },
+    "ferocity": {
+      "count": 23,
+      "truncated": false,
+      "entries": [
+        {
+          "id": 63544,
+          "name": "Godly Bloodfang Helm of Ferocity",
+          "level": 220,
+          "class": "Warrior",
+          "slot": "Head",
+          "stats": {
+            "armour": 150,
+            "weight": 15,
+            "slot": "Head",
+            "resists": [
+              [
+                "Resistance 10",
+                1500
+              ]
+            ],
+            "levelReq": 220,
+            "classReq": "Warrior",
+            "attributes": [
+              [
+                "Strength",
+                500
+              ],
+              [
+                "Vitality",
+                500
+              ]
+            ],
+            "abilities": [
+              [
+                "Melee Combat",
+                750
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                1000
+              ],
+              [
+                "Spell Attack Evasion",
+                1000
+              ],
+              [
+                "Movement Attack Evasion",
+                1000
+              ],
+              [
+                "Wounding Attack Evasion",
+                1000
+              ],
+              [
+                "Weakening Attack Evasion",
+                1000
+              ]
+            ]
+          }
+        },
+        {
+          "id": 64417,
+          "name": "Godly Bloodleaf Amulet of Ferocity",
+          "level": 220,
+          "class": "Rogue",
+          "slot": "Necklace",
+          "stats": {
+            "slot": "Necklace",
+            "resists": [
+              [
+                "Poison",
+                100
+              ],
+              [
+                "Resistance 10",
+                400
+              ]
+            ],
+            "levelReq": 220,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                600
+              ],
+              [
+                "Dexterity",
+                300
+              ],
+              [
+                "Vitality",
+                400
+              ]
+            ]
+          }
+        },
+        {
+          "id": 64612,
+          "name": "Godly Bloodleaf Band of Ferocity",
+          "level": 220,
+          "class": "Rogue",
+          "slot": "Ring",
+          "stats": {
+            "slot": "Ring",
+            "levelReq": 220,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                200
+              ],
+              [
+                "Vitality",
+                200
+              ]
+            ],
+            "abilities": [
+              [
+                "Dagger",
+                1500
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Sneaky Attack",
+                3500,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "id": 64442,
+          "name": "Godly Bloodleaf Charm of Ferocity",
+          "level": 220,
+          "class": "Rogue",
+          "slot": "Charm",
+          "stats": {
+            "slot": "Charm",
+            "resists": [
+              [
+                "Resistance 10",
+                500
+              ]
+            ],
+            "levelReq": 220,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                500
+              ],
+              [
+                "Vitality",
+                200
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Quick Strike",
+                1000,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "id": 63543,
+          "name": "Imperial Bloodfang Helm of Ferocity",
+          "level": 215,
+          "class": "Warrior",
+          "slot": "Head",
+          "stats": {
+            "armour": 120,
+            "weight": 15,
+            "slot": "Head",
+            "resists": [
+              [
+                "Resistance 10",
+                1200
+              ]
+            ],
+            "levelReq": 215,
+            "classReq": "Warrior",
+            "attributes": [
+              [
+                "Strength",
+                400
+              ],
+              [
+                "Vitality",
+                400
+              ]
+            ],
+            "abilities": [
+              [
+                "Melee Combat",
+                600
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                800
+              ],
+              [
+                "Spell Attack Evasion",
+                800
+              ],
+              [
+                "Movement Attack Evasion",
+                800
+              ],
+              [
+                "Wounding Attack Evasion",
+                800
+              ],
+              [
+                "Weakening Attack Evasion",
+                800
+              ]
+            ]
+          }
+        },
+        {
+          "id": 64416,
+          "name": "Imperial Bloodleaf Amulet of Ferocity",
+          "level": 215,
+          "class": "Rogue",
+          "slot": "Necklace",
+          "stats": {
+            "slot": "Necklace",
+            "resists": [
+              [
+                "Poison",
+                80
+              ],
+              [
+                "Resistance 10",
+                320
+              ]
+            ],
+            "levelReq": 215,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                480
+              ],
+              [
+                "Dexterity",
+                240
+              ],
+              [
+                "Vitality",
+                320
+              ]
+            ]
+          }
+        },
+        {
+          "id": 64611,
+          "name": "Imperial Bloodleaf Band of Ferocity",
+          "level": 215,
+          "class": "Rogue",
+          "slot": "Ring",
+          "stats": {
+            "slot": "Ring",
+            "levelReq": 215,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                160
+              ],
+              [
+                "Vitality",
+                160
+              ]
+            ],
+            "abilities": [
+              [
+                "Dagger",
+                1200
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Sneaky Attack",
+                2800,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "id": 64441,
+          "name": "Imperial Bloodleaf Charm of Ferocity",
+          "level": 215,
+          "class": "Rogue",
+          "slot": "Charm",
+          "stats": {
+            "slot": "Charm",
+            "resists": [
+              [
+                "Resistance 10",
+                400
+              ]
+            ],
+            "levelReq": 215,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                400
+              ],
+              [
+                "Vitality",
+                160
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Quick Strike",
+                800,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "id": 63542,
+          "name": "Royal Bloodfang Helm of Ferocity",
+          "level": 210,
+          "class": "Warrior",
+          "slot": "Head",
+          "stats": {
+            "armour": 90,
+            "weight": 15,
+            "slot": "Head",
+            "resists": [
+              [
+                "Resistance 10",
+                900
+              ]
+            ],
+            "levelReq": 210,
+            "classReq": "Warrior",
+            "attributes": [
+              [
+                "Strength",
+                300
+              ],
+              [
+                "Vitality",
+                300
+              ]
+            ],
+            "abilities": [
+              [
+                "Melee Combat",
+                450
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                600
+              ],
+              [
+                "Spell Attack Evasion",
+                600
+              ],
+              [
+                "Movement Attack Evasion",
+                600
+              ],
+              [
+                "Wounding Attack Evasion",
+                600
+              ],
+              [
+                "Weakening Attack Evasion",
+                600
+              ]
+            ]
+          }
+        },
+        {
+          "id": 64415,
+          "name": "Royal Bloodleaf Amulet of Ferocity",
+          "level": 210,
+          "class": "Rogue",
+          "slot": "Necklace",
+          "stats": {
+            "slot": "Necklace",
+            "resists": [
+              [
+                "Poison",
+                60
+              ],
+              [
+                "Resistance 10",
+                240
+              ]
+            ],
+            "levelReq": 210,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                360
+              ],
+              [
+                "Dexterity",
+                180
+              ],
+              [
+                "Vitality",
+                240
+              ]
+            ]
+          }
+        },
+        {
+          "id": 64610,
+          "name": "Royal Bloodleaf Band of Ferocity",
+          "level": 210,
+          "class": "Rogue",
+          "slot": "Ring",
+          "stats": {
+            "slot": "Ring",
+            "levelReq": 210,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                120
+              ],
+              [
+                "Vitality",
+                120
+              ]
+            ],
+            "abilities": [
+              [
+                "Dagger",
+                900
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Sneaky Attack",
+                2100,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "id": 64440,
+          "name": "Royal Bloodleaf Charm of Ferocity",
+          "level": 210,
+          "class": "Rogue",
+          "slot": "Charm",
+          "stats": {
+            "slot": "Charm",
+            "resists": [
+              [
+                "Resistance 10",
+                300
+              ]
+            ],
+            "levelReq": 210,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                300
+              ],
+              [
+                "Vitality",
+                120
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Quick Strike",
+                600,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "id": 63541,
+          "name": "Majestic Bloodfang Helm of Ferocity",
+          "level": 205,
+          "class": "Warrior",
+          "slot": "Head",
+          "stats": {
+            "armour": 75,
+            "weight": 15,
+            "slot": "Head",
+            "resists": [
+              [
+                "Resistance 10",
+                750
+              ]
+            ],
+            "levelReq": 205,
+            "classReq": "Warrior",
+            "attributes": [
+              [
+                "Strength",
+                250
+              ],
+              [
+                "Vitality",
+                250
+              ]
+            ],
+            "abilities": [
+              [
+                "Melee Combat",
+                375
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                500
+              ],
+              [
+                "Spell Attack Evasion",
+                500
+              ],
+              [
+                "Movement Attack Evasion",
+                500
+              ],
+              [
+                "Wounding Attack Evasion",
+                500
+              ],
+              [
+                "Weakening Attack Evasion",
+                500
+              ]
+            ]
+          }
+        },
+        {
+          "id": 64414,
+          "name": "Majestic Bloodleaf Amulet of Ferocity",
+          "level": 205,
+          "class": "Rogue",
+          "slot": "Necklace",
+          "stats": {
+            "slot": "Necklace",
+            "resists": [
+              [
+                "Poison",
+                50
+              ],
+              [
+                "Resistance 10",
+                200
+              ]
+            ],
+            "levelReq": 205,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                300
+              ],
+              [
+                "Dexterity",
+                150
+              ],
+              [
+                "Vitality",
+                200
+              ]
+            ]
+          }
+        },
+        {
+          "id": 64609,
+          "name": "Majestic Bloodleaf Band of Ferocity",
+          "level": 205,
+          "class": "Rogue",
+          "slot": "Ring",
+          "stats": {
+            "slot": "Ring",
+            "levelReq": 205,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                100
+              ],
+              [
+                "Vitality",
+                100
+              ]
+            ],
+            "abilities": [
+              [
+                "Dagger",
+                750
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Sneaky Attack",
+                1750,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "id": 64439,
+          "name": "Majestic Bloodleaf Charm of Ferocity",
+          "level": 205,
+          "class": "Rogue",
+          "slot": "Charm",
+          "stats": {
+            "slot": "Charm",
+            "resists": [
+              [
+                "Resistance 10",
+                250
+              ]
+            ],
+            "levelReq": 205,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                250
+              ],
+              [
+                "Vitality",
+                100
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Quick Strike",
+                500,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "id": 63540,
+          "name": "Mighty Bloodfang Helm of Ferocity",
+          "level": 200,
+          "class": "Warrior",
+          "slot": "Head",
+          "stats": {
+            "armour": 60,
+            "weight": 15,
+            "slot": "Head",
+            "resists": [
+              [
+                "Resistance 10",
+                600
+              ]
+            ],
+            "levelReq": 200,
+            "classReq": "Warrior",
+            "attributes": [
+              [
+                "Strength",
+                200
+              ],
+              [
+                "Vitality",
+                200
+              ]
+            ],
+            "abilities": [
+              [
+                "Melee Combat",
+                300
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                400
+              ],
+              [
+                "Spell Attack Evasion",
+                400
+              ],
+              [
+                "Movement Attack Evasion",
+                400
+              ],
+              [
+                "Wounding Attack Evasion",
+                400
+              ],
+              [
+                "Weakening Attack Evasion",
+                400
+              ]
+            ]
+          }
+        },
+        {
+          "id": 64413,
+          "name": "Mighty Bloodleaf Amulet of Ferocity",
+          "level": 200,
+          "class": "Rogue",
+          "slot": "Necklace",
+          "stats": {
+            "slot": "Necklace",
+            "resists": [
+              [
+                "Poison",
+                40
+              ],
+              [
+                "Resistance 10",
+                160
+              ]
+            ],
+            "levelReq": 200,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                240
+              ],
+              [
+                "Dexterity",
+                120
+              ],
+              [
+                "Vitality",
+                160
+              ]
+            ]
+          }
+        },
+        {
+          "id": 64608,
+          "name": "Mighty Bloodleaf Band of Ferocity",
+          "level": 200,
+          "class": "Rogue",
+          "slot": "Ring",
+          "stats": {
+            "slot": "Ring",
+            "levelReq": 200,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                80
+              ],
+              [
+                "Vitality",
+                80
+              ]
+            ],
+            "abilities": [
+              [
+                "Dagger",
+                600
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Sneaky Attack",
+                1400,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "id": 64438,
+          "name": "Mighty Bloodleaf Charm of Ferocity",
+          "level": 200,
+          "class": "Rogue",
+          "slot": "Charm",
+          "stats": {
+            "slot": "Charm",
+            "resists": [
+              [
+                "Resistance 10",
+                200
+              ]
+            ],
+            "levelReq": 200,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Strength",
+                200
+              ],
+              [
+                "Vitality",
+                80
+              ]
+            ],
+            "skillBonuses": [
+              [
+                "Quick Strike",
+                400,
+                0
+              ]
+            ]
+          }
+        },
+        {
+          "id": 58773,
+          "name": "Greater Potion of Mage's Ferocity",
+          "level": null,
+          "class": "Mage",
+          "slot": null,
+          "stats": {
+            "classReq": "Mage"
+          }
+        },
+        {
+          "id": 58772,
+          "name": "Lesser Potion of Mage's Ferocity",
+          "level": null,
+          "class": "Mage",
+          "slot": null,
+          "stats": {
+            "classReq": "Mage"
+          }
+        },
+        {
+          "id": 58771,
+          "name": "Minor Potion of Mage's Ferocity",
+          "level": null,
+          "class": "Mage",
+          "slot": null,
+          "stats": {
+            "classReq": "Mage"
+          }
+        }
+      ]
+    },
+    "concealment": {
+      "count": 5,
+      "truncated": false,
+      "entries": [
+        {
+          "id": 63549,
+          "name": "Godly Bloodfang Helm of Concealment",
+          "level": 220,
+          "class": "Rogue",
+          "slot": "Head",
+          "stats": {
+            "armour": 100,
+            "weight": 15,
+            "slot": "Head",
+            "resists": [
+              [
+                "Resistance 10",
+                1500
+              ]
+            ],
+            "levelReq": 220,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Dexterity",
+                500
+              ],
+              [
+                "Vitality",
+                500
+              ]
+            ],
+            "abilities": [
+              [
+                "Cunning",
+                750
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                1000
+              ],
+              [
+                "Spell Attack Evasion",
+                1000
+              ],
+              [
+                "Movement Attack Evasion",
+                1000
+              ],
+              [
+                "Wounding Attack Evasion",
+                1000
+              ],
+              [
+                "Weakening Attack Evasion",
+                1000
+              ]
+            ]
+          }
+        },
+        {
+          "id": 63548,
+          "name": "Imperial Bloodfang Helm of Concealment",
+          "level": 215,
+          "class": "Rogue",
+          "slot": "Head",
+          "stats": {
+            "armour": 80,
+            "weight": 15,
+            "slot": "Head",
+            "resists": [
+              [
+                "Resistance 10",
+                1200
+              ]
+            ],
+            "levelReq": 215,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Dexterity",
+                400
+              ],
+              [
+                "Vitality",
+                400
+              ]
+            ],
+            "abilities": [
+              [
+                "Cunning",
+                600
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                800
+              ],
+              [
+                "Spell Attack Evasion",
+                800
+              ],
+              [
+                "Movement Attack Evasion",
+                800
+              ],
+              [
+                "Wounding Attack Evasion",
+                800
+              ],
+              [
+                "Weakening Attack Evasion",
+                800
+              ]
+            ]
+          }
+        },
+        {
+          "id": 63547,
+          "name": "Royal Bloodfang Helm of Concealment",
+          "level": 210,
+          "class": "Rogue",
+          "slot": "Head",
+          "stats": {
+            "armour": 60,
+            "weight": 15,
+            "slot": "Head",
+            "resists": [
+              [
+                "Resistance 10",
+                900
+              ]
+            ],
+            "levelReq": 210,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Dexterity",
+                300
+              ],
+              [
+                "Vitality",
+                300
+              ]
+            ],
+            "abilities": [
+              [
+                "Cunning",
+                450
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                600
+              ],
+              [
+                "Spell Attack Evasion",
+                600
+              ],
+              [
+                "Movement Attack Evasion",
+                600
+              ],
+              [
+                "Wounding Attack Evasion",
+                600
+              ],
+              [
+                "Weakening Attack Evasion",
+                600
+              ]
+            ]
+          }
+        },
+        {
+          "id": 63546,
+          "name": "Majestic Bloodfang Helm of Concealment",
+          "level": 205,
+          "class": "Rogue",
+          "slot": "Head",
+          "stats": {
+            "armour": 50,
+            "weight": 15,
+            "slot": "Head",
+            "resists": [
+              [
+                "Resistance 10",
+                750
+              ]
+            ],
+            "levelReq": 205,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Dexterity",
+                250
+              ],
+              [
+                "Vitality",
+                250
+              ]
+            ],
+            "abilities": [
+              [
+                "Cunning",
+                375
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                500
+              ],
+              [
+                "Spell Attack Evasion",
+                500
+              ],
+              [
+                "Movement Attack Evasion",
+                500
+              ],
+              [
+                "Wounding Attack Evasion",
+                500
+              ],
+              [
+                "Weakening Attack Evasion",
+                500
+              ]
+            ]
+          }
+        },
+        {
+          "id": 63545,
+          "name": "Mighty Bloodfang Helm of Concealment",
+          "level": 200,
+          "class": "Rogue",
+          "slot": "Head",
+          "stats": {
+            "armour": 40,
+            "weight": 15,
+            "slot": "Head",
+            "resists": [
+              [
+                "Resistance 10",
+                600
+              ]
+            ],
+            "levelReq": 200,
+            "classReq": "Rogue",
+            "attributes": [
+              [
+                "Dexterity",
+                200
+              ],
+              [
+                "Vitality",
+                200
+              ]
+            ],
+            "abilities": [
+              [
+                "Cunning",
+                300
+              ]
+            ],
+            "evasions": [
+              [
+                "Physical Attack Evasion",
+                400
+              ],
+              [
+                "Spell Attack Evasion",
+                400
+              ],
+              [
+                "Movement Attack Evasion",
+                400
+              ],
+              [
+                "Wounding Attack Evasion",
+                400
+              ],
+              [
+                "Weakening Attack Evasion",
+                400
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    "valley_of_ancients": {
+      "count": 0,
+      "truncated": false,
+      "entries": []
+    },
+    "proteus": {
+      "count": 0,
+      "truncated": false,
+      "entries": []
+    },
+    "hasted": {
+      "count": 0,
+      "truncated": false,
+      "entries": []
+    },
+    "vested": {
+      "count": 0,
+      "truncated": false,
+      "entries": []
+    }
+  }
+}
