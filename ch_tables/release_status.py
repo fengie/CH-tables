@@ -72,6 +72,13 @@ def check_evidence(entries: list[dict], by_id: dict[str, dict]) -> dict[str, dic
         parsed = urlparse(str(source_url))
         if parsed.scheme != "https" or not parsed.netloc or parsed.username or parsed.password:
             raise ValueError(f"Bad public evidence URL: {item_id}")
+        if evidence_type in ("official_patch", "official_confirmation",
+                             "developer_confirmation"):
+            host = (parsed.hostname or "").casefold()
+            if host != "celtic-heroes.com" and not host.endswith(".celtic-heroes.com"):
+                raise ValueError(
+                    f"Official/developer evidence must use an official Celtic Heroes domain: {item_id}"
+                )
         when = row.get("evidence_date")
         try:
             when_date = date.fromisoformat(when)
