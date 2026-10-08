@@ -1,0 +1,65 @@
+name: Verify gear release status
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/gear-release-status.yml"
+      - "ch_tables/release_status.py"
+      - "ch_tables/game_query.py"
+      - "data/release/evidence.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ch-gear-release-status
+  cancel-in-progress: false
+
+jobs:
+  classify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Enforce release evidence safety tests
+        run: python -m unittest tests.test_release_status tests.test_game_query -v
+      - name: Generate evidence-backed status for every item
+        run: python -m ch_tables.release_status --data data/game --evidence data/release/evidence.json
+      - name: Verify complete coverage with no inferred unreleased state
+        run: |
+          python - <<'PY'
+          import gzip,json
+          from pathlib import Path
+          p=Path("data/game")
+          meta=json.loads((p/"manifest.json").read_text())
+          r=json.loads((p/"release_status_summary.json").read_text())
+          assert r["source_items"]==meta["counts"]["items"]
+          assert sum(r["status_counts"].values())==r["source_items"]
+          assert r["status_counts"].get("confirmed_unreleased",0)==0, "No confirmed negative evidence yet"
+          assert r["status_counts"].get("released_documented",0)==3, "Verify exact family item evidence"
+          rows=[json.loads(x) for x in gzip.open(p/"item_release_status.jsonl.gz","rt")]
+          assert len(rows)==r["source_items"]
+          assert len({x["item_id"] for x in rows})==len(rows)
+          assert all(x["excluded_from_default_bis"]==(x["release_status"]!="released_documented") for x in rows)
+          print("CONFIRMED",r["status_counts"],r["source_signal_counts"])
+          PY
+      - name: Publish only against unchanged main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/game/item_release_status.jsonl.gz data/game/release_status_summary.json
+          if git diff --cached --quiet; then
+            echo "Item status evidence unchanged"
+            exit 0
+          fi
+          git commit -m "data: classify all extracted gear with evidence and release-state gates"
+          git fetch origin main
+          if [ "$(git rev-parse HEAD^)" != "$(git rev-parse origin/main)" ]; then
+            echo "::error::main moved; refuse to publish stale classification"
+            exit 1
+          fi
+          git push origin HEAD:main
