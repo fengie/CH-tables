@@ -144,6 +144,14 @@ class BuildPlannerTests(unittest.TestCase):
                      Preferences(level=220, skill_points_available=1,
                                  max_swaps_per_skill=1, total_gold_budget=1000))
 
+    def test_unverified_source_cannot_be_labeled_observed(self):
+        with self.assertRaisesRegex(ValueError, "provenance"):
+            SkillRank(1, 100, 5, 0.1, evidence_kind="observed")
+        measured = SkillRank(1, 100, 5, 0.1,
+                             evidence_kind="observed",
+                             source_url="https://the-codex.ch/damagebuilder/example")
+        self.assertEqual(measured.expected_damage, 100)
+
     def test_rejects_malformed_rank_and_imaginary_scaling(self):
         with self.assertRaises(ValueError):
             rank(5, -200)
