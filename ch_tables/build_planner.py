@@ -117,6 +117,7 @@ class Swap:
     unequip_seconds: float = 0.15
     release_status: str = "unverified"
     owned: bool = False
+    acquisition_gold_cost: int | None = None
     requires_manual_action: bool = True
 
     def __post_init__(self):
@@ -124,6 +125,8 @@ class Swap:
             raise ValueError("Swap must have item ID, unique slot and level bonus")
         if min(self.direct_damage, self.equip_seconds, self.unequip_seconds) < 0:
             raise ValueError("Negative swap bonus or time")
+        if self.acquisition_gold_cost is not None and self.acquisition_gold_cost < 0:
+            raise ValueError("Negative acquisition cost")
 
 
 @dataclass(frozen=True)
@@ -154,6 +157,7 @@ class Preferences:
     max_swaps_per_skill: int = 0
     per_skill_swap_limit: dict[str, int] = field(default_factory=dict)
     unique_swap_item_limit: int = 0
+    total_gold_budget: int | None = None
     skill_points_available: int | None = None
     starting_skill_points: int = 0
     bonus_skill_points: int = 0
@@ -173,6 +177,8 @@ class Preferences:
             raise ValueError("Unique swap limit must be 0..30")
         if self.max_effective_skill_rank < 1:
             raise ValueError("Invalid effective skill cap")
+        if self.total_gold_budget is not None and self.total_gold_budget < 0:
+            raise ValueError("Negative gold budget")
         if min(self.baseline_auto_dps, self.manual_action_penalty_dps,
                self.healing_value_per_hp) < 0:
             raise ValueError("Negative preferences")
@@ -196,6 +202,7 @@ class BuildResult:
     occupied_share: float
     utility: float
     used_swap_ids: frozenset[str]
+    gold_cost: int | None
     warning: str
 
     def as_dict(self) -> dict:
@@ -208,6 +215,7 @@ class BuildResult:
             "estimated_skill_time_occupancy": round(self.occupied_share, 5),
             "utility": round(self.utility, 3),
             "unique_swap_item_ids": sorted(self.used_swap_ids),
+            "total_acquisition_gold": self.gold_cost,
             "warning": self.warning,
             "skills": [
                 {
@@ -289,6 +297,15 @@ def optimize(skills: list[Skill], swaps_by_skill: dict[str, list[Swap]],
         bonus_points=prefs.bonus_skill_points,
         override=prefs.skill_points_available,
     )
+    # Gold cost is charged ONCE per unique non-owned item, regardless of
+    # how many skills reuse that item in the rotation.
+    cost_by_id = {}
+    for group in swaps_by_skill.values():
+        for item in group:
+            price = 0 if item.owned else item.acquisition_gold_cost
+            if item.item_id in cost_by_id and cost_by_id[item.item_id] != price:
+                raise ValueError("Inconsistent price/ownership for swap item ID")
+            cost_by_id[item.item_id] = price
     # Exact multiple-choice knapsack over the validated per-skill options.
     # State also tracks distinct swap items so "max swap inventory" is exact.
     # Keep up to four non-dominated occupation variants per key to avoid
@@ -308,6 +325,10 @@ def optimize(skills: list[Skill], swaps_by_skill: dict[str, list[Swap]],
                 newids = ids | option.swap_item_ids
                 if prefs.unique_swap_item_limit and len(newids) > prefs.unique_swap_item_limit:
                     continue
+                if prefs.total_gold_budget is not None:
+                    costs = [cost_by_id.get(i) for i in newids]
+                    if any(c is None for c in costs) or sum(costs) > prefs.total_gold_budget:
+                        continue
                 key = (total, newids)
                 for oldvalue, occupied, prev in variants:
                     newocc = occupied + option.occupation_share
@@ -340,12 +361,15 @@ def optimize(skills: list[Skill], swaps_by_skill: dict[str, list[Swap]],
         key=lambda row: (row[0], -row[1], -len(row[4]), -row[3]),
     )
     utility, occ, choices, spent, ids = winner
+    final_prices = [cost_by_id.get(i) for i in ids]
+    gold_total = (sum(final_prices) if all(p is not None for p in final_prices)
+                  else None)
     return BuildResult(
         choices, spent, budget,
         prefs.baseline_auto_dps + sum(x.dps_gain for x in choices),
         sum(x.healing_per_second for x in choices),
         sum(x.actions_per_min for x in choices),
-        occ, utility + prefs.baseline_auto_dps, ids,
+        occ, utility + prefs.baseline_auto_dps, ids, gold_total,
         "Rank-specific inputs are observations/estimates, not validated game "
         "coefficients. Additive cooldown DPS is a screening model, not a "
         "simulation of GCD, simultaneous cooldown contention, DoT overlap, "
