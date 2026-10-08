@@ -85,25 +85,57 @@ def parse_skills_html(html: str, source_url: str) -> list[dict]:
         ci = next((i for i, token in enumerate(tokens) if COOLDOWN.search(token)), None)
         if ci is None:
             continue
-        raw_cooldown = tokens[ci]
-        # A stat is accepted only if the immediately following token contains
-        # numeric values and precedes the first Max Damage block.
+        # HTML often splits "10s (6s)" and "2,400 (4,950)" across text nodes.
+        # Aggregate bounded neighboring tokens rather than using one text node.
+        labels = set(KNOWN_ABILITIES) | set(PRIMARY_STATS) | set(METRICS)
         limit = next((j for j in range(ci, len(tokens))
-                      if tokens[j].strip() == "Max Damage"), min(ci + 24, len(tokens)))
+                      if tokens[j].strip() in ("Max Damage", "Debuff Value",
+                                             "Healing")), min(ci + 80, len(tokens)))
         pre_damage = tokens[ci + 1:limit]
+        first_stat_index = next(
+            (i for i, t in enumerate(pre_damage) if t.strip() in
+             set(KNOWN_ABILITIES) | set(PRIMARY_STATS)), len(pre_damage)
+        )
+        raw_cooldown = " ".join(tokens[ci:ci + 1] +
+                                pre_damage[:first_stat_index])
+        # Only parse explicit labels; unavailable timing numbers remain None.
+        timing = {}
+        for metric in ("Cooldown", "Cast", "Lockout"):
+            match = re.search(r"\\b" + metric +
+                              r"\\s*:\\s*([0-9]+(?:\\.[0-9]+)?)\\s*s",
+                              raw_cooldown, re.IGNORECASE)
+            timing[metric.lower() + "_s"] = float(match.group(1)) if match else None
+        matched_cd = re.search(
+            r"\\bCooldown\\s*:\\s*[0-9]+(?:\\.[0-9]+)?\\s*s\\s*"
+            r"\\(\\s*([0-9]+(?:\\.[0-9]+)?)\\s*s\\s*\\)", raw_cooldown,
+            re.IGNORECASE)
+        timing["effective_cooldown_s"] = (
+            float(matched_cd.group(1)) if matched_cd else None
+        )
         ability = None
         scaling = None
-        for i, t in enumerate(pre_damage[:-1]):
-            if ability is None and t in KNOWN_ABILITIES:
-                ability = {"name": t, "value": parse_stat_pair(pre_damage[i + 1])}
-            if scaling is None and t in PRIMARY_STATS:
-                scaling = {"stat": t, "value": parse_stat_pair(pre_damage[i + 1])}
+        for i, t in enumerate(pre_damage):
+            if t not in KNOWN_ABILITIES and t not in PRIMARY_STATS:
+                continue
+            j = i + 1
+            while j < len(pre_damage) and pre_damage[j] not in labels and j <= i + 12:
+                j += 1
+            # These are consecutive text nodes representing one stat.
+            pair = parse_stat_pair(" ".join(pre_damage[i + 1:j]))
+            if t in KNOWN_ABILITIES and ability is None:
+                ability = {"name": t, "value": pair}
+            if t in PRIMARY_STATS and scaling is None:
+                scaling = {"stat": t, "value": pair}
         vals = {}
+        duplicate_metrics = {}
         for i, token in enumerate(tokens):
             if token.strip() in METRICS and i + 1 < len(tokens):
                 num = parse_integer(tokens[i + 1])
                 if num is not None:
-                    vals[token.strip()] = num
+                    if token.strip() in vals:
+                        duplicate_metrics.setdefault(token.strip(), []).append(num)
+                    else:
+                        vals[token.strip()] = num
         if "Max Damage" not in vals and "Debuff Value" not in vals and "Healing" not in vals:
             continue
         identity = (source_url, name)
@@ -113,8 +145,10 @@ def parse_skills_html(html: str, source_url: str) -> list[dict]:
         observations.append({
             "source_url": source_url, "skill_name": name,
             "cooldown_cast_lockout_text": raw_cooldown,
+            "timing_s": timing,
             "skill_ability": ability, "scaling_attribute": scaling,
             "numeric_metrics": vals,
+            "additional_metric_occurrences": duplicate_metrics,
             "model_provenance": "single_saved_build_not_engine_coefficients",
         })
     return observations
