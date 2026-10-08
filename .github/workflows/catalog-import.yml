@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - ".github/workflows/catalog-import.yml"
+      - "ch_tables/catalog_ingest.py"
 
 permissions:
   contents: write
