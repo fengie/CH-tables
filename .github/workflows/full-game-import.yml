@@ -7,6 +7,7 @@ on:
       - ".github/workflows/full-game-import.yml"
       - "ch_tables/full_game_ingest.py"
       - "tests/test_full_game_ingest.py"
+      - "ch_tables/gear_bonus_index.py"
 
 permissions:
   contents: write
@@ -28,6 +29,10 @@ jobs:
         run: python -m unittest tests.test_full_game_ingest tests.test_catalog_ingest -v
       - name: Import all publicly source-pinned records
         run: python -m ch_tables.full_game_ingest --output data/game
+      - name: Build exact all-gear skill and ability bonus index
+        run: |
+          python -m unittest tests.test_gear_bonus_index tests.test_game_query -v
+          python -m ch_tables.gear_bonus_index --data data/game
       - name: Verify generated file manifest and all gzip archives
         run: |
           python - <<'PY'
