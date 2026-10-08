@@ -52,11 +52,12 @@ This file is the repository's durable current-work ledger. It follows the cross-
 ### OPT-002 — Dynamic multi-objective simulator and planner UI
 
 **Priority:** P1  
-**Status:** PLANNED  
-**Owner:** unclaimed  
+**Status:** ACTIVE  
+**Owner:** implementation slice via GitHub candidate; in-game calibration remains unclaimed  
 **Source:** `docs/OPTIMIZATION_ARCHITECTURE_2026_10_08.md`.  
 **Acceptance:** seeded event-simulation fixtures agree with game observations; search agrees with exhaustive oracle for tiny cases; clear Pareto results with safe, priced gear sources and quality indicators.  
-**Next action:** prototype event queue with one validated boss and discrete attack/cooldown/potion/swap policies; benchmark CP-SAT vs baseline search before selecting default solver.
+**Implemented slice:** `ch_tables/combat_simulator.py` models deterministic priority-queue events, resource caps, enemy/auto/pet attacks, cast/action occupation, finite potions, swaps, DoT refresh and buff expiry; a planner Choice adapter and paired-seed evaluation are included. `tests/test_combat_simulator.py` has 16 locally passing standard-library regression tests. `data/planner/synthetic_combat_scenario.json` is explicitly NOT real game data. See `docs/COMBAT_SIMULATOR.md`. Full OPT-002 acceptance is still pending.  
+**Next action:** collect same-patch real Rogue and resource-limited caster traces to validate action timing/mitigation/mount/skill mechanics; compare predictions on grouped session holdouts before any practical-DPS claims. Then build tiny exact oracle/solver and Pareto comparison.
 
 ### OPT-003 — Tooling case-study feedback
 
