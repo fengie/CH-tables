@@ -1,0 +1,71 @@
+name: Publish planner research snapshots
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/planner-research.yml"
+      - "ch_tables/pet_catalog.py"
+      - "ch_tables/skill_priorities.py"
+      - "ch_tables/market_import.py"
+      - "data/community/prices.csv"
+      - "data/community/drops.csv"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ch-planner-research
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Verify modeling and ingestion tests
+        run: |
+          python -m unittest tests.test_build_planner tests.test_economy tests.test_market_import tests.test_pet_catalog tests.test_skill_priorities tests.test_personal_planner -v
+      - name: Index source-backed companion gear and dated pet tiers
+        run: python -m ch_tables.pet_catalog --data data/game --output data/pets
+      - name: Rank the original saved-build skill observations
+        run: python -m ch_tables.skill_priorities
+      - name: Audit per-world price and RNG submissions
+        run: python -m ch_tables.market_import --game data/game --input data/community --output data/community
+      - name: Verify outputs are internally consistent
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          pets=json.loads(Path("data/pets/pets_and_tiers.json").read_text())
+          rankings=json.loads(Path("data/planner/skill_snapshot_rankings.json").read_text())
+          market=json.loads(Path("data/community/market_summary.json").read_text())
+          assert pets["source_items"]==23752
+          assert len(pets["public_pet_species"])>=8
+          assert len(pets["measured_tiers"])>=18
+          assert rankings["published_saved_builds"]>=8
+          assert market["prices_submitted"]>=0
+          print("PET SPECIES",len(pets["public_pet_species"]))
+          print("PUBLISHED SKILL BUILDS",rankings["published_saved_builds"])
+          print("REAL WORLD PRICES",market["prices_submitted"])
+          PY
+      - name: Publish only if no other agent advanced main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/pets data/planner/skill_snapshot_rankings.json data/community/market_summary.json
+          if git diff --cached --quiet; then
+            echo "Evidence-based planner data unchanged"
+            exit 0
+          fi
+          git commit -m "data: publish pet tiers, observed skill indices and economy evidence"
+          git fetch origin main
+          if [ "$(git rev-parse HEAD^)" != "$(git rev-parse origin/main)" ]; then
+            echo "::error::main advanced; refusing stale research publication"
+            exit 1
+          fi
+          git push origin HEAD:main
