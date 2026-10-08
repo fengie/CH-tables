@@ -1,6 +1,6 @@
 # CH-tables
 
-> ⏱️ Last README update: **October 8, 2026 · 7:13:00 PM EDT** _(repo-enforced)_
+> ⏱️ Last README update: **October 8, 2026 · 7:30:00 PM EDT** _(repo-enforced)_
 
 Celtic Heroes class/boss data utilities, normalized class samples, and reproducible effective-DPS analysis.
 
@@ -25,6 +25,53 @@ Run tests:
 ```powershell
 python -m unittest discover -s tests -v
 ```
+
+## Personalized gear, skill and pet optimization (personal beta)
+
+This repo is moving toward a Prydwen-style guide and character builder, with
+per-level skill points, **0–3 gear swaps per skill**, item-release safety,
+pet tiers, game-server trade observations, RNG limits and QoL alternatives.
+The current implementation is a local Python **research optimizer**, not
+a finished website or validated live-game DPS simulator.
+
+- [Design, algorithms, exact limits and roadmap](docs/BUILD_PLANNER.md)
+- [User's DEX-only knuckleblade Rogue template](data/planner/personal_dex_fist_rogue_template.json)
+- [Runnable explicitly synthetic example](data/planner/example_scenario.json)
+  and [example comparison report](data/planner/demo_report.json)
+- [Source-specific skill-DPS indices](data/planner/skill_snapshot_rankings.json)
+- [Public pet species/tier/index](data/pets/pets_and_tiers.json)
+- [Full rarity metadata](data/game/item_rarity_summary.json):
+  rarity labels are not drop probabilities
+- [Per-world market and drop input schema](data/community/README.md):
+  completed sales are never confused with asking prices
+- [Community contribution/evidence policy](CONTRIBUTING.md)
+
+Run:
+
+```powershell
+# One command runs all optimizer, data-ingestion and safety tests
+python -m unittest discover -s tests -v
+
+# Synthetic proof that point allocation and multiple playstyles run
+python -m ch_tables.build_planner --scenario data/planner/example_scenario.json
+
+# Real personal runner, once exact per-skill rank curves are provided
+python -m ch_tables.personal_planner --scenario data/planner/personal_dex_fist_rogue_template.json
+
+# Inspect item rarity and availability labels, source skills and pets
+python -m ch_tables.game_query items "Creidhne's Knuckleblade" --released-only
+python -m ch_tables.pet_catalog
+python -m ch_tables.skill_priorities
+
+# Recalculate from sourced marketplace or documented loot observations
+python -m ch_tables.market_import
+```
+
+**No fabricated stat curves/prices:** Skill-rank damage in the personal
+template is intentionally blank, world and exact level must be confirmed,
+and the market submission files initially contain no observations. The
+personal runner fails rather than inventing a BIS rotation. The automated
+snapshot-specific skill ranking is NOT a universal skill priority list.
 
 ## Reproducible refresh pipeline
 
