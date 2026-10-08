@@ -1,6 +1,6 @@
 # CH-tables
 
-> ⏱️ Last README update: **October 5, 2026 · 7:41:53 PM EDT** _(repo-enforced)_
+> ⏱️ Last README update: **October 8, 2026 · 6:49 PM EDT** _(repo-enforced)_
 
 Celtic Heroes class/boss data utilities, normalized class samples, and reproducible effective-DPS analysis.
 
@@ -89,6 +89,52 @@ Calibration n:                   3
 ```
 
 Because the calibration sample is small, the code reports its observed min/max range instead of claiming a misleading high-confidence population interval.
+
+## Reusable CH mechanics and gear research
+
+This repository now includes a source-pinned, reproducible Celtic Heroes
+reference system. All numerical observations are labeled; published
+calculator approximations are not claimed as official server equations.
+
+- [Skill / ability registry](ch_tables/skill_reference.py): 93 community-indexed
+  skills and 43 named abilities, with character-stat scaling and evasion types
+  where documented.
+- [Cross-class skill panel observations](data/reference/codex_skill_panel_observations.json):
+  **122 modeled skill observations from 12 public Codex builds**, spanning all
+  five classes. Includes base/effective attributes, skill abilities,
+  cooldown/cast/lockout, and per-skill damage when present. These are
+  *saved-build snapshots*, not fitted engine coefficients.
+- [Endgame/rogue item catalog](data/catalog/rogue_endgame_items.json):
+  **3,203 candidate records** selected from **23,752** unique upstream items
+  using the pinned [catalog manifest](data/catalog/catalog_manifest.json).
+- [Priority gear lookup](data/catalog/priority_gear_lookup.json) and
+  [item-stat schema](data/catalog/item_stat_schema.json): inspect raw item
+  field names, exact item bonuses and plausible alternative gear without
+  pretending to have proven BIS ranks.
+- [Boss resistances/evasions](data/reference/raid_boss_resistances_2026_10_08.json):
+  eight historical upstream raid-boss records.
+- [Robust stat inverse-modeling](ch_tables/calibration.py): identifiability
+  checks, segmented-sqrt STR candidates, Huber IRLS, leave-session-out
+  validation, session bootstrap, and information-guided next experiments.
+- [Research and validation protocol](docs/SCALING_RESEARCH.md) explains
+  exactly what measurements are needed to recover currently unknown
+  rank-specific skill formulas.
+- [Personal DEX fist Rogue profile](docs/DEX_FIST_ROGUE_PROFILE.md)
+  documents fixed skills, held gear, and knuckleblade-only constraints.
+
+Source refreshes are explicit and bounded, not scheduled to scrape on
+every push. Local commands:
+
+```powershell
+python -m ch_tables.catalog_ingest --output data/catalog
+python -m ch_tables.catalog_report
+python -m ch_tables.codex_skill_ingest
+python -m unittest discover -s tests -v
+```
+
+**Known gaps:** Some user-owned Valley of Ancients and Proteus items are absent
+from the imported item names; current-client weapon speed/procs and complete
+skill rank coefficients remain unverified. Never fill unknown values by guess.
 
 ## Data sources
 
