@@ -1,0 +1,20 @@
+{
+  "duration_s": 60,
+  "max_hp": 120,
+  "max_energy": 60,
+  "auto": {"interval_s": 2, "damage": 10},
+  "enemy": {"interval_s": 4, "damage": 12},
+  "pet": {"interval_s": 5, "damage": 4},
+  "skills": [
+    {"name": "Synthetic strike", "damage": 35, "cooldown_s": 10, "cast_s": 1, "energy_cost": 12, "priority": 1,
+     "swaps": [{"item_id": "toy_ring", "slot": "ring1", "equip_s": 0.1, "restore_s": 0.1}]},
+    {"name": "Synthetic damage-over-time", "damage": 2, "cooldown_s": 15, "cast_s": 1.5, "energy_cost": 8,
+     "dot": {"tick_damage": 3, "tick_interval_s": 2, "ticks": 4}}
+  ],
+  "hp_regen_s": 1,
+  "energy_regen_s": 2,
+  "hp_potion": {"restore": 40, "charges": 3, "threshold_fraction": 0.25, "action_s": 0.5, "cooldown_s": 10, "gold_each": 10},
+  "energy_potion": {"restore": 20, "charges": 2, "threshold_fraction": 0.15, "action_s": 0.5, "cooldown_s": 10, "gold_each": 5},
+  "mount": {"max_hp": 0, "max_energy": 0, "verified_in_combat": false},
+  "evidence": "synthetic"
+}
