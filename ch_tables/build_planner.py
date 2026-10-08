@@ -76,6 +76,8 @@ class SkillRank:
             raise ValueError("Hit probability must be 0..1")
         if self.evidence_kind not in ("observed", "community_model", "user_estimate"):
             raise ValueError("Evidence kind mandatory")
+        if self.evidence_kind in ("observed", "community_model") and not self.source_url.startswith("https://"):
+            raise ValueError("Sourced skill ranks need public HTTPS provenance")
         if not all(math.isfinite(x) for x in (
             self.expected_damage, self.cooldown_s, self.occupied_s,
             self.hit_probability, self.healing, self.energy_cost
