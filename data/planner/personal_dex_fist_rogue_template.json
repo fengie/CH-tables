@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "scenario_status": "user_supplied",
+  "name": "PERSONAL TEMPLATE — fill exact level, world, rank measurements, pet, inventory",
+  "notes": "NOT RUNNABLE until missing rank curves are provided; placeholder level 220 and world YOUR_WORLD are not the player's verified data.",
+  "character": {
+    "class": "Rogue",
+    "attribute_allocation": "all assignable primary stat points into Dexterity",
+    "weapon_target": "Named Strength Creidhne/Dhiothu Hand-to-Hand knuckleblades",
+    "surface_gear": "Royal Concealment helm; Godly Ferocity amulet; Imperial Ferocity charm/misc; 390 fire Valley ring; Imperial Proteus protection bracelet; full Doch Gul planned",
+    "raid_swap_set": "Separate already-owned Expose support equipment; do not optimize raid swap gear as surface set",
+    "skill_list": [
+      "Shadowstrike",
+      "Quick Strike",
+      "Life Steal",
+      "Double Attack",
+      "Rend",
+      "Smoke Bomb",
+      "Expose Weakness"
+    ],
+    "disliked_upkeep": [
+      "Poison Weapon",
+      "Fast Reflexes"
+    ]
+  },
+  "preferences": {
+    "level": 220,
+    "skill_points_available": null,
+    "starting_skill_points": 0,
+    "bonus_skill_points": 0,
+    "skill_rank_cap_override": null,
+    "max_effective_skill_rank": 50,
+    "max_swaps_per_skill": 3,
+    "per_skill_swap_limit": {
+      "Shadowstrike": 2,
+      "Quick Strike": 2,
+      "Life Steal": 1,
+      "Double Attack": 1,
+      "Rend": 2,
+      "Smoke Bomb": 0,
+      "Expose Weakness": 0
+    },
+    "unique_swap_item_limit": 10,
+    "total_gold_budget": null,
+    "baseline_auto_dps": 0,
+    "manual_action_penalty_dps": 0.1,
+    "auto_loss_fraction": 1,
+    "allow_unverified_owned_swaps": true,
+    "healing_value_per_hp": 0.01,
+    "max_occupation_fraction": 0.8
+  },
+  "effort_budget": {
+    "world": "YOUR_WORLD",
+    "gold": null,
+    "maximum_boss_kills": 100,
+    "minimum_success_chance": 0.5,
+    "acquisition_mode": "any",
+    "include_unknown_rng": false,
+    "include_unknown_market": false
+  },
+  "skills": [
+    {
+      "name": "Shadowstrike",
+      "mandatory": true,
+      "required_points": 1,
+      "role": "damage",
+      "ranks": {}
+    },
+    {
+      "name": "Quick Strike",
+      "mandatory": true,
+      "required_points": 1,
+      "role": "damage",
+      "ranks": {}
+    },
+    {
+      "name": "Life Steal",
+      "mandatory": true,
+      "required_points": 1,
+      "role": "heal",
+      "ranks": {}
+    },
+    {
+      "name": "Double Attack",
+      "mandatory": true,
+      "required_points": 1,
+      "role": "damage",
+      "ranks": {}
+    },
+    {
+      "name": "Rend",
+      "mandatory": true,
+      "required_points": 1,
+      "role": "damage",
+      "ranks": {}
+    },
+    {
+      "name": "Smoke Bomb",
+      "mandatory": true,
+      "required_points": 1,
+      "role": "support",
+      "ranks": {}
+    },
+    {
+      "name": "Expose Weakness",
+      "mandatory": true,
+      "required_points": 1,
+      "role": "support",
+      "ranks": {}
+    }
+  ],
+  "swaps_by_skill": {},
+  "pet_preferences": {
+    "desired_role": "solo_DPS_with_sustain",
+    "max_upgrade_tokens": null,
+    "owned_pet": null,
+    "known_pet_skill_dps": null
+  },
+  "acquisition_priority": "owned first, documented releases only otherwise"
+}
