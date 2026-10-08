@@ -101,13 +101,13 @@ def parse_skills_html(html: str, source_url: str) -> list[dict]:
         # Only parse explicit labels; unavailable timing numbers remain None.
         timing = {}
         for metric in ("Cooldown", "Cast", "Lockout"):
-            match = re.search(r"\\b" + metric +
-                              r"\\s*:\\s*([0-9]+(?:\\.[0-9]+)?)\\s*s",
+            match = re.search(r"\b" + metric +
+                              r"\s*:\s*([0-9]+(?:\.[0-9]+)?)\s*s",
                               raw_cooldown, re.IGNORECASE)
             timing[metric.lower() + "_s"] = float(match.group(1)) if match else None
         matched_cd = re.search(
-            r"\\bCooldown\\s*:\\s*[0-9]+(?:\\.[0-9]+)?\\s*s\\s*"
-            r"\\(\\s*([0-9]+(?:\\.[0-9]+)?)\\s*s\\s*\\)", raw_cooldown,
+            r"\bCooldown\s*:\s*[0-9]+(?:\.[0-9]+)?\s*s\s*"
+            r"\(\s*([0-9]+(?:\.[0-9]+)?)\s*s\s*\)", raw_cooldown,
             re.IGNORECASE)
         timing["effective_cooldown_s"] = (
             float(matched_cd.group(1)) if matched_cd else None
