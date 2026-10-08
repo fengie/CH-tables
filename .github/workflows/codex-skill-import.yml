@@ -1,0 +1,46 @@
+name: Collect Codex skill observations
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/codex-skill-import.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: codex-skill-reference
+  cancel-in-progress: false
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install existing parser dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Offline format checks
+        run: python -m unittest tests.test_codex_skill_ingest -v
+      - name: Collect public skill panels responsibly
+        run: python -m ch_tables.codex_skill_ingest
+      - name: Publish evidence when canonical main has not moved
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/reference/codex_skill_panel_observations.json
+          if git diff --cached --quiet; then
+            echo "No skill observation changes"
+            exit 0
+          fi
+          git commit -m "data: source-index Codex cross-class skill observations"
+          git fetch origin main
+          if [ "$(git rev-parse HEAD^)" != "$(git rev-parse origin/main)" ]; then
+            echo "::error::main moved; refusing stale skill-data publication"
+            exit 1
+          fi
+          git push origin HEAD:main
