@@ -6,6 +6,7 @@ on:
     paths:
       - ".github/workflows/full-game-import.yml"
       - "ch_tables/full_game_ingest.py"
+      - "tests/test_full_game_ingest.py"
 
 permissions:
   contents: write
