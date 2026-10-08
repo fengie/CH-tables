@@ -23,6 +23,7 @@ class SkillPrioritiesTests(unittest.TestCase):
         self.assertEqual(x[0]["codex_net_after_reported_lost_auto"], 160)
         self.assertIsNone(x[1]["codex_net_after_reported_lost_auto"])
         self.assertFalse(x[0]["strictly_comparable_to_other_characters"])
+        self.assertEqual(output["https://test.example/build-a"]["by_source_modeled_net_after_auto_loss"][0]["skill"], "Fast")
 
     def test_expose_and_smoke_are_not_mislabeled_damage_skills(self):
         test = [
