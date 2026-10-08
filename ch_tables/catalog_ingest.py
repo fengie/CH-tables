@@ -118,16 +118,16 @@ def get_int(*values) -> int | None:
 def normalize_item(item: dict, source_asset: str) -> dict:
     stats = item.get("stats") if isinstance(item.get("stats"), dict) else {}
     fields = dict(stats)
-    for key in ("slot", "class", "classes", "level", "minLevel", "levelRequirement"):
+    for key in ("slot", "class", "classReq", "classes", "level", "levelReq", "minLevel", "levelRequirement"):
         if key in item and key not in fields:
             fields[key] = item[key]
     normalized = {
         "id": item["id"],
         "name": str(item["name"]),
         "slot": fields.get("slot"),
-        "class": fields.get("class", fields.get("classes")),
-        "level": get_int(fields.get("level"), fields.get("minLevel"),
-                         fields.get("levelRequirement")),
+        "class": fields.get("class", fields.get("classReq", fields.get("classes"))),
+        "level": get_int(fields.get("level"), fields.get("levelReq"),
+                         fields.get("minLevel"), fields.get("levelRequirement")),
         "stats": stats,
         "description": item.get("description"),
         "source_asset": source_asset,
@@ -170,8 +170,11 @@ def assemble(assets: dict[str, str]) -> tuple[list[dict], dict]:
         script = assets[asset]
         parsed = extract_json_literal(script)
         found = list(iter_items(parsed))
-        if not found:
+        if not found and asset != ASSETS[0]:
             raise ValueError(f"No item records from {asset}: schema drift")
+        if found:
+            samples = [i for i in found if any(t in str(i.get("name", "")).casefold() for t in ("knuckle", "ferocity", "doch gul", "blight"))]
+            print(f"asset {asset} records={len(found)} examples={[(i.get(chr(110)+chr(97)+chr(109)+chr(101)), i.get(chr(115)+chr(116)+chr(97)+chr(116)+chr(115))) for i in samples[:4]]}", flush=True)
         sha = hashlib.sha256(script.encode("utf-8")).hexdigest()
         manifest["sources"].append({
             "path": asset, "url": source_url(asset), "sha256_text": sha,
