@@ -1,6 +1,6 @@
 # CH-tables
 
-> ⏱️ Last README update: **October 8, 2026 · 9:00:43 PM EDT** _(repo-enforced)_
+> ⏱️ Last README update: **October 8, 2026 · 9:03:07 PM EDT** _(repo-enforced)_
 
 Celtic Heroes class/boss data utilities, normalized class samples, and reproducible effective-DPS analysis.
 
@@ -19,7 +19,7 @@ Refresh the **full public Codex Saved Builds catalog (327 linked builds)** from 
 python -m ch_tables.codex_catalog
 ```
 
-This rebuilds all public listing rows, derived CSV tables, provenance manifest and a local indexed SQLite database joining the existing skill-panel observations. [Coverage and limitations](docs/CODEX_CATALOG.md). The older one-page network refresher is guarded against silently truncating a complete dataset.
+This rebuilds all public listing rows, derived CSV tables, provenance manifest and a local indexed SQLite database joining the existing skill-panel observations. Expand the detail sources carefully using `python -m ch_tables.codex_detail_refresh --limit 12` before re-running the SQLite export. [Coverage and limitations](docs/CODEX_CATALOG.md). The older one-page network refresher is guarded against silently truncating a complete dataset.
 
 Refresh the community build sample:
 

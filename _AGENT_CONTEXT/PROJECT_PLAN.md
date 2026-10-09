@@ -42,6 +42,16 @@ This file is the repository's durable current-work ledger. It follows the cross-
 **Implementation:** `data/reference/codex_published_build_catalog.json`, `ch_tables/codex_catalog.py`, `docs/CODEX_CATALOG.md`. Raw complete CSV and filtered normalized/class tables published from one snapshot. Existing one-page scraper fails closed when pagination reveals incomplete coverage.
 **Next action:** systematically expand independent detail-page coverage with source/terms review; neither raw modeled DPS nor a copied HTML page establishes real-game DPS accuracy.
 
+### DATA-004 — Incremental public Codex detail coverage
+
+**Priority:** P1
+**Status:** ACTIVE
+**Owner:** unclaimed for future source-compliant collection
+**Source:** complete DATA-003 catalog, existing 12-build / 122-panel source archive
+**Goal:** expand independent per-build skill evidence safely without discarding source identity or prior observations.
+**Delivered:** `ch_tables/codex_detail_refresh.py` provides deterministic class-balanced missing-URL selection, capped rate-limited page requests, no retry on 429, schema-fail-closed incremental merging, independent original snapshot preservation and atomic publication. `tests/test_codex_detail_refresh.py` is entirely offline.
+**Next action:** execute small authorized increments in an internet-enabled trusted runtime, measure successful independent build coverage and parser drift, get publisher/author permission before broad redistribution, then implement separate tank-specific detailed-metric extraction. Do not report all detail pages as ingested.
+
 ### OPT-001 — Equip/mount/consumable feasibility and research benchmark
 
 **Priority:** P1  
