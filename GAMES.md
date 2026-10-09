@@ -21,3 +21,7 @@
 - AION 2 shop data is a dated, limited October 9 Global snapshot. Do not infer extra Mileage on Quna spending or guaranteed future prices; user values skins, collecting and long-term play above meta.
 - No proprietary game art bundled. No login, paid purchases or scheduled agents.
 - .heaven/update-policy.json follows this renamed repository exactly. See web/DEPLOYMENT.md for release controls.
+
+## Research strategy (2026-10-09)
+
+[Prydwen/KQM/Fribbels/poe.ninja/Paimon competitor audit](_AGENT_CONTEXT/RESEARCH_FINDINGS/records/2026/10/2026-10-09-competitor-product-b500f55604b9.md) · [Scientific multiobjective, validation and provenance review](_AGENT_CONTEXT/RESEARCH_FINDINGS/records/2026/10/2026-10-09-science-multicriteria-1f9c1c451eea.md). These are dated design findings, **not** deployed features or proof of better performance. Existing CH optimization ADR and AION source ledger remain authoritative on their specific facts.
