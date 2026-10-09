@@ -1,8 +1,8 @@
 {
   "schema": "heaven-toolbox/update-policy/v1",
-  "repository": "fengie/CH-tables",
+  "repository": "fengie/Heaven.gg",
   "branch": "main",
-  "kind": "source",
+  "kind": "product",
   "source_update": {
     "required": true,
     "strategy": "ff-only",
@@ -10,6 +10,11 @@
     "controller": "heaven-toolbox/repo-autoupdate"
   },
   "runtime_update": {
-    "mode": "none"
+    "mode": "self-update-release",
+    "evidence_paths": [
+      ".github/workflows/site.yml",
+      "web/DEPLOYMENT.md",
+      "web/tests/site.test.mjs"
+    ]
   }
 }

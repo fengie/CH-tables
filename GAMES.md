@@ -1,20 +1,23 @@
-# heaven.gg — combined game intelligence hub
+# Heaven.gg — combined game intelligence hub
 
-> **Migration candidate, not renamed yet.** This branch lives in `fengie/CH-tables`. The final requested repository `fengie/heaven.gg` does not yet exist.
+**Canonical repository:** https://github.com/fengie/Heaven.gg. Two games, one independently sourced and tested frontend, one GitHub repository.
 
-| Game | Repository area | Focus |
-|---|---|---|
-| **Celtic Heroes** | Existing root `ch_tables/`, `data/`, `docs/`, `tests/` | Class, skill, boss, gear and combat-model research |
-| **AION 2** | [`apps/aion2-value-atlas/`](apps/aion2-value-atlas/) | Cosmetics, shop price comparisons, Quna/Mileage, historical patches |
+| Game | Research source | Browser view |
+| --- | --- | --- |
+| **Celtic Heroes** | Original ch_tables/, data/, docs/, tests/ | Build explorer (327 public samples), equipment and historical boss intelligence |
+| **AION 2** | apps/aion2-value-atlas/ and its own tests/data | Full Atreia Atlas shop/Mileage comparison dashboard |
 
-All existing Celtic Heroes files remain in place so its CLI, evidence sets and CI continue to function. The AION 2 app has independent data and tests, and never treats another game's prices/patches as authoritative.
+## Run and ship
 
-## Repo cutover
+- npm run test:web verifies the unified site and its source identity.
+- npm run build creates deterministic dist/ from tracked files, including a byte-identical copy of the AION browser app.
+- The Heaven.gg Website workflow (.github/workflows/site.yml) validates PRs, then on verified main publishes an atomic GitHub Pages artifact. It does not deploy from a chat copy, separate AppDeploy instance, or unreviewed web edits.
+- GitHub Pages URL after **successful** publication: https://fengie.github.io/Heaven.gg/. The URL is not evidence of live availability until a Pages deployment and browser check pass.
+- GitHub Pages may require the repo Settings → Pages → Build and deployment → GitHub Actions selection; a 404 or deployment 404 must be recorded and repaired rather than claiming live service.
 
-1. Complete the exact-head PR tests; do not force-push or bypass review.
-2. Rename/create the destination `fengie/heaven.gg` using an authorized GitHub repository management capability. This GitHub connector cannot do that.
-3. Reconfigure the repo auto-update policy from `fengie/CH-tables` to the new canonical GitHub identity; confirm GitHub Actions, references, CLI entrypoints, and runbooks.
-4. Publish any website ONLY from verified GitHub `main`, with provenance and post-deployment acceptance. Do not independently deploy through AppDeploy.
-5. Preserve original CH Git history; original AION source ancestry is `b9d5b70` (locally supplied, cannot be grafted using the current GitHub connector). Do not delete the original repositories without explicit authorization.
+## Invariants
 
-Research/financial uncertainty remains explicitly dated and sourced. No recurring agents created.
+- Celtic Heroes CLI, datasets and unit tests remain in place. The browser reader exposes public saved-build calculator values, not calibrated or measured live DPS. Boss figures are historical and released gear claims require evidence.
+- AION 2 shop data is a dated, limited October 9 Global snapshot. Do not infer extra Mileage on Quna spending or guaranteed future prices; user values skins, collecting and long-term play above meta.
+- No proprietary game art bundled. No login, paid purchases or scheduled agents.
+- .heaven/update-policy.json follows this renamed repository exactly. See web/DEPLOYMENT.md for release controls.
