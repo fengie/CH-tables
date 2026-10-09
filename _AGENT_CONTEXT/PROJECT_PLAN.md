@@ -63,6 +63,8 @@ This file is the repository's durable current-work ledger. It follows the cross-
 
 **Evidence acquisition slice (October 8):** `ch_tables/combat_evidence.py` accepts private local recordings and strict timestamped event transcriptions, hashes both original and transcript bytes, derives exact fixed-window combat/potion observations, rejects duplicate/invalid/escaping inputs, and emits the existing holdout validator's schema. `tests/test_combat_evidence.py` adds 18 targeted regressions, and `docs/COMBAT_EVIDENCE.md` supplies a first-party Rogue/caster recording protocol. This is capture/intake infrastructure, not real gameplay calibration.
 
+**Validation-integrity correction (October 8):** the holdout evaluator now compares the actual supplied `Encounter` against the exact SHA-pinned scenario configuration before simulation, eliminating a mismatch that could otherwise produce apparently hash-validated predictions from a different model. Two adversarial regression tests cover changed damage, skills, HP, horizon, and a rehashed scenario with a stale model. Local simulator + validator + evidence-intake tests: 45 passed. Chronology and game-mechanics calibration remain unverified.
+
 **Next action:** collect independently recorded same-patch Rogue and resource-limited caster traces (including source hash, timing, gear and policy); freeze calibrated inputs before holdout inspection, then compare against real sessions and audit model bias. Only after that proceed to the tiny exact solver/oracle.
 
 ### OPT-003 — Tooling case-study feedback

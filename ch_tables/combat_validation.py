@@ -152,6 +152,12 @@ def evaluate_holdout(encounter: Encounter, scenario: dict,
         # Until an independent fit manifest exists, scenario bytes ARE the
         # frozen model. No trusting an arbitrary unrelated 'model hash'.
         raise ValueError("Frozen model must be the exact scenario configuration")
+    # The caller-supplied Encounter MUST be the decoded version of the hashed
+    # scenario. Without this binding, a different skill/attack/potion model can
+    # be evaluated while borrowing another scenario's apparently valid SHA.
+    # Dataclass equality covers nested skills, pets, attacks, buffs and resources.
+    if encounter != encounter_from_dict(scenario):
+        raise ValueError("Encounter does not match frozen scenario configuration")
     holdout = [s for s in bundle.sessions if s.split == "holdout"]
     if any(abs(s.duration_s - encounter.duration_s) > 1e-6 for s in holdout):
         raise ValueError("Observed horizon differs from simulated fixed window")

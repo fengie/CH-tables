@@ -56,6 +56,14 @@ nonempty `patch_id`, `boss_id` and anonymous `build_id`, the canonical
 `session_id`, `recording_sha256`, `split`, `duration_s`, `elapsed_s`,
 `total_damage`, `end_reason`, `hp_potions`, `energy_potions`.
 
+**Frozen-model binding:** `evaluate_holdout(encounter, scenario, bundle)` now
+requires the in-memory `Encounter` to match a fresh parse of the exact
+SHA-pinned scenario, including attack power, skills, potions, mount and timing.
+An independently supplied or stale model is rejected even when its evidence
+tag and time window look valid. This closes a model-substitution gap; it does
+**not** prove that scenario parameters were actually measured or frozen before
+holdout collection.
+
 Gameplay mode requires `combat_simulator.Encounter.evidence=observed` and a
 source URL for its scenario inputs; this is a **source-presence gate**, not
 verification that the measurements or game mechanics are correct. The locally

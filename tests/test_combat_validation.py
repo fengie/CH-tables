@@ -54,6 +54,38 @@ class CombatValidationTests(unittest.TestCase):
             evaluate_holdout(self.encounter, self.scenario,
                              load_observations(raw), seeds=2)
 
+    def test_frozen_model_cannot_be_decoupled_from_hashed_scenario(self):
+        # Regression: previously the evaluator accepted a supplied Encounter
+        # with different parameters from the supposedly frozen scenario JSON.
+        # The SHA was correct but its predicted DPS came from another model.
+        from dataclasses import replace
+        from ch_tables.combat_simulator import Attack, SimSkill
+
+        observations = load_observations(bundle(self.scenario))
+        variants = (
+            replace(self.encounter, auto=Attack(2, 100)),
+            replace(self.encounter, skills=(SimSkill("extra", 80, 2, 0),)),
+            replace(self.encounter, max_hp=1000),
+            replace(self.encounter, duration_s=9),
+        )
+        for altered in variants:
+            with self.subTest(variant=altered), self.assertRaisesRegex(
+                    ValueError, "Encounter does not match frozen scenario"):
+                evaluate_holdout(altered, self.scenario, observations, seeds=2)
+        # Independently decoded but identical model remains valid.
+        self.assertEqual(
+            evaluate_holdout(encounter_from_dict(dict(self.scenario)),
+                             self.scenario, observations, seeds=2)["status"],
+            "synthetic_regression_only",
+        )
+
+    def test_rehashed_scenario_cannot_authorize_stale_encounter(self):
+        # A new digest (and valid bundle) cannot authorize an older Encounter.
+        updated = {**self.scenario, "auto": {"interval_s": 2, "damage": 50}}
+        observations = load_observations(bundle(updated))
+        with self.assertRaisesRegex(ValueError, "Encounter does not match frozen scenario"):
+            evaluate_holdout(self.encounter, updated, observations, seeds=2)
+
     def test_duplicate_sessions_and_recordings_fail(self):
         raw = bundle(self.scenario)
         raw["sessions"][2]["session_id"] = "s1"
