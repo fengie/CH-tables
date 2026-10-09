@@ -1,3 +1,4 @@
+import {compareBuilds} from './decision.mjs';
 'use strict';
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
@@ -50,7 +51,7 @@ function buildCard(build) {
   const inList = state.compared.includes(build.id);
   return '<article class="build-card">' +
     '<div class="card-top"><span class="class-tag">' + esc(build.characterClass) + '</span><span class="small-meta">LVL ' + esc(build.level) + ' · ' + esc(build.buildType) + '</span></div>' +
-    '<h4>' + esc(build.name) + '</h4><div class="metric">' + metric + '</div><div class="gear-note">Public saved-build calculator · ' + esc(build.snapshotDate) + '</div>' +
+    '<h4>' + esc(build.name) + '</h4><div class="metric">' + metric + '</div><div class="gear-note">CODEX MODEL · ' + esc(build.snapshotDate) + '</div>' +
     '<div class="card-foot"><a href="' + makeLink(build.sourceUrl) + '" target="_blank" rel="noopener noreferrer">Original ↗</a><button type="button" data-pick="' + esc(build.id) + '" aria-pressed="' + inList + '">' + (inList ? '✓ Selected' : '+ Compare') + '</button></div></article>';
 }
 function renderBuilds() {
@@ -86,10 +87,13 @@ function comparisonCard(build, index) {
     '<div class="detail-line"><span>Type</span><b>' + esc(build.buildType) + '</b></div>' +
     '<div class="detail-line"><span>Modeled DPS</span><b>' + (build.benchmarkDps == null ? 'Not provided' : whole(build.benchmarkDps)) + '</b></div>' +
     '<div class="detail-line"><span>Measured DPS?</span><b>No</b></div>' +
+    '<div class="detail-line"><span>Context</span><b>Target/equipment not verified</b></div>' +
     '<div class="detail-line"><span>Original</span><b><a href="' + makeLink(build.sourceUrl) + '" target="_blank" rel="noopener noreferrer">View ↗</a></b></div></div>';
 }
 function renderComparison() {
   const chosen = state.compared.map((id) => catalog.builds.find((b) => b.id === id)).filter(Boolean);
+  const evidence=compareBuilds(chosen[0],chosen[1]);
+  setNodeHtml('#comparison-evidence','<strong>'+ (evidence.comparable?'Controlled model comparison — not live-game DPS':'No validated DPS winner')+'</strong><p>Public, self-selected Codex builds contain calculator results; true boss, gear and rotation equivalence is not established by a date or class match.</p><ul>'+evidence.reasons.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>');
   setNodeHtml('#comparison', comparisonCard(chosen[0],0) + comparisonCard(chosen[1],1));
 }
 

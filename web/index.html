@@ -7,7 +7,7 @@
   <meta name="description" content="Heaven.gg — source-backed game research, visual build comparisons and AION 2 shop intelligence.">
   <title>Heaven.gg · Game Intelligence</title>
   <link rel="stylesheet" href="./site.css">
-  <script src="./site.js" defer></script>
+  <script src="./site.js" type="module"></script>
 </head>
 <body>
   <div class="app">
@@ -63,7 +63,8 @@
               <div class="more-wrap"><button id="show-more" class="secondary-button" hidden>Show more builds ↓</button></div>
             </div>
             <div class="surface compare-surface">
-              <div class="panel-heading"><div><span class="overline subtle">SIDE BY SIDE</span><h3>Build comparison</h3><p>Choose any two saved builds to compare known attributes.</p></div><button id="clear-compare" class="text-button">Clear selection</button></div>
+              <div class="panel-heading"><div><span class="overline subtle">SIDE BY SIDE</span><h3>Build comparison</h3><p>Choose two saved builds to compare known attributes and inspect why the data may not support a winner.</p></div><button id="clear-compare" class="text-button">Clear selection</button></div>
+              <div id="comparison-evidence" class="comparison-evidence" aria-live="polite"><strong>Evidence</strong><p>Choose two source-linked builds to inspect comparability.</p></div>
               <div id="comparison" class="comparison" aria-live="polite"><div class="empty-state">Choose “Compare” on two build cards to start.</div></div>
             </div>
           </section>
