@@ -71,3 +71,8 @@ then execute this harness. Before calling a model reliable, also compare
 ability-level traces (casts, interruptions, autos and DoTs) and evaluate
 uncertainty across players and conditions. A perfect toy result is not game
 validation.
+
+
+## Offline source-recording intake
+
+The [offline combat-evidence intake](COMBAT_EVIDENCE.md) accepts locally retained recordings plus timestamped transcripts, derives observed damage and consumable counts, and generates this harness's exact source-hashed schema. It does not decode video or certify game authenticity. Real gameplay calibration still requires independent recorded Rogue/caster runs and blind holdout review.
