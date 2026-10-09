@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b111b">
+  <meta name="description" content="Heaven.gg — source-backed game research, visual build comparisons and AION 2 shop intelligence.">
+  <title>Heaven.gg · Game Intelligence</title>
+  <link rel="stylesheet" href="./site.css">
+  <script src="./site.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="Heaven.gg home">
+        <span class="brand-symbol">✦</span>
+        <span class="brand-word">HEAVEN<span class="brand-dot">.GG</span><small>GAME INTELLIGENCE</small></span>
+      </a>
+      <nav class="game-tabs" role="tablist" aria-label="Game">
+        <button id="tab-ch" class="game-tab active" role="tab" aria-selected="true" aria-controls="view-ch" data-game="ch"><span class="tab-icon">⚔</span> Celtic Heroes</button>
+        <button id="tab-aion" class="game-tab" role="tab" aria-selected="false" aria-controls="view-aion" data-game="aion"><span class="tab-icon">◇</span> AION 2</button>
+      </nav>
+      <a class="github-link" href="https://github.com/fengie/Heaven.gg" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </header>
+
+    <main>
+      <section id="view-ch" class="game-view" role="tabpanel" aria-labelledby="tab-ch">
+        <div class="wrap">
+          <div class="hero">
+            <div class="hero-copy">
+              <span class="overline"><span class="live-dot"></span> CELTIC HEROES · RESEARCH LAB</span>
+              <h1>Build smarter.<br><em>Play your way.</em></h1>
+              <p>Browse 327 sourced community builds, investigate historical boss stats, and compare gear. Confidence labels stay attached to every result — a modeled DPS estimate is never presented as a live-game measurement.</p>
+              <div class="hero-actions"><button class="primary-button" data-ch-goto="builds">Explore builds <span>→</span></button><button class="secondary-button" data-ch-goto="gear">Explore equipment ↗</button></div>
+            </div>
+            <div class="hero-art" aria-hidden="true"><span class="art-ring art-ring-a"></span><span class="art-ring art-ring-b"></span><span class="art-sword">⚔</span><span class="art-tag art-tag-a">DPS INDEX</span><span class="art-tag art-tag-b">EVIDENCE / 2026</span></div>
+          </div>
+
+          <div class="kpi-grid" aria-label="Research snapshot">
+            <div class="kpi"><span>Community builds</span><strong id="build-count">327</strong><small>Public, source-linked</small></div>
+            <div class="kpi"><span>Playable classes</span><strong id="class-count">5</strong><small>Mage · Rogue · Warrior · Druid · Ranger</small></div>
+            <div class="kpi"><span>Boss snapshots</span><strong id="boss-count">—</strong><small>Historical upstream data</small></div>
+            <div class="kpi"><span>Item candidates</span><strong id="gear-count">—</strong><small>Release status labeled</small></div>
+          </div>
+
+          <div class="section-heading"><div><span class="overline subtle">THE RESEARCH DESK</span><h2>Find your next advantage.</h2></div><span class="snapshot" id="ch-snapshot">Snapshot: Oct 8, 2026 · sourced, not live</span></div>
+          <div class="section-tabs" role="tablist" aria-label="Celtic Heroes research category">
+            <button data-section="builds" role="tab" class="section-tab active" aria-selected="true">Community builds</button>
+            <button data-section="gear" role="tab" class="section-tab" aria-selected="false">Gear explorer</button>
+            <button data-section="bosses" role="tab" class="section-tab" aria-selected="false">Boss intel</button>
+          </div>
+
+          <section id="research-builds" class="research-panel" aria-label="Community builds">
+            <div class="surface">
+              <div class="toolbar">
+                <div><h3>Build explorer</h3><p>Search real public submissions. Theoretical DPS is not measured performance.</p></div>
+                <label class="search-input"><span aria-hidden="true">⌕</span><input id="build-query" type="search" placeholder="Search builds or classes" aria-label="Search builds"></label>
+              </div>
+              <div class="filterline"><div id="class-filters" class="filter-chips" aria-label="Filter by class"></div><label class="sort-label">Sort <select id="build-sort" aria-label="Sort builds"><option value="recent">Catalog order</option><option value="dps">Modeled DPS (high to low)</option><option value="level">Level (high to low)</option><option value="name">Name (A–Z)</option></select></label></div>
+              <div class="distribution"><span class="distribution-label">CLASS MIX</span><div id="class-chart" class="class-chart" aria-label="Community builds by class"></div></div>
+              <div class="countline"><span id="result-count">Loading builds…</span><span>Source: <a href="https://the-codex.ch/builds" target="_blank" rel="noopener noreferrer">The Codex ↗</a></span></div>
+              <div id="build-cards" class="build-grid" aria-live="polite"></div>
+              <div class="more-wrap"><button id="show-more" class="secondary-button" hidden>Show more builds ↓</button></div>
+            </div>
+            <div class="surface compare-surface">
+              <div class="panel-heading"><div><span class="overline subtle">SIDE BY SIDE</span><h3>Build comparison</h3><p>Choose any two saved builds to compare known attributes.</p></div><button id="clear-compare" class="text-button">Clear selection</button></div>
+              <div id="comparison" class="comparison" aria-live="polite"><div class="empty-state">Choose “Compare” on two build cards to start.</div></div>
+            </div>
+          </section>
+
+          <section id="research-gear" class="research-panel" hidden aria-label="Gear explorer">
+            <div class="surface">
+              <div class="toolbar"><div><h3>Gear explorer</h3><p>Cataloged gear candidates. Database presence is not proof an item is obtainable.</p></div><label class="search-input"><span>⌕</span><input id="gear-query" type="search" placeholder="Search weapons, jewelry, gear" aria-label="Search gear"></label></div>
+              <div class="filterline"><div id="gear-filters" class="filter-chips"><button class="chip active" data-gear-status="all">All cataloged</button><button class="chip" data-gear-status="released_documented">Documented released</button><button class="chip" data-gear-status="unverified">Unverified / other</button></div></div>
+              <div class="countline"><span id="gear-result-count"></span><span>Release ≠ farmability · <a href="https://github.com/fengie/Heaven.gg/blob/main/docs/GEAR_RELEASE_STATUS.md" target="_blank" rel="noopener noreferrer">Method ↗</a></span></div>
+              <div id="gear-cards" class="gear-grid" aria-live="polite"></div><div class="more-wrap"><button class="secondary-button" id="gear-more" hidden>Show more gear ↓</button></div>
+            </div>
+          </section>
+          <section id="research-bosses" class="research-panel" hidden aria-label="Boss intel">
+            <div class="surface"><div class="toolbar"><div><h3>Boss intel</h3><p>Historical extracted stat records, not verified current-server mechanics. Resistance figures are raw engine fields, not percentages.</p></div></div><div id="boss-cards" class="boss-grid" aria-live="polite"></div><p class="disclaimer">Data source: historical CH Encyclopedia extraction, dated October 8, 2026. Sentinel values (including negative resistances) are not interpretable as combat percentages. <a href="https://github.com/fengie/Heaven.gg/blob/main/docs/FULL_GAME_DATA.md" target="_blank" rel="noopener noreferrer">Research limitations ↗</a></p></div>
+          </section>
+
+          <div class="footnote"><span>◈</span><p><strong>Research, not guaranteed meta.</strong> All figures are versioned snapshots with source links and limitations. No login, private character access, or fabricated damage curves.</p></div>
+        </div>
+      </section>
+
+      <section id="view-aion" class="game-view" role="tabpanel" aria-labelledby="tab-aion" hidden>
+        <div class="aion-topline"><div><span class="overline">AION 2 · SHOP INTELLIGENCE</span><h1>Atreia Atlas</h1><p>Fashion-first cash-shop research, Quna packs, Mileage, passes and cosmetic value.</p></div><a class="secondary-button" href="./aion2/index.html" target="_blank" rel="noopener noreferrer">Open full-screen ↗</a></div>
+        <iframe id="aion-frame" title="Atreia Atlas · AION 2 Value Intelligence" src="./aion2/index.html" loading="lazy"></iframe>
+        <p class="aion-note">AION 2 data is an October 9, 2026 snapshot; check the live game shop before purchasing. All data and source code originate from the same GitHub repository.</p>
+      </section>
+    </main>
+    <footer class="site-footer"><span>HEAVEN.GG <i>✦</i> FAN RESEARCH HUB</span><span>Independent, not affiliated with Deca Games or NCSOFT. <a href="https://github.com/fengie/Heaven.gg">View source ↗</a></span></footer>
+  </div>
+</body>
+</html>
