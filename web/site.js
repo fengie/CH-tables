@@ -127,6 +127,12 @@ function applyCatalog(data) {
   renderBuilds(); renderGear(); renderBosses();
 }
 function attachEvents() {
+  document.querySelectorAll('[data-aion-tool]').forEach(button=>button.addEventListener('click',()=>{
+    const shop=button.dataset.aionTool==='shop';
+    document.querySelector('#aion-frame').hidden=!shop;
+    document.querySelector('#wardrobe-frame').hidden=shop;
+    document.querySelectorAll('[data-aion-tool]').forEach(b=>{const active=b===button;b.classList.toggle('active',active);b.setAttribute('aria-selected',String(active));});
+  }));
   $$('.game-tab').forEach((button) => button.addEventListener('click', () => selectGame(button.dataset.game)));
   $$('.section-tab').forEach((button) => button.addEventListener('click', () => selectSection(button.dataset.section)));
   $$('[data-ch-goto]').forEach((button) => button.addEventListener('click', () => {selectSection(button.dataset.chGoto);document.querySelector('.section-heading')?.scrollIntoView({behavior:'smooth'});}));

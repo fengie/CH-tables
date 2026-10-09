@@ -18,6 +18,7 @@ test('build produces both game tabs, copied AION dashboard and source-pinned CH 
     assert.match(page,/data-game="aion"/);
     assert.match(page,/aria-selected="true"/);
     assert.match(page,/comparison-evidence/);
+    assert.match(page,/wardrobe-frame/);
     const aion=await readFile(join(tmp,'aion2','index.html'),'utf8');
     assert.equal(aion,await readFile(join(root,'apps/aion2-value-atlas/index.html'),'utf8'));
     assert.match(aion,/Quna/i);
@@ -34,12 +35,14 @@ test('copy/rebuild is deterministic for fixed inputs',async()=>{
   const b=await mkdtemp(join(tmpdir(),'heaven-b-'));
   try {
     await build(a);await build(b);
-    for(const path of ['index.html','site.css','site.js','decision.mjs','ch/catalog.json','aion2/index.html','version.json'])
+    for(const path of ['index.html','site.css','site.js','decision.mjs','wardrobe.mjs','aion2/catalog.json','aion2/wardrobe.html','aion2/wardrobe.js','ch/catalog.json','aion2/index.html','version.json'])
       assert.equal(await readFile(join(a,path),'utf8'),await readFile(join(b,path),'utf8'),'Divergence: '+path);
   } finally {await rm(a,{recursive:true,force:true});await rm(b,{recursive:true,force:true});}
 });
 test('final shipped JavaScript passes the actual Node parser',()=>{
   execFileSync(process.execPath,['--check','web/site.js'],{cwd:root,stdio:'pipe'});
+  execFileSync(process.execPath,['--check','web/wardrobe.js'],{cwd:root,stdio:'pipe'});
+  execFileSync(process.execPath,['--check','web/wardrobe.mjs'],{cwd:root,stdio:'pipe'});
   execFileSync(process.execPath,['--check','web/decision.mjs'],{cwd:root,stdio:'pipe'});
   execFileSync(process.execPath,['--check','web/build.mjs'],{cwd:root,stdio:'pipe'});
 });
