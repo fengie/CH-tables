@@ -37,8 +37,6 @@ evidence_refs: ["https://doi.org/10.1007/s10462-020-09851-4","https://pmc.ncbi.n
 | Feng et al., *ICWSM* (2026), DOI 10.1609/icwsm.v20i1.42667 | Contextualized LLM explanations can affect preference/engagement under controlled movie-domain conditions; verbosity has diminishing value. | Prefer precise deterministic source-derived reasons; no need for unverified LLM recommendation system. Game-domain generalization untested. |
 | W3C WCAG 2.2 Quick Ref | Interactive controls need keyboard access, focus visibility, semantic labels and readable responsive content. | Test two top-level tabs, nested AION controls, compare widgets, color-independent status and small-screen table behavior. |
 
-**Sources:** [Monti](https://doi.org/10.1007/s10462-020-09851-4), [multiobjective survey](https://pmc.ncbi.nlm.nih.gov/articles/PMC10073543/), [interactive OR experiment](https://doi.org/10.1007/s10479-024-05941-6), [incremental elicitation](https://www.sciencedirect.com/science/article/pii/S2193943821000923), [scenario charts](https://www.sciencedirect.com/science/article/pii/S0020025521007155), [Sargent V&V](https://www.tandfonline.com/doi/abs/10.1057/jos.2012.20), [NIST bootstrap](https://itl.nist.gov/div898/handbook/eda/section3/eda334.htm), [FAIR](https://doi.org/10.1038/sdata.2016.18), [PROV-O](https://www.w3.org/TR/prov-o/), [Balog SIGIR](https://research.google/pubs/transparent-scrutable-and-explainable-user-models-for-personalized-recommendation/), [ACM TORS](https://doi.org/10.1145/3754459), [ICWSM](https://ojs.aaai.org/index.php/ICWSM/article/view/42667), [WCAG](https://www.w3.org/WAI/WCAG22/quickref/).
-
 ## Decision contract, not an unverified algorithm
 
 **Recommendation = scenario + feasible candidates + objective vector + source quality + preference + reproducible explanation.** An example CH vector: practical damage, sustain, death probability, potion cost, swap frequency, required item acquisition. AION vector: distinct wanted looks, real-money price incl membership and repeated dyes, in-game hours, account-wide value, owned duplicates, permanence. Do **not** assign a universal number to personal aesthetic preference; user wishlist/ratings are inputs.
@@ -56,19 +54,15 @@ evidence_refs: ["https://doi.org/10.1007/s10462-020-09851-4","https://pmc.ncbi.n
 
 ## Low-cost implementation plan with guardrails
 
-1. Define one versioned decision provenance schema spanning both games, retaining per-game units; fixture-test region/patch/unknown/currency mismatch and hash the underlying observations. Don't merge identical names without stable IDs.
-2. Surface linked eligibility, uncertainty and "why" breakdown from the existing source-backed CH/AION JSON. Do not replace the large existing simulators or use an LLM where deterministic rules suffice.
-3. Add bounded interactive "what if" scenarios and Pareto visualizations with explicit unavailable-data states and named objective units. Test stable tie, nontransitive comparisons, dominance of **known** dimensions only, no ranking against mismatched patches.
-4. Test a real, smaller end-to-end decision with a player against the plain baseline; record time-to-decision, correct understanding of caveats, willingness to revise choice, number of unexplained results. Predefine success targets before measuring. Experimental papers suggest methods, but do not prove Heaven.gg's KPI improvements.
-5. Only then increase dataset depth and art richness. Prioritize full shop coverage and historically grounded game observations over complex speculative ML infrastructure.
+1. Define cross-game provenance schema retaining independent units; test patch/region/unknown/currency mismatches and source hashes.
+2. Show known eligibility, uncertainty and source-derived explanations; reuse CH solver, don't rebuild.
+3. Add bounded "what-if" Pareto scenarios; test mismatches, ties, incompleteness and historical stable IDs.
+4. Evaluate a real decision against plain browsing for time-to-choice and comprehension; preregister outcomes.
+5. Expand first-party coverage and calibrated observations before frameworks or ML.
 
-## Explicit alternatives rejected for now
+## Alternatives rejected for now
 
-- **Single "God-tier" score:** short but misleading across class, boss, ownership, cosmetic taste and uncertain data. Offer default preset views instead.
-- **Immediate deep-learning recommender:** no representative labeled training set or efficacy evidence, opaque and maintenance-heavy; deterministic explanations are enough for current scope.
-- **First-party-game autopurchasing or password import:** unnecessary trust boundary for a guide. Keep read-only/manual data input until explicit separate consent and API terms verification.
-- **Unlimited scraping of competitor guides/data:** copyright, rate-limit, and publisher trust risk; cite first-party URLs and observe reuse terms.
-- **Per-hit confidence intervals from one fight:** pseudo-replication. Group by session/character/patch and report inability to estimate when n is inadequate.
+One "God-tier" score hides context; an ML ranker lacks representative training data; auto-purchase/login adds privilege; mass third-party scraping risks rights; per-hit confidence intervals from one fight misstate independence. Prefer named preference presets, deterministic source explanations, authorized/manual observations and independent-session evidence.
 
 ## Research limitations and next falsifiable actions
 

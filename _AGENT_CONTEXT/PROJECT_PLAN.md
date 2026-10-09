@@ -96,3 +96,14 @@ This file is the repository's durable current-work ledger. It follows the cross-
 **Source:** `fengie/heaven-toolbox` project-training/provenance guidance and October 8 multi-repo user request.  
 **Acceptance:** narrow cross-project evidence/case study saved in Toolbox, without copying CH-specific assumptions or adding broad unvalidated mandatory policies.  
 **Next action:** run measured end-to-end development throughput/rework benchmark from two actual Toolbox projects and promote only verified wins.
+
+
+### WEB-002 — Competitor-informed decision and collector experience
+
+**Priority:** P1, following GitHub Pages issue #6  
+**Status:** READY (research authored, implementation unclaimed)  
+**Owner:** unclaimed  
+**Source:** 2026-10-09 competitor and scientific records, root `_AGENT_CONTEXT/RESEARCH_FINDINGS/records/2026/10/`.  
+**Goal:** understandable, feasible, dated, player-specific comparisons without universal tier claims.  
+**Acceptance:** CH compare has assumption/source/encounter evidence with incomplete-state guard; AION compare includes owned cosmetics, dye, expiry and region/binding; negative scenario tests, keyboard and mobile checks pass.  
+**Next action:** implement trust/context badges and scenario-mismatch regression in a separate reviewed PR; validate one sourced cosmetic purchase workflow before adding larger catalog. No scheduled agents or auto-purchase.
