@@ -88,11 +88,16 @@ def validate_catalog(doc: dict) -> list[PublishedBuild]:
             if dps is not None or row["metric"] != "Tank":
                 raise ValueError("Tank cannot carry a damage benchmark")
         else:
-            if type(dps) not in (int, float) or not math.isfinite(dps) or dps < 0:
-                raise ValueError("Invalid reported damage benchmark")
-            match = re.fullmatch(r"([0-9,]+(?:[.][0-9]+)?) DPS", row["metric"])
-            if match is None or abs(float(match[1].replace(",", "")) - dps) > .011:
-                raise ValueError("Display benchmark and numeric DPS disagree")
+            if dps is None and row["metric"] == "N/A DPS":
+                # Public Codex entries may be incomplete/unscored. Keep them
+                # in the full listing, but never assign a fabricated zero.
+                pass
+            else:
+                if type(dps) not in (int, float) or not math.isfinite(dps) or dps < 0:
+                    raise ValueError("Invalid reported damage benchmark")
+                match = re.fullmatch(r"([0-9,]+(?:[.][0-9]+)?) DPS", row["metric"])
+                if match is None or abs(float(match[1].replace(",", "")) - dps) > .011:
+                    raise ValueError("Display benchmark and numeric DPS disagree")
         builds.append(PublishedBuild(name=row["name"], character_class=cls,
                   level=lvl, build_type=typ, benchmark_dps=dps,
                   description=row["description"], created=row["created"],
@@ -181,7 +186,8 @@ def publish_catalog(snapshot: Path, raw: Path, normalized: Path,
         write_raw_csv(stages[0], builds)
         write_dict_rows(stages[1], normal)
         write_dict_rows(stages[2], classes)
-        counts = {"listed_builds": len(builds), "damage_builds": sum(b.is_damage_build for b in builds),
+        counts = {"listed_builds": len(builds), "damage_builds": sum(b.build_type == "Damage" for b in builds),
+                  "scored_damage_builds": sum(b.is_damage_build for b in builds),
                   "tank_builds": sum(b.build_type == "Tank" for b in builds),
                   "filtered_damage_builds": len(normal),
                   "skill_panels": 0}

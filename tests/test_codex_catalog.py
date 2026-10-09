@@ -38,7 +38,8 @@ class CatalogTests(unittest.TestCase):
         rows = validate_catalog(doc)
         self.assertEqual(len(rows), 327)
         self.assertEqual(sum(r.build_type == "Tank" for r in rows), 21)
-        self.assertEqual(sum(r.is_damage_build for r in rows), 306)
+        self.assertEqual(sum(r.build_type == "Damage" for r in rows), 306)
+        self.assertEqual(sum(r.is_damage_build for r in rows), 300)
         self.assertEqual(len(set(r.build_url for r in rows)), len(rows))
 
     def test_partial_page_or_duplicate_cannot_publish(self):
@@ -53,6 +54,18 @@ class CatalogTests(unittest.TestCase):
         d = make_doc()
         d["pages"][0]["range"] = [2, 3, 2]
         with self.assertRaisesRegex(ValueError, "page"):
+            validate_catalog(d)
+
+    def test_unscored_public_damage_record_is_not_zero(self):
+        d = make_doc()
+        d["records"][0]["benchmark_dps"] = None
+        d["records"][0]["metric"] = "N/A DPS"
+        records = validate_catalog(d)
+        self.assertEqual(records[0].build_type, "Damage")
+        self.assertIsNone(records[0].benchmark_dps)
+        self.assertFalse(records[0].is_damage_build)
+        d["records"][0]["metric"] = "1000.0 DPS"
+        with self.assertRaises(ValueError):
             validate_catalog(d)
 
     def test_source_and_typed_numeric_gates(self):

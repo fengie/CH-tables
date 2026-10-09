@@ -1,6 +1,6 @@
 # Codex complete public Saved Builds catalog — 2026-10-08 snapshot
 
-**Scope achieved:** all **327** entries visible across four pages (100/100/100/27) in [Codex Saved Builds](https://the-codex.ch/builds) were captured through its ordinary read-only browser controls, not by using internal APIs. **306 damage builds** and **21 tanks**. Unique detail URLs, class, level, type, calculator benchmark, short description and date are preserved with the source URL and complete pagination record.
+**Scope achieved:** all **327** entries visible across four pages (100/100/100/27) in [Codex Saved Builds](https://the-codex.ch/builds) were captured through its ordinary read-only browser controls, not by using internal APIs. **306 damage-type builds** (300 with numeric DPS and six unscored `N/A DPS` entries) and **21 tanks**. Unique detail URLs, class, level, type, calculator benchmark, short description and date are preserved with the source URL and complete pagination record.
 
 The pinned factual snapshot is \`data/reference/codex_published_build_catalog.json\`. The complete raw CSV is \`data/raw/codex_builds_latest.csv\`. The level-220+ model-relative subset remains in \`data/normalized/builds_normalized.csv\`, and class statistics in \`data/normalized/class_summary.csv\`. Note: the filtered normalized CSV is **not** the full catalog; tanks and lower levels remain available in raw/SQLite.
 
