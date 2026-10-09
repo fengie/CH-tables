@@ -4,7 +4,7 @@
 
 ## Reproducible experiment (2026-10-08 snapshot)
 
-Input: [`data/reference/codex_skill_panel_observations.json`](../data/reference/codex_skill_panel_observations.json), from 12 independently saved Codex builds (122 skill observations, 117 containing both positive `Max Damage` and `Avg Damage`). The original source URLs and response hashes are embedded in the snapshot. Source: [The Codex damage builder](https://the-codex.ch/damagebuilder). Its results are community **modeled** values, not independent player hit logs. Do not represent this evidence as observed game mechanics.
+Input: [`data/reference/codex_skill_panel_observations.json`](../data/reference/codex_skill_panel_observations.json), from 12 independently saved Codex builds (122 skill observations, including five explicit 0/0 utility/healing panels excluded from ratio training; 117 containing both positive `Max Damage` and `Avg Damage`). The original source URLs and response hashes are embedded in the snapshot. Source: [The Codex damage builder](https://the-codex.ch/damagebuilder). Its results are community **modeled** values, not independent player hit logs. Do not represent this evidence as observed game mechanics.
 
 We make one deliberately narrow prediction: **Given a skill name and its reported Codex Max Damage, predict its Codex Avg Damage**. For each held-out *entire build*, take the median `Avg Damage / Max Damage` ratio for that skill from **other** builds. If the skill was never observed elsewhere, use the global training-only median. The medians are robust against outliers, require no arbitrary hyperparameter search and cannot leak rows from a held-out build. Every inference reports the number of other-build skill examples; unsupported skills use a low-confidence global prior.
 

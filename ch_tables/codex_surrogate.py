@@ -71,8 +71,14 @@ def read_panels(document: dict) -> tuple[Panel, ...]:
         maximum, average = metrics.get("Max Damage"), metrics.get("Avg Damage")
         if maximum is None or average is None:
             continue  # Explicitly unavailable, never substitute zero.
-        if not _number(maximum) or not _number(average) or maximum <= 0 or average <= 0:
-            raise ValueError("Max/Avg Damage must be positive finite Codex values")
+        if not _number(maximum) or not _number(average):
+            raise ValueError("Max/Avg Damage must be finite Codex values")
+        # Utility/healing panels sometimes report exactly 0/0. They are
+        # valid *non-damage* observations, not ratio-training examples.
+        if maximum == 0 and average == 0:
+            continue
+        if maximum <= 0 or average <= 0:
+            raise ValueError("Positive damage pairs required; reject one-sided zero")
         if average / maximum > 10:
             raise ValueError("Implausible panel ratio; check parser/schema drift")
         rows.append(Panel(build, skill, float(maximum), float(average)))

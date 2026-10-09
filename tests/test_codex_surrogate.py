@@ -46,6 +46,14 @@ class SurrogateTests(unittest.TestCase):
         del d["observations"][0]["numeric_metrics"]["Avg Damage"]
         self.assertEqual(len(read_panels(d)), 5)
 
+    def test_zero_damage_support_panels_ignored_without_zero_substitution(self):
+        d = toy()
+        d["observations"][0]["numeric_metrics"] = {"Max Damage": 0, "Avg Damage": 0}
+        self.assertEqual(len(read_panels(d)), 5)
+        d["observations"][0]["numeric_metrics"]["Avg Damage"] = 1
+        with self.assertRaisesRegex(ValueError, "one-sided zero"):
+            read_panels(d)
+
     def test_bad_source_and_duplicate_build_skill_fail_closed(self):
         d = toy()
         d["observations"][0]["source_url"] = "https://evil.example/path"
