@@ -331,6 +331,18 @@ def refresh_dataset(
         retention=snapshot_retention,
     )
     records = parse_saved_builds_page(html, page_url=source_meta["source_url"])
+    # A paginated Saved Builds page is NOT a full catalog. An old default
+    # single-page request would silently replace complete DB outputs with 25
+    # rows; reject that before any generation is published.
+    found = re.search(r"\b(?:Showing\s+)?\d+\s*-\s*\d+\s+of\s+(\d+)\b",
+                      BeautifulSoup(html, "html.parser").get_text(" ", strip=True),
+                      flags=re.I)
+    if found and int(found.group(1)) > len(records):
+        raise SourceSchemaError(
+            f"Incomplete paginated Codex listing: {len(records)} of "
+            f"{found.group(1)}; use the complete catalog importer"
+        )
+
     normalized = normalize_builds(records, min_level=min_level)
     summary = summarize_classes(records, min_level=min_level)
     _validate_records(records, normalized)

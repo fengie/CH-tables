@@ -33,6 +33,15 @@ This file is the repository's durable current-work ledger. It follows the cross-
 **Next action:** none for DATA-002; future schema changes must update parser fixtures/version and preserve the same fail-closed publication contract.
 
 
+### DATA-003 — Complete public Codex Saved Builds catalog
+
+**Priority:** P1
+**Status:** DONE for public listing metadata; detailed all-build mechanics remain OPEN under OPT-002
+**Source:** 2026-10-08 four-page Codex public Saved Builds listing (327 entries, 100/100/100/27)
+**Acceptance:** unique source URLs, 306 damage + 21 tanks, complete pagination, fail-closed validation and atomic CSV/SQLite publication, 122 existing skill panels retained with provenance.
+**Implementation:** `data/reference/codex_published_build_catalog.json`, `ch_tables/codex_catalog.py`, `docs/CODEX_CATALOG.md`. Raw complete CSV and filtered normalized/class tables published from one snapshot. Existing one-page scraper fails closed when pagination reveals incomplete coverage.
+**Next action:** systematically expand independent detail-page coverage with source/terms review; neither raw modeled DPS nor a copied HTML page establishes real-game DPS accuracy.
+
 ### OPT-001 — Equip/mount/consumable feasibility and research benchmark
 
 **Priority:** P1  

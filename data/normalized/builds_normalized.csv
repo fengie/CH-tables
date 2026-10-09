@@ -1,23 +1,288 @@
 name,character_class,level,build_type,benchmark_dps,description,created,build_url,source_url,sample_dps_index,class_dps_index,normalization_min_level,sample_median_dps
-Frederique,Rogue,231,Damage,7912.0,Level 231 Rogue build for Gelebron (6m),Sep 28 2026,,https://the-codex.ch/builds,83.61,75.57,220,9463.0
-SuiR,Ranger,250,Damage,11286.2,Level 250 Ranger build,Sep 27 2026,,https://the-codex.ch/builds,119.27,102.09,220,9463.0
-AzaGodly,Rogue,232,Damage,8408.4,Level 232 Rogue build for Gelebron,Sep 27 2026,,https://the-codex.ch/builds,88.86,80.32,220,9463.0
-SUZZ,Ranger,250,Damage,11286.2,Level 250 Ranger build,Sep 26 2026,,https://the-codex.ch/builds,119.27,102.09,220,9463.0
-MageIceS,Mage,250,Damage,5560.7,Level 250 Mage build (1m),Sep 26 2026,,https://the-codex.ch/builds,58.76,77.07,220,9463.0
-Cerri,Rogue,232,Damage,7983.7,Rogue on cerridwen,Sep 25 2026,,https://the-codex.ch/builds,84.37,76.26,220,9463.0
-Sage,Druid,233,Damage,4909.5,Level 233 Druid build for Bloodthorn,Sep 24 2026,,https://the-codex.ch/builds,51.88,94.26,220,9463.0
-Yungbrat,Warrior,231,Damage,9530.7,Level 231 Warrior build for Gelebron (2m),Sep 20 2026,,https://the-codex.ch/builds,100.72,79.40,220,9463.0
-Surya8,Warrior,233,Damage,11982.1,Level 233 Warrior build (5m),Sep 20 2026,,https://the-codex.ch/builds,126.62,99.83,220,9463.0
-Surya warrior,Warrior,233,Damage,12695.9,Level 233 Warrior build for Gelebron (5m),Sep 20 2026,,https://the-codex.ch/builds,134.16,105.77,220,9463.0
-DragonzxDX VOA Build,Ranger,231,Damage,8900.3,Level 231 Ranger build,Sep 18 2026,,https://the-codex.ch/builds,94.05,80.50,220,9463.0
-meatball gele,Warrior,239,Damage,12747.0,Level 239 Warrior build for Gelebron (5m),Sep 14 2026,,https://the-codex.ch/builds,134.70,106.20,220,9463.0
-smo practial bis,Warrior,235,Damage,12023.4,cer,Sep 14 2026,,https://the-codex.ch/builds,127.06,100.17,220,9463.0
-MageIce,Mage,250,Damage,8314.0,Level 250 Mage build for Bloodthorn,Sep 13 2026,,https://the-codex.ch/builds,87.86,115.24,220,9463.0
-IceMag,Mage,250,Damage,7214.7,Level 250 Mage build,Sep 13 2026,,https://the-codex.ch/builds,76.24,100.00,220,9463.0
-Ranger test,Ranger,230,Damage,6314.3,Level 230 Ranger build for Gelebron,Sep 12 2026,,https://the-codex.ch/builds,66.73,57.11,220,9463.0
-druid test 1,Druid,233,Damage,5507.2,Level 233 Druid build,Sep 12 2026,,https://the-codex.ch/builds,58.20,105.74,220,9463.0
-Rogue suzu,Rogue,250,Damage,12529.8,Level 250 Rogue build for Gelebron,Sep 11 2026,,https://the-codex.ch/builds,132.41,119.68,220,9463.0
-SuzuRanger,Ranger,250,Damage,11055.6,Level 250 Ranger build,Sep 11 2026,,https://the-codex.ch/builds,116.83,100.00,220,9463.0
-Chicoo,Rogue,232,Damage,12663.3,Rogue,Sep 11 2026,,https://the-codex.ch/builds,133.82,120.96,220,9463.0
-rogue ammy comparison,Rogue,230,Damage,12893.7,Level 230 Rogue build for Gelebron (10m),Sep 11 2026,,https://the-codex.ch/builds,136.25,123.16,220,9463.0
-SuzuWarrior,Warrior,230,Damage,9395.3,Level 230 Warrior build,Sep 11 2026,,https://the-codex.ch/builds,99.28,78.28,220,9463.0
+icy magic,Mage,233,Damage,7635.6,Level 233 Mage build,"Oct 8, 2026",https://the-codex.ch/damagebuilder/icy-magic,https://the-codex.ch/builds,105.83392240841616,110.55672192861799,220,7214.7
+RogueTank,Rogue,231,Damage,3599.4,Level 231 Rogue build for Proteus Base,"Oct 7, 2026",https://the-codex.ch/damagebuilder/roguetank,https://the-codex.ch/builds,49.88980830803776,42.24598302836821,220,7214.7
+dimsim epona,Ranger,220,Damage,2551.2,staying dull dex till dg,"Oct 3, 2026",https://the-codex.ch/damagebuilder/dimsim-epona,https://the-codex.ch/builds,35.3611376772423,33.66965151805098,220,7214.7
+Douglass,Ranger,230,Damage,8472.5,Level 230 Ranger build for Proteus Base (3m),"Sep 30, 2026",https://the-codex.ch/damagebuilder/douglass,https://the-codex.ch/builds,117.4338503333472,111.81644813683245,220,7214.7
+EG Redgold,Warrior,225,Damage,4969,My main Arawn Hybrid Axe DPS toon,"Sep 30, 2026",https://the-codex.ch/damagebuilder/eg-redgold,https://the-codex.ch/builds,68.87327262394834,55.64950554927148,220,7214.7
+Frederique,Rogue,231,Damage,7912,Level 231 Rogue build for Gelebron (6m),"Sep 28, 2026",https://the-codex.ch/damagebuilder/frederique,https://the-codex.ch/builds,109.6649895352544,92.8627598267626,220,7214.7
+SuiR,Ranger,250,Damage,11286.2,Level 250 Ranger build,"Sep 27, 2026",https://the-codex.ch/damagebuilder/suir,https://the-codex.ch/builds,156.43339293387112,148.95046290491808,220,7214.7
+AzaGodly,Rogue,232,Damage,8408.4,Level 232 Rogue build for Gelebron,"Sep 26, 2026",https://the-codex.ch/damagebuilder/azagodly,https://the-codex.ch/builds,116.54538650255728,98.68898252367929,220,7214.7
+SUZZ,Ranger,250,Damage,11286.2,Level 250 Ranger build,"Sep 26, 2026",https://the-codex.ch/damagebuilder/suzz,https://the-codex.ch/builds,156.43339293387112,148.95046290491808,220,7214.7
+MageIceS,Mage,250,Damage,5560.7,Level 250 Mage build (1m),"Sep 26, 2026",https://the-codex.ch/damagebuilder/mageices,https://the-codex.ch/builds,77.07458383577973,80.51400854267719,220,7214.7
+Cerri,Rogue,232,Damage,8544.7,Rogue on cerridwen,"Sep 25, 2026",https://the-codex.ch/damagebuilder/cerri,https://the-codex.ch/builds,118.43458494462695,100.2887290055281,220,7214.7
+Sage,Druid,233,Damage,4909.5,Level 233 Druid build for Bloodthorn,"Sep 23, 2026",https://the-codex.ch/damagebuilder/sage,https://the-codex.ch/builds,68.04856750800448,95.91770946282566,220,7214.7
+Yungbrat,Warrior,231,Damage,9530.7,Level 231 Warrior build for Gelebron (2m),"Sep 20, 2026",https://the-codex.ch/damagebuilder/yungbrat,https://the-codex.ch/builds,132.10112686598197,106.73752113874859,220,7214.7
+Surya8,Warrior,233,Damage,11982.1,Level 233 Warrior build (5m),"Sep 20, 2026",https://the-codex.ch/damagebuilder/surya8,https://the-codex.ch/builds,166.07897764286804,134.19157585870914,220,7214.7
+Surya warrior,Warrior,233,Damage,12695.9,Level 233 Warrior build for Gelebron (5m),"Sep 19, 2026",https://the-codex.ch/damagebuilder/surya-warrior,https://the-codex.ch/builds,175.9726669161573,142.18566260877355,220,7214.7
+DragonzxDX VOA Build,Ranger,231,Damage,8881.1,Level 231 Ranger build for Proteus Prime,"Sep 18, 2026",https://the-codex.ch/damagebuilder/dragonzxdx-voa-build,https://the-codex.ch/builds,123.09728748250102,117.20897699002923,220,7214.7
+meatball gele,Warrior,239,Damage,12747,Level 239 Warrior build for Gelebron (5m),"Sep 14, 2026",https://the-codex.ch/damagebuilder/meatball-gele,https://the-codex.ch/builds,176.68094307455613,142.7579487294352,220,7214.7
+smo practial bis,Warrior,235,Damage,12023.4,cer,"Sep 14, 2026",https://the-codex.ch/damagebuilder/smo-practial-bis,https://the-codex.ch/builds,166.65142001746435,134.65410847677816,220,7214.7
+MageIce,Mage,250,Damage,8314,Level 250 Mage build for Bloodthorn,"Sep 13, 2026",https://the-codex.ch/damagebuilder/mageice,https://the-codex.ch/builds,115.23694678919429,120.37935278360965,220,7214.7
+IceMag,Mage,250,Damage,7214.7,Level 250 Mage build,"Sep 13, 2026",https://the-codex.ch/damagebuilder/icemag,https://the-codex.ch/builds,100,104.46246289727068,220,7214.7
+Ranger test,Ranger,230,Damage,6314.3,Level 230 Ranger build for Gelebron,"Sep 12, 2026",https://the-codex.ch/damagebuilder/ranger-test,https://the-codex.ch/builds,87.51992459838941,83.33344331311906,220,7214.7
+druid test 1,Druid,233,Damage,5507.2,Level 233 Druid build,"Sep 12, 2026",https://the-codex.ch/damagebuilder/druid-test-1,https://the-codex.ch/builds,76.33304226093946,107.5950727270951,220,7214.7
+Rogue suzu,Rogue,250,Damage,12529.8,Level 250 Rogue build for Gelebron,"Sep 11, 2026",https://the-codex.ch/damagebuilder/rogue-suzu,https://the-codex.ch/builds,173.6704228866065,147.06165420593652,220,7214.7
+SuzuRanger,Ranger,250,Damage,11055.6,Level 250 Ranger build,"Sep 11, 2026",https://the-codex.ch/damagebuilder/suzuranger,https://the-codex.ch/builds,153.23714083745688,145.90710227460193,220,7214.7
+Chicoo,Rogue,232,Damage,12663.3,Rogue,"Sep 11, 2026",https://the-codex.ch/damagebuilder/chicoo,https://the-codex.ch/builds,175.52081167616114,148.6285372237415,220,7214.7
+rogue ammy comparison,Rogue,230,Damage,12893.7,Level 230 Rogue build for Gelebron (10m),"Sep 11, 2026",https://the-codex.ch/damagebuilder/rogue-ammy-comparison,https://the-codex.ch/builds,178.71429165453867,151.33273083649252,220,7214.7
+SuzuWarrior,Warrior,230,Damage,9395.3,Level 230 Warrior build,"Sep 11, 2026",https://the-codex.ch/damagebuilder/suzuwarrior,https://the-codex.ch/builds,130.22440295507784,105.22113090905016,220,7214.7
+SKIMO,Warrior,231,Damage,10811.6,w,"Sep 10, 2026",https://the-codex.ch/damagebuilder/skimo,https://the-codex.ch/builds,149.85515683257793,121.08275190108746,220,7214.7
+TestIMage,Mage,250,Damage,8478.9,Level 250 Mage build,"Sep 10, 2026",https://the-codex.ch/damagebuilder/testimage,https://the-codex.ch/builds,117.52255811052434,122.76695866212988,220,7214.7
+SuzuMage,Mage,230,Damage,7401.8,Level 230 Mage build (1m),"Sep 10, 2026",https://the-codex.ch/damagebuilder/suzumage,https://the-codex.ch/builds,102.59331642341331,107.17150510388764,220,7214.7
+artos,Mage,221,Damage,3112.4,Level 221 Mage build for Bloodthorn (1m),"Sep 10, 2026",https://the-codex.ch/damagebuilder/artos,https://the-codex.ch/builds,43.139700888463835,45.064794034605086,220,7214.7
+Suzu DRUID,Druid,230,Damage,5329.2,Level 230 Druid build (1m),"Sep 10, 2026",https://the-codex.ch/damagebuilder/suzu-druid,https://the-codex.ch/builds,73.86585720819993,104.11745743340268,220,7214.7
+My Druid,Druid,250,Damage,6837.5,Suz,"Sep 10, 2026",https://the-codex.ch/damagebuilder/my-druid,https://the-codex.ch/builds,94.7717853826216,133.58536275630314,220,7214.7
+nope1,Rogue,236,Damage,10637.4,Level 236 Rogue build for Gelebron (6m),"Sep 9, 2026",https://the-codex.ch/damagebuilder/nope1,https://the-codex.ch/builds,147.44064202253733,124.85064729287214,220,7214.7
+hisashi,Warrior,234,Damage,8254.7,garbo war,"Sep 9, 2026",https://the-codex.ch/damagebuilder/hisashi,https://the-codex.ch/builds,114.41501379128725,92.44716712770604,220,7214.7
+Astro,Ranger,226,Damage,6787.2,Level 226 Ranger build for Proteus Base (1m),"Sep 9, 2026",https://the-codex.ch/damagebuilder/astro,https://the-codex.ch/builds,94.0745976963699,89.57457619289575,220,7214.7
+spear bis,Warrior,240,Damage,13678.1,realistic swaps,"Sep 8, 2026",https://the-codex.ch/damagebuilder/spear-bis,https://the-codex.ch/builds,189.5865385948134,153.18565140943656,220,7214.7
+sword bis,Warrior,230,Damage,13092.5,Level 230 Warrior build (6m),"Sep 8, 2026",https://the-codex.ch/damagebuilder/sword-bis,https://the-codex.ch/builds,181.46977698310394,146.62731966267597,220,7214.7
+realistic best dps spear warr,Warrior,240,Damage,13707.3,realistic swaps,"Sep 8, 2026",https://the-codex.ch/damagebuilder/realistic-best-dps-spear-warr,https://the-codex.ch/builds,189.9912678281841,153.51267204981465,220,7214.7
+test 4 warr dps hammer,Warrior,230,Damage,11498,Level 230 Warrior build (1m),"Sep 8, 2026",https://the-codex.ch/damagebuilder/test-4-warr-dps-hammer,https://the-codex.ch/builds,159.36906593482752,128.76997681737242,220,7214.7
+test 3 warr dps axe,Warrior,230,Damage,12216.5,Level 230 Warrior build (1m),"Sep 8, 2026",https://the-codex.ch/damagebuilder/test-3-warr-dps-axe,https://the-codex.ch/builds,169.32789998198123,136.81670045133328,220,7214.7
+test 2 warr dps spear,Warrior,230,Damage,13597.2,Level 230 Warrior build,"Sep 8, 2026",https://the-codex.ch/damagebuilder/test-2-warr-dps-spear,https://the-codex.ch/builds,188.46521684893344,152.27962504619728,220,7214.7
+test warr dps sword,Warrior,230,Damage,13092.5,Level 230 Warrior build (6m),"Sep 8, 2026",https://the-codex.ch/damagebuilder/test-warr-dps-sword,https://the-codex.ch/builds,181.46977698310394,146.62731966267597,220,7214.7
+car,Mage,233,Damage,7237.1,Level 233 Mage build for Bloodthorn,"Sep 7, 2026",https://the-codex.ch/damagebuilder/car,https://the-codex.ch/builds,100.31047722012003,104.78679504814306,220,7214.7
+yooyeon,Druid,220,Damage,3953.7,Level 220 Druid build,"Sep 6, 2026",https://the-codex.ch/damagebuilder/yooyeon,https://the-codex.ch/builds,54.800615410204166,77.24408756557159,220,7214.7
+Frontman,Mage,233,Damage,6294.5,Level 233 Mage build (10m),"Sep 4, 2026",https://the-codex.ch/damagebuilder/frontman,https://the-codex.ch/builds,87.24548491274759,91.13878230652284,220,7214.7
+Zeno,Warrior,231,Damage,7770,dg t4 war,"Sep 3, 2026",https://the-codex.ch/damagebuilder/zeno,https://the-codex.ch/builds,107.69678572913635,87.01884848416974,220,7214.7
+zzzc,Mage,225,Damage,4747.9,Level 225 Mage build for Bloodthorn,"Sep 2, 2026",https://the-codex.ch/damagebuilder/zzzc,https://the-codex.ch/builds,65.80869613428139,68.74538478245131,220,7214.7
+Lonal,Rogue,234,Damage,12100.3,Level 234 Rogue build for Gelebron,"Aug 31, 2026",https://the-codex.ch/damagebuilder/lonal,https://the-codex.ch/builds,167.71729940260855,142.02063356063894,220,7214.7
+zzz,Rogue,235,Damage,10528.2,Level 235 Rogue build,"Aug 30, 2026",https://the-codex.ch/damagebuilder/zzz,https://the-codex.ch/builds,145.92706557445217,123.56897219516203,220,7214.7
+Mage,Mage,233,Damage,7793.7,Level 233 Mage build for Bloodthorn,"Aug 30, 2026",https://the-codex.ch/damagebuilder/mage,https://the-codex.ch/builds,108.02528171649548,112.84586983276623,220,7214.7
+Rouge,Rogue,230,Damage,5609.7,Level 230 Rogue build,"Aug 30, 2026",https://the-codex.ch/damagebuilder/rouge,https://the-codex.ch/builds,77.75375275479229,65.84077651670755,220,7214.7
+OG Riga Rogue 4,Rogue,233,Damage,8520.1,Test 4,"Aug 30, 2026",https://the-codex.ch/damagebuilder/og-riga-rogue-4,https://the-codex.ch/builds,118.09361442610226,100,220,7214.7
+OG Riga rogue 1,Rogue,233,Damage,8258.4,Test 1,"Aug 30, 2026",https://the-codex.ch/damagebuilder/og-riga-rogue-1,https://the-codex.ch/builds,114.46629797496777,96.92843980704451,220,7214.7
+OG Riga rogue 2,Rogue,233,Damage,8492.8,Test 2,"Aug 30, 2026",https://the-codex.ch/damagebuilder/og-riga-rogue-2,https://the-codex.ch/builds,117.71522031408097,99.67958122557246,220,7214.7
+OG Riga rogue 3,Rogue,233,Damage,8496.2,Test 3,"Aug 30, 2026",https://the-codex.ch/damagebuilder/og-riga-rogue-3,https://the-codex.ch/builds,117.76234632070634,99.71948686048286,220,7214.7
+Test rogue 3,Rogue,233,Damage,8496.2,Test rogue 3,"Aug 30, 2026",https://the-codex.ch/damagebuilder/test-rogue-3,https://the-codex.ch/builds,117.76234632070634,99.71948686048286,220,7214.7
+Test rogue 2,Rogue,233,Damage,8258.4,Test rogue 2,"Aug 30, 2026",https://the-codex.ch/damagebuilder/test-rogue-2,https://the-codex.ch/builds,114.46629797496777,96.92843980704451,220,7214.7
+Test rogue 1,Rogue,233,Damage,8390.9,Test rogue 1,"Aug 30, 2026",https://the-codex.ch/damagebuilder/test-rogue-1,https://the-codex.ch/builds,116.30282617433849,98.48358587340523,220,7214.7
+My ranger,Ranger,230,Damage,7031.8,Level 230 Ranger build for Gelebron,"Aug 27, 2026",https://the-codex.ch/damagebuilder/my-ranger,https://the-codex.ch/builds,97.4648980553592,92.80270286321375,220,7214.7
+Styled Druid,Druid,230,Damage,4478.2,druid,"Aug 27, 2026",https://the-codex.ch/damagebuilder/styled-druid,https://the-codex.ch/builds,62.07049496167547,87.49133038322147,220,7214.7
+StyledxDxD Druid,Druid,230,Damage,5693.8,Level 230 Druid build,"Aug 27, 2026",https://the-codex.ch/damagebuilder/styledxdxd-druid,https://the-codex.ch/builds,78.91942838926082,111.24070763610077,220,7214.7
+AFK TOTO,Ranger,238,Damage,6323.1,Level 238 Ranger build for Proteus Prime,"Aug 26, 2026",https://the-codex.ch/damagebuilder/afk-toto,https://the-codex.ch/builds,87.641897792008,83.4495819668345,220,7214.7
+Fire mage,Mage,232,Damage,6099.8,Level 232 Mage build,"Aug 25, 2026",https://the-codex.ch/damagebuilder/fire-mage,https://the-codex.ch/builds,84.54682800393641,88.31969883443134,220,7214.7
+Toto,Ranger,238,Damage,5348.1,Level 238 Ranger build for Proteus Prime,"Aug 25, 2026",https://the-codex.ch/damagebuilder/toto,https://the-codex.ch/builds,74.12782236267621,70.5819470381344,220,7214.7
+1G-DPS Rogue,Rogue,230,Damage,10761.2,(ง’̀-’́)ง,"Aug 24, 2026",https://the-codex.ch/damagebuilder/1g-dps-rogue,https://the-codex.ch/builds,149.1565830873079,126.30368188166806,220,7214.7
+Ouchie,Druid,232,Damage,4647.5,I really do heal,"Aug 21, 2026",https://the-codex.ch/damagebuilder/ouchie,https://the-codex.ch/builds,64.41709287981482,90.79897234514354,220,7214.7
+Napalm ice,Mage,230,Damage,6652.6,dps ice mage on cerri,"Aug 18, 2026",https://the-codex.ch/damagebuilder/napalm-ice,https://the-codex.ch/builds,92.20896225761294,96.32375298631725,220,7214.7
+wartest,Warrior,226,Damage,3892.9,Level 226 Warrior build for Gelebron,"Aug 18, 2026",https://the-codex.ch/damagebuilder/wartest,https://the-codex.ch/builds,53.95789152702122,43.597899004378945,220,7214.7
+Tankman1,Warrior,224,Damage,4707.4,Level 224 Warrior build for Gelebron,"Aug 16, 2026",https://the-codex.ch/damagebuilder/tankman1,https://the-codex.ch/builds,65.24734223183223,52.71975899026777,220,7214.7
+bttype1,Rogue,230,Damage,9000000,Level 230 Rogue build,"Aug 15, 2026",https://the-codex.ch/damagebuilder/bttype1,https://the-codex.ch/builds,124745.31165537029,105632.56299808688,220,7214.7
+opk,Rogue,230,Damage,5087.5,Level 230 Rogue build,"Aug 15, 2026",https://the-codex.ch/damagebuilder/opk,https://the-codex.ch/builds,70.51575256074403,59.71174047252966,220,7214.7
+healjr,Druid,221,Damage,3895.9,Level 221 Druid build,"Aug 14, 2026",https://the-codex.ch/damagebuilder/healjr,https://the-codex.ch/builds,53.99947329757301,76.11483945335013,220,7214.7
+Expo,Mage,233,Damage,5442.6,Level 233 Mage build,"Aug 13, 2026",https://the-codex.ch/damagebuilder/expo,https://the-codex.ch/builds,75.4376481350576,78.80402519365816,220,7214.7
+DOT DROP,Ranger,230,Damage,3748.1,Level 230 Ranger build,"Aug 12, 2026",https://the-codex.ch/damagebuilder/dot-drop,https://the-codex.ch/builds,51.95087806838815,49.46582818078038,220,7214.7
+SOS1,Ranger,230,Damage,3717,Level 230 Ranger build,"Aug 12, 2026",https://the-codex.ch/damagebuilder/sos1,https://the-codex.ch/builds,51.51981371366793,49.05538362049056,220,7214.7
+SOS,Ranger,230,Damage,3425.6,Level 230 Ranger build,"Aug 12, 2026",https://the-codex.ch/damagebuilder/sos,https://the-codex.ch/builds,47.48083773407072,45.20961047359495,220,7214.7
+Rogue Goal,Rogue,231,Damage,10846,Level 231 Rogue build for Gelebron,"Aug 11, 2026",https://the-codex.ch/damagebuilder/rogue-goal,https://the-codex.ch/builds,150.33196113490513,127.29897536413893,220,7214.7
+Rogue Base Test,Rogue,231,Damage,9231.1,Level 231 Rogue build for Gelebron,"Aug 11, 2026",https://the-codex.ch/damagebuilder/rogue-base-test,https://the-codex.ch/builds,127.94849404687652,108.34497247684887,220,7214.7
+Winterx Perfect SP Rogue,Rogue,230,Damage,3410.7,Not my actual build lol,"Aug 7, 2026",https://the-codex.ch/damagebuilder/winterx-perfect-sp-rogue,https://the-codex.ch/builds,47.27431494033016,40.03122029084165,220,7214.7
+pika supp,Rogue,250,Damage,6354.9,Level 250 Rogue build for Gelebron,"Aug 7, 2026",https://the-codex.ch/damagebuilder/pika-supp,https://the-codex.ch/builds,88.08266455985697,74.58715273294914,220,7214.7
+heal,Druid,220,Damage,28.2,Level 220 Druid build,"Aug 4, 2026",https://the-codex.ch/damagebuilder/heal,https://the-codex.ch/builds,0.3908686431868269,0.5509480409108225,220,7214.7
+Druid Totem Test,Druid,230,Damage,6799.7,Level 230 Druid build,"Aug 3, 2026",https://the-codex.ch/damagebuilder/druid-totem-test,https://the-codex.ch/builds,94.24785507366904,132.84685793550778,220,7214.7
+Druid Caster Test,Druid,230,Damage,5640.7,Level 230 Druid build,"Aug 3, 2026",https://the-codex.ch/damagebuilder/druid-caster-test,https://the-codex.ch/builds,78.18343105049414,110.20328419736443,220,7214.7
+my build with frostbite,Mage,230,Damage,5298.8,Level 230 Mage build,"Aug 1, 2026",https://the-codex.ch/damagebuilder/my-build-with-frostbite,https://the-codex.ch/builds,73.44449526660846,76.72192861796859,220,7214.7
+my build frostbite,Mage,230,Damage,5298.8,Level 230 Mage build,"Aug 1, 2026",https://the-codex.ch/damagebuilder/my-build-frostbite,https://the-codex.ch/builds,73.44449526660846,76.72192861796859,220,7214.7
+my current build,Mage,230,Damage,4953.1,Level 230 Mage build,"Aug 1, 2026",https://the-codex.ch/damagebuilder/my-current-build,https://the-codex.ch/builds,68.65288924002385,71.71649895026425,220,7214.7
+Xento Build,Druid,231,Damage,5245.6,Level 231 Druid build,"Jul 30, 2026",https://the-codex.ch/damagebuilder/xento-build,https://the-codex.ch/builds,72.70711186882338,102.48415047524153,220,7214.7
+555,Mage,232,Damage,7142.5,mage,"Jul 30, 2026",https://the-codex.ch/damagebuilder/555,https://the-codex.ch/builds,98.99926538872026,103.41707087526244,220,7214.7
+hand2hand ranger,Ranger,230,Damage,8749.6,Level 230 Ranger build for Proteus Base,"Jul 29, 2026",https://the-codex.ch/damagebuilder/hand2hand-ranger,https://the-codex.ch/builds,121.27461987331421,115.47349597144046,220,7214.7
+hand2hand,Rogue,230,Damage,10732.9,Level 230 Rogue build for Proteus Base,"Jul 29, 2026",https://the-codex.ch/damagebuilder/hand2hand,https://the-codex.ch/builds,148.76432838510263,125.97152615579628,220,7214.7
+crom totem1,Druid,230,Damage,7443.1,Level 230 Druid build for Gelebron,"Jul 29, 2026",https://the-codex.ch/damagebuilder/crom-totem1,https://the-codex.ch/builds,103.16575879800962,145.41706962068594,220,7214.7
+znex,Druid,230,Damage,6015.6,Level 230 Druid build,"Jul 29, 2026",https://the-codex.ch/damagebuilder/znex,https://the-codex.ch/builds,83.37976631044951,117.52776719514695,220,7214.7
+MY mage,Mage,230,Damage,4824.4,30% cd perm on each skill,"Jul 26, 2026",https://the-codex.ch/damagebuilder/my-mage,https://the-codex.ch/builds,66.86903128335204,69.85303699413595,220,7214.7
+seppa7,Druid,230,Damage,3073.5,Level 230 Druid build,"Jul 26, 2026",https://the-codex.ch/damagebuilder/seppa7,https://the-codex.ch/builds,42.60052393030895,60.04747530990826,220,7214.7
+xNickWx,Rogue,221,Damage,3302.8,TechNick's Support rogue,"Jul 23, 2026",https://the-codex.ch/damagebuilder/xnickwx,https://the-codex.ch/builds,45.77875725948412,38.764803230009036,220,7214.7
+Bis support rogue,Rogue,230,Damage,4995.5,Level 230 Rogue build,"Jul 23, 2026",https://the-codex.ch/damagebuilder/bis-support-rogue,https://the-codex.ch/builds,69.24057826382247,58.63194093966033,220,7214.7
+Winterx,Rogue,230,Damage,3182.9,Support rogue,"Jul 23, 2026",https://the-codex.ch/damagebuilder/winterx,https://the-codex.ch/builds,44.1168724964309,37.357542751845635,220,7214.7
+Support Build T2 BDG,Rogue,230,Damage,4995.5,Level 230 Rogue build,"Jul 23, 2026",https://the-codex.ch/damagebuilder/support-build-t2-bdg,https://the-codex.ch/builds,69.24057826382247,58.63194093966033,220,7214.7
+Ishmael,Druid,231,Damage,4810.2,Level 231 Druid build,"Jul 22, 2026",https://the-codex.ch/damagebuilder/ishmael,https://the-codex.ch/builds,66.67221090274023,93.97766902089498,220,7214.7
+R Dex Build,Ranger,234,Damage,6668.8,Level 234 Ranger build,"Jul 21, 2026",https://the-codex.ch/damagebuilder/r-dex-build,https://the-codex.ch/builds,92.4335038185926,88.01198339745156,220,7214.7
+Stabbing4Dayz,Rogue,233,Damage,11174.2,Level 233 Rogue build for Gelebron,"Jul 21, 2026",https://the-codex.ch/damagebuilder/stabbing4dayz,https://the-codex.ch/builds,154.881006833271,131.15104282813584,220,7214.7
+theExaltedOne,Ranger,225,Damage,5361.3,Level 225 Ranger build for Proteus Prime,"Jul 20, 2026",https://the-codex.ch/damagebuilder/theexaltedone,https://the-codex.ch/builds,74.31078215310409,70.75615501870757,220,7214.7
+Moda,Ranger,230,Damage,8335.4,Level 230 Ranger build for Proteus Base,"Jul 19, 2026",https://the-codex.ch/damagebuilder/moda,https://the-codex.ch/builds,115.53356341913039,110.00706070224294,220,7214.7
+Night Druid Build,Druid,238,Damage,5020.8,Level 238 Druid build,"Jul 19, 2026",https://the-codex.ch/damagebuilder/night-druid-build,https://the-codex.ch/builds,69.5912511954759,98.09219587961198,220,7214.7
+shi,Rogue,234,Damage,12550.3,Level 234 Rogue build (10m),"Jul 19, 2026",https://the-codex.ch/damagebuilder/shi,https://the-codex.ch/builds,173.95456498537706,147.3022617105433,220,7214.7
+double apo ranger,Ranger,232,Damage,3912.7,Level 232 Ranger build,"Jul 19, 2026",https://the-codex.ch/damagebuilder/double-apo-ranger,https://the-codex.ch/builds,54.232331212663034,51.63814890823066,220,7214.7
+BigFloyd,Rogue,232,Damage,8649.9,rogue test,"Jul 16, 2026",https://the-codex.ch/damagebuilder/bigfloyd,https://the-codex.ch/builds,119.89271903197638,101.5234562974613,220,7214.7
+Mem,Rogue,233,Damage,8491.6,...,"Jul 13, 2026",https://the-codex.ch/damagebuilder/mem,https://the-codex.ch/builds,117.69858760586027,99.66549688383938,220,7214.7
+Killa2,Rogue,226,Damage,5209.4,Level 226 Rogue build for Proteus Prime,"Jul 10, 2026",https://the-codex.ch/damagebuilder/killa2,https://the-codex.ch/builds,72.2053585041651,61.14247485358152,220,7214.7
+Ranger Danger,Ranger,230,Damage,8915.8,Level 230 Ranger build for Proteus Base,"Jul 10, 2026",https://the-codex.ch/damagebuilder/ranger-danger,https://the-codex.ch/builds,123.57824996188339,117.66693281774809,220,7214.7
+Maso21,Warrior,235,Damage,8929.1,Level 235 Warrior build (5m),"Jul 8, 2026",https://the-codex.ch/damagebuilder/maso21,https://the-codex.ch/builds,123.76259581132965,100,220,7214.7
+Killa1,Rogue,225,Damage,5093.6,Level 225 Rogue build for Proteus Prime,"Jul 3, 2026",https://the-codex.ch/damagebuilder/killa1,https://the-codex.ch/builds,70.60030216086601,59.783335876339486,220,7214.7
+500 iq warrior build,Warrior,250,Damage,13791.9,Level 250 Warrior build,"Jul 2, 2026",https://the-codex.ch/damagebuilder/500-iq-warrior-build,https://the-codex.ch/builds,191.1638737577446,154.46013595995117,220,7214.7
+500 iq mage build,Mage,250,Damage,13408.6,Level 250 Mage build,"Jul 2, 2026",https://the-codex.ch/damagebuilder/500-iq-mage-build,https://the-codex.ch/builds,185.85110954024424,194.14464634764352,220,7214.7
+500 iq rogue build,Rogue,250,Damage,13775.4,Level 250 Rogue build (1m),"Jul 2, 2026",https://the-codex.ch/damagebuilder/500-iq-rogue-build,https://the-codex.ch/builds,190.93517401970976,161.68120092487177,220,7214.7
+Swordman Build,Warrior,231,Damage,6461.9,Level 231 Warrior build for Proteus Prime,"Jul 1, 2026",https://the-codex.ch/damagebuilder/swordman-build,https://the-codex.ch/builds,89.56574770953748,72.36899575545127,220,7214.7
+nnnnnn,Warrior,227,Damage,4784.2,Level 227 Warrior build for Proteus Prime,"Jul 1, 2026",https://the-codex.ch/damagebuilder/nnnnnn,https://the-codex.ch/builds,66.31183555795805,53.57986807181015,220,7214.7
+GodStrike,Rogue,231,Damage,8226.3,Level 231 Rogue build for Gelebron,"Jun 30, 2026",https://the-codex.ch/damagebuilder/godstrike,https://the-codex.ch/builds,114.02137303006361,96.55168366568466,220,7214.7
+Rangiii,Ranger,228,Damage,6689.7,Level 228 Ranger build for Proteus Base,"Jun 30, 2026",https://the-codex.ch/damagebuilder/rangiii,https://the-codex.ch/builds,92.72319015343673,88.28781270002574,220,7214.7
+Agent,Rogue,232,Damage,11231.6,Level 232 Rogue build for Gelebron (10m),"Jun 24, 2026",https://the-codex.ch/damagebuilder/agent,https://the-codex.ch/builds,155.67660470982855,131.82474384103472,220,7214.7
+Eyepatch,Ranger,230,Damage,5578.2,Level 230 Ranger build for Gelebron (10m),"Jun 24, 2026",https://the-codex.ch/damagebuilder/eyepatch,https://the-codex.ch/builds,77.3171441639985,73.61870888130761,220,7214.7
+spear,Warrior,225,Damage,3344.5,war,"Jun 23, 2026",https://the-codex.ch/damagebuilder/spear,https://the-codex.ch/builds,46.35674387015399,37.456182593990434,220,7214.7
+Gwyn Shields DPS,Warrior,230,Damage,5632,Level 230 Warrior build for Gelebron,"Jun 22, 2026",https://the-codex.ch/damagebuilder/gwyn-shields-dps,https://the-codex.ch/builds,78.06284391589394,63.07466597977399,220,7214.7
+Titom,Ranger,236,Damage,9159.9,Level 236 Ranger build for Proteus Base (1m),"Jun 21, 2026",https://the-codex.ch/damagebuilder/titom,https://the-codex.ch/builds,126.96162002578069,120.88846070092316,220,7214.7
+slap2hot,Rogue,221,Damage,4396.9,slap,"Jun 21, 2026",https://the-codex.ch/damagebuilder/slap2hot,https://the-codex.ch/builds,60.94362897972195,51.60620180514313,220,7214.7
+Spear Warr Meta,Warrior,240,Damage,13643.9,Spear Warr Max build,"Jun 20, 2026",https://the-codex.ch/damagebuilder/spear-warr-meta,https://the-codex.ch/builds,189.11250641052294,152.80263408406222,220,7214.7
+Icy,Mage,233,Damage,7790.5,Level 233 Mage build,"Jun 19, 2026",https://the-codex.ch/damagebuilder/icy,https://the-codex.ch/builds,107.98092782790691,112.7995366683559,220,7214.7
+Warrior1,Warrior,233,Damage,7710.3,Level 233 Warrior build (10m),"Jun 18, 2026",https://the-codex.ch/damagebuilder/warrior1,https://the-codex.ch/builds,106.86930849515572,86.35024806531453,220,7214.7
+Warrior,Warrior,233,Damage,7710.3,Level 233 Warrior build (10m),"Jun 18, 2026",https://the-codex.ch/damagebuilder/warrior,https://the-codex.ch/builds,106.86930849515572,86.35024806531453,220,7214.7
+Ranger,Ranger,233,Damage,7156.3,Level 233 Ranger build (10m),"Jun 18, 2026",https://the-codex.ch/damagebuilder/ranger,https://the-codex.ch/builds,99.1905415332585,94.44580086180162,220,7214.7
+test,Rogue,230,Damage,9460.1,Level 230 Rogue build for Gelebron (1m),"Jun 17, 2026",https://the-codex.ch/damagebuilder/test,https://the-codex.ch/builds,131.1225691989965,111.03273435757797,220,7214.7
+build compare tato,Warrior,234,Damage,8360.8,Level 234 Warrior build for Gelebron (10m),"Jun 17, 2026",https://the-codex.ch/damagebuilder/build-compare-tato,https://the-codex.ch/builds,115.88562240980221,93.63541678332642,220,7214.7
+mythicfire127,Mage,230,Damage,7035.6,Level 230 Mage build for Bloodthorn (1m),"Jun 16, 2026",https://the-codex.ch/damagebuilder/mythicfire127,https://the-codex.ch/builds,97.51756829805814,101.86925360167957,220,7214.7
+Maso 21,Warrior,235,Damage,8855.5,Level 235 Warrior build for Proteus Prime (5m),"Jun 15, 2026",https://the-codex.ch/damagebuilder/maso-21,https://the-codex.ch/builds,122.7424563737924,99.17572879685522,220,7214.7
+Teaa,Druid,229,Damage,4155.2,Level 229 Druid build,"Jun 14, 2026",https://the-codex.ch/damagebuilder/teaa,https://the-codex.ch/builds,57.593524332266064,81.1808262266897,220,7214.7
+Jakezz,Rogue,235,Damage,5766.6,Level 235 Rogue build for Gelebron,"Jun 12, 2026",https://the-codex.ch/damagebuilder/jakezz,https://the-codex.ch/builds,79.92847935465093,67.68230419830753,220,7214.7
+DragonzxDX,Ranger,231,Damage,8637.6,Level 231 Ranger build for Proteus Prime,"Jun 12, 2026",https://the-codex.ch/damagebuilder/dragonzxdx,https://the-codex.ch/builds,119.72223377271405,113.99536765142568,220,7214.7
+vmkk,Mage,225,Damage,3867.5,Level 225 Mage build for Bloodthorn,"Jun 9, 2026",https://the-codex.ch/damagebuilder/vmkk,https://the-codex.ch/builds,53.605832536349396,55.99797292405705,220,7214.7
+Ankou,Mage,230,Damage,7233.2,Registered sex offender,"Jun 8, 2026",https://the-codex.ch/damagebuilder/ankou,https://the-codex.ch/builds,100.2564209184027,104.73032650401794,220,7214.7
+Rangi,Ranger,230,Damage,6818.8,Level 230 Ranger build for Proteus Base,"Jun 6, 2026",https://the-codex.ch/damagebuilder/rangi,https://the-codex.ch/builds,94.5125923461821,89.9916195403285,220,7214.7
+Sneaky attack spear rogue,Rogue,230,Damage,10893.1,Level 230 Rogue build,"Jun 4, 2026",https://the-codex.ch/damagebuilder/sneaky-attack-spear-rogue,https://the-codex.ch/builds,150.98479493256824,127.85178577716223,220,7214.7
+Reddestryer DPs,Druid,230,Damage,3211.8,Level 230 Druid build,"Jun 3, 2026",https://the-codex.ch/damagebuilder/reddestryer-dps,https://the-codex.ch/builds,44.51744355274648,62.749465170119855,220,7214.7
+REDALiCE,Druid,230,Damage,5771.2,gwyd ver,"Jun 3, 2026",https://the-codex.ch/damagebuilder/redalice,https://the-codex.ch/builds,79.992238069497,112.75288417391982,220,7214.7
+Havel,Warrior,233,Damage,12316.1,Level 233 Warrior build for Gelebron,"Jun 2, 2026",https://the-codex.ch/damagebuilder/havel,https://the-codex.ch/builds,170.70841476430067,137.93215441645853,220,7214.7
+Zeno non doch,Warrior,230,Damage,7815.2,Doch pants and chest + imp pet,"Jun 2, 2026",https://the-codex.ch/damagebuilder/zeno-non-doch,https://the-codex.ch/builds,108.32328440544998,87.52505851653581,220,7214.7
+Reich,Mage,250,Damage,9361.4,Level 250 Mage build,"Jun 2, 2026",https://the-codex.ch/damagebuilder/reich,https://the-codex.ch/builds,129.7545289478426,135.54477665966843,220,7214.7
+Ge1,Ranger,230,Damage,7221.6,Level 230 Ranger build for Proteus Base,"Jun 1, 2026",https://the-codex.ch/damagebuilder/ge1,https://the-codex.ch/builds,100.09563807226914,95.30760246266738,220,7214.7
+Rogue main build,Rogue,240,Damage,11456.1,Level 240 Rogue build,"May 30, 2026",https://the-codex.ch/damagebuilder/rogue-main-build,https://the-codex.ch/builds,158.78830720612086,134.45968944026478,220,7214.7
+Vex Healer,Druid,233,Damage,2143.2,cerri druid,"May 30, 2026",https://the-codex.ch/damagebuilder/vex-healer,https://the-codex.ch/builds,29.706016882198842,41.87205110922251,220,7214.7
+Aspire totem Build,Druid,234,Damage,7469.9,build i cant use until gwyd gets merged or more :(,"May 29, 2026",https://the-codex.ch/damagebuilder/aspire-totem-build,https://the-codex.ch/builds,103.53722261493894,145.9406656311969,220,7214.7
+Shadow peak,Rogue,231,Damage,10040.4,Level 231 Rogue build for Gelebron (10m),"May 28, 2026",https://the-codex.ch/damagebuilder/shadow-peak,https://the-codex.ch/builds,139.16586968273108,117.84368728066572,220,7214.7
+mythicfire,Mage,230,Damage,6878.6,Level 230 Mage build,"May 28, 2026",https://the-codex.ch/damagebuilder/mythicfire,https://the-codex.ch/builds,95.34145563918113,99.59603272279736,220,7214.7
+mythic fire,Mage,230,Damage,6878.6,Level 230 Mage build,"May 28, 2026",https://the-codex.ch/damagebuilder/mythic-fire,https://the-codex.ch/builds,95.34145563918113,99.59603272279736,220,7214.7
+Glib,Ranger,231,Damage,9861.3,3 prec no double cd,"May 27, 2026",https://the-codex.ch/damagebuilder/glib,https://the-codex.ch/builds,136.68343798078922,130.14523930501574,220,7214.7
+Glib full vit,Ranger,231,Damage,9828.1,double cd test,"May 27, 2026",https://the-codex.ch/damagebuilder/glib-full-vit,https://the-codex.ch/builds,136.22326638668275,129.70707983872563,220,7214.7
+Nephyria-Gwydion,Ranger,231,Damage,11218.1,"40% SS, 30% DS","May 27, 2026",https://the-codex.ch/damagebuilder/nephyria-gwydion,https://the-codex.ch/builds,155.48948674234552,148.05170809605195,220,7214.7
+g1e,Ranger,230,Damage,7106.9,Level 230 Ranger build for Proteus Base,"May 27, 2026",https://the-codex.ch/damagebuilder/g1e,https://the-codex.ch/builds,98.50582837817234,93.79384069208079,220,7214.7
+zxzx,Mage,231,Damage,4357.6,Level 231 Mage build,"May 27, 2026",https://the-codex.ch/damagebuilder/zxzx,https://the-codex.ch/builds,60.39890778549351,63.094186635777895,220,7214.7
+High Tier Ice,Mage,235,Damage,8087.9,Level 235 Mage build,"May 26, 2026",https://the-codex.ch/damagebuilder/high-tier-ice,https://the-codex.ch/builds,112.10306734860771,117.1056251357417,220,7214.7
+High Tier Fire,Mage,235,Damage,9109.4,Level 235 Mage build,"May 26, 2026",https://the-codex.ch/damagebuilder/high-tier-fire,https://the-codex.ch/builds,126.26166022149224,131.8960399623543,220,7214.7
+Draga,Warrior,231,Damage,9853.2,Level 231 Warrior build for Gelebron (5m),"May 24, 2026",https://the-codex.ch/damagebuilder/draga,https://the-codex.ch/builds,136.5711672002994,110.3493073210066,220,7214.7
+test long,Ranger,233,Damage,11796,long test 233,"May 24, 2026",https://the-codex.ch/damagebuilder/test-long,https://the-codex.ch/builds,163.49952180963865,155.6785862758425,220,7214.7
+true chad,Mage,250,Damage,10631.8,framemogger heightmogger looksmogger voicemogger,"May 23, 2026",https://the-codex.ch/damagebuilder/true-chad,https://the-codex.ch/builds,147.3630227175073,153.93904293057264,220,7214.7
+Healthcare,Druid,226,Damage,2499,Level 226 Druid build for Bloodthorn (10m),"May 21, 2026",https://the-codex.ch/damagebuilder/healthcare,https://the-codex.ch/builds,34.63761486964115,48.823374263693104,220,7214.7
+Realistic Rogue Build,Rogue,250,Damage,13013.2,Level 250 Rogue build for Gelebron,"May 20, 2026",https://the-codex.ch/damagebuilder/realistic-rogue-build,https://the-codex.ch/builds,180.3706321815183,152.73529653407826,220,7214.7
+TopTierRouge,Rogue,220,Damage,5781.2,Level 220 Rogue build for Gelebron,"May 20, 2026",https://the-codex.ch/damagebuilder/toptierrouge,https://the-codex.ch/builds,80.13084397133629,67.8536636893933,220,7214.7
+Warrior dpd,Warrior,224,Damage,4711.2,Level 224 Warrior build,"May 19, 2026",https://the-codex.ch/damagebuilder/warrior-dpd,https://the-codex.ch/builds,65.30001247453117,52.762316470864924,220,7214.7
+RangE,Ranger,226,Damage,8541.1,Level 226 Ranger build for Proteus Base,"May 16, 2026",https://the-codex.ch/damagebuilder/range,https://the-codex.ch/builds,118.38468681996481,112.72180173284153,220,7214.7
+best possible ranger,Ranger,232,Damage,11286.1,probably,"May 15, 2026",https://the-codex.ch/damagebuilder/best-possible-ranger,https://the-codex.ch/builds,156.43200687485276,148.9491431474895,220,7214.7
+Ice target dpm,Mage,231,Damage,6378.2,Level 231 Mage build (5m),"May 13, 2026",https://the-codex.ch/damagebuilder/ice-target-dpm,https://the-codex.ch/builds,88.40561631114254,92.35068413813075,220,7214.7
+IceIceJay,Rogue,233,Damage,3913.9,My Dex rogue build,"May 12, 2026",https://the-codex.ch/damagebuilder/iceicejay,https://the-codex.ch/builds,54.24896392088375,45.937254257579134,220,7214.7
+My rogue build,Rogue,228,Damage,6155.6,Level 228 Rogue build for Gelebron,"May 9, 2026",https://the-codex.ch/damagebuilder/my-rogue-build,https://the-codex.ch/builds,85.3202489361997,72.24797831011374,220,7214.7
+fireball69,Mage,222,Damage,3253.3,Level 222 Mage build for Bloodthorn (10m),"May 9, 2026",https://the-codex.ch/damagebuilder/fireball69,https://the-codex.ch/builds,45.09265804537957,47.10490118004778,220,7214.7
+xprinc,Mage,233,Damage,7797.9,.,"May 8, 2026",https://the-codex.ch/damagebuilder/xprinc,https://the-codex.ch/builds,108.083496195268,112.90668211105479,220,7214.7
+Max Mage,Mage,240,Damage,9528.3,Level 240 Mage build,"May 8, 2026",https://the-codex.ch/damagebuilder/max-mage,https://the-codex.ch/builds,132.06786144954052,137.9613407659451,220,7214.7
+Elymas Updated,Mage,232,Damage,7855.6,Danu 232 Firemage,"May 7, 2026",https://the-codex.ch/damagebuilder/elymas-updated,https://the-codex.ch/builds,108.88325224888075,113.74212698182873,220,7214.7
+Guava,Rogue,230,Damage,9446.6,Level 230 Rogue build for Gelebron (5m),"May 7, 2026",https://the-codex.ch/damagebuilder/guava,https://the-codex.ch/builds,130.93545123151344,110.87428551308082,220,7214.7
+Pwnagepotato700,Warrior,234,Damage,11775.7,Belenor sword warrior,"May 6, 2026",https://the-codex.ch/damagebuilder/pwnagepotato700,https://the-codex.ch/builds,163.2181518289049,131.88003270206403,220,7214.7
+Pikachu2,Rogue,231,Damage,7933.4,:D,"May 6, 2026",https://the-codex.ch/damagebuilder/pikachu2,https://the-codex.ch/builds,109.9616061651905,93.11393058766915,220,7214.7
+woi,Rogue,230,Damage,12710.7,Level 230 Rogue build for Gelebron,"May 6, 2026",https://the-codex.ch/damagebuilder/woi,https://the-codex.ch/builds,176.17780365087947,149.1848687221981,220,7214.7
+mm warr build,Warrior,238,Damage,11804.4,Level 238 Warrior build for Gelebron,"May 5, 2026",https://the-codex.ch/damagebuilder/mm-warr-build,https://the-codex.ch/builds,163.61595076718368,132.2014536739425,220,7214.7
+Hypothetical build,Ranger,225,Damage,2536.1,Level 225 Ranger build (10m),"May 4, 2026",https://the-codex.ch/damagebuilder/hypothetical-build,https://the-codex.ch/builds,35.151842765464956,33.47036814633471,220,7214.7
+Druid halfgoat,Druid,233,Damage,5347.8,My Druid build,"May 4, 2026",https://the-codex.ch/damagebuilder/druid-halfgoat,https://the-codex.ch/builds,74.12366418562102,104.48084869442897,220,7214.7
+Lure bele,Mage,230,Damage,5767.8,leave my build alone:(,"May 4, 2026",https://the-codex.ch/damagebuilder/lure-bele,https://the-codex.ch/builds,79.94511206287164,83.51263302685877,220,7214.7
+skimo bis,Warrior,231,Damage,10982.7,skimo warrior with hypothetical but possible gear,"May 4, 2026",https://the-codex.ch/damagebuilder/skimo-bis,https://the-codex.ch/builds,152.22670381304837,122.99895846165907,220,7214.7
+Sharp shot heavy v2,Ranger,230,Damage,7643.5,Level 230 Ranger build for Proteus Base,"May 1, 2026",https://the-codex.ch/damagebuilder/sharp-shot-heavy-v2,https://the-codex.ch/builds,105.9434210708692,100.8756590538659,220,7214.7
+Dogma DG Fort Warrior,Warrior,230,Damage,8627.8,Level 230 Warrior build (5m),"Apr 30, 2026",https://the-codex.ch/damagebuilder/dogma-dg-fort-warrior,https://the-codex.ch/builds,119.58639998891152,96.62563976212607,220,7214.7
+Gwyn Blaze Fire VOA,Mage,230,Damage,4022.6,Test build,"Apr 29, 2026",https://the-codex.ch/damagebuilder/gwyn-blaze-fire-voa,https://the-codex.ch/builds,55.75561007387695,58.24368348657062,220,7214.7
+AldStorm1,Druid,231,Damage,4819.9,Druid dps,"Apr 29, 2026",https://the-codex.ch/damagebuilder/aldstorm1,https://the-codex.ch/builds,66.80665862752436,94.16717951723665,220,7214.7
+Aldstorm,Druid,231,Damage,4819.9,Druid dps,"Apr 29, 2026",https://the-codex.ch/damagebuilder/aldstorm,https://the-codex.ch/builds,66.80665862752436,94.16717951723665,220,7214.7
+Jainsa,Druid,231,Damage,4819.9,Druid dps,"Apr 29, 2026",https://the-codex.ch/damagebuilder/jainsa,https://the-codex.ch/builds,66.80665862752436,94.16717951723665,220,7214.7
+Jain,Druid,231,Damage,4819.9,Druid dps,"Apr 29, 2026",https://the-codex.ch/damagebuilder/jain,https://the-codex.ch/builds,66.80665862752436,94.16717951723665,220,7214.7
+Sabtrick,Druid,231,Damage,4819.9,Level 231 Druid build (5m),"Apr 29, 2026",https://the-codex.ch/damagebuilder/sabtrick,https://the-codex.ch/builds,66.80665862752436,94.16717951723665,220,7214.7
+Druid dps,Druid,231,Damage,5183.3,Level 231 Druid build (5m),"Apr 29, 2026",https://the-codex.ch/damagebuilder/druid-dps,https://the-codex.ch/builds,71.84359710036455,101.26698512244916,220,7214.7
+Gwyn Blaze Fire,Mage,229,Damage,5247.9,BT test build,"Apr 29, 2026",https://the-codex.ch/damagebuilder/gwyn-blaze-fire,https://the-codex.ch/builds,72.73899122624641,75.98494172156663,220,7214.7
+stinky totem,Druid,250,Damage,8988.9,Level 250 Druid build,"Apr 28, 2026",https://the-codex.ch/damagebuilder/stinky-totem,https://the-codex.ch/builds,124.59145910432865,175.61761861501037,220,7214.7
+ew ranger,Ranger,250,Damage,13571.8,Level 250 Ranger build,"Apr 28, 2026",https://the-codex.ch/damagebuilder/ew-ranger,https://the-codex.ch/builds,188.1131578582616,179.11483869264828,220,7214.7
+rogues are poo,Rogue,250,Damage,13730.7,Level 250 Rogue build,"Apr 28, 2026",https://the-codex.ch/damagebuilder/rogues-are-poo,https://the-codex.ch/builds,190.3156056384881,161.15655919531463,220,7214.7
+warriors suck,Warrior,250,Damage,13023.5,Level 250 Warrior build,"Apr 28, 2026",https://the-codex.ch/damagebuilder/warriors-suck,https://the-codex.ch/builds,180.51339626041278,145.85456540972774,220,7214.7
+druids suck,Druid,250,Damage,9152.1,Level 250 Druid build,"Apr 28, 2026",https://the-codex.ch/damagebuilder/druids-suck,https://the-codex.ch/builds,126.85350742234604,178.80608387304747,220,7214.7
+best fire mage,Mage,250,Damage,12896.1,Level 250 Mage build,"Apr 28, 2026",https://the-codex.ch/damagebuilder/best-fire-mage,https://the-codex.ch/builds,178.7475570709801,186.72410048505031,220,7214.7
+worst ice mage,Mage,250,Damage,12651.6,Level 250 Mage build,"Apr 28, 2026",https://the-codex.ch/damagebuilder/worst-ice-mage,https://the-codex.ch/builds,175.35864277100922,183.18395714182293,220,7214.7
+Maso20,Warrior,235,Damage,5448,Level 235 Warrior build for Gelebron (3m),"Apr 28, 2026",https://the-codex.ch/damagebuilder/maso20,https://the-codex.ch/builds,75.51249532205081,61.013987971912066,220,7214.7
+Gwyn Blaze Ice,Mage,229,Damage,3335.6,BT test build,"Apr 28, 2026",https://the-codex.ch/damagebuilder/gwyn-blaze-ice,https://the-codex.ch/builds,46.23338461751702,48.29653225222616,220,7214.7
+Skill,Ranger,230,Damage,5479.9,Level 230 Ranger build for Bloodthorn,"Apr 27, 2026",https://the-codex.ch/damagebuilder/skill,https://the-codex.ch/builds,75.95464814891818,72.32138732900893,220,7214.7
+Skill Monkey,Ranger,230,Damage,5479.9,Level 230 Ranger build for Bloodthorn,"Apr 27, 2026",https://the-codex.ch/damagebuilder/skill-monkey,https://the-codex.ch/builds,75.95464814891818,72.32138732900893,220,7214.7
+Gwyn Heals Build,Druid,231,Damage,4689.4,Test build for BT,"Apr 27, 2026",https://the-codex.ch/damagebuilder/gwyn-heals-build,https://the-codex.ch/builds,64.99785160852149,91.61757954068123,220,7214.7
+Gwyndolyn Heals Test,Druid,231,Damage,4292.8,Level 231 Druid build for Bloodthorn,"Apr 27, 2026",https://the-codex.ch/damagebuilder/gwyndolyn-heals-test,https://the-codex.ch/builds,59.50074154157484,83.86914007170138,220,7214.7
+Gwyndolyn Heals,Druid,231,Damage,4292.8,Level 231 Druid build for Bloodthorn,"Apr 27, 2026",https://the-codex.ch/damagebuilder/gwyndolyn-heals,https://the-codex.ch/builds,59.50074154157484,83.86914007170138,220,7214.7
+Saiken1122,Warrior,230,Damage,6935.9,Level 230 Warrior build,"Apr 25, 2026",https://the-codex.ch/damagebuilder/saiken1122,https://the-codex.ch/builds,96.13566745672031,77.6774814930956,220,7214.7
+Saiken12,Warrior,230,Damage,6935.9,..,"Apr 25, 2026",https://the-codex.ch/damagebuilder/saiken12,https://the-codex.ch/builds,96.13566745672031,77.6774814930956,220,7214.7
+Saiken,Warrior,230,Damage,6935.9,Level 230 Warrior build,"Apr 25, 2026",https://the-codex.ch/damagebuilder/saiken,https://the-codex.ch/builds,96.13566745672031,77.6774814930956,220,7214.7
+bis supp rogue,Rogue,250,Damage,5209.6,kek,"Apr 25, 2026",https://the-codex.ch/damagebuilder/bis-supp-rogue,https://the-codex.ch/builds,72.2081306222019,61.14482224387038,220,7214.7
+Napalm ice mage,Mage,232,Damage,6287.5,Cerri,"Apr 24, 2026",https://the-codex.ch/damagebuilder/napalm-ice-mage,https://the-codex.ch/builds,87.14846078146007,91.03742850937523,220,7214.7
+Napalm,Mage,232,Damage,6287.5,Level 232 Mage build for Bloodthorn,"Apr 24, 2026",https://the-codex.ch/damagebuilder/napalm,https://the-codex.ch/builds,87.14846078146007,91.03742850937523,220,7214.7
+NitroRanger,Ranger,234,Damage,10516.8,work in progress,"Apr 24, 2026",https://the-codex.ch/damagebuilder/nitroranger,https://the-codex.ch/builds,145.76905484635537,138.79624924938796,220,7214.7
+Test Rogue,Rogue,230,Damage,12665.2,Level 230 Rogue build for Gelebron,"Apr 23, 2026",https://the-codex.ch/damagebuilder/test-rogue,https://the-codex.ch/builds,175.54714679751063,148.65083743148554,220,7214.7
+Sylv,Druid,233,Damage,5325,Level 233 Druid build,"Apr 23, 2026",https://the-codex.ch/damagebuilder/sylv,https://the-codex.ch/builds,73.80764272942743,104.03540134220319,220,7214.7
+Darkky,Druid,233,Damage,6169.7,Level 233 Druid build,"Apr 23, 2026",https://the-codex.ch/damagebuilder/darkky,https://the-codex.ch/builds,85.51568325779311,120.53844425558518,220,7214.7
+Surya Ranger,Ranger,232,Damage,11635.9,suryas ranger build level 232,"Apr 21, 2026",https://the-codex.ch/damagebuilder/surya-ranger,https://the-codex.ch/builds,161.28044132119146,153.5656546326785,220,7214.7
+Unreal Gwydion t5Mage,Mage,232,Damage,8647,Level 232 Mage build (10m),"Apr 20, 2026",https://the-codex.ch/damagebuilder/unreal-gwydion-t5mage,https://the-codex.ch/builds,119.85252332044298,125.20089770506044,220,7214.7
+Tess,Druid,233,Damage,5856.7,Level 233 Druid build for Bloodthorn,"Apr 19, 2026",https://the-codex.ch/damagebuilder/tess,https://the-codex.ch/builds,81.17731853022302,114.42331174476645,220,7214.7
+Audreylynn ICE helm,Mage,232,Damage,5547.1,"Fire helm, IV DG, void grim","Apr 18, 2026",https://the-codex.ch/damagebuilder/audreylynn-ice-helm,https://the-codex.ch/builds,76.88607980927829,80.31709259393325,220,7214.7
+Audreylynn Fire helm,Mage,232,Damage,5594.9,"Fire helm, IV DG, void grim","Apr 18, 2026",https://the-codex.ch/damagebuilder/audreylynn-fire-helm,https://the-codex.ch/builds,77.54861602007013,81.00919423731267,220,7214.7
+glibfullvit,Ranger,231,Damage,9019,3 prec no double cd,"Apr 18, 2026",https://the-codex.ch/damagebuilder/glibfullvit,https://the-codex.ch/builds,125.00866286886496,119.02892248404744,220,7214.7
+Gwyndolyn Hunt,Ranger,225,Damage,6825.3,Test build with current equipment,"Apr 14, 2026",https://the-codex.ch/damagebuilder/gwyndolyn-hunt,https://the-codex.ch/builds,94.60268618237765,90.07740377318649,220,7214.7
+Sharp Shot Heavy,Ranger,230,Damage,7510.8,Level 230 Ranger build for Proteus Base,"Apr 14, 2026",https://the-codex.ch/damagebuilder/sharp-shot-heavy,https://the-codex.ch/builds,104.1041207534617,99.1243409461341,220,7214.7
+azura gele,Rogue,234,Damage,10328.8,Level 234 Rogue build for Gelebron (5m),"Apr 14, 2026",https://the-codex.ch/damagebuilder/azura-gele,https://the-codex.ch/builds,143.16326389177652,121.22862407718218,220,7214.7
+takemyfire,Mage,230,Damage,5768.9,Level 230 Mage build for Bloodthorn (10m),"Apr 14, 2026",https://the-codex.ch/damagebuilder/takemyfire,https://the-codex.ch/builds,79.96035871207395,83.5285600521248,220,7214.7
+Leopard,Rogue,230,Damage,9810.4,type shi,"Apr 14, 2026",https://the-codex.ch/damagebuilder/leopard,https://the-codex.ch/builds,135.9779339404272,115.14418844849237,220,7214.7
+mage build,Mage,225,Damage,4651.1,Level 225 Mage build,"Apr 13, 2026",https://the-codex.ch/damagebuilder/mage-build,https://the-codex.ch/builds,64.46699100447698,67.34380655903858,220,7214.7
+4112026 Rogue Build,Rogue,230,Damage,5106.4,Level 230 Rogue build for Proteus Base,"Apr 11, 2026",https://the-codex.ch/damagebuilder/4112026-rogue-build,https://the-codex.ch/builds,70.7777177152203,59.93356885482564,220,7214.7
+Audreylynn,Mage,232,Damage,4695.2,Level 232 Mage build,"Apr 11, 2026",https://the-codex.ch/damagebuilder/audreylynn,https://the-codex.ch/builds,65.07824303158827,67.98233548106856,220,7214.7
+yuhhh,Warrior,231,Damage,5023.1,type,"Apr 10, 2026",https://the-codex.ch/damagebuilder/yuhhh,https://the-codex.ch/builds,69.62313055289894,56.25538968093089,220,7214.7
+Azura,Rogue,235,Damage,10515.7,Level 235 Rogue build for Gelebron,"Apr 7, 2026",https://the-codex.ch/damagebuilder/azura,https://the-codex.ch/builds,145.75380819715303,123.42226030210914,220,7214.7
+30 cd ammy imp invo,Mage,232,Damage,6033.1,"30% voa ammy, imp invo band","Apr 7, 2026",https://the-codex.ch/damagebuilder/30-cd-ammy-imp-invo,https://the-codex.ch/builds,83.62232663866827,87.35394193875335,220,7214.7
+mage ogmios ammy,Mage,232,Damage,5938.4,"named ammy, 30% fb cd ring","Apr 6, 2026",https://the-codex.ch/damagebuilder/mage-ogmios-ammy,https://the-codex.ch/builds,82.3097287482501,85.9827698544849,220,7214.7
+mage cd ammy,Mage,232,Damage,5893.3,"30% voa ammy, imp fb gele ring","Apr 6, 2026",https://the-codex.ch/damagebuilder/mage-cd-ammy,https://the-codex.ch/builds,81.68461613095485,85.32976181857671,220,7214.7
+Jilly,Druid,227,Damage,3186.2,Level 227 Druid build,"Apr 6, 2026",https://the-codex.ch/damagebuilder/jilly,https://the-codex.ch/builds,44.16261244403786,62.24931375709441,220,7214.7
+pos,Druid,235,Damage,6251.8,Level 235 Druid build for Bloodthorn,"Apr 6, 2026",https://the-codex.ch/damagebuilder/pos,https://the-codex.ch/builds,86.65363771189377,122.14244546688937,220,7214.7
+Aza,Rogue,231,Damage,9366.1,Level 231 Rogue build for Gelebron (9m),"Apr 3, 2026",https://the-codex.ch/damagebuilder/aza,https://the-codex.ch/builds,129.8196737217071,109.92946092182017,220,7214.7
+Chico rogue,Rogue,232,Damage,11780.6,Rogue,"Apr 1, 2026",https://the-codex.ch/damagebuilder/chico-rogue,https://the-codex.ch/builds,163.28606872080613,138.268330183918,220,7214.7
+Chico,Rogue,232,Damage,11780.6,Rogue,"Apr 1, 2026",https://the-codex.ch/damagebuilder/chico,https://the-codex.ch/builds,163.28606872080613,138.268330183918,220,7214.7
+Pikachu,Rogue,229,Damage,7122.7,:D,"Mar 31, 2026",https://the-codex.ch/damagebuilder/pikachu,https://the-codex.ch/builds,98.72482570307844,83.59878405183038,220,7214.7
+Heals,Druid,250,Damage,15.6,Level 250 Druid build,"Mar 29, 2026",https://the-codex.ch/damagebuilder/heals,https://the-codex.ch/builds,0.2162252068693085,0.30477976731236994,220,7214.7
+Rafada,Warrior,225,Damage,329.2,Level 225 Warrior build,"Mar 29, 2026",https://the-codex.ch/damagebuilder/rafada,https://the-codex.ch/builds,4.562906288549766,3.6868217401529826,220,7214.7
+Expose,Rogue,250,Damage,4389.3,Level 250 Rogue build,"Mar 28, 2026",https://the-codex.ch/damagebuilder/expose,https://the-codex.ch/builds,60.83828849432409,51.51700097416697,220,7214.7
+ranger1,Ranger,236,Damage,6681.8,Level 236 Ranger build for Gelebron (10m),"Mar 27, 2026",https://the-codex.ch/damagebuilder/ranger1,https://the-codex.ch/builds,92.6136914909837,88.18355186316755,220,7214.7
+Combusts bt build,Mage,230,Damage,7878.3,Bt build,"Mar 26, 2026",https://the-codex.ch/damagebuilder/combusts-bt-build,https://the-codex.ch/builds,109.19788764605597,114.07080286686455,220,7214.7
+Combust,Mage,230,Damage,7878.3,Level 230 Mage build for Bloodthorn,"Mar 26, 2026",https://the-codex.ch/damagebuilder/combust,https://the-codex.ch/builds,109.19788764605597,114.07080286686455,220,7214.7
+Duppy,Mage,235,Damage,8214.2,Level 235 Mage build for Bloodthorn,"Mar 26, 2026",https://the-codex.ch/damagebuilder/duppy,https://the-codex.ch/builds,113.85365988883808,118.93433721856223,220,7214.7
+Wuppy mage,Mage,235,Damage,8214.2,build,"Mar 26, 2026",https://the-codex.ch/damagebuilder/wuppy-mage,https://the-codex.ch/builds,113.85365988883808,118.93433721856223,220,7214.7
+Wuppy,Mage,235,Damage,8214.2,Mage build,"Mar 26, 2026",https://the-codex.ch/damagebuilder/wuppy,https://the-codex.ch/builds,113.85365988883808,118.93433721856223,220,7214.7
+Yuppy,Mage,235,Damage,8214.2,Level 235 Mage build for Bloodthorn,"Mar 26, 2026",https://the-codex.ch/damagebuilder/yuppy,https://the-codex.ch/builds,113.85365988883808,118.93433721856223,220,7214.7
+Gwydion-ASPIRE Caster Build,Druid,234,Damage,6851,Aspire to be Aspire..,"Mar 26, 2026",https://the-codex.ch/damagebuilder/gwydion-aspire-caster-build,https://the-codex.ch/builds,94.95890335010465,133.8491144780158,220,7214.7
+Edl,Rogue,233,Damage,3984,Level 233 Rogue build for Proteus Prime (10m),"Mar 26, 2026",https://the-codex.ch/damagebuilder/edl,https://the-codex.ch/builds,55.22059129277724,46.760014553819786,220,7214.7
+Zob,Ranger,222,Damage,5385.9,Level 222 Ranger build for Proteus Base,"Mar 25, 2026",https://the-codex.ch/damagebuilder/zob,https://the-codex.ch/builds,74.65175267162876,71.08081534613937,220,7214.7
+BiS Ranger,Ranger,240,Damage,12253,GigaBiS,"Mar 24, 2026",https://the-codex.ch/damagebuilder/bis-ranger,https://the-codex.ch/builds,169.8338115236947,161.70987772447424,220,7214.7
+Renoir,Mage,231,Damage,5886.1,230 Mage 23/03/26,"Mar 23, 2026",https://the-codex.ch/damagebuilder/renoir,https://the-codex.ch/builds,81.58481988163057,85.22551219865345,220,7214.7
+spoonkid,Ranger,233,Damage,11189,Level 233 Ranger build for Gelebron,"Mar 22, 2026",https://the-codex.ch/damagebuilder/spoonkid,https://the-codex.ch/builds,155.08614356799313,147.66765868433382,220,7214.7
+Test 3,Mage,232,Damage,7689.3,Level 232 Mage build,"Mar 21, 2026",https://the-codex.ch/damagebuilder/test-3,https://the-codex.ch/builds,106.5782361012932,111.33425034387896,220,7214.7
+Test 2,Mage,232,Damage,8025,Level 232 Mage build,"Mar 21, 2026",https://the-codex.ch/damagebuilder/test-2,https://the-codex.ch/builds,111.2312362260385,116.19488887280099,220,7214.7
+Test 1,Mage,232,Damage,7347.1,Level 232 Mage build,"Mar 21, 2026",https://the-codex.ch/damagebuilder/test-1,https://the-codex.ch/builds,101.83514214035235,106.37949757474843,220,7214.7
+OysTer Rosmerta NO DG,Druid,231,Damage,5053.6,NO DG build.,"Mar 20, 2026",https://the-codex.ch/damagebuilder/oyster-rosmerta-no-dg,https://the-codex.ch/builds,70.04587855350881,98.73301487755081,220,7214.7
+Theoretical,Druid,230,Damage,8259,Compare bonk baddie build to others (set for gele),"Mar 19, 2026",https://the-codex.ch/damagebuilder/theoretical,https://the-codex.ch/builds,114.47461432907812,161.3574421944143,220,7214.7
+Cyyda,Rogue,234,Damage,10213.8,Level 234 Rogue build,"Mar 19, 2026",https://the-codex.ch/damagebuilder/cyyda,https://the-codex.ch/builds,141.56929602062456,119.87887466109551,220,7214.7
+Renoir Currently,Mage,230,Damage,6105.6,As of 19/03/26,"Mar 19, 2026",https://the-codex.ch/damagebuilder/renoir-currently,https://the-codex.ch/builds,84.62721942700321,88.40367769492508,220,7214.7
+Kiwi,Warrior,233,Damage,10566.5,Rigga 🥝,"Mar 18, 2026",https://the-codex.ch/damagebuilder/kiwi,https://the-codex.ch/builds,146.45792617849668,118.33779440257138,220,7214.7
+Galamage2,Mage,233,Damage,6375.2,Level 233 Mage build for Bloodthorn,"Mar 17, 2026",https://the-codex.ch/damagebuilder/galamage2,https://the-codex.ch/builds,88.36403454059074,92.30724679649606,220,7214.7
+Galamage,Mage,233,Damage,8710.7,Level 233 Mage build for Bloodthorn,"Mar 17, 2026",https://the-codex.ch/damagebuilder/galamage,https://the-codex.ch/builds,120.73544291515934,126.12321725910375,220,7214.7
+Qwe,Druid,235,Damage,5874.2,Level 235 Druid build,"Mar 17, 2026",https://the-codex.ch/damagebuilder/qwe,https://the-codex.ch/builds,81.41987885844179,114.76521212476432,220,7214.7
+Rouge1,Rogue,230,Damage,3991.6,Testing theoretical dps,"Mar 17, 2026",https://the-codex.ch/damagebuilder/rouge1,https://the-codex.ch/builds,55.32593177817512,46.84921538479595,220,7214.7
+Nickown,Mage,230,Damage,6028.8,ice mage build (alt),"Mar 17, 2026",https://the-codex.ch/damagebuilder/nickown,https://the-codex.ch/builds,83.56272610087738,87.29168174907696,220,7214.7
+Icemeta,Mage,250,Damage,7423.5,best possible ice mage?,"Mar 17, 2026",https://the-codex.ch/damagebuilder/icemeta,https://the-codex.ch/builds,102.89409123040458,107.48570187504525,220,7214.7
+Ouch,Druid,231,Damage,4673.7,Level 231 Druid build,"Mar 17, 2026",https://the-codex.ch/damagebuilder/ouch,https://the-codex.ch/builds,64.78024034263379,91.31084605691174,220,7214.7
+Thereotical,Mage,230,Damage,7458,ankou on cerridwen,"Mar 17, 2026",https://the-codex.ch/damagebuilder/thereotical,https://the-codex.ch/builds,103.37228159175018,107.98523130384422,220,7214.7
+Beast2,Warrior,234,Damage,8196,Level 234 Warrior build for Gelebron,"Mar 17, 2026",https://the-codex.ch/damagebuilder/beast2,https://the-codex.ch/builds,113.60139714749053,91.78976604585009,220,7214.7
+Beast,Warrior,234,Damage,5371.2,Level 234 Warrior build for Gelebron,"Mar 17, 2026",https://the-codex.ch/damagebuilder/beast,https://the-codex.ch/builds,74.44800199592498,60.15387889036968,220,7214.7
+Meatball,Warrior,236,Damage,12159.2,Cerridwen - 236 spear warrior,"Mar 17, 2026",https://the-codex.ch/damagebuilder/meatball,https://the-codex.ch/builds,168.53368816444205,136.1749784412763,220,7214.7
+Elymas2,Mage,234,Damage,6906.5,Fire Mage 234 - Updated,"Mar 17, 2026",https://the-codex.ch/damagebuilder/elymas2,https://the-codex.ch/builds,95.72816610531277,100,220,7214.7
+Zeemer,Druid,230,Damage,5353.8,Poverty Druid,"Mar 17, 2026",https://the-codex.ch/damagebuilder/zeemer,https://the-codex.ch/builds,74.20682772672461,104.5980716818568,220,7214.7
+Elymas,Mage,234,Damage,8100.6,Fire Mage,"Mar 17, 2026",https://the-codex.ch/damagebuilder/elymas,https://the-codex.ch/builds,112.27909684394362,117.28950988199523,220,7214.7
+Seapilot,Druid,230,Damage,6318.4,Seapilot's lure daddy build (solo 0 res bt/dino),"Mar 16, 2026",https://the-codex.ch/damagebuilder/seapilot,https://the-codex.ch/builds,87.5767530181435,123.44362062733833,220,7214.7
+Darkysbuild,Druid,233,Damage,6169.7,Level 233 Druid build,"Mar 16, 2026",https://the-codex.ch/damagebuilder/darkysbuild,https://the-codex.ch/builds,85.51568325779311,120.53844425558518,220,7214.7
+Glibber,Ranger,231,Damage,9354.2,3 prec no double cd,"Mar 16, 2026",https://the-codex.ch/damagebuilder/glibber,https://the-codex.ch/builds,129.65473269851833,123.45274938466311,220,7214.7
+Lolol123,Ranger,232,Damage,10931.1,"First saved build o7, best ranger in game","Mar 16, 2026",https://the-codex.ch/damagebuilder/lolol123,https://the-codex.ch/builds,151.51149735955758,144.26400427601408,220,7214.7

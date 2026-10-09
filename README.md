@@ -13,6 +13,14 @@ pip install -r requirements.txt
 python main.py
 ```
 
+Refresh the **full public Codex Saved Builds catalog (327 linked builds)** from the pinned, verified four-page snapshot:
+
+```powershell
+python -m ch_tables.codex_catalog
+```
+
+This rebuilds all public listing rows, derived CSV tables, provenance manifest and a local indexed SQLite database joining the existing skill-panel observations. [Coverage and limitations](docs/CODEX_CATALOG.md). The older one-page network refresher is guarded against silently truncating a complete dataset.
+
 Refresh the community build sample:
 
 ```powershell
