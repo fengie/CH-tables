@@ -15,7 +15,7 @@ All selected items must be within the same measurement basis. Unverified mount i
 - `optimize_loadouts(spec, top_k)` uses a deterministic, bounded branch-and-bound search. The upper bound is the highest achievable remaining independent-slot weighted score plus **all positive conditional interaction rewards**, even those that may not activate. This deliberate overestimation guarantees *no false optimality pruning* when effects are negative, conditional, or both. Cheap minimum remaining acquisition cost gives an additional safe branch cutoff.
 - `exhaustive_oracle(spec, top_k)` separately enumerates tiny feasible product spaces. The two paths must agree on exact score, item selection and tie order before a solver change is trusted.
 - Every node has a budget. If the maximum is reached, `certified_exact=false` and its winners are explicitly **unproven partial candidates**. A complete enumeration with no winner means no eligible loadout under the modeled constraints.
-- The objective is **only a weighted additive research proxy**. Returning the top K of a single profile does not constitute a full Pareto frontier. For different objectives, compare independently supplied weight vectors, and eventually replace proxies with calibrated event-simulation objectives.
+- `optimize_loadouts()` still gives the top-K of a **weighted additive research proxy**. `pareto_loadouts()` now returns the unweighted nondominated set across all six supplied metric dimensions (maximize) and acquisition gold (minimize). It never reports this as empirical DPS. Both share eligibility, interaction, pricing, and compatibility gates. The weights affect scalar-search ranking and Pareto's traversal order only, not Pareto membership. Calibrated event-simulation outcomes remain a future dependency.
 
 ## Example API
 
@@ -44,6 +44,52 @@ Run `python -m unittest tests/test_loadout_search.py -v`. The regression suite i
 1. Independent same-patch in-game Rogue/caster observations and calibration of `combat_simulator.py` mechanics via `combat_validation.py`.
 2. Proof of real slot, mount/pet, set, proc, consumable and swap behavior for every candidate; no source-only developmental gear in recommendations.
 3. Use the event-simulation engine as a true nonlinear complete-build evaluator (e.g. rank breakpoints, survivability, pets, consumables), then benchmark an admissible bound or an explicitly heuristic alternative, marking missing optimality certificates honestly.
-4. Pareto-frontier selection across survival, DPS, QoL, price and robustness rather than one uncalibrated weighted score.
+4. Extend the **already implemented exact additive-metric Pareto engine** to calibrated nonlinear encounter outputs (survival, actual DPS, consumables, micromanagement and robustness), including a correctness oracle for the enriched evaluator.
 
 No proprietary game-client access, packet capture, account credentials, fabricated prices, or copyrighted asset redistribution is performed here.
+
+## Pareto frontier (complete when certified)
+
+`ch_tables.loadout_pareto.pareto_loadouts(spec, max_frontier=2000)`
+returns the nondominated, affordable loadouts under **seven objectives**:
+six modeled scenario metrics maximized (`damage_proxy`, HP, energy, HP regen,
+energy regen, incoming-DPS reduction) and acquisition cost minimized.
+It is deliberately independent of arbitrary weights, so a shield or
+energy-restoring bracelet is not dropped simply because a DPS-only profile
+would rank a different offhand first.
+
+```python
+from ch_tables.loadout_pareto import pareto_loadouts
+frontier = pareto_loadouts(problem, max_frontier=2000)
+if not frontier.certified_exact:
+    raise RuntimeError("Incomplete Pareto search: " + str(frontier.stop_reason))
+for candidate in frontier.frontier:
+    print(candidate.item_ids, candidate.metrics, candidate.gold_cost)
+```
+
+The search enumerates one eligible item per required slot while checking
+proven mount combinations, item incompatibilities, release/class limits,
+exact source/metric basis, gold budget, full set thresholds and both
+positive and negative conditional adjustments. It prunes a subtree **only
+when a feasible incumbent dominates the most optimistic metric vector of
+that subtree at its lowest possible gold cost**. Bounds include the positive
+component of every conditional interaction, including effects that might not
+activate, and are conservatively widened for floating-point rounding.
+
+Tied seven-objective vectors use a deterministic item-ID representative.
+A maximum node or frontier cap yields `certified_exact=false` plus
+`stop_reason=node_limit|frontier_limit`; a partial list is **never** a
+certified full frontier. There is no promise that arbitrary large catalogs
+have compact fronts. `exhaustive_pareto_oracle` and separately coded
+unpruned tiny-case regression fixtures check correctness, including 170
+randomized interaction/cost cases; an additional 500 deterministic adversarial
+cases were checked in local research. In a dominated synthetic 12-slot,
+40-items/slot benchmark, the bound closed 481 search nodes; this is a
+toy algorithm check, not game-data scalability evidence.
+
+Run `python -m unittest tests/test_loadout_pareto.py -v`.
+
+**Scientific boundary:** damage is still `damage_proxy`, not practical
+event-simulated DPS; survival, potion burden, swap inputs, mobility, unknown
+proc mechanics and market price uncertainties need measured model
+coefficients before cross-objective game recommendations can be trusted.
